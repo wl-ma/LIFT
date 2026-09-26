@@ -43,3 +43,5 @@ All six numerical CSV tables regenerate from portable released records. Plot gen
 Two local packaging checks failed before being corrected: the normal-cone driver initially omitted the upstream Lean options; the Beck compiler's initial 4 GiB limit was insufficient. The driver now preserves the original options and allows 8 GiB for Beck. No mathematical source was changed to make either check pass. These were zero-model packaging checks, not additional experimental trials.
 
 Version13 adds source-level Apache-2.0 notices for the upstream normal-cone files and retains ReasBook attribution. No blanket license is inferred for material without an explicit grant; see LICENSES.md.
+
+The first hosted CI run passed data regeneration and detected a missing dependency lock in the original example bundle. The exact pinned Mathlib dependency lock is now included; the first failure remains visible in CI history.
