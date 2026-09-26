@@ -1,0 +1,330 @@
+{
+  "schema": "lift.case-check.v1",
+  "case": "beck",
+  "lean_version": "Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+  "mathlib_commit": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "modules": [
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Definition_2_1",
+      "sha256": "c1fa38db65c78e9bb75d1348977a32e3844ea0c0ad86426102934cfe938d674b",
+      "returncode": 0,
+      "seconds": 5.617907927022316
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "returncode": 0,
+      "seconds": 5.475735743006226
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Definition_2_5",
+      "sha256": "550e2555a18ce8c9f7ed95c0d1980e10a5ed8284960b8cfa5e42f91974e99548",
+      "returncode": 0,
+      "seconds": 3.887899946013931
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Definition_2_6",
+      "sha256": "0ad7cd1fb8d67f06ee98ebc1ed501425330b75b6a879a73d33e3fbf56f65ea9c",
+      "returncode": 0,
+      "seconds": 1.4039281660225242
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Definition_2_7",
+      "sha256": "afc80d3e93f7d3f39875274a41abee53e2101a00a79143e1e8fb281e024704b6",
+      "returncode": 0,
+      "seconds": 5.261514639016241
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Theorem_5_17",
+      "sha256": "ef6294157e22253220b96ec98bf2c4c2dc60be1dfd19285a548b72a7357c7db1",
+      "returncode": 0,
+      "seconds": 4.313235821988201
+    },
+    {
+      "name": "ReasLib.Analysis.Convex.Strong",
+      "sha256": "257064ff62bcde20810c71fe84ecf10b0c90bd4fccc19bdbe8c948c6b805dfc4",
+      "returncode": 0,
+      "seconds": 1.5841230649966747
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Lemma_5_20",
+      "sha256": "cf979b051f07ddcfa8db8172bf8fc3d0c1c54b53c80aae0f4f2b54fd1bd4fc1d",
+      "returncode": 0,
+      "seconds": 4.253119947999949
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Definition_2_2",
+      "sha256": "149a6af59f9ff1c29c324c4eb8ed86279c070357aaa6462d705537f9f071088a",
+      "returncode": 0,
+      "seconds": 4.351336725987494
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Definition_2_8",
+      "sha256": "d283e5f4870280ad65c35b624b1c28b3b7ae4ab9d169000bbb3c9183027c4e01",
+      "returncode": 0,
+      "seconds": 4.183340214978671
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Theorem_2_6",
+      "sha256": "98db2a51a2a3b4b96b984176d5448a2d992f93c995e78dbf20dc50813d6eb7d0",
+      "returncode": 0,
+      "seconds": 3.098755761020584
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Theorem_2_8",
+      "sha256": "04e764d2f461009eba3da52db731c3226cf13b66d359eb303d7b69a502d67924",
+      "returncode": 0,
+      "seconds": 6.106607309979154
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap02.Example_2_6",
+      "sha256": "3dec18c6ced4e3e719dc9c370f5acab5ea9c76b61c9bcd5413fc5cc59487e7e3",
+      "returncode": 0,
+      "seconds": 5.007963062002091
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Proposition_5_13",
+      "sha256": "a3b5c3ca8a90c8541d4e50ecd1a0b6542f035177f9fc0e2cdba03c3923965e0d",
+      "returncode": 0,
+      "seconds": 4.038444495003205
+    },
+    {
+      "name": "FirstOrderMethodsOptimization_Beck_2017",
+      "sha256": "9b9020d79facce6caedec7ff567274bb4dbaa8dd024a0b79297a0964688ec401",
+      "returncode": 0,
+      "seconds": 3.45286582299741
+    },
+    {
+      "name": "IntroductoryLecturesOnConvexOptimization_Nesterov_2004",
+      "sha256": "1015f8f4676a27ea63780b30cc916712232857097b2bdf635dc61cb949c107fb",
+      "returncode": 0,
+      "seconds": 3.586236787989037
+    },
+    {
+      "name": "ReasLib",
+      "sha256": "1015f8f4676a27ea63780b30cc916712232857097b2bdf635dc61cb949c107fb",
+      "returncode": 0,
+      "seconds": 3.493040394008858
+    },
+    {
+      "name": "Audit",
+      "sha256": "cc324a56408b35d5bdd93d4cd2afd05591a862a4ce25687769f211cc7982d4de",
+      "returncode": 0,
+      "seconds": 3.602179941983195
+    }
+  ],
+  "clients": [
+    {
+      "name": "client-00",
+      "sha256": "4eebe36cbbeaa702e25fe049167071df996c33258098b8cb582c51c8f8cca802",
+      "returncode": 0,
+      "seconds": 3.4699316019832622
+    },
+    {
+      "name": "client-01",
+      "sha256": "4b7dae2b31d4b30557c6e66ee5661b6601e916013dbe3e964cbf363e346058d1",
+      "returncode": 0,
+      "seconds": 3.7018345539981965
+    },
+    {
+      "name": "client-02",
+      "sha256": "c5551315111f916f06ec17227bb918c7a5bdcc173c2d5ceb5242ff9c8b78a1e1",
+      "returncode": 0,
+      "seconds": 3.4434249509940855
+    },
+    {
+      "name": "client-03",
+      "sha256": "9f38a045eadb3232a79ed179884765b2063b6e789c5935a8cc35ee89edf904b6",
+      "returncode": 0,
+      "seconds": 3.610854038997786
+    },
+    {
+      "name": "client-04",
+      "sha256": "241b573053c93825b0a18c5e316092feed5b5fc620ccdeb549936647ebc3011e",
+      "returncode": 0,
+      "seconds": 3.5014405949914362
+    },
+    {
+      "name": "client-05",
+      "sha256": "0dad64251a840a710975d6bca5e2be098444d565a18dfeb554eb26d1b55dd54a",
+      "returncode": 0,
+      "seconds": 3.5697587530012242
+    },
+    {
+      "name": "client-06",
+      "sha256": "6ad7f3181fddeafb4c9e4aeba5854e3418e5f86846a45717c2d0246de958b93f",
+      "returncode": 0,
+      "seconds": 3.7003975819970947
+    },
+    {
+      "name": "client-07",
+      "sha256": "ae65627f94168317061592c87786638ddfdab9d950794eb497a455bcc886754a",
+      "returncode": 0,
+      "seconds": 3.5012265080004
+    },
+    {
+      "name": "client-08",
+      "sha256": "c02601172d4d217fb7fb36c244f8231f65189d921be278b6e7cc8f1ce9f273a3",
+      "returncode": 0,
+      "seconds": 3.5116099519946147
+    },
+    {
+      "name": "client-09",
+      "sha256": "d4f342f45dfa8bac96f9d16785757f9047964bcdb6947d52a8a4aa1fe01f9d98",
+      "returncode": 0,
+      "seconds": 3.5877779920119792
+    },
+    {
+      "name": "client-10",
+      "sha256": "fce0921070f464e970c8f7cce1b2c7e143fdfbb9d7545ffb30f62ad5aeda4126",
+      "returncode": 0,
+      "seconds": 3.5486856659990735
+    },
+    {
+      "name": "client-11",
+      "sha256": "3e144f95ca4a57e7f8dae8fd24fbf119c1d4316269751cc2029f0fd357548475",
+      "returncode": 0,
+      "seconds": 3.619461455993587
+    },
+    {
+      "name": "client-12",
+      "sha256": "b4f0fb013212318c20618e30a61564e99eb0e4f9d18736be13c8fe31092120d8",
+      "returncode": 0,
+      "seconds": 3.526860874990234
+    },
+    {
+      "name": "client-13",
+      "sha256": "1654d5d4c0cbb9d822ef1bea175116b6a7dcf9d1785f4324f2708c3d1ad6f511",
+      "returncode": 0,
+      "seconds": 3.5436400400067214
+    },
+    {
+      "name": "client-14",
+      "sha256": "6f077e0ebeed8890571b2162a76afd38a1fffb188f02cac1283ec8a6c7ec0c3f",
+      "returncode": 0,
+      "seconds": 3.5994299090234563
+    },
+    {
+      "name": "client-15",
+      "sha256": "eb796bfcf01ff0c0c88793a2721dee8cbd4adcaecb4b585da308c68c058738ee",
+      "returncode": 0,
+      "seconds": 3.4069909139943775
+    },
+    {
+      "name": "client-16",
+      "sha256": "d89dca9e93b3cad76a9a8c534706ab48954099b0719609197c4c5f575c0aec27",
+      "returncode": 0,
+      "seconds": 3.527366113004973
+    },
+    {
+      "name": "client-17",
+      "sha256": "50cb0a866b96be2b3bf959a57fa2d1caf3ab0ad44046caa8b99d3239c82f7212",
+      "returncode": 0,
+      "seconds": 3.4459557580121327
+    },
+    {
+      "name": "client-18",
+      "sha256": "70b2c4ae3bc42fc0ffb0ec6a5331935f4477f489a136ad2fecd3ee736275cca1",
+      "returncode": 0,
+      "seconds": 3.619366375991376
+    },
+    {
+      "name": "client-19",
+      "sha256": "28cf1cd33c1894ea90b07e7865179aa212ef8d081f71e9e8c123624dcc13f003",
+      "returncode": 0,
+      "seconds": 3.535755749006057
+    },
+    {
+      "name": "client-20",
+      "sha256": "a1657224967fe06429ead242c1882cbd31c46f7b0e43a3d7038203b0eccbe592",
+      "returncode": 0,
+      "seconds": 4.418514178018086
+    },
+    {
+      "name": "client-21",
+      "sha256": "50ac9074a219e5832a6dc6ce510077f4f8253042dd44b40b760878b0edfd0f28",
+      "returncode": 0,
+      "seconds": 3.930116809991887
+    }
+  ],
+  "passed": true,
+  "model_calls": 0,
+  "axioms": {
+    "is_strongly_convex_function.convex_effective_domain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "is_strongly_convex_function.ne_bot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "is_strongly_convex_function.segment_ineq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "is_strongly_convex_function.sigma_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "is_strongly_convex_function_iff_strongConvexOn_toReal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexOn_toReal_of_is_strongly_convex_function": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "is_strongly_convex_function_add_of_convexOn_toReal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "is_strongly_convex_function_add_of_is_convex_function": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "half_squared_norm_add_indicator_is_one_strongly_convex_function": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "half_squared_norm_is_one_strongly_convex_on": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effective_domain_sub_coe_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "is_strongly_convex_function_iff_convexOn_toReal_sub_half_sigma_norm_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "is_strongly_convex_function_iff_sub_half_sigma_norm_sq_is_convex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sub_coe_neBot_of_neBot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "toReal_sub_coe_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 152.08029231301043
+}

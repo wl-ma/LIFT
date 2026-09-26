@@ -1,0 +1,4 @@
+import FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16
+import FirstOrderMethodsOptimization_Beck_2017.Chap05.Theorem_5_17
+import FirstOrderMethodsOptimization_Beck_2017.Chap05.Lemma_5_20
+import FirstOrderMethodsOptimization_Beck_2017.Chap05.Proposition_5_13

@@ -61,3 +61,7 @@ Outputs belong in `_runs/`, which Git ignores. Each extraction pins its compiler
 - The online trace is inspectable historical evidence; this package does not replay the remote multi-agent run.
 - Tool smoke checks demonstrate packaging and support-tool behavior. They are not additional LIFT paper experiments.
 - A model-generated mathematical description requires its own semantic review. This release's JSON command does not perform that generation.
+
+## Version13 complete reproduction
+
+See [the v13 guide](reproduce-v13.md) for table regeneration, figures, additional cases, expanded tool checks and CI.

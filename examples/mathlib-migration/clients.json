@@ -1,0 +1,12 @@
+{
+  "clients": [
+    {
+      "file": "clients/Pair.lean",
+      "sha256": "f683094ca8ee22a49063affc6cd3fe2dda8ddd920e6f73cc40cf397c15bcd5f0"
+    },
+    {
+      "file": "clients/Scalar.lean",
+      "sha256": "22d89320a8541ac358dd93741b0769ee6349d005b12a8e62c8685843abc81307"
+    }
+  ]
+}

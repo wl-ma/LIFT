@@ -4,3 +4,9 @@ defaultTargets = ["Fixture"]
 
 [[lean_lib]]
 name = "Fixture"
+
+[[lean_lib]]
+name = "Structures"
+
+[[lean_lib]]
+name = "Consumer"

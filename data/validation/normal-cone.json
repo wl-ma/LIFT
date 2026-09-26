@@ -1,0 +1,411 @@
+{
+  "schema": "lift.case-check.v1",
+  "case": "normal-cone",
+  "lean_version": "Lean (version 4.32.0, x86_64-unknown-linux-gnu, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)",
+  "mathlib_commit": "81a5d257c8e410db227a6665ed08f64fea08e997",
+  "modules": [
+    {
+      "name": "ReasLib.Analysis.SetValuedOperator",
+      "sha256": "e548f670cb653201508ea11be9e722be6724e6b7bc7ac4bc1069630b57c6a4c8",
+      "returncode": 0,
+      "seconds": 0.8058186690032016
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.DualPairing",
+      "sha256": "2738c375cf4007d6bdbc557a0f1e5f0319f13c9cb177b9a8fbe8ed5f2c89092f",
+      "returncode": 0,
+      "seconds": 2.4006240290182177
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.DualPairing.Monotone",
+      "sha256": "57c857719ab0aa7ab436ea55c2c35050252d364917c23479030211bc8ec520c4",
+      "returncode": 0,
+      "seconds": 1.3828477369970642
+    },
+    {
+      "name": "ReasLib.Analysis.Convex.NormalCone",
+      "sha256": "69fa88f536292c0d78f6f598a3c361c82642e428a91c6c0e9410fbd447673d0f",
+      "returncode": 0,
+      "seconds": 2.820886469009565
+    },
+    {
+      "name": "ReasLib.Analysis.Convex.NormalCone.ClosedBall",
+      "sha256": "be40c69f9d050cca1622638d4b8e980898591ab919de1def39b939bce248ca11",
+      "returncode": 0,
+      "seconds": 2.6882044519879855
+    },
+    {
+      "name": "ReasLib.Analysis.Convex.NormalCone.Sum",
+      "sha256": "4f38dfa54c499d71543244f886561b2724c3c077501b53b5e9114769629b9808",
+      "returncode": 0,
+      "seconds": 1.4909145800047554
+    },
+    {
+      "name": "ReasLib.Analysis.InfiniteSum.NatTriangle",
+      "sha256": "ac60fce50dd7bad12737df4bf21e714874cf790127355b5640c0db6a7b8de178",
+      "returncode": 0,
+      "seconds": 1.599735044001136
+    },
+    {
+      "name": "ReasLib.Analysis.InnerProductSpace.HilbertProd2",
+      "sha256": "89dd12a31371ad0341829b8771aa32347654685e09367b2a10090af122bbc6bd",
+      "returncode": 0,
+      "seconds": 1.3400170980021358
+    },
+    {
+      "name": "ReasLib.Analysis.Normed.LorentzCone",
+      "sha256": "9416dae08f7627daceffa7cd5c786cf0d25443cf859f2a4212adcf2cff1b00a1",
+      "returncode": 0,
+      "seconds": 0.9867461110115983
+    },
+    {
+      "name": "ReasLib.Analysis.Normed.LorentzCone.HilbertProd2",
+      "sha256": "f4366810a140b6c18caf1a801529a6d08748dcd695b232a1bdedca2558a26259",
+      "returncode": 0,
+      "seconds": 1.3003200590028428
+    },
+    {
+      "name": "ReasLib.Analysis.Normed.LorentzCone.SeedTemplate",
+      "sha256": "eb3991824edcdb4c7b6d6123f0528274f61e9c02f23345bdf5ecde12347bcbd5",
+      "returncode": 0,
+      "seconds": 1.9523751229862683
+    },
+    {
+      "name": "ReasLib.Analysis.Sequence.L1",
+      "sha256": "0b43f68a6d748cc23aa60d9c9765c40881316483329c4d4654a13fd851d9744b",
+      "returncode": 0,
+      "seconds": 1.6514043000061065
+    },
+    {
+      "name": "ReasLib.Analysis.Sequence.L1Synthesis",
+      "sha256": "77cfe7f13c8ca4d4f83b37e0f1bac14178a76de8a302b7759753cad9b5687195",
+      "returncode": 0,
+      "seconds": 2.120861937000882
+    },
+    {
+      "name": "ReasLib.Data.Countable.RepeatingSchedule",
+      "sha256": "06f80d59b8ad4e51772e43c5b07023999e3d42eef0912ca6ffd596f85b1f1477",
+      "returncode": 0,
+      "seconds": 0.7386408319871407
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.DualPairing.MaximalExtension",
+      "sha256": "b3e36f8cd9c1c046832544e0852c26521b4a3d25486a52c4ffe052c92b3551ba",
+      "returncode": 0,
+      "seconds": 1.2451032499957364
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0",
+      "sha256": "d583836f476dd234dca6688f56c0ef40e0b57c7b5785747538abdbbd5a10771c",
+      "returncode": 0,
+      "seconds": 1.1184272469836287
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0.Coordinate",
+      "sha256": "b268bd5564e90ddf1ce424573f6d1eb20a23871ed8c494f8bdf8f5057fb8ec8a",
+      "returncode": 0,
+      "seconds": 1.2336216249968857
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0.Single",
+      "sha256": "8305f27a72e837cf1708240d8229e231273ac3aa7a12602e7a97c65da2ca603b",
+      "returncode": 0,
+      "seconds": 1.1576685619947966
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0.Pairing",
+      "sha256": "e631411e47ff7f0ecbc2aed4e6d5e5d08bcae1318dda42fbcc057de268eb6dff",
+      "returncode": 0,
+      "seconds": 2.1216783069830853
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0.Dual",
+      "sha256": "6acc44a9e318f6aec0015932525e518e80df52514da155d0b5bb498c68650748",
+      "returncode": 0,
+      "seconds": 4.35907745899749
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0.DualPairing",
+      "sha256": "7277ca6344f1e5fa274a0f46e7cb6def2d7c5f47e03285384f7c000bad6866b1",
+      "returncode": 0,
+      "seconds": 2.4288385270047
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0.DualPairing.Origin",
+      "sha256": "046538db2eff6fa49d1a57de4ee21390a373ac4960acb23eedadfb81160c1a28",
+      "returncode": 0,
+      "seconds": 1.50337328799651
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0.DualPairing.Surjective",
+      "sha256": "e6f8ceb2619290da20e3aecddd7072a49c1d4dbbb92a56fc57ea818c42fa2088",
+      "returncode": 0,
+      "seconds": 1.2882505859888624
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.L1.Transpose",
+      "sha256": "bcf56b9e60ef1136b814d57a9f952dcb6c24b54e07b953f324fda5846330cfe4",
+      "returncode": 0,
+      "seconds": 1.3261396710004192
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.C0.Transpose",
+      "sha256": "2923884146a321dc235217bcf358791bf5da223a902aea132726f142bed4c628",
+      "returncode": 0,
+      "seconds": 1.749373492988525
+    },
+    {
+      "name": "ReasLib.Order.RationalTime",
+      "sha256": "4340a10aad89c49ad0d3717cc2d07fc914c18e1f141f3152d88b6b0ff0394a67",
+      "returncode": 0,
+      "seconds": 0.9579661210009363
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator",
+      "sha256": "1c02957efe5d41b47c0410621bc38ac264d57eb99319a6f0f9e7cc95fd074136",
+      "returncode": 0,
+      "seconds": 2.701745327998651
+    },
+    {
+      "name": "ReasLib.MeasureTheory.UnitL2",
+      "sha256": "29decc132b74dfc3f2579e7ed63aff8e04a4a807e1ff99b586cd14671eb9bbdd",
+      "returncode": 0,
+      "seconds": 1.3769008189847227
+    },
+    {
+      "name": "ReasLib.MeasureTheory.UnitL2.IntervalIndicator",
+      "sha256": "e9c76e15688412cf1390703702a20c7e2d8d6e5ebe154e69a25a0d42e5e74e1f",
+      "returncode": 0,
+      "seconds": 1.967116426996654
+    },
+    {
+      "name": "ReasLib.MeasureTheory.UnitL2.RationalIntervalIndicator",
+      "sha256": "6a859b6eed9a3f61cf7a046af2c4df0e8271a89ae1631c04754a7c23dff4d078",
+      "returncode": 0,
+      "seconds": 1.2417382550192997
+    },
+    {
+      "name": "ReasLib.MeasureTheory.UnitL2.IntervalCoordinateOperator",
+      "sha256": "b076db3cef375b6fe0b2fc8ad7520fcaa8d3e827fc6d7f7072a6b5b82ad47c5e",
+      "returncode": 0,
+      "seconds": 1.8618585450167302
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Bilinear",
+      "sha256": "4a54da225e7287094e1b5c4aed6804ebc86be75812eab7e153002e6579f2487f",
+      "returncode": 0,
+      "seconds": 2.2581390909908805
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Quadratic",
+      "sha256": "4106893373c90cd8c760a728ba45da918f1f499219a6e210ef4546df254b407b",
+      "returncode": 0,
+      "seconds": 7.302914283005521
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Gram",
+      "sha256": "7fe259555cc81041f971a118ed46980e576204c6fef96408d2f6c0f76c06a0cb",
+      "returncode": 0,
+      "seconds": 2.332263965974562
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Norm",
+      "sha256": "17f9effbe5e329555e577ce7846c335a7c4c62b83e192d5a289e8e7076c3184d",
+      "returncode": 0,
+      "seconds": 1.4493718789890409
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization",
+      "sha256": "e35d8a79dc7cd46dd9f795345d7e4007ee328d5a364965fdcfab6dd6335ab527",
+      "returncode": 0,
+      "seconds": 2.1041316539922263
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.Point",
+      "sha256": "459bd938e5c67fc800dd82fb8920e5c80dd170e2d1aa59bfa7a04c680f27168f",
+      "returncode": 0,
+      "seconds": 1.1370381040032953
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.LorentzCoordinates",
+      "sha256": "7c141e8b29affb0071657981e02bb0441a1f1aaf1a0a6ef18c689bbd9cd010a6",
+      "returncode": 0,
+      "seconds": 3.3389731860079337
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.LorentzCoordinates.FixedPositive",
+      "sha256": "a379d49103efd1fc32875c7d0ec525fa714decbce486cd921b1b17cb5c6d95a2",
+      "returncode": 0,
+      "seconds": 1.4819083139882423
+    },
+    {
+      "name": "ReasLib.MeasureTheory.UnitL2.IntervalCoordinateOperator.Pointwise",
+      "sha256": "44f74b28f6ecd576504af8211e58400280843c0da9f4f9f796cf92a6ce953a6b",
+      "returncode": 0,
+      "seconds": 2.129387119988678
+    },
+    {
+      "name": "ReasLib.MeasureTheory.UnitL2.IntervalCoordinateOperator.Jump",
+      "sha256": "c86640cf9b04945d6a3059ccfd872628ccc94208afb357bf889eadc7d6999862",
+      "returncode": 0,
+      "seconds": 2.10649139402085
+    },
+    {
+      "name": "ReasLib.MeasureTheory.Measure.Lebesgue.Conull",
+      "sha256": "6859ee9a02b8419c99560120a340cb358b06628d3f23c6b2d2ff1d97e19173e4",
+      "returncode": 0,
+      "seconds": 1.5207391069852747
+    },
+    {
+      "name": "ReasLib.MeasureTheory.UnitL2.IntervalCoordinateOperator.Injective",
+      "sha256": "b3566e046b22a96068421b085272dfe0f42536900a87cb058e897a08b0ce2725",
+      "returncode": 0,
+      "seconds": 1.6129244600015227
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.LorentzCoordinates.Kernel",
+      "sha256": "4430b003d8a8503d558e2691a3cdce78e10c7a05b6ab9cb69172b10e71ad906d",
+      "returncode": 0,
+      "seconds": 1.9823666099982802
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.QuadraticIdentity",
+      "sha256": "519795ac91342b28815818d52614a204226807bcef082e5a72331997f282ce23",
+      "returncode": 0,
+      "seconds": 1.7238741900073364
+    },
+    {
+      "name": "ReasLib.MeasureTheory.UnitL2.IntervalCoordinateOperator.Adjoint",
+      "sha256": "a3f18cc16462439d7d9451516a050743123ded77a174c5398a2ae1bbe452e68c",
+      "returncode": 0,
+      "seconds": 1.7437651660002302
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.SymmetricPart",
+      "sha256": "97baeed42f59a950170d652328379a9d60f23999e2e2ea243e09ecbc8a274b99",
+      "returncode": 0,
+      "seconds": 3.4152260159899015
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.LorentzEnergy",
+      "sha256": "5b9f695495d8b6be99cc217060f83db158236167bdb6a8f0ea1d4056985b7862",
+      "returncode": 0,
+      "seconds": 1.6662238370045088
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.Pairing",
+      "sha256": "1b06e32bd0b3582e17b8b306e4280bcdab7ead35abd643338e9f000f8c6170f9",
+      "returncode": 0,
+      "seconds": 1.8313314709812403
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.SamePositiveCoordinate",
+      "sha256": "252562f0a41d97ab6fde1f2e327b175a127dca8a0acf78c527b4110902d8ad6e",
+      "returncode": 0,
+      "seconds": 2.1741068990086205
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.ScaledDetector",
+      "sha256": "eb3505f20a4df574104e99104a751a432fa7af345b15b31b18eea9a3c7943cfa",
+      "returncode": 0,
+      "seconds": 2.385300833993824
+    },
+    {
+      "name": "ReasLib.Topology.Sequences",
+      "sha256": "a97b6c0a86ea91dbfa9e190d3d641b296afbd3563c50fde966e982989ea67b28",
+      "returncode": 0,
+      "seconds": 0.8593558509892318
+    },
+    {
+      "name": "ReasLib.Topology.RationalTime",
+      "sha256": "e21390b76e5536bc829967786c450e8f51d0f16d3aea851901f9810302063282",
+      "returncode": 0,
+      "seconds": 1.3937592470028903
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.UnitDifferenceDetector",
+      "sha256": "312ec2f218549008373f140a1bb86f2e38d349c863b3a2da270d23d33b6379ca",
+      "returncode": 0,
+      "seconds": 2.9146801289753057
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.SeedBase",
+      "sha256": "4d26b7f032b4d02b5e5eef8f05886fb8331d35e5e478089013c55d042bd04b18",
+      "returncode": 0,
+      "seconds": 4.915726716979407
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.SeedSchedule",
+      "sha256": "8315fb6bceded5268e77374094fdf6dd9c413b214a0e6726c6f86a2ad3d1fad3",
+      "returncode": 0,
+      "seconds": 7.524776824982837
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.SeedComparisons",
+      "sha256": "c112d93ff73a907976c4c5cee07768a24064c3c489d1151fe9879ba5a41ceafa",
+      "returncode": 0,
+      "seconds": 4.751564011996379
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.SeedAssembly",
+      "sha256": "10c960e667352e9ddc100a4abd9695558396414a9117badbdd747a3fb2f228dc",
+      "returncode": 0,
+      "seconds": 8.438331950019347
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.SeedWitnesses",
+      "sha256": "73e260570848a1279be5a819311e287df43f16f7e43c86d6359dc410d65c8d0e",
+      "returncode": 0,
+      "seconds": 5.167375557008199
+    },
+    {
+      "name": "ReasLib.FunctionalAnalysis.SequenceSpace.RationalTimeOperator.Parametrization.SeedCounterexample",
+      "sha256": "ec6bdf5f5f4b3f67bdbf79a2526d60b4dab46ee7eca3edbf586de0d1de762eab",
+      "returncode": 0,
+      "seconds": 2.2104861180123407
+    },
+    {
+      "name": "SourceRecovery",
+      "sha256": "1315db8cd42fcf1a5e664d6a324fd8037e710439c69d4c1f31c3695446b764c2",
+      "returncode": 0,
+      "seconds": 6.176638786011608
+    },
+    {
+      "name": "Audit",
+      "sha256": "fc43e45e0348774aac4987b35fb8d4a43e9a36318e73d2f513d3c1c2e7701c8d",
+      "returncode": 0,
+      "seconds": 2.8559690460097045
+    }
+  ],
+  "clients": [],
+  "passed": true,
+  "model_calls": 0,
+  "axioms": {
+    "DualPairing.maximalMonotone_normalConeGraph_closedBall": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "C0Seq.coordinateDualPairing_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Lorentz.exists_seedCounterexample": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Lorentz.seedPoint_polar_subset_carrier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "C0Seq.exists_maximalMonotone_sum_not_maximal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 145.8623455259949
+}

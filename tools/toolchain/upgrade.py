@@ -139,14 +139,18 @@ def compare(before: dict, after: dict) -> dict:
         "is_partial",
         "constructors",
         "structure_fields",
+        "type_dependencies",
+        "value_dependencies",
+        "dependency_modules",
+        "mutual_family",
     )
     changed = [
         {
             "declaration": key,
-            "fields": [f for f in fields if old[key][f] != new[key][f]],
+            "fields": [f for f in fields if old[key].get(f) != new[key].get(f)],
         }
         for key in sorted(old.keys() & new.keys())
-        if any(old[key][f] != new[key][f] for f in fields)
+        if any(old[key].get(f) != new[key].get(f) for f in fields)
     ]
     missing = sorted(old.keys() - new.keys())
     return {
@@ -162,6 +166,52 @@ def compare(before: dict, after: dict) -> dict:
     }
 
 
+def check_clients(project: Path, manifest_path: Path, output: Path) -> dict:
+    """Run immutable original clients in the selected project's actual environment."""
+    project = project.resolve(strict=True)
+    manifest_path = manifest_path.resolve(strict=True)
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if not manifest.get("clients"):
+        raise ValueError("An empty client set cannot establish preservation")
+    output.mkdir(parents=True, exist_ok=False)
+    results = []
+    for number, entry in enumerate(manifest["clients"]):
+        client = (manifest_path.parent / entry["file"]).resolve(strict=True)
+        if not client.is_relative_to(manifest_path.parent) or client.suffix != ".lean":
+            raise ValueError("Client must remain inside its declared source directory")
+        before = hashlib.sha256(client.read_bytes()).hexdigest()
+        if before != entry["sha256"]:
+            raise ValueError("Original client hash differs from its manifest")
+        try:
+            process = subprocess.run(
+                ["lake", "env", "lean", "-j", "1", str(client)],
+                cwd=project,
+                text=True,
+                capture_output=True,
+                timeout=600,
+                check=False,
+            )
+            code, log = process.returncode, process.stdout + process.stderr
+        except subprocess.TimeoutExpired:
+            code, log = 124, "Client compilation timed out."
+        if hashlib.sha256(client.read_bytes()).hexdigest() != before:
+            raise ValueError("Original client changed during validation")
+        (output / f"client-{number:03d}.log").write_text(log, encoding="utf-8")
+        results.append({"file": entry["file"], "sha256": before, "returncode": code})
+    report = {
+        "schema": "lift.client-check.v1",
+        "toolchain": (project / "lean-toolchain").read_text().strip(),
+        "manifest_sha256": hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
+        "clients": results,
+        "status": "clients_passed"
+        if all(r["returncode"] == 0 for r in results)
+        else "client_failure",
+        "model_calls": 0,
+    }
+    (output / "report.json").write_text(json.dumps(report, indent=2) + "\n")
+    return report
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
@@ -175,9 +225,15 @@ def main() -> int:
     diff = commands.add_parser("compare")
     diff.add_argument("before", type=Path)
     diff.add_argument("after", type=Path)
+    clients = commands.add_parser("clients")
+    clients.add_argument("project", type=Path)
+    clients.add_argument("--manifest", type=Path, required=True)
+    clients.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     if args.command == "prepare":
         report = prepare(args.source, args.destination, args.target, args.mathlib_rev)
+    elif args.command == "clients":
+        report = check_clients(args.project, args.manifest, args.output)
     elif args.command == "build":
         result = subprocess.run(["lake", "build"], cwd=args.project, check=False)
         return result.returncode
@@ -187,7 +243,7 @@ def main() -> int:
             json.loads(args.after.read_text(encoding="utf-8")),
         )
     print(json.dumps(report, indent=2))
-    return 1 if report.get("status") == "review_required" else 0
+    return 1 if report.get("status") in {"review_required", "client_failure"} else 0
 
 
 if __name__ == "__main__":

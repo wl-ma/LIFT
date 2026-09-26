@@ -1,0 +1,34 @@
+{
+  "lean_version": "Lean (version 4.32.0, x86_64-unknown-linux-gnu, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)",
+  "modules": [
+    {
+      "module": "ReasLib.Analysis.Calculus.Taylor",
+      "returncode": 0,
+      "source_sha256": "1b67cee374f7676e14ca1c38e49432c092c6a39ad83657613f8b15174875e856"
+    },
+    {
+      "module": "NocedalNumericalOptimization.Chapter02.Theorem_2_1",
+      "returncode": 0,
+      "source_sha256": "bec7f6a13ea8ae0846bbeb0b06f3b66069adb3f32883a3ef9f67fe77b58bef5d"
+    },
+    {
+      "module": "NocedalNumericalOptimization.Chapter02.Theorem_2_2",
+      "returncode": 0,
+      "source_sha256": "711a4d293bc94486863465751ea52ed93878c74fcffc7880ef93aafb14c371c6"
+    },
+    {
+      "module": "ReasLib.AlgebraicTopology.FundamentalGroup.Product",
+      "returncode": 0,
+      "source_sha256": "011526c309459395241b238d1f5371ecee0c55d9ad57b206f2be4bc59e638b1d"
+    },
+    {
+      "module": "RiemannSurfaces.Chapter1.Exercise_3_2",
+      "returncode": 0,
+      "source_sha256": "9e1492682a2329c2f0273a65f4753366dec5d8e4e885fcdd13a50fbeec54644a"
+    }
+  ],
+  "axioms": "'IsLocalMin.fderiv_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Taylor.existsFirstOrder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Taylor.fderivAddEqIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Taylor.existsSecondOrder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodProjectionHom' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodPathHom' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodPathHom_leftInverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodPathHom_rightInverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodMulEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "audit_returncode": 0,
+  "checked_declarations": 9,
+  "passed": true
+}

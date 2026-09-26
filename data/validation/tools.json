@@ -1,0 +1,41 @@
+{
+  "schema": "lift.tool-validation.v1",
+  "fixture": [
+    {
+      "version": "4.26.0",
+      "declarations": 36,
+      "private_and_generated": true,
+      "cross_module_dependencies": true,
+      "missing_name_rejected": true
+    },
+    {
+      "version": "4.30.0",
+      "declarations": 36,
+      "private_and_generated": true,
+      "cross_module_dependencies": true,
+      "missing_name_rejected": true
+    },
+    {
+      "version": "4.32.0",
+      "declarations": 36,
+      "private_and_generated": true,
+      "cross_module_dependencies": true,
+      "missing_name_rejected": true
+    }
+  ],
+  "migration": {
+    "comparison": {
+      "schema": "lift.toolchain-comparison.v1",
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "status": "selected_facts_unchanged",
+      "semantic_equivalence": "not_established_by_textual_comparison",
+      "client_preservation": "run_original_clients_separately"
+    },
+    "original_clients_per_version": 2,
+    "source_unchanged": true
+  },
+  "passed": true,
+  "model_calls": 0
+}

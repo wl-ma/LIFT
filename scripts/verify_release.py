@@ -69,7 +69,7 @@ def main() -> int:
             == entry["sha256"]
         ), entry["path"]
     summary = json.loads((ROOT / "data/summary.json").read_text(encoding="utf-8"))
-    assert summary["paper_snapshot"] == "version10"
+    assert summary["paper_snapshot"] == "version13"
     assert summary["projects"] == len(corpus)
     assert summary["linked_obligations"] == len(obligations)
     assert summary["declaration_actions"] == {

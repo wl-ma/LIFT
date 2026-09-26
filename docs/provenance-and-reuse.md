@@ -2,9 +2,9 @@
 
 ## Paper and data
 
-The current public package follows the version10 manuscript fixed on 26 September 2026 at 17:50 Beijing time. The initial version6 snapshot remains recorded in provenance; the experimental totals and original Lean source bytes are unchanged. The paper source hash is recorded in [release-provenance.json](../data/release-provenance.json); the manuscript itself is not bundled here.
+The current public package follows the version13 manuscript fixed on 26 September 2026 at 19:54 Beijing time. The initial version6 snapshot remains recorded in provenance; the experimental totals and original Lean source bytes are unchanged. The paper source hash is recorded in [release-provenance.json](../data/release-provenance.json); the manuscript itself is not bundled here.
 
-The construction and action tables derive from retained M2F project exports. The seven proof batches and 249 obligation links derive from recorded stage handoffs. Release-local project/obligation labels replace service identifiers; statistical units and values are retained. The raw action file is aggregated by project and decision. Complete logs, original textbook files, private service configuration, and full historical archives are outside this package.
+The construction and action tables derive from retained M2F project exports. The seven proof batches and 249 obligation links derive from recorded stage handoffs. Release-local project/obligation labels replace service identifiers; statistical units and values are retained. Portable item-level action, module, integration-manifest and proof-stage projections are released in data/records; the paper tables regenerate from these inputs. Complete logs, original textbook files, private service configuration, and full historical archives are outside this package.
 
 ## Selected Lean artifacts
 
@@ -25,3 +25,5 @@ The facts extractor's original supported environment was Lean 4.26.0. This packa
 This repository currently has **no blanket license grant** for newly released LIFT material or historical exported components without explicit upstream notices. Public availability alone does not establish permission to redistribute, sublicense, or incorporate all material into another project. Existing third-party terms remain intact. A project-wide code/data licensing decision will be added separately; this release does not invent one or relicense upstream work.
 
 The published data and selected artifacts support inspection and reproducibility. For reuse beyond permissions already supplied by applicable upstream licenses, seek authorization from the relevant rights holders.
+
+Version13 additionally packages 60 original normal-cone modules with their explicit Apache-2.0 notices and upstream commit, plus independent before/checkpoint Beck source trees and all 22 original clients. Fresh validation covers 36 fixture declarations per supported compiler and one real Mathlib norm-interface migration with original clients. See [version13 reproduction](reproduce-v13.md) and [license scopes](../LICENSES.md).

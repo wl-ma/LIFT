@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "item_key": "INF-044",
+  "plan_version": 2,
+  "declarations": [
+    {
+      "action": "promote",
+      "final_name": "DualPairing.maximalMonotone_normalConeGraph_closedBall",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone/ClosedBall.lean",
+      "source_name": "DualPairing.maximalMonotone_normalConeGraph_closedBall"
+    },
+    {
+      "action": "reuse_existing",
+      "final_name": "DualPairing.dom_normalCone",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone.lean",
+      "source_name": "DualPairing.dom_normalCone (closed-ball specialization)"
+    }
+  ],
+  "proof_units": [
+    {
+      "declaration": "DualPairing.maximalMonotone_normalConeGraph_closedBall",
+      "dependencies": [
+        "li-e832fbd8b71bcbf99d20e155",
+        "li-a10fcca04ce169dff614d44c"
+      ],
+      "kind": "theorem",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone/ClosedBall.lean",
+      "proof_unit_id": "li-9fba4c6c2c5dade27df61f0c",
+      "status": "pending",
+      "unfinished_token_count": 1,
+      "unfinished_tokens": [
+        {
+          "column": 79,
+          "line": 20,
+          "token": "sorry"
+        }
+      ]
+    },
+    {
+      "declaration": "DualPairing.mem_normalCone",
+      "dependencies": [],
+      "kind": "theorem",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone.lean",
+      "proof_unit_id": "li-d61d13183bbdd122710b88b2",
+      "status": "pending",
+      "unfinished_token_count": 1,
+      "unfinished_tokens": [
+        {
+          "column": 63,
+          "line": 23,
+          "token": "sorry"
+        }
+      ]
+    },
+    {
+      "declaration": "DualPairing.mem_graph_normalCone",
+      "dependencies": [
+        "li-d61d13183bbdd122710b88b2"
+      ],
+      "kind": "theorem",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone.lean",
+      "proof_unit_id": "li-e832fbd8b71bcbf99d20e155",
+      "status": "pending",
+      "unfinished_token_count": 1,
+      "unfinished_tokens": [
+        {
+          "column": 63,
+          "line": 34,
+          "token": "sorry"
+        }
+      ]
+    },
+    {
+      "declaration": "DualPairing.dom_normalCone",
+      "dependencies": [
+        "li-d61d13183bbdd122710b88b2"
+      ],
+      "kind": "theorem",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone.lean",
+      "proof_unit_id": "li-fc21961bb69a11a41427010b",
+      "status": "pending",
+      "unfinished_token_count": 1,
+      "unfinished_tokens": [
+        {
+          "column": 30,
+          "line": 43,
+          "token": "sorry"
+        }
+      ]
+    },
+    {
+      "declaration": "DualPairing.mem_dom_normalCone",
+      "dependencies": [
+        "li-fc21961bb69a11a41427010b"
+      ],
+      "kind": "theorem",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone.lean",
+      "proof_unit_id": "li-8a709236115ea1bcf0964235",
+      "status": "pending",
+      "unfinished_token_count": 1,
+      "unfinished_tokens": [
+        {
+          "column": 38,
+          "line": 48,
+          "token": "sorry"
+        }
+      ]
+    },
+    {
+      "declaration": "DualPairing.normalCone_eq_zero_of_mem_interior",
+      "dependencies": [
+        "li-d61d13183bbdd122710b88b2"
+      ],
+      "kind": "theorem",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone.lean",
+      "proof_unit_id": "li-fbfa6ecbb206689cd11a09a7",
+      "status": "pending",
+      "unfinished_token_count": 1,
+      "unfinished_tokens": [
+        {
+          "column": 55,
+          "line": 52,
+          "token": "sorry"
+        }
+      ]
+    },
+    {
+      "declaration": "DualPairing.isMonotone_normalConeGraph",
+      "dependencies": [
+        "li-e832fbd8b71bcbf99d20e155"
+      ],
+      "kind": "theorem",
+      "owner_file": "ReasLib/Analysis/Convex/NormalCone.lean",
+      "proof_unit_id": "li-a10fcca04ce169dff614d44c",
+      "status": "pending",
+      "unfinished_token_count": 1,
+      "unfinished_tokens": [
+        {
+          "column": 43,
+          "line": 56,
+          "token": "sorry"
+        }
+      ]
+    }
+  ],
+  "source_target": "S2/Infra/closedBall_normalCone_maximalMonotone.lean",
+  "source_digest_before": "e6a4dce48a783f2eec2cd6ca1c7cc01ed4f06d1dbfee24684e1073dfd89e3502",
+  "source_digest_after": "8a2250bc4c85703170f8189b859d9f7a930bc7cb3a3efad5e4e37dc129d6f43b",
+  "changed_files": [
+    {
+      "after_sha256": "d07732d04e5f03f710060128e37805958d32013ff41abfb3f363a7050b28beb4",
+      "before_sha256": null,
+      "operation": "create",
+      "path": "ReasLib/Analysis/Convex/NormalCone/ClosedBall.lean"
+    },
+    {
+      "after_sha256": "8a2250bc4c85703170f8189b859d9f7a930bc7cb3a3efad5e4e37dc129d6f43b",
+      "before_sha256": "e6a4dce48a783f2eec2cd6ca1c7cc01ed4f06d1dbfee24684e1073dfd89e3502",
+      "operation": "edit",
+      "path": "S2/Infra/closedBall_normalCone_maximalMonotone.lean"
+    }
+  ]
+}

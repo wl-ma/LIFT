@@ -1,0 +1,16 @@
+name = "ReasBookE2b"
+version = "0.1.0"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c5ea00351c28e24afc9f0f84379aa41082b1188f"
+
+[[lean_lib]]
+name = "ReasLib"
+
+[[lean_lib]]
+name = "FirstOrderMethodsOptimization_Beck_2017"
+
+[[lean_lib]]
+name = "IntroductoryLecturesOnConvexOptimization_Nesterov_2004"

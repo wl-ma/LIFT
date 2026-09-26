@@ -1,6 +1,6 @@
 # Experimental data
 
-These tables accompany the 26 September 2026 version10 manuscript. They are curated from the retained evidence, not results of new experiments run for this repository. [release-provenance.json](release-provenance.json) records original input hashes and the curation operations.
+These tables accompany the 26 September 2026 version13 manuscript. They are curated from the retained evidence, not results of new experiments run for this repository. [release-provenance.json](release-provenance.json) records original input hashes and the curation operations.
 
 See the [manuscript-to-artifact map](../docs/paper-artifact-map.md) for table labels and the Taylor evidence chain.
 
@@ -71,3 +71,7 @@ python3 scripts/verify_release.py
 ```
 
 The verifier checks totals, batch/obligation cardinalities, successful links, released source hashes, and local Markdown links. It does not contact a backend or rerun proof generation. Public project labels and the exclusion of service identifiers/logs make these tables portable; original input hashes preserve the relation to the retained local evidence. Full raw exports are not part of this release.
+
+## Version13 record-level inputs
+
+[records/](records/) supplies selection, stage counts, individual actions/modules and proof-stage matching inputs. scripts/reproduce_tables.py checks all six corresponding released tables. [normal-cone.json](normal-cone.json) and [validation/](validation/) add separately identified case checks. [online-events.json](online-events.json) preserves the ordered redacted event projection.

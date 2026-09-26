@@ -1,6 +1,6 @@
 # Manuscript-to-artifact map
 
-This index follows the version10 manuscript (26 September 2026). LaTeX labels identify tables independently of layout-dependent numbering. The paper source hash is in [release provenance](../data/release-provenance.json).
+This index follows the version13 manuscript (26 September 2026). LaTeX labels identify tables independently of layout-dependent numbering. The paper source hash is in [release provenance](../data/release-provenance.json).
 
 | Paper result or label | Released evidence | Reproduction / interpretation |
 | --- | --- | --- |
@@ -22,3 +22,9 @@ This index follows the version10 manuscript (26 September 2026). LaTeX labels id
 ## Coverage boundary
 
 This package contains the curated numerical evidence for all four experimental subsections, the three selected mathematical cases, and the retained online revision. Algorithm pseudocode, illustrative appendix examples, and method diagrams describe the method; they are not additional completed experimental runs. The entire paper PDF, full 20-project exports, orchestration runtime, original textbooks, and raw model logs are not included. The compiler extractor and toolchain helper are support tools, with their own packaging checks rather than new paper results.
+
+## Version13 additional evidence
+
+- app:normal-cone-case, tab:normal-cone-recovery: [source, representation, actual caller](../examples/normal-cone/README.md), [version identities](../data/normal-cone.json), and [release checks](../data/validation/normal-cone.json).
+- Corpus selection and aggregate regeneration: [records](../data/records/), [reproduction](reproduce-v13.md).
+- app:online-case: [before/checkpoint/clients](../examples/beck/README.md), [all ordered events](../data/online-events.json).

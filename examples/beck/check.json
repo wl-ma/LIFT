@@ -1,0 +1,25 @@
+{
+  "project": "checkpoint",
+  "version": "4.30.0",
+  "mathlib_commit": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "modules": [],
+  "axiom_names": [
+    "is_strongly_convex_function.convex_effective_domain",
+    "is_strongly_convex_function.ne_bot",
+    "is_strongly_convex_function.segment_ineq",
+    "is_strongly_convex_function.sigma_pos",
+    "is_strongly_convex_function_iff_strongConvexOn_toReal",
+    "strongConvexOn_toReal_of_is_strongly_convex_function",
+    "is_strongly_convex_function_add_of_convexOn_toReal",
+    "is_strongly_convex_function_add_of_is_convex_function",
+    "half_squared_norm_add_indicator_is_one_strongly_convex_function",
+    "half_squared_norm_is_one_strongly_convex_on",
+    "effective_domain_sub_coe_eq",
+    "is_strongly_convex_function_iff_convexOn_toReal_sub_half_sigma_norm_sq",
+    "is_strongly_convex_function_iff_sub_half_sigma_norm_sq_is_convex",
+    "sub_coe_neBot_of_neBot",
+    "toReal_sub_coe_eq"
+  ],
+  "clients_manifest": "clients.json",
+  "memory_mb": 8192
+}

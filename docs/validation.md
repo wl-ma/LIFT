@@ -31,3 +31,15 @@ No full corpus proof audit, new integration campaign, model benchmark, comparati
 The latest manuscript keeps the numerical evidence unchanged. The [artifact map](paper-artifact-map.md) now locates its four experimental subsections and the Taylor recovery chain. A new curated table preserves 258 obligation–task links covering the same 249 obligations and 72 linked task aliases; the 135 successful-task batch total remains a distinct measure.
 
 The package verifier now also checks these links, the shared Taylor task, every file hash in release provenance, summary action totals, and exact regeneration of the offline demo from its template and released tables. The migration comparator now rejects empty exports and detects declaration-kind changes. These close packaging and validation gaps without changing the historical mathematical evidence.
+
+## Version13 fresh checks
+
+The version13 refresh additionally recompiles the normal-cone import closure (60 original modules, a full-type source specialization, and the named audit) and the Beck checkpoint (17 original modules, audit, and all 22 original hash-bound clients). Five normal-cone and 15 Beck theorem identities pass the exact-name axiom allowlist. The original 20 Beck type-hash comparison remains retained historical evidence; the fresh checks do not claim to have rerun that complete type-hash extractor.
+
+The expanded Lean-to-JSON fixture exports 36 declarations on each of Lean 4.26.0, 4.30.0 and 4.32.0, covering structures, instances, private/generated declarations and cross-module dependencies. The real Mathlib norm-interface example passes original scalar and pair clients on pinned 4.30 and 4.32 dependencies; selected declaration facts, including dependencies, agree. This is one validated migration example, not automatic repair of arbitrary projects.
+
+All six numerical CSV tables regenerate from portable released records. Plot generation uses those tables, normalizes declaration-action shares and combines the two retention categories. Twelve regression tests and scoped Ruff checks pass. Detailed case/tool reports are in data/validation; commands are in reproduce-v13.md. Local compilation used matching installed dependency caches. The new CI workflow exercises clean-checkout dependency setup; its hosted result must be checked separately.
+
+Two local packaging checks failed before being corrected: the normal-cone driver initially omitted the upstream Lean options; the Beck compiler's initial 4 GiB limit was insufficient. The driver now preserves the original options and allows 8 GiB for Beck. No mathematical source was changed to make either check pass. These were zero-model packaging checks, not additional experimental trials.
+
+Version13 adds source-level Apache-2.0 notices for the upstream normal-cone files and retains ReasBook attribution. No blanket license is inferred for material without an explicit grant; see LICENSES.md.

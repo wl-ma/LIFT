@@ -49,3 +49,7 @@ See [the fixture output](../../examples/lean-json/expected-facts.json) for an ac
 The existing [translator](prompts/translator.md) and [verifier](prompts/verifier.md) instructions document the separate generation/review roles. They are shipped as reference instructions, with their original contract-specific terminology. This standalone command does not implement those model calls, the full natural-language schema, semantic review, or backend submission.
 
 Compiler facts and generated prose must remain distinct. A complete natural-language workflow should retain the identity and formal specification, record context selection, and review generated prose against the actual hypotheses, conclusions, and prescribed data. Structural JSON validity alone does not establish mathematical correspondence.
+
+## Expanded compiler validation
+
+Run 'python3 scripts/validate_tools.py --output _runs/tool-validation' from repository root. Separate fixtures exercise private declarations, generated constructors/recursors, polymorphic structures, instances and cross-module proof dependencies under all three supported compilers. This remains compiler extraction, not model-generated natural-language conversion.

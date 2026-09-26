@@ -1,0 +1,8 @@
+LIFT version13 artifact package
+
+Historical experimental records retain their original outcomes and counting units.
+ReasBook-derived Beck files: Apache-2.0, upstream attribution retained.
+Normal-cone ReasLib files: Copyright (c) 2026 Zichen Wang, per-file Apache-2.0 notices retained.
+Selected Nocedal/Riemann-surfaces exports: preserve existing notices; no additional license is granted over unlicensed components.
+Mathlib and its dependencies retain their own upstream licenses and are not vendored.
+See docs/provenance-and-reuse.md and LICENSES.md for file-level scope.

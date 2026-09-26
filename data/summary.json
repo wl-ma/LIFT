@@ -1,5 +1,5 @@
 {
-  "paper_snapshot": "version10",
+  "paper_snapshot": "version13",
   "projects": 20,
   "catalogue_items": 10922,
   "integrated_items": 5061,
@@ -16,5 +16,6 @@
   "successful_proof_tasks": 135,
   "linked_obligations": 249,
   "compiled_example_files": 5,
-  "axiom_checked_declarations": 9
+  "axiom_checked_declarations": 9,
+  "additional_normal_cone_case": "Separately checked; original 5-file / 9-declaration totals unchanged"
 }

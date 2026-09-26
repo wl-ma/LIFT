@@ -1,0 +1,13 @@
+{
+  "source": "Retained existing-backend-20260926 collection; no new experiment",
+  "inputs": {
+    "repository-disposition.csv": "4c90e88164414811dcb5556ecdd59c6b7ef7ceea08b512455007ab0523c0a9d6",
+    "stages.csv": "4328e0c9f724089cd1cacae866582953808ce5ef755514765ed74c9d238d9410",
+    "integration-manifests.csv": "7bf73ea3da8695152527d967a6c9351aa4677067526ab958ed717f09915553b8",
+    "declaration-actions.csv": "17631f43fdd393fd2ca6e1485c8a333032f9dfc5d62b3f11ed706b05b62d5bce",
+    "lean-files.csv": "f8ebf9c739440216e446afefd80f79a362b4747ec4c27e2de809e6aa82bca0f6",
+    "selected-proof-obligations.csv": "700bd3cb37e3eecfa7cf8875e6e9ebd69512a76950f856fbd329e20bbbcb2ec1"
+  },
+  "curation_implementation_sha256": "e80da8dd547eeccce590584086eacf5d7a1de151e52a442d7616ca041394f266",
+  "scope": "Stage counts are recorded status aggregates; actions/modules/proof-stage selections retain individual records. No raw model/session logs."
+}

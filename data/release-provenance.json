@@ -1,6 +1,6 @@
 {
-  "paper_snapshot": "version10, 2026-09-26 17:50 Asia/Shanghai",
-  "paper_sha256": "68955d819d63b963326fa25060c546cbbb32c3be5b046bed4eb17c95b58aee92",
+  "paper_snapshot": "version13, 2026-09-26 19:54 Asia/Shanghai",
+  "paper_sha256": "1098697517bdb6546574078f80ae5fca03124773bc0473b520c65a1788d70cba",
   "collection_date": "2026-09-26",
   "transformations": [
     "Public project slugs replace internal repository identifiers.",
@@ -84,6 +84,9 @@
   "refresh_notes": [
     "Version10 keeps the experimental totals and checked source files unchanged.",
     "Added release-local proof-task aliases and a manuscript-to-artifact map.",
-    "Original experimental records remain separate from packaging verification."
+    "Original experimental records remain separate from packaging verification.",
+    "Version13 adds a normal-cone public interface and actual research-proof caller.",
+    "The corpus, action and proof-handoff denominators are unchanged.",
+    "New case recompilation, tools and CI are release validation, not historical experiments."
   ]
 }

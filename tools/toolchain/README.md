@@ -37,3 +37,7 @@ The comparison indexes records by `Module::name`, reports missing/added declarat
 `selected_facts_unchanged` means those selected textual fields matched. It is not a semantic-equivalence theorem, does not compare theorem proof bodies, and does not test all callers. Pretty-print changes can require review even when the mathematics is unchanged. Use the original source specifications and run original client files in the target environment before accepting a real migration.
 
 The release checks include a dependency-free 4.26.0 → 4.30.0 migration and a 4.32.0 extraction exercise. No full mathematical-project migration benchmark is claimed.
+
+## Immutable original-client checking
+
+'python3 tools/toolchain/upgrade.py clients PROJECT --manifest CLIENTS_JSON --output NEW_DIRECTORY' compiles each hash-bound original client under PROJECT's actual environment, preserves failures and emits a separate report. The comparison now includes type/value dependencies, dependency modules and mutual families; textual drift requests review. See the [real Mathlib migration](../../examples/mathlib-migration/) and [validation command](../../docs/reproduce-v13.md).

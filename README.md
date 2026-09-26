@@ -6,7 +6,7 @@
 
 LIFT studies how independently formalized Lean developments can contribute reusable mathematical interfaces while retaining connections to their original specifications. A public theorem, definition, or structure is developed together with the adaptations that recover the source result. Candidates can be constructed concurrently and revised against an evolving library.
 
-This repository contains the public experimental artifacts accompanying the paper: machine-readable tables, declaration-level examples, an offline ReasLib browser, compiler-based Lean-to-JSON extraction, and a toolchain-alignment helper. This release follows the **26 September 2026, version10 manuscript snapshot**. The exact manuscript hash and artifact origins are recorded in [release provenance](data/release-provenance.json).
+This repository contains the public experimental artifacts accompanying the paper: machine-readable tables, declaration-level examples, an offline ReasLib browser, compiler-based Lean-to-JSON extraction, and a toolchain-alignment helper. This release follows the **26 September 2026, version13 manuscript snapshot**. The exact manuscript hash and artifact origins are recorded in [release provenance](data/release-provenance.json).
 
 The [manuscript-to-artifact map](docs/paper-artifact-map.md) connects the experimental tables and case studies to individual released files, including the Taylor obligation-to-proof chain.
 
@@ -181,3 +181,9 @@ The full 20-project raw exports, original textbooks, backend service implementat
 The manuscript title is **LIFT: Library Integration of Formalized Theorems for Reusable Mathematical Knowledge**. A public paper URL and finalized bibliographic metadata will be added when available. To reference this artifact meanwhile, cite the repository URL and the exact Git commit used; do not infer publication or acceptance from this repository's existence.
 
 Issues with a table, example, or tool are welcome through [GitHub Issues](https://github.com/wl-ma/LIFT/issues). Include the repository commit, Lean version, command, and a minimal diagnostic, without credentials or private source material.
+
+## Version13 additions
+
+The [v13 reproduction guide](docs/reproduce-v13.md) provides raw-record table regeneration, figures, the [normal-cone research-proof case](examples/normal-cone/README.md), and executable [Beck checkpoint](examples/beck/README.md). See [license scope](LICENSES.md) and [citation metadata](CITATION.cff). New validation is separate from historical experimental totals.
+
+See the [ReasLib demo plan](docs/reaslib-demo-plan.md) for the next evidence-focused interface, grounded in the version13 manuscript.

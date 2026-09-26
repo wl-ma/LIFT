@@ -6,7 +6,7 @@
 
 LIFT 研究怎样把独立形式化的 Lean 项目组织为可复用的数学库。核心是同时确定公共接口和回到原始数学要求的适配关系：公共结论应能恢复来源命题；公共构造还要保留所要求的数据、定义方程与运算规律。多个候选可以并行构造，接纳和修订时使用当前库中的内容。
 
-本仓库存放论文相关的公开实验材料、ReasLib 示例和配套工具。当前内容对应 **2026-09-26 17:50 固定的 version10 论文**，稿件哈希与文件来源见[发布溯源](data/release-provenance.json)。
+本仓库存放论文相关的公开实验材料、ReasLib 示例和配套工具。当前内容对应 **2026-09-26 17:50 固定的 version13 论文**，稿件哈希与文件来源见[发布溯源](data/release-provenance.json)。
 
 新增的[论文—材料对照表](docs/paper-artifact-map.md)逐项定位实验表格与案例；[证明任务关联表](data/proof-task-links.csv)保留三个 Taylor 义务由同一成功任务完成的分组关系。
 
@@ -74,3 +74,9 @@ lake env lean Audit.lean
 **工具链辅助工具** 创建新副本，固定目标 Lean/Mathlib，运行构建并比较升级前后的声明事实。当前支持 `lakefile.toml`，可检测名称缺失、类型或定义体变化、公理变化。构建成功与接口保持是两种不同检查；程序不会自动修复任意 API 变化，也不能以字符串相同证明跨版本语义等价。
 
 本次发布未启动模型调用或新的论文实验。原教材全文、全部历史源码包、内部服务配置和原始会话日志未纳入仓库。来源、复用边界及后续仍待补充的内容见[来源说明](docs/provenance-and-reuse.md)和[验证记录](docs/validation.md)。
+
+## version13 补充材料
+
+现已补入[法锥及研究证明调用](examples/normal-cone/README.md)、[Beck 原始检查点与 22 个客户端](examples/beck/README.md)、61→20 筛选记录和逐项统计输入。见[完整复现命令](docs/reproduce-v13.md)、[许可范围](LICENSES.md)及[CITATION.cff](CITATION.cff)。新增检查与原历史结果分别记录。
+
+See the [ReasLib demo plan](docs/reaslib-demo-plan.md) for the next evidence-focused interface, grounded in the version13 manuscript.

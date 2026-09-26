@@ -1,0 +1,156 @@
+{
+  "clients": [
+    {
+      "name": "is_strongly_convex_function",
+      "file": "clients/af35697c4bf269bc.lean",
+      "sha256": "4eebe36cbbeaa702e25fe049167071df996c33258098b8cb582c51c8f8cca802",
+      "kind": "full_type_interface",
+      "type_sha256": "05c17ce2a3dfe15ea91ab15b0e49686b8284b73845b7005c425e26e79992532c"
+    },
+    {
+      "name": "is_strongly_convex_function.casesOn",
+      "file": "clients/b458575269913f3e.lean",
+      "sha256": "4b7dae2b31d4b30557c6e66ee5661b6601e916013dbe3e964cbf363e346058d1",
+      "kind": "full_type_interface",
+      "type_sha256": "655cbdc84b5ab4e1d708e45e78b4d99d81c96cc2befcdb9c98f4ce921150e31c"
+    },
+    {
+      "name": "is_strongly_convex_function.convex_effective_domain",
+      "file": "clients/c7624e1e29c7ef6f.lean",
+      "sha256": "c5551315111f916f06ec17227bb918c7a5bdcc173c2d5ceb5242ff9c8b78a1e1",
+      "kind": "full_type_interface",
+      "type_sha256": "eb0e7cff7d6a61d7857ccbee8b538d4dabcd63159f717d4a43b1922b27e93466"
+    },
+    {
+      "name": "is_strongly_convex_function.mk",
+      "file": "clients/1772436ad43bc0f2.lean",
+      "sha256": "9f38a045eadb3232a79ed179884765b2063b6e789c5935a8cc35ee89edf904b6",
+      "kind": "full_type_interface",
+      "type_sha256": "eddb8f9a46d1e487523883bb6e92fe6d2e5416325cc7ee82a2c0f4d5e0f6eb29"
+    },
+    {
+      "name": "is_strongly_convex_function.ne_bot",
+      "file": "clients/d1f5d18dac022f9d.lean",
+      "sha256": "241b573053c93825b0a18c5e316092feed5b5fc620ccdeb549936647ebc3011e",
+      "kind": "full_type_interface",
+      "type_sha256": "f3e83c7c32f736d47fcfba5a71ec41a42553e3304ed21bc3944978522848ddb6"
+    },
+    {
+      "name": "is_strongly_convex_function.rec",
+      "file": "clients/4c5b53d95cdc883d.lean",
+      "sha256": "0dad64251a840a710975d6bca5e2be098444d565a18dfeb554eb26d1b55dd54a",
+      "kind": "full_type_interface",
+      "type_sha256": "2685788424d914a00394a41278e0befdfc336fc203c235f69c0e6a7b32e905a8"
+    },
+    {
+      "name": "is_strongly_convex_function.recOn",
+      "file": "clients/015ca4ab2254c84e.lean",
+      "sha256": "6ad7f3181fddeafb4c9e4aeba5854e3418e5f86846a45717c2d0246de958b93f",
+      "kind": "full_type_interface",
+      "type_sha256": "655cbdc84b5ab4e1d708e45e78b4d99d81c96cc2befcdb9c98f4ce921150e31c"
+    },
+    {
+      "name": "is_strongly_convex_function.segment_ineq",
+      "file": "clients/056f8effd3b303de.lean",
+      "sha256": "ae65627f94168317061592c87786638ddfdab9d950794eb497a455bcc886754a",
+      "kind": "full_type_interface",
+      "type_sha256": "3854bf73a964279c75451915e6022039eaae794220df95372a4b4859a5247949"
+    },
+    {
+      "name": "is_strongly_convex_function.sigma_pos",
+      "file": "clients/3a7156973b3ac9d1.lean",
+      "sha256": "c02601172d4d217fb7fb36c244f8231f65189d921be278b6e7cc8f1ce9f273a3",
+      "kind": "full_type_interface",
+      "type_sha256": "fb42b56bfbe80a3774d4cd42359cf96c01ab467f6220d66f407066d678252e3d"
+    },
+    {
+      "name": "is_strongly_convex_function_iff_strongConvexOn_toReal",
+      "file": "clients/002b577388071972.lean",
+      "sha256": "d4f342f45dfa8bac96f9d16785757f9047964bcdb6947d52a8a4aa1fe01f9d98",
+      "kind": "full_type_interface",
+      "type_sha256": "27a4437c64599dfc841d638c7067fa463ea3fc960eecceb01048c870ee8b9ba1"
+    },
+    {
+      "name": "strongConvexOn_toReal_of_is_strongly_convex_function",
+      "file": "clients/578dfe1a6c69bfd3.lean",
+      "sha256": "fce0921070f464e970c8f7cce1b2c7e143fdfbb9d7545ffb30f62ad5aeda4126",
+      "kind": "full_type_interface",
+      "type_sha256": "a8f32c1a6ab716a38f118be70d430f716d13439f78f9a54cd4604ce29b8704c3"
+    },
+    {
+      "name": "is_strongly_convex_function_add_of_convexOn_toReal",
+      "file": "clients/339c214fb28f67da.lean",
+      "sha256": "3e144f95ca4a57e7f8dae8fd24fbf119c1d4316269751cc2029f0fd357548475",
+      "kind": "full_type_interface",
+      "type_sha256": "cb235f43add196e43832dd9114f1bd7f66d3343c55855058158d67baed8e24d7"
+    },
+    {
+      "name": "is_strongly_convex_function_add_of_is_convex_function",
+      "file": "clients/447dc1f87d4ba844.lean",
+      "sha256": "b4f0fb013212318c20618e30a61564e99eb0e4f9d18736be13c8fe31092120d8",
+      "kind": "full_type_interface",
+      "type_sha256": "bfc08947e1e43c2f7e10ca3c34d929422e50d6386466228f2e5a3c78d6ddc928"
+    },
+    {
+      "name": "half_squared_norm_add_indicator_is_one_strongly_convex_function",
+      "file": "clients/14967c57919b21ad.lean",
+      "sha256": "1654d5d4c0cbb9d822ef1bea175116b6a7dcf9d1785f4324f2708c3d1ad6f511",
+      "kind": "full_type_interface",
+      "type_sha256": "facc39f88020c53c489ba0deb464852ec903ac8aeb75a69c43dea897c2d3d8b7"
+    },
+    {
+      "name": "half_squared_norm_is_one_strongly_convex_on",
+      "file": "clients/9f335dc4efe43d16.lean",
+      "sha256": "6f077e0ebeed8890571b2162a76afd38a1fffb188f02cac1283ec8a6c7ec0c3f",
+      "kind": "full_type_interface",
+      "type_sha256": "43a7d36e79692afa25ffb3f3c0e6f2664a72209a691c6804379d9f0eab00fb04"
+    },
+    {
+      "name": "effective_domain_sub_coe_eq",
+      "file": "clients/fb7fdbf238245fa9.lean",
+      "sha256": "eb796bfcf01ff0c0c88793a2721dee8cbd4adcaecb4b585da308c68c058738ee",
+      "kind": "full_type_interface",
+      "type_sha256": "b92fa23a1705897cc1e74c1263607c09e4911bff1810557a9643dd81509b63e4"
+    },
+    {
+      "name": "is_strongly_convex_function_iff_convexOn_toReal_sub_half_sigma_norm_sq",
+      "file": "clients/01ee1fee232e3fdd.lean",
+      "sha256": "d89dca9e93b3cad76a9a8c534706ab48954099b0719609197c4c5f575c0aec27",
+      "kind": "full_type_interface",
+      "type_sha256": "08af433f74659f29ab42215da3133e7004b0eb8cf3d7b224105c6f3da9c60a3c"
+    },
+    {
+      "name": "is_strongly_convex_function_iff_sub_half_sigma_norm_sq_is_convex",
+      "file": "clients/855dcde034ba0b39.lean",
+      "sha256": "50cb0a866b96be2b3bf959a57fa2d1caf3ab0ad44046caa8b99d3239c82f7212",
+      "kind": "full_type_interface",
+      "type_sha256": "d4401099a00893a3b2ec0040d43f8caac9f2fc73679c870e68a2207520283708"
+    },
+    {
+      "name": "sub_coe_neBot_of_neBot",
+      "file": "clients/ba473c5f10d91dd7.lean",
+      "sha256": "70b2c4ae3bc42fc0ffb0ec6a5331935f4477f489a136ad2fecd3ee736275cca1",
+      "kind": "full_type_interface",
+      "type_sha256": "f1f37593207818fb83e9060d2ee52763abc89fe4ab121dbf0facd90844994e2d"
+    },
+    {
+      "name": "toReal_sub_coe_eq",
+      "file": "clients/8ed0c22a83d49c95.lean",
+      "sha256": "28cf1cd33c1894ea90b07e7865179aa212ef8d081f71e9e8c123624dcc13f003",
+      "kind": "full_type_interface",
+      "type_sha256": "07ea71c381fd508592044fe2fc27b6fa95c1e07da9fd43bf6a12f7996f0336d8"
+    },
+    {
+      "name": "original_application:FirstOrderMethodsOptimization_Beck_2017.Chap05.Lemma_5_20",
+      "file": "clients/original-ef41deca34bbce1f.lean",
+      "sha256": "a1657224967fe06429ead242c1882cbd31c46f7b0e43a3d7038203b0eccbe592",
+      "kind": "original_application_module"
+    },
+    {
+      "name": "original_application:FirstOrderMethodsOptimization_Beck_2017.Chap05.Proposition_5_13",
+      "file": "clients/original-887b60e6eeba4652.lean",
+      "sha256": "50ac9074a219e5832a6dc6ce510077f4f8253042dd44b40b760878b0edfd0f28",
+      "kind": "original_application_module"
+    }
+  ]
+}

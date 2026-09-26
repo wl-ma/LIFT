@@ -1,0 +1,122 @@
+[
+  {
+    "project": "linear-nonlinear-programming",
+    "title": "Linear/nonlinear programming",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "convex-optimization",
+    "title": "Convex optimization",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "sun-yuan",
+    "title": "Sun–Yuan optimization",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.31.0"
+  },
+  {
+    "project": "linear-optimization",
+    "title": "Linear optimization",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "admm",
+    "title": "ADMM development",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "nocedal",
+    "title": "Nocedal optimization",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "number-theory-script",
+    "title": "Number theory: script",
+    "domain": "Number theory",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "bauschke",
+    "title": "Bauschke convex analysis",
+    "domain": "Convex analysis",
+    "toolchain": "leanprover/lean4:v4.29.0"
+  },
+  {
+    "project": "elementary-number-theory",
+    "title": "Elementary number theory",
+    "domain": "Number theory",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "primes-congruences",
+    "title": "Primes and congruences",
+    "domain": "Number theory",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "monotone-operator-sum",
+    "title": "Monotone-operator sum",
+    "domain": "Convex analysis",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "l0-l1",
+    "title": "L0/L1 optimization",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "bfgs",
+    "title": "BFGS convergence",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "symmetric-pairs",
+    "title": "Symmetric pairs",
+    "domain": "Representation theory",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "dfp-wolfe",
+    "title": "DFP with Wolfe conditions",
+    "domain": "Optimization",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "question-pairs",
+    "title": "Mathematical question pairs",
+    "domain": "Mixed mathematics",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "riemann-surfaces",
+    "title": "Riemann surfaces",
+    "domain": "Topology",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "matrices",
+    "title": "Matrices and linear algebra",
+    "domain": "Linear algebra",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "stacks",
+    "title": "Stacks development",
+    "domain": "Algebraic geometry",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "project": "analysis-algebra",
+    "title": "Analysis/algebra sample",
+    "domain": "Mixed mathematics",
+    "toolchain": "leanprover/lean4:v4.32.0"
+  }
+]

@@ -10,6 +10,8 @@ import re
 import subprocess
 from pathlib import Path
 
+from check_case import audit_output
+
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT = ROOT / "examples/reaslib"
 MODULES = [
@@ -122,13 +124,11 @@ def main() -> int:
         timeout=180,
         check=False,
     )
-    outputs = re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", audit.stdout)
-    valid = audit.returncode == 0 and len(outputs) == 9
-    for _, values in outputs:
-        valid = (
-            valid
-            and set(filter(None, (v.strip() for v in values.split(",")))) <= ALLOWED
-        )
+    expected = re.findall(
+        r"^#print axioms (\S+)", (PROJECT / "Audit.lean").read_text(), re.MULTILINE
+    )
+    outputs = audit_output(audit.stdout, expected)
+    valid = audit.returncode == 0 and len(expected) == 9
     report = {
         "lean_version": version,
         "modules": records,
