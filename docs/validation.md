@@ -45,3 +45,7 @@ Two local packaging checks failed before being corrected: the normal-cone driver
 Version13 adds source-level Apache-2.0 notices for the upstream normal-cone files and retains ReasBook attribution. No blanket license is inferred for material without an explicit grant; see LICENSES.md.
 
 The first hosted CI run passed data regeneration and detected a missing dependency lock in the original example bundle. The exact pinned Mathlib dependency lock is now included; the first failure remains visible in CI history.
+
+## Completed clean-checkout CI
+
+[Run 36249511312](https://github.com/wl-ma/LIFT/actions/runs/36249511312) passed all five jobs on commit 76eeae114b65c554074e98fa264a04e1d314056f: data, original ReasLib examples, normal-cone, Beck and tools. Dependency setup used a fresh hosted checkout. The final publication commit only adds this result, mirror download/checksum notes and their refreshed manifest; executable source is unchanged from the checked commit. The paper-v13 tag fixes that final package. See data/validation/ci.json for job identities. No model experiment was run.

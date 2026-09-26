@@ -1,0 +1,34 @@
+{
+  "validated_commit": "76eeae114b65c554074e98fa264a04e1d314056f",
+  "workflow_run": 36249511312,
+  "url": "https://github.com/wl-ma/LIFT/actions/runs/36249511312",
+  "jobs": [
+    {
+      "id": 108424788832,
+      "name": "tools",
+      "conclusion": "success"
+    },
+    {
+      "id": 108424788967,
+      "name": "lean (examples/beck/checkpoint, beck)",
+      "conclusion": "success"
+    },
+    {
+      "id": 108424788973,
+      "name": "lean (examples/reaslib, reaslib)",
+      "conclusion": "success"
+    },
+    {
+      "id": 108424788979,
+      "name": "data",
+      "conclusion": "success"
+    },
+    {
+      "id": 108424788990,
+      "name": "lean (examples/normal-cone, normal-cone)",
+      "conclusion": "success"
+    }
+  ],
+  "model_calls": 0,
+  "scope": "Fresh hosted checkout, dependency download, compilation, clients, portable data and tool checks."
+}

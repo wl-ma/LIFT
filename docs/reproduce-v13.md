@@ -54,3 +54,9 @@ Cache-based local checks and fresh-checkout GitHub CI results are reported separ
 
 data/validation/ records package checks. Historical results stay in their original
 files. No command here runs a model or resumes a previous campaign.
+
+## Anonymous mirror and checksums
+
+The review mirror applies its configured identity and URL redactions to descriptive files. The full-package manifest binds the original Git bytes; it should detect these transport changes rather than silently accept a newly generated manifest. Run the full manifest check on the Git checkout. Mathematical source hashes, recorded tables and the independent Lean/client commands have separate evidence bindings. A successful mirror page refresh is not a successful ZIP-download or fresh compilation check of the downloaded mirror.
+
+The fixed mirror was refreshed from the version13 publication commit. Its pages were verified; the full ZIP request timed out during this release check. Do not treat the mirror's download path as independently validated until that archive is actually retrieved and checked.
