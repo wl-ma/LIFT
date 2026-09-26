@@ -1,0 +1,473 @@
+{
+  "schema": "lift.online-checkpoint.v1",
+  "scope": "Beck source checkpoint following the accepted Proposition 5.13 revision",
+  "source_record_sha256": "24de8952a09914cae36883f78db1b1d9ccb3995ed1cdaa0bb657abe65be84a80",
+  "library_state": "4745368993cdb64ff1502a0f2db44bbccb288ad18b035bdc121a02981433be47",
+  "status": "working_state_checked",
+  "formal_result": false,
+  "lean_toolchain": "leanprover/lean4:v4.30.0",
+  "mathlib_revision": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "original_declarations": 20,
+  "trusted_source_theorems": 15,
+  "clients_passed": 22,
+  "clients_total": 22,
+  "declarations": [
+    {
+      "name": "is_strongly_convex_function",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "05c17ce2a3dfe15ea91ab15b0e49686b8284b73845b7005c425e26e79992532c",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "inductive",
+      "original_type_sha256": "05c17ce2a3dfe15ea91ab15b0e49686b8284b73845b7005c425e26e79992532c",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function.casesOn",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "655cbdc84b5ab4e1d708e45e78b4d99d81c96cc2befcdb9c98f4ce921150e31c",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "definition",
+      "original_type_sha256": "655cbdc84b5ab4e1d708e45e78b4d99d81c96cc2befcdb9c98f4ce921150e31c",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function.convex_effective_domain",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "eb0e7cff7d6a61d7857ccbee8b538d4dabcd63159f717d4a43b1922b27e93466",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "theorem",
+      "original_type_sha256": "eb0e7cff7d6a61d7857ccbee8b538d4dabcd63159f717d4a43b1922b27e93466",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function.mk",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "eddb8f9a46d1e487523883bb6e92fe6d2e5416325cc7ee82a2c0f4d5e0f6eb29",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "constructor",
+      "original_type_sha256": "eddb8f9a46d1e487523883bb6e92fe6d2e5416325cc7ee82a2c0f4d5e0f6eb29",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function.ne_bot",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "f3e83c7c32f736d47fcfba5a71ec41a42553e3304ed21bc3944978522848ddb6",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "theorem",
+      "original_type_sha256": "f3e83c7c32f736d47fcfba5a71ec41a42553e3304ed21bc3944978522848ddb6",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function.rec",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "2685788424d914a00394a41278e0befdfc336fc203c235f69c0e6a7b32e905a8",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "recursor",
+      "original_type_sha256": "2685788424d914a00394a41278e0befdfc336fc203c235f69c0e6a7b32e905a8",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function.recOn",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "655cbdc84b5ab4e1d708e45e78b4d99d81c96cc2befcdb9c98f4ce921150e31c",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "definition",
+      "original_type_sha256": "655cbdc84b5ab4e1d708e45e78b4d99d81c96cc2befcdb9c98f4ce921150e31c",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function.segment_ineq",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "3854bf73a964279c75451915e6022039eaae794220df95372a4b4859a5247949",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "theorem",
+      "original_type_sha256": "3854bf73a964279c75451915e6022039eaae794220df95372a4b4859a5247949",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function.sigma_pos",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "fb42b56bfbe80a3774d4cd42359cf96c01ab467f6220d66f407066d678252e3d",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "theorem",
+      "original_type_sha256": "fb42b56bfbe80a3774d4cd42359cf96c01ab467f6220d66f407066d678252e3d",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function_iff_strongConvexOn_toReal",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "27a4437c64599dfc841d638c7067fa463ea3fc960eecceb01048c870ee8b9ba1",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "theorem",
+      "original_type_sha256": "27a4437c64599dfc841d638c7067fa463ea3fc960eecceb01048c870ee8b9ba1",
+      "original_type_preserved": true
+    },
+    {
+      "name": "strongConvexOn_toReal_of_is_strongly_convex_function",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Definition_5_16",
+      "type_sha256": "a8f32c1a6ab716a38f118be70d430f716d13439f78f9a54cd4604ce29b8704c3",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "67e69d4e8d687a7c847562e67662bafad42f663365668cd4f0c32822cfc0643d",
+      "kind": "theorem",
+      "original_type_sha256": "a8f32c1a6ab716a38f118be70d430f716d13439f78f9a54cd4604ce29b8704c3",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function_add_of_convexOn_toReal",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Lemma_5_20",
+      "type_sha256": "cb235f43add196e43832dd9114f1bd7f66d3343c55855058158d67baed8e24d7",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "cf979b051f07ddcfa8db8172bf8fc3d0c1c54b53c80aae0f4f2b54fd1bd4fc1d",
+      "kind": "theorem",
+      "original_type_sha256": "cb235f43add196e43832dd9114f1bd7f66d3343c55855058158d67baed8e24d7",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function_add_of_is_convex_function",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Lemma_5_20",
+      "type_sha256": "bfc08947e1e43c2f7e10ca3c34d929422e50d6386466228f2e5a3c78d6ddc928",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "cf979b051f07ddcfa8db8172bf8fc3d0c1c54b53c80aae0f4f2b54fd1bd4fc1d",
+      "kind": "theorem",
+      "original_type_sha256": "bfc08947e1e43c2f7e10ca3c34d929422e50d6386466228f2e5a3c78d6ddc928",
+      "original_type_preserved": true
+    },
+    {
+      "name": "half_squared_norm_add_indicator_is_one_strongly_convex_function",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Proposition_5_13",
+      "type_sha256": "facc39f88020c53c489ba0deb464852ec903ac8aeb75a69c43dea897c2d3d8b7",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "a3b5c3ca8a90c8541d4e50ecd1a0b6542f035177f9fc0e2cdba03c3923965e0d",
+      "kind": "theorem",
+      "original_type_sha256": "facc39f88020c53c489ba0deb464852ec903ac8aeb75a69c43dea897c2d3d8b7",
+      "original_type_preserved": true
+    },
+    {
+      "name": "half_squared_norm_is_one_strongly_convex_on",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Proposition_5_13",
+      "type_sha256": "43a7d36e79692afa25ffb3f3c0e6f2664a72209a691c6804379d9f0eab00fb04",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "a3b5c3ca8a90c8541d4e50ecd1a0b6542f035177f9fc0e2cdba03c3923965e0d",
+      "kind": "theorem",
+      "original_type_sha256": "43a7d36e79692afa25ffb3f3c0e6f2664a72209a691c6804379d9f0eab00fb04",
+      "original_type_preserved": true
+    },
+    {
+      "name": "effective_domain_sub_coe_eq",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Theorem_5_17",
+      "type_sha256": "b92fa23a1705897cc1e74c1263607c09e4911bff1810557a9643dd81509b63e4",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "ef6294157e22253220b96ec98bf2c4c2dc60be1dfd19285a548b72a7357c7db1",
+      "kind": "theorem",
+      "original_type_sha256": "b92fa23a1705897cc1e74c1263607c09e4911bff1810557a9643dd81509b63e4",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function_iff_convexOn_toReal_sub_half_sigma_norm_sq",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Theorem_5_17",
+      "type_sha256": "08af433f74659f29ab42215da3133e7004b0eb8cf3d7b224105c6f3da9c60a3c",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "ef6294157e22253220b96ec98bf2c4c2dc60be1dfd19285a548b72a7357c7db1",
+      "kind": "theorem",
+      "original_type_sha256": "08af433f74659f29ab42215da3133e7004b0eb8cf3d7b224105c6f3da9c60a3c",
+      "original_type_preserved": true
+    },
+    {
+      "name": "is_strongly_convex_function_iff_sub_half_sigma_norm_sq_is_convex",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Theorem_5_17",
+      "type_sha256": "d4401099a00893a3b2ec0040d43f8caac9f2fc73679c870e68a2207520283708",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "ef6294157e22253220b96ec98bf2c4c2dc60be1dfd19285a548b72a7357c7db1",
+      "kind": "theorem",
+      "original_type_sha256": "d4401099a00893a3b2ec0040d43f8caac9f2fc73679c870e68a2207520283708",
+      "original_type_preserved": true
+    },
+    {
+      "name": "sub_coe_neBot_of_neBot",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Theorem_5_17",
+      "type_sha256": "f1f37593207818fb83e9060d2ee52763abc89fe4ab121dbf0facd90844994e2d",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "ef6294157e22253220b96ec98bf2c4c2dc60be1dfd19285a548b72a7357c7db1",
+      "kind": "theorem",
+      "original_type_sha256": "f1f37593207818fb83e9060d2ee52763abc89fe4ab121dbf0facd90844994e2d",
+      "original_type_preserved": true
+    },
+    {
+      "name": "toReal_sub_coe_eq",
+      "module": "FirstOrderMethodsOptimization_Beck_2017.Chap05.Theorem_5_17",
+      "type_sha256": "07ea71c381fd508592044fe2fc27b6fa95c1e07da9fd43bf6a12f7996f0336d8",
+      "trusted_proof": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "is_unsafe": false,
+      "is_partial": false,
+      "source_sha256": "ef6294157e22253220b96ec98bf2c4c2dc60be1dfd19285a548b72a7357c7db1",
+      "kind": "theorem",
+      "original_type_sha256": "07ea71c381fd508592044fe2fc27b6fa95c1e07da9fd43bf6a12f7996f0336d8",
+      "original_type_preserved": true
+    }
+  ],
+  "clients": [
+    {
+      "name": "is_strongly_convex_function",
+      "sha256": "4eebe36cbbeaa702e25fe049167071df996c33258098b8cb582c51c8f8cca802",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function.casesOn",
+      "sha256": "4b7dae2b31d4b30557c6e66ee5661b6601e916013dbe3e964cbf363e346058d1",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function.convex_effective_domain",
+      "sha256": "c5551315111f916f06ec17227bb918c7a5bdcc173c2d5ceb5242ff9c8b78a1e1",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function.mk",
+      "sha256": "9f38a045eadb3232a79ed179884765b2063b6e789c5935a8cc35ee89edf904b6",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function.ne_bot",
+      "sha256": "241b573053c93825b0a18c5e316092feed5b5fc620ccdeb549936647ebc3011e",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function.rec",
+      "sha256": "0dad64251a840a710975d6bca5e2be098444d565a18dfeb554eb26d1b55dd54a",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function.recOn",
+      "sha256": "6ad7f3181fddeafb4c9e4aeba5854e3418e5f86846a45717c2d0246de958b93f",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function.segment_ineq",
+      "sha256": "ae65627f94168317061592c87786638ddfdab9d950794eb497a455bcc886754a",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function.sigma_pos",
+      "sha256": "c02601172d4d217fb7fb36c244f8231f65189d921be278b6e7cc8f1ce9f273a3",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function_iff_strongConvexOn_toReal",
+      "sha256": "d4f342f45dfa8bac96f9d16785757f9047964bcdb6947d52a8a4aa1fe01f9d98",
+      "passed": true
+    },
+    {
+      "name": "strongConvexOn_toReal_of_is_strongly_convex_function",
+      "sha256": "fce0921070f464e970c8f7cce1b2c7e143fdfbb9d7545ffb30f62ad5aeda4126",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function_add_of_convexOn_toReal",
+      "sha256": "3e144f95ca4a57e7f8dae8fd24fbf119c1d4316269751cc2029f0fd357548475",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function_add_of_is_convex_function",
+      "sha256": "b4f0fb013212318c20618e30a61564e99eb0e4f9d18736be13c8fe31092120d8",
+      "passed": true
+    },
+    {
+      "name": "half_squared_norm_add_indicator_is_one_strongly_convex_function",
+      "sha256": "1654d5d4c0cbb9d822ef1bea175116b6a7dcf9d1785f4324f2708c3d1ad6f511",
+      "passed": true
+    },
+    {
+      "name": "half_squared_norm_is_one_strongly_convex_on",
+      "sha256": "6f077e0ebeed8890571b2162a76afd38a1fffb188f02cac1283ec8a6c7ec0c3f",
+      "passed": true
+    },
+    {
+      "name": "effective_domain_sub_coe_eq",
+      "sha256": "eb796bfcf01ff0c0c88793a2721dee8cbd4adcaecb4b585da308c68c058738ee",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function_iff_convexOn_toReal_sub_half_sigma_norm_sq",
+      "sha256": "d89dca9e93b3cad76a9a8c534706ab48954099b0719609197c4c5f575c0aec27",
+      "passed": true
+    },
+    {
+      "name": "is_strongly_convex_function_iff_sub_half_sigma_norm_sq_is_convex",
+      "sha256": "50cb0a866b96be2b3bf959a57fa2d1caf3ab0ad44046caa8b99d3239c82f7212",
+      "passed": true
+    },
+    {
+      "name": "sub_coe_neBot_of_neBot",
+      "sha256": "70b2c4ae3bc42fc0ffb0ec6a5331935f4477f489a136ad2fecd3ee736275cca1",
+      "passed": true
+    },
+    {
+      "name": "toReal_sub_coe_eq",
+      "sha256": "28cf1cd33c1894ea90b07e7865179aa212ef8d081f71e9e8c123624dcc13f003",
+      "passed": true
+    },
+    {
+      "name": "original_application:FirstOrderMethodsOptimization_Beck_2017.Chap05.Lemma_5_20",
+      "sha256": "a1657224967fe06429ead242c1882cbd31c46f7b0e43a3d7038203b0eccbe592",
+      "passed": true
+    },
+    {
+      "name": "original_application:FirstOrderMethodsOptimization_Beck_2017.Chap05.Proposition_5_13",
+      "sha256": "50ac9074a219e5832a6dc6ce510077f4f8253042dd44b40b760878b0edfd0f28",
+      "passed": true
+    }
+  ],
+  "whole_run_context": {
+    "first_run_final_public_manifest": "failed_due_to_duplicate_binding",
+    "second_run_accepted_mathematical_updates": 0,
+    "claim": "Source-local mechanism case; not a complete release or comparative performance result."
+  }
+}

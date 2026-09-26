@@ -1,0 +1,10 @@
+.lake/
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+_build/
+_runs/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,21 @@
+project,title,domain,catalogue_items,integrated_items,public_module_occurrences,modules_with_sorry_text,integration_manifests,toolchain
+linear-nonlinear-programming,Linear/nonlinear programming,Optimization,1464,104,69,11,104,leanprover/lean4:v4.32.0
+convex-optimization,Convex optimization,Optimization,1137,243,247,54,243,leanprover/lean4:v4.32.0
+sun-yuan,Sun–Yuan optimization,Optimization,661,494,385,88,494,leanprover/lean4:v4.31.0
+linear-optimization,Linear optimization,Optimization,751,152,135,30,152,leanprover/lean4:v4.32.0
+admm,ADMM development,Optimization,55,15,26,4,15,leanprover/lean4:v4.32.0
+nocedal,Nocedal optimization,Optimization,808,245,213,32,245,leanprover/lean4:v4.32.0
+number-theory-script,Number theory: script,Number theory,384,375,220,209,375,leanprover/lean4:v4.32.0
+bauschke,Bauschke convex analysis,Convex analysis,902,23,29,6,23,leanprover/lean4:v4.29.0
+elementary-number-theory,Elementary number theory,Number theory,431,419,109,108,419,leanprover/lean4:v4.32.0
+primes-congruences,Primes and congruences,Number theory,652,641,227,216,641,leanprover/lean4:v4.32.0
+monotone-operator-sum,Monotone-operator sum,Convex analysis,361,209,152,0,209,leanprover/lean4:v4.32.0
+l0-l1,L0/L1 optimization,Optimization,18,14,42,0,14,leanprover/lean4:v4.32.0
+bfgs,BFGS convergence,Optimization,21,10,638,0,17,leanprover/lean4:v4.32.0
+symmetric-pairs,Symmetric pairs,Representation theory,547,3,5,2,3,leanprover/lean4:v4.32.0
+dfp-wolfe,DFP with Wolfe conditions,Optimization,262,176,432,0,176,leanprover/lean4:v4.32.0
+question-pairs,Mathematical question pairs,Mixed mathematics,507,82,59,12,82,leanprover/lean4:v4.32.0
+riemann-surfaces,Riemann surfaces,Topology,142,70,57,0,64,leanprover/lean4:v4.32.0
+matrices,Matrices and linear algebra,Linear algebra,83,60,21,0,60,leanprover/lean4:v4.32.0
+stacks,Stacks development,Algebraic geometry,1730,1722,12648,10536,1791,leanprover/lean4:v4.32.0
+analysis-algebra,Analysis/algebra sample,Mixed mathematics,6,4,2,0,4,leanprover/lean4:v4.32.0

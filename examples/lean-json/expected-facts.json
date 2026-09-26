@@ -1,0 +1,180 @@
+{
+  "schema": "lift.compiler-facts.v1",
+  "lean_version": "Lean (version 4.26.0, x86_64-unknown-linux-gnu, commit d8204c9fd894f91bbb2cdfec5912ec8196fd8562, Release)",
+  "declared_toolchain": "leanprover/lean4:v4.26.0",
+  "modules": [
+    "Fixture"
+  ],
+  "extractor_sha256": "399bc54599e0ad0a10e00f33772bb23857f8651f9e2a0452ca51b154dfa42019",
+  "source_sha256": {
+    "Fixture.lean": "92d6a9695e5ba7c9a9d214b33b9fa248cbac7ae5df3699214e862c2a24fa88d1",
+    "lake-manifest.json": "dffa5a01340f78f268f352db76ca77089295fd5808454d0492b5ea4a8f6b1910",
+    "lakefile.toml": "65076774917514605e773568a0e32d83a109a57b2f39462eb37c03a71a19d485",
+    "lean-toolchain": "e8173aad377a6d70041e5f7a5d8895ed587628f5cab243c53a18c40a1b7b6bf8"
+  },
+  "scope": "Selected compiled modules; references may point outside this export.",
+  "natural_language_generated": false,
+  "records": [
+    {
+      "axioms": [],
+      "constructors": [],
+      "definition_value": "fun (n : Nat) => n + n",
+      "dependency_modules": {
+        "HAdd.hAdd": "Init.Prelude",
+        "Nat": "Init.Prelude",
+        "instAddNat": "Init.Prelude",
+        "instHAdd": "Init.Prelude"
+      },
+      "is_partial": false,
+      "is_unsafe": false,
+      "kind": "def",
+      "module": "Fixture",
+      "mutual_family": [
+        "LIFTExample.twice"
+      ],
+      "name": "LIFTExample.twice",
+      "selection_range": {
+        "column_end": 9,
+        "column_start": 4,
+        "line_end": 4,
+        "line_start": 4
+      },
+      "source_range": {
+        "column_end": 34,
+        "column_start": 0,
+        "line_end": 4,
+        "line_start": 3
+      },
+      "structure_fields": [],
+      "type": "Nat → Nat",
+      "type_dependencies": [
+        "Nat"
+      ],
+      "value_available": true,
+      "value_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "instAddNat",
+        "instHAdd"
+      ],
+      "declaration_key": "Fixture::LIFTExample.twice"
+    },
+    {
+      "axioms": [],
+      "constructors": [],
+      "definition_value": null,
+      "dependency_modules": {
+        "Eq": "Init.Prelude",
+        "HAdd.hAdd": "Init.Prelude",
+        "LIFTExample.twice": "Fixture",
+        "Nat": "Init.Prelude",
+        "instAddNat": "Init.Prelude",
+        "instHAdd": "Init.Prelude",
+        "rfl": "Init.Prelude"
+      },
+      "is_partial": false,
+      "is_unsafe": false,
+      "kind": "theorem",
+      "module": "Fixture",
+      "mutual_family": [
+        "LIFTExample.twice_eq"
+      ],
+      "name": "LIFTExample.twice_eq",
+      "selection_range": {
+        "column_end": 16,
+        "column_start": 8,
+        "line_end": 7,
+        "line_start": 7
+      },
+      "source_range": {
+        "column_end": 51,
+        "column_start": 0,
+        "line_end": 7,
+        "line_start": 6
+      },
+      "structure_fields": [],
+      "type": "∀ (n : Nat), LIFTExample.twice n = n + n",
+      "type_dependencies": [
+        "Eq",
+        "HAdd.hAdd",
+        "LIFTExample.twice",
+        "Nat",
+        "instAddNat",
+        "instHAdd"
+      ],
+      "value_available": true,
+      "value_dependencies": [
+        "LIFTExample.twice",
+        "Nat",
+        "rfl"
+      ],
+      "declaration_key": "Fixture::LIFTExample.twice_eq"
+    },
+    {
+      "axioms": [],
+      "constructors": [],
+      "definition_value": null,
+      "dependency_modules": {
+        "Eq": "Init.Prelude",
+        "Eq.mpr": "Init.Core",
+        "Eq.refl": "Init.Prelude",
+        "HAdd.hAdd": "Init.Prelude",
+        "LIFTExample.twice": "Fixture",
+        "LIFTExample.twice_eq": "Fixture",
+        "Nat": "Init.Prelude",
+        "OfNat.ofNat": "Init.Prelude",
+        "congrArg": "Init.Prelude",
+        "id": "Init.Prelude",
+        "instAddNat": "Init.Prelude",
+        "instHAdd": "Init.Prelude",
+        "instOfNatNat": "Init.Prelude"
+      },
+      "is_partial": false,
+      "is_unsafe": false,
+      "kind": "theorem",
+      "module": "Fixture",
+      "mutual_family": [
+        "LIFTExample.twice_three"
+      ],
+      "name": "LIFTExample.twice_three",
+      "selection_range": {
+        "column_end": 19,
+        "column_start": 8,
+        "line_end": 10,
+        "line_start": 10
+      },
+      "source_range": {
+        "column_end": 15,
+        "column_start": 0,
+        "line_end": 11,
+        "line_start": 9
+      },
+      "structure_fields": [],
+      "type": "LIFTExample.twice 3 = 6",
+      "type_dependencies": [
+        "Eq",
+        "LIFTExample.twice",
+        "Nat",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "value_available": true,
+      "value_dependencies": [
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "HAdd.hAdd",
+        "LIFTExample.twice",
+        "LIFTExample.twice_eq",
+        "Nat",
+        "OfNat.ofNat",
+        "congrArg",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "declaration_key": "Fixture::LIFTExample.twice_three"
+    }
+  ]
+}

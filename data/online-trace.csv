@@ -1,0 +1,9 @@
+sequence,event,mathematical_item,context,accepted_version,revision,status
+3,proposal_started,Beck Lemma 5.20,86964a6ecaaab9cda1190f3a2026911d1e5b62531c7dfa9fe470c949ebef117d,,,
+4,proposal_started,Beck Proposition 5.13,86964a6ecaaab9cda1190f3a2026911d1e5b62531c7dfa9fe470c949ebef117d,,,
+15,candidate_accepted,Beck Lemma 5.20,,1cad1e08fce0bca1dafbbd8b24d32da823602dddcff13230218d4e4b8df80425,,
+18,candidate_rejected,Beck Proposition 5.13,,,,
+19,revision_requested,Beck Proposition 5.13,,,1,
+20,proposal_started,Beck Proposition 5.13,1cad1e08fce0bca1dafbbd8b24d32da823602dddcff13230218d4e4b8df80425,,,
+24,candidate_accepted,Beck Proposition 5.13,,4745368993cdb64ff1502a0f2db44bbccb288ad18b035bdc121a02981433be47,,
+25,historical_audit,,,,,history_accepted

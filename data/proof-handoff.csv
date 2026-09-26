@@ -1,0 +1,8 @@
+project,statement_success,integration_success,proof_work_success,pending_units_after_integration,exact_id_success_links,declaration_owner_success_links,unresolved_links
+nocedal,3,3,3,4,4,0,0
+bfgs,10,10,15,56,56,0,0
+l0-l1,14,14,18,6,6,0,0
+riemann-surfaces,23,23,27,44,44,0,0
+admm,4,4,7,77,77,0,0
+analysis-algebra,4,4,4,4,4,0,0
+matrices,60,60,61,58,55,3,0
