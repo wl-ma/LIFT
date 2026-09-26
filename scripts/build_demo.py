@@ -17,7 +17,7 @@ def main() -> None:
     payload = json.dumps(
         {"corpus": corpus, "trace": trace}, ensure_ascii=False
     ).replace("<", "\\u003c")
-    template = (ROOT / "demo/template.html").read_text()
+    template = (ROOT / "demo/template.html").read_text(encoding="utf-8")
     (ROOT / "demo/index.html").write_text(
         template.replace("/* RELEASE_DATA */ null", payload)
     )

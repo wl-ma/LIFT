@@ -1,6 +1,6 @@
 {
-  "paper_snapshot": "version6, 2026-09-26 16:27 Asia/Shanghai",
-  "paper_sha256": "d3c3ae9b7e88271cd9dbfc57500a4c648d8105aa2624e3554b6a126f2dbd52bc",
+  "paper_snapshot": "version10, 2026-09-26 17:50 Asia/Shanghai",
+  "paper_sha256": "68955d819d63b963326fa25060c546cbbb32c3be5b046bed4eb17c95b58aee92",
   "collection_date": "2026-09-26",
   "transformations": [
     "Public project slugs replace internal repository identifiers.",
@@ -78,5 +78,12 @@
       "origin": "data/evidence/tokyo-existing-results/results/20260925/E2b/reasbook-r01-tokyo/review/online-proposition-5-13.patch",
       "role": "Recorded Beck source recovery and public interface change"
     }
+  ],
+  "initial_paper_snapshot": "version6, 2026-09-26 16:27 Asia/Shanghai",
+  "initial_paper_sha256": "d3c3ae9b7e88271cd9dbfc57500a4c648d8105aa2624e3554b6a126f2dbd52bc",
+  "refresh_notes": [
+    "Version10 keeps the experimental totals and checked source files unchanged.",
+    "Added release-local proof-task aliases and a manuscript-to-artifact map.",
+    "Original experimental records remain separate from packaging verification."
   ]
 }

@@ -13,7 +13,7 @@ This record describes checks of the public package. Historical paper evidence re
 | Lean-to-JSON fixture | Passed | Three declarations exported with Lean 4.26.0, 4.30.0, and 4.32.0 |
 | Cross-version fixture comparison | Passed | Selected types, definition bodies, axiom sets and trust flags unchanged in 4.26→4.30 and 4.26→4.32 exports |
 | Missing exact declaration | Correctly rejected | An unknown fully qualified name causes failure and no output artifact |
-| Regression tests | Passed, 4 tests | Definition drift, new axioms, missing/duplicate identities, isolated preparation and explicit Mathlib pins |
+| Regression tests | Passed, 6 tests | Definition/kind drift, new axioms, missing/duplicate identities, empty exports, isolated preparation and explicit Mathlib pins |
 | Formatting and static checks | Passed | Ruff format/check on public Python tools, scripts, and tests |
 | Offline demo | Passed | Search narrows the corpus; case controls switch content; timeline reaches the recorded checkpoint; desktop page visually inspected |
 | Public-package hygiene | Passed | Curated files only; no service credentials, raw backend logs, local absolute paths, caches, or original textbooks |
@@ -25,3 +25,9 @@ The original Lean extractor was retained byte-for-byte. This release adds a test
 The toolchain helper is a new preparation/comparison utility, not evidence of a previously completed automated whole-project migration system. It detects selected textual fact changes and leaves arbitrary API repair and original-client verification explicit.
 
 No full corpus proof audit, new integration campaign, model benchmark, comparative runtime experiment, or remote deployment was performed for this release.
+
+## Version10 completeness review
+
+The latest manuscript keeps the numerical evidence unchanged. The [artifact map](paper-artifact-map.md) now locates its four experimental subsections and the Taylor recovery chain. A new curated table preserves 258 obligation–task links covering the same 249 obligations and 72 linked task aliases; the 135 successful-task batch total remains a distinct measure.
+
+The package verifier now also checks these links, the shared Taylor task, every file hash in release provenance, summary action totals, and exact regeneration of the offline demo from its template and released tables. The migration comparator now rejects empty exports and detects declaration-kind changes. These close packaging and validation gaps without changing the historical mathematical evidence.

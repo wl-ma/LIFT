@@ -6,7 +6,9 @@
 
 LIFT studies how independently formalized Lean developments can contribute reusable mathematical interfaces while retaining connections to their original specifications. A public theorem, definition, or structure is developed together with the adaptations that recover the source result. Candidates can be constructed concurrently and revised against an evolving library.
 
-This repository contains the public experimental artifacts accompanying the paper: machine-readable tables, declaration-level examples, an offline ReasLib browser, compiler-based Lean-to-JSON extraction, and a toolchain-alignment helper. This initial release follows the **26 September 2026, version6 manuscript snapshot**. The exact manuscript hash and artifact origins are recorded in [release provenance](data/release-provenance.json).
+This repository contains the public experimental artifacts accompanying the paper: machine-readable tables, declaration-level examples, an offline ReasLib browser, compiler-based Lean-to-JSON extraction, and a toolchain-alignment helper. This release follows the **26 September 2026, version10 manuscript snapshot**. The exact manuscript hash and artifact origins are recorded in [release provenance](data/release-provenance.json).
+
+The [manuscript-to-artifact map](docs/paper-artifact-map.md) connects the experimental tables and case studies to individual released files, including the Taylor obligation-to-proof chain.
 
 ## Start here
 
@@ -27,6 +29,8 @@ python3 scripts/verify_release.py
 ```
 
 The table and integrity checks require **Python 3.10+**, with no third-party Python packages. Open `demo/index.html` directly in a browser for a searchable project table, mathematical examples, and the recorded online revision. The demo contains its data and needs no account, API key, server, or model. GitHub's file viewer displays its source; it is not a hosted application.
+
+If you are reading a review mirror, use its download control and run the same commands from the extracted repository root. A redacted Git clone URL is not a clone endpoint. Keep the full directory layout so local documentation and demo links resolve.
 
 ## What LIFT does
 

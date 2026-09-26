@@ -1,6 +1,8 @@
 # Experimental data
 
-These tables accompany the 26 September 2026 version6 manuscript. They are curated from the retained evidence, not results of new experiments run for this repository. [release-provenance.json](release-provenance.json) records original input hashes and the curation operations.
+These tables accompany the 26 September 2026 version10 manuscript. They are curated from the retained evidence, not results of new experiments run for this repository. [release-provenance.json](release-provenance.json) records original input hashes and the curation operations.
+
+See the [manuscript-to-artifact map](../docs/paper-artifact-map.md) for table labels and the Taylor evidence chain.
 
 ## Files and units
 
@@ -11,6 +13,7 @@ These tables accompany the 26 September 2026 version6 manuscript. They are curat
 | [module-profile.csv](module-profile.csv) | Project × directory area | Where public modules occur in each project's hierarchy |
 | [proof-handoff.csv](proof-handoff.csv) | 7 selected batches | Successful stage items/tasks and links between stages |
 | [proof-obligations.csv](proof-obligations.csv) | 249 obligations | Declaration, owning module, source item, and matching method for each proof handoff |
+| [proof-task-links.csv](proof-task-links.csv) | Obligation × linked task | Release-local task identities preserving shared proof work |
 | [lean-checks-historical.json](lean-checks-historical.json) | 5 files / 9 declarations | Original 26 September compilation and axiom check, remapped to released files |
 | [lean-checks-release.json](lean-checks-release.json) | Same selected Lean files | Fresh verification of this release's copied examples |
 | [online-trace.csv](online-trace.csv) | 8 selected events | Recorded revision sequence and content-addressed library contexts |
@@ -42,6 +45,10 @@ The original action-level file is aggregated here by selected project and action
 `exact_id_success_links` uses original obligation identifiers. `declaration_owner_success_links` uses the declaration and owner-module pair. The original IDs are replaced by public release-local obligation labels in the detailed table. The selected data contains 246 exact-ID links and 3 declaration/owner links; all 249 point to successful task records. `unresolved_links` is zero in these selected batches.
 
 `integration_time_status=pending` describes when an obligation was handed to proof work, while `proof_stage_success=True` describes its later linked record. `current_owner_exists` concerns file availability in the retained export. Neither field substitutes for current kernel checking; `evidence_level` preserves this qualification explicitly.
+
+`proof-task-links.csv` retains the successful-task grouping behind each released obligation. Its `proof_task` values are release-local aliases, scoped to the original project and proof batch. Multiple rows for one obligation mean multiple linked successful task records. The distinct aliases in this file need not equal the 135 total successful tasks: that total also includes tasks outside the selected obligation links.
+
+There are 258 obligation–task links covering all 249 obligations and 72 distinct linked task aliases. These are separate cardinalities: nine extra links arise because some obligations link to more than one successful record. The first three Taylor obligations all link to `proof-task-0001`.
 
 ## Lean checks
 

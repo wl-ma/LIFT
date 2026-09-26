@@ -18,7 +18,7 @@
 <div class="stats"><div class="stat"><strong>20</strong><span>mathematical developments</span></div><div class="stat"><strong>5,061</strong><span>accepted integration items</span></div><div class="stat"><strong>249</strong><span>linked proof obligations</span></div><div class="stat"><strong>9</strong><span>axiom-checked declarations</span></div></div>
 <section><div class="eyebrow">01 / Construction corpus</div><h2>Where the components come from</h2>
 <p>Each row retains a development's recorded environment. Integrated items count source entries; module occurrences include inherited content and unfinished interfaces.</p>
-<div class="controls"><label>Search developments<input id="search" type="search" placeholder="Try Taylor, topology, optimization…"></label><label>Mathematical area<select id="domain"><option value="">All areas</option></select></label><span id="count" class="note" aria-live="polite"></span></div>
+<div class="controls"><label>Search developments<input id="search" type="search" placeholder="Try Nocedal, topology, optimization…"></label><label>Mathematical area<select id="domain"><option value="">All areas</option></select></label><span id="count" class="note" aria-live="polite"></span></div>
 <div class="table-wrap"><table><thead><tr><th>Development</th><th>Area</th><th class="num">Items</th><th class="num">Integrated</th><th class="num">Modules</th><th>Lean</th></tr></thead><tbody id="corpus"></tbody></table></div>
 <p class="note">Source: <a href="../data/construction.csv">construction.csv</a>. 5,061 / 10,922 is catalogue coverage, not an attempted-task success rate or a trusted-theorem count.</p></section>
 <section><div class="eyebrow">02 / Executable ReasLib cases</div><h2>From public interfaces back to source results</h2>
@@ -32,7 +32,7 @@
 <p class="note"><a href="../data/online-trace.csv">Event table</a> · <a href="../data/online-revision.patch">Actual revision patch</a> · <a href="../data/online-checkpoint.json">20 declarations / 15 trusted source theorems / 22 clients</a></p>
 <details><summary>What this checkpoint establishes</summary><p class="note">It records source-local reuse and a passing Beck source checkpoint. The broader first run later failed its final public-manifest check, and the second run accepted no mathematical update. This is not a complete library release or evidence of a general comparative speedup.</p></details></section>
 <section><div class="eyebrow">04 / Supporting tools</div><h2>Inspect, extract, align</h2><p><a href="../tools/lean_json/README.md">Lean → JSON</a> exports actual compiler facts. <a href="../tools/toolchain/README.md">Toolchain alignment</a> creates a separate target-version copy and reports declaration drift. The tools distinguish build success, textual comparison, and mathematical preservation.</p></section>
-<footer>Static, offline evidence browser. No remote requests, analytics, accounts, or model calls. Manuscript snapshot: version6. <a href="../docs/provenance-and-reuse.md">Provenance and reuse</a>.</footer>
+<footer>Static, offline evidence browser. No remote requests, analytics, accounts, or model calls. Manuscript snapshot: version10. <a href="../docs/provenance-and-reuse.md">Provenance and reuse</a>.</footer>
 </main>
 <script>
 const release = /* RELEASE_DATA */ null;

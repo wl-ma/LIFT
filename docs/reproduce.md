@@ -9,7 +9,7 @@ python3 scripts/verify_release.py
 python3 -m unittest discover -s tests -v
 ```
 
-The first command verifies the paper totals, obligation cardinalities, preserved Lean source hashes, and Markdown links. The tests check migration isolation, explicit dependency pins, and drift reporting. Neither command calls a model or backend.
+The first command verifies the paper totals, obligation and task-link cardinalities, all provenance-listed source hashes, demo freshness, and Markdown links. The tests check migration isolation, explicit dependency pins, empty/duplicate exports, and drift reporting. Neither command calls a model or backend.
 
 ## 2. Browse and regenerate the demo
 

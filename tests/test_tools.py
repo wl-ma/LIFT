@@ -22,6 +22,7 @@ def bundle() -> dict:
         "records": [
             {
                 "declaration_key": "Fixture::Demo.value",
+                "kind": "def",
                 "type": "Nat",
                 "definition_value": "3",
                 "axioms": [],
@@ -49,14 +50,30 @@ class ComparisonTests(unittest.TestCase):
 
     def test_missing_and_duplicate_declarations(self) -> None:
         before, after = bundle(), bundle()
-        after["records"] = []
+        extra = copy.deepcopy(before["records"][0])
+        extra["declaration_key"] = "Fixture::Demo.other"
+        before["records"].append(extra)
         self.assertEqual(
-            UPGRADE.compare(before, after)["missing"], ["Fixture::Demo.value"]
+            UPGRADE.compare(before, after)["missing"], ["Fixture::Demo.other"]
         )
+        after["records"] = []
+        with self.assertRaises(ValueError):
+            UPGRADE.compare(before, after)
         after = bundle()
         after["records"].append(copy.deepcopy(after["records"][0]))
         with self.assertRaises(ValueError):
             UPGRADE.compare(before, after)
+
+    def test_changed_declaration_kind_requires_review(self) -> None:
+        before, after = bundle(), bundle()
+        after["records"][0]["kind"] = "opaque"
+        self.assertEqual(UPGRADE.compare(before, after)["status"], "review_required")
+
+    def test_empty_baseline_cannot_claim_preservation(self) -> None:
+        before = bundle()
+        before["records"] = []
+        with self.assertRaises(ValueError):
+            UPGRADE.compare(before, bundle())
 
 
 class PreparationTests(unittest.TestCase):
@@ -82,12 +99,17 @@ class PreparationTests(unittest.TestCase):
                 source, target, "leanprover/lean4:v4.30.0", "b" * 40
             )
             self.assertEqual(report["status"], "prepared_not_built")
-            self.assertEqual((source / "lakefile.toml").read_text(), config)
+            self.assertEqual(
+                (source / "lakefile.toml").read_text(encoding="utf-8"), config
+            )
             self.assertFalse((target / ".env").exists())
             self.assertFalse((target / "lake-manifest.json").exists())
-            self.assertIn("b" * 40, (target / "lakefile.toml").read_text())
             self.assertIn(
-                '[[lean_lib]]\nname = "Demo"', (target / "lakefile.toml").read_text()
+                "b" * 40, (target / "lakefile.toml").read_text(encoding="utf-8")
+            )
+            self.assertIn(
+                '[[lean_lib]]\nname = "Demo"',
+                (target / "lakefile.toml").read_text(encoding="utf-8"),
             )
             with self.assertRaises(ValueError):
                 UPGRADE.prepare(source, target, "leanprover/lean4:v4.30.0", "b" * 40)

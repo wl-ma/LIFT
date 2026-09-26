@@ -32,7 +32,7 @@ The old `lake-manifest.json`, `.lake` products, Git state, environment files, ru
 
 ## How to interpret comparisons
 
-The comparison indexes records by `Module::name`, reports missing/added declarations, and compares type, definition body, constructors, fields, axioms, and unsafe/partial flags. It exits with status 1 when existing declarations are missing or changed. New declarations are reported separately.
+The comparison indexes records by `Module::name`, reports missing/added declarations, and compares declaration kind, type, definition body, constructors, fields, axioms, and unsafe/partial flags. Empty exports and duplicate identities are rejected. It exits with status 1 when existing declarations are missing or changed. New declarations are reported separately.
 
 `selected_facts_unchanged` means those selected textual fields matched. It is not a semantic-equivalence theorem, does not compare theorem proof bodies, and does not test all callers. Pretty-print changes can require review even when the mathematics is unchanged. Use the original source specifications and run original client files in the target environment before accepting a real migration.
 

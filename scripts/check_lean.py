@@ -37,7 +37,9 @@ def main() -> int:
     build.mkdir()
     env = os.environ.copy()
     if args.packages:
-        manifest = json.loads((ROOT / "data/lean-checks-historical.json").read_text())
+        manifest = json.loads(
+            (ROOT / "data/lean-checks-historical.json").read_text(encoding="utf-8")
+        )
         revision = subprocess.run(
             ["git", "-C", str(args.packages / "mathlib"), "rev-parse", "HEAD"],
             capture_output=True,

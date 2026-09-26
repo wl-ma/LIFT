@@ -2,7 +2,7 @@
 
 ## Paper and data
 
-The initial public package follows the version6 manuscript fixed on 26 September 2026 at 16:27 Beijing time. The paper source hash is recorded in [release-provenance.json](../data/release-provenance.json); the manuscript itself is not bundled here.
+The current public package follows the version10 manuscript fixed on 26 September 2026 at 17:50 Beijing time. The initial version6 snapshot remains recorded in provenance; the experimental totals and original Lean source bytes are unchanged. The paper source hash is recorded in [release-provenance.json](../data/release-provenance.json); the manuscript itself is not bundled here.
 
 The construction and action tables derive from retained M2F project exports. The seven proof batches and 249 obligation links derive from recorded stage handoffs. Release-local project/obligation labels replace service identifiers; statistical units and values are retained. The raw action file is aggregated by project and decision. Complete logs, original textbook files, private service configuration, and full historical archives are outside this package.
 

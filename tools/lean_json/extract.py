@@ -49,7 +49,7 @@ def extract(
 ) -> dict:
     """Extract exact target identities; never infer types from source text."""
     project = project.resolve(strict=True)
-    declared = (project / "lean-toolchain").read_text().strip()
+    declared = (project / "lean-toolchain").read_text(encoding="utf-8").strip()
     version = declared.removeprefix("leanprover/lean4:").removeprefix("v")
     if version not in SUPPORTED:
         raise ValueError(
@@ -74,7 +74,7 @@ def extract(
             requested = "\n".join(names) if names else "*"
             driver.write_text(
                 f"import {module}\n"
-                + EXTRACTOR.read_text()
+                + EXTRACTOR.read_text(encoding="utf-8")
                 + "\nset_option maxRecDepth 100000\nset_option maxHeartbeats 0\n"
                 + "#harness_dump_module "
                 + json.dumps(module)

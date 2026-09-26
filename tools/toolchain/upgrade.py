@@ -50,12 +50,12 @@ def prepare(
         raise ValueError("Destination must be a new directory outside the source")
     if not re.fullmatch(r"leanprover/lean4:v\d+\.\d+\.\d+", target):
         raise ValueError("Target must be an explicit stable leanprover/lean4:vX.Y.Z")
-    original = (source / "lean-toolchain").read_text().strip()
+    original = (source / "lean-toolchain").read_text(encoding="utf-8").strip()
     if (source / "lakefile.lean").exists():
         raise ValueError(
             "lakefile.lean requires manual dependency adaptation; only TOML is supported"
         )
-    config = (source / "lakefile.toml").read_text()
+    config = (source / "lakefile.toml").read_text(encoding="utf-8")
     sections = re.split(r"(?=^\[\[require\]\])", config, flags=re.MULTILINE)
     mathlib_count = 0
     for index, section in enumerate(sections):
@@ -122,6 +122,8 @@ def compare(before: dict, after: dict) -> dict:
     def index(bundle: dict) -> dict:
         if bundle.get("schema") != "lift.compiler-facts.v1":
             raise ValueError("Expected a LIFT compiler-fact export")
+        if not bundle.get("records"):
+            raise ValueError("Cannot compare an empty compiler-fact export")
         entries = {r["declaration_key"]: r for r in bundle["records"]}
         if len(entries) != len(bundle["records"]):
             raise ValueError("Duplicate declaration identities")
@@ -129,6 +131,7 @@ def compare(before: dict, after: dict) -> dict:
 
     old, new = index(before), index(after)
     fields = (
+        "kind",
         "type",
         "definition_value",
         "axioms",
@@ -180,7 +183,8 @@ def main() -> int:
         return result.returncode
     else:
         report = compare(
-            json.loads(args.before.read_text()), json.loads(args.after.read_text())
+            json.loads(args.before.read_text(encoding="utf-8")),
+            json.loads(args.after.read_text(encoding="utf-8")),
         )
     print(json.dumps(report, indent=2))
     return 1 if report.get("status") == "review_required" else 0
