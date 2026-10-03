@@ -1,0 +1,54 @@
+{
+  "schema": "lift.independent-live-review.v1",
+  "reviewer": "Codex_independent_source_review",
+  "cases": [
+    {
+      "case": "structure",
+      "sha256": "ca5ea2e1f5f072d6e9a1e83671c0e6b6f4ea422df0610029766f59e317b022c7",
+      "reviewed": true,
+      "reason": "Accepted text retains Nat curvature, strict positivity as constructor evidence and Int center.",
+      "source_artifact_identifier": "standalone-live-r04/natural/unit-0000-round-00.draft.json"
+    },
+    {
+      "case": "energy",
+      "sha256": "8c57a2e5111678327047e601473c2482e6bf502a238fce94cdf449eeff98a358",
+      "reviewed": true,
+      "reason": "Compared full constructor and structure_fields evidence and the exact definition body: Nat-to-Int coercion, integer subtraction and multiplication, exponent two; no missing positivity or additional assumptions.",
+      "source_artifact_identifier": "standalone-live-r05/energy-complete-natural/result.json"
+    },
+    {
+      "case": "theorem",
+      "sha256": "dae561d4829bd08557de4b4c8ff7878879ce801576df06b095c0de932e06f9e5",
+      "reviewed": true,
+      "reason": "Universal Nat n,m,k and premise n <= m are retained, with conclusion n+k <= m+k.",
+      "source_artifact_identifier": "standalone-live-r05/theorem-natural/result.json"
+    },
+    {
+      "case": "negative-control",
+      "sha256": "8c50e25d2340ae2e12425b6200aa71711fdd59122506bf7a2f5852424d0a9e88",
+      "reviewed": true,
+      "reason": "The intentionally missing premise is rejected rather than silently restored or accepted.",
+      "source_artifact_identifier": "standalone-live-r05/negative-review.json"
+    },
+    {
+      "case": "reaslib",
+      "sha256": "e1eefa3be3cf207651974f11d77ccf0c1fad9b984d3d72fa3a0014de411848ac",
+      "reviewed": true,
+      "reason": "Compared actual StrongC1.lean structure and all six compiler records. Exact four fields and lower inequality retained; no finite dimension, nonempty/open domain, unique derivative or whole-space smoothness added. fderivWithin denotes the selected within derivative.",
+      "source_artifact_identifier": "standalone-live-r05/reaslib-natural/result.json"
+    },
+    {
+      "case": "migration",
+      "sha256": "f36f3d198127117df91a893a86ffce510e46ec9177d997a65a6c6bb53f6f1d61",
+      "reviewed": true,
+      "reason": "Reviewed actual import-only patch, failed target build, successful rebuilt target, preserved full declaration evidence and identical original two client source hashes.",
+      "source_artifact_identifier": "standalone-live-r05/migration/report.json"
+    }
+  ],
+  "scope": "Independent comparison of these concrete outputs against source and compiler evidence, not a formal proof of natural-language equivalence or a general tool benchmark.",
+  "previous_failed_or_undecided_runs_retained": true,
+  "review_model_usage": "unknown",
+  "additional_experiment_model_calls": 0,
+  "source_review_sha256": "aec22a8d6486d769aaee84d4cbe77da42c6a07a344b99a7e56f50e16dadce865",
+  "portable_evidence_sha256": "9fa194795bee729a115a2f1ac58f97206f6bc2794cfbf6e72514d4c84c7ac783"
+}

@@ -1,11 +1,17 @@
-# License and attribution scope
+# Licenses
 
-| Surface | Applicable terms |
+Original LIFT software is licensed under [Apache-2.0](LICENSE). Original documentation, paper figures, and curated statistical datasets are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). Attribution for these materials may use **LIFT contributors**, the repository title, and its distribution URL.
+
+| Material | Terms |
 | --- | --- |
-| examples/normal-cone/ReasLib/ and historical source excerpt | Original per-file Apache-2.0 notices, retained verbatim; see [license text](examples/normal-cone/LICENSE) and [NOTICE](examples/normal-cone/NOTICE) |
-| ReasBook-derived examples/beck/ source and original-source patch | Apache-2.0; [upstream license text](third_party/ReasBook-LICENSE); experimental generated additions are identified as such |
-| Existing Nocedal/Riemann-surfaces mathematical exports | Original notices retained. No blanket license grant is inferred for files without an explicit grant |
-| Recorded statistical data and validation evidence | Released for inspection and reproduction; underlying content rights and source attribution remain separate; no new blanket data license |
-| New LIFT scripts, tests, wrappers and documentation | No new license grant pending the repository owner's explicit choice |
+| `src/`, `scripts/`, `tests/`, Python wrappers in `tools/`, original example fixtures, and the offline browser implementation | Apache-2.0 |
+| Original Markdown documentation (except the executable role prompts below), `docs/assets/`, browser explanatory content, statistical CSVs and curated metadata | CC BY 4.0 |
+| Normal-cone original modules and retained source excerpt | Apache-2.0; contributor headers, [license](examples/paper-cases/normal-cone/LICENSE) and [notice](examples/paper-cases/normal-cone/NOTICE) apply |
+| ReasBook-derived Beck sources and source-context patch | Apache-2.0; [upstream license](third_party/ReasBook-LICENSE) and existing notices apply |
+| Generated Lean library and independent clients under `examples/reaslib-serial/` | Apache-2.0; bibliography identifies the mathematical sources |
+| Supplementary Lean projects under `experiments/serial-library-growth/supplementary/` | Apache-2.0; bibliography identifies the mathematical sources |
+| Five Nocedal/Riemann-surfaces Lean exports under `examples/paper-cases/reaslib/` | Apache-2.0 |
+| `tools/lean_json/HarnessFacts.lean` and `tools/lean_json/prompts/` | Apache-2.0 |
+| Third-party report excerpts and downloaded dependencies | Respective upstream terms |
 
-A GitHub URL or successful compilation is not a license. No third-party component is relicensed by this package. File hashes and origins are in [release provenance](data/release-provenance.json) and the case manifests.
+Third-party copyright and attribution notices remain part of the distribution. File origins and hashes are recorded in [provenance](metadata/provenance.json).

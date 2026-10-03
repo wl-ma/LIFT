@@ -1,0 +1,14 @@
+{
+  "schema": "lift.public-release-review.v1",
+  "release": "R4",
+  "accepted": true,
+  "source_identity": "9c0e332940d62b0e31694f62b51bfbdd9b38e18a1dfdd54234e636dc267af110",
+  "original_review_sha256": "77e2e2c51157e781c13effb91e27781dee31a5e40a7b972fcf62d19fe789bd5c",
+  "trusted_declarations": 134,
+  "full_original_types_preserved": true,
+  "private_and_generated_inventory_complete": true,
+  "fixed_clients_passed": 34,
+  "boundary_examples_passed": 13,
+  "evaluation_model_calls": 0,
+  "review_usage": null
+}

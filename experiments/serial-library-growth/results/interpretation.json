@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "release": "R5",
+  "selected_source_units": 12,
+  "books": 3,
+  "trusted_library_declarations": 180,
+  "original_source_interfaces": 18,
+  "representation_obligations": 51,
+  "independent_clients": 17,
+  "extended_real_boundary_clients": 4,
+  "construction": "One project extended serially through statement preparation, library integration and proof.",
+  "production_reuse": [
+    {
+      "consumer": "Bauschke quadratic-shift equivalence",
+      "provider": "Beck quadratic norm identity",
+      "evidence": "Compiled proof dependency closure and source review."
+    },
+    {
+      "consumer": "Beck constrained quadratic",
+      "provider": "StrongConvex.add_convex",
+      "evidence": "Compiled value dependency."
+    },
+    {
+      "consumer": "Bauschke subdifferential strong monotonicity",
+      "provider": "strongConvex_iff_strongConvexOn",
+      "evidence": "Compiled value dependency path through quadratic support."
+    }
+  ],
+  "nesterov_content": "Derivative monotonicity, first-order lower bounds and quadratic Jensen equivalences for arbitrary norms and convex domains.",
+  "three_source_example": "Independent evaluator-written consumers identify the real and extended-real versions of the same quadratic function.",
+  "independent_replacement_score": null,
+  "comparative_method_improvement": null,
+  "manual_interface_assistance": "Exact source-facing compatibility goals and aggregate imports were supplied by the evaluator; native model runs proved the compatibility goals.",
+  "generated_proof_body_edits": 0,
+  "usage": {
+    "settled_tokens": 25682640,
+    "settled_calls": 185,
+    "settled_provider_retries": 1,
+    "actual_total_tokens": null,
+    "actual_total_calls": null,
+    "interrupted_attempts_with_unknown_usage": 1,
+    "currency_cost": null,
+    "review_usage": null,
+    "extension_calls_with_unknown_usage": 2
+  },
+  "fixed_source_client_checks": 69,
+  "extension_boundary_examples": 25,
+  "manual_compatibility_assistance": "Exact source-facing recovery goals and import aggregation supplied during validation; model proof runs discharge recovery goals. Three import-only forwarding modules preserve the final original import surface.",
+  "initial_nesterov_previous_library_dependency": false,
+  "nesterov_extension_bridge": "StrongConvexC1On.iff_strongConvex_coe uses the accepted real/EReal equivalence; other new proofs are classified by their actual dependency paths."
+}

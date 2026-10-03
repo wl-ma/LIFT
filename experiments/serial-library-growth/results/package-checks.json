@@ -1,0 +1,1548 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "accepted_source_identity": "02aa84f81d84ffe3245af1ecb4fb535cea12cca77ccc0e5223ae90a0d47d8bde",
+  "package_source_identity": "119b6c8d10649d41386231056bdaebae1abdc5cb9641cb32edefbbc7cd9d0a5c",
+  "dataset_sha256": "87748a1f8bced9fc7078cb45dd64579fa352bdde59a97a82811fe7c882817916",
+  "package_manifest_sha256": "307bcaac536abb37e6e63436cf5f0277ef4d99ac6b94d86073166c70a6364af8",
+  "lean_version": "Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+  "mathlib_revision": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "library_axioms": {
+    "mem_effectiveDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mem_effectiveDomain._simp_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effectiveDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effectiveDomain_coe_eq_univ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effectiveDomain_eq_lt_top": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ReasLib.Analysis.Convex.erealIndicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.InnerProductSpace.NormSq.0.Analysis.InnerProductSpace.sqCombo_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Analysis.InnerProductSpace.norm_sq_smul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Analysis.InnerProductSpace.euclideanNormSq_combo_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Analysis.InnerProductSpace.real_inner_smul_smul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.effectiveDomain_add._simp_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.botLt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.ReasLib.Analysis.Convex.halfNormSqEReal_strongConvex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.coe_iff_strongConvexOn_univ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.ReasLib.Analysis.Convex.bot_lt_erealIndicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.sub_strongConvexModulus_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvex_iff_strongConvexOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.convexOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ReasLib.Analysis.Convex.halfNormSq_add_erealIndicator_strongConvex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.weightedSub_coe_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.le_weightedSub_toReal_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.coe_toReal_of_mem_effectiveDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.ofConditions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.iff_proper_Ioo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.convexDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ReasLib.Analysis.Convex.erealIndicator.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvex_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.coe_strongConvexModulus_mul_comm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.toReal_add_of_mem_effectiveDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.leCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.jensen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexOn_iff_exists_convex_add_normSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.effectiveDomain_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.effectiveDomain_add._simp_1_2": [
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.ReasLib.Analysis.Convex.erealIndicator_le_combo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.eqOn_of_add_normSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.le_toReal_of_extendedJensen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.StrongConvex.coe_iff_strongConvexOn_univ._simp_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.sigmaPos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Analysis.Convex.strongConvex_iff_convex_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.leCombo_at_endpoint": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.ReasLib.Analysis.Convex.effectiveDomain_erealIndicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.convex_effectiveDomain_of_leCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.sub_coe_le_of_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.add_convex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.le_sub_coe_iff_add_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.leCombo_Icc_iff_Ioo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.convexOn_toReal_sub_normSq_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "leCombo_Ioo_iff_convex_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.add_coe_le_weighted_iff_toReal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.subNormSq_convexCombo_le_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.subNormSq_convexCombo_le_of_top": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.subNormSq._proof_1": [
+      "propext"
+    ],
+    "strongConvex_iff_convex_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.subNormSq_weighted_le_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "subNormSq_eq_coe_toReal_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.convexCombo_quadraticGap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.weightedSub_le_iff_add_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effectiveDomain_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.leCombo_Ioo_iff_convex_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.congr": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_fderivMono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_fderivMono_convexCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.lower_of_fderivWithin_mono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.lower_of_convexCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.HasFDerivWithinAt.apply_sub_eq_of_convex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.convexDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.slope_le_of_convexCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.le_of_fderiv_eq_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.hasDerivAt_comp_lineMap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.le_sub_fderivWithin_of_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.convexCombo_quadratic_of_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_convexCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.ofConditions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.le_of_hasFDerivWithinAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.segmentDeriv_ge_of_fderivMono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.contDiffOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.muPos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.differentiableOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexC1On_iff_of_finiteDimensional": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_strongConvexOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexC1On_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexOn_iff_segment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_strongConvex_coe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.muNonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1Nonneg.0.hasFDerivWithinAt_apply_sub_eq_of_convex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.nonnegCombination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1Nonneg.0.contDiffOn_linearCombination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ConvexC1On": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.contDiffOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "convexC1On_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.ofConditions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.convexDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1Nonneg.0.fderivWithin_linearCombination_apply_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ConvexC1On.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.nonnegCombination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1NonnegOn.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexC1NonnegOn_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexC1On_iff_nonneg_and_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StronglyMonotone.to_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StronglyMonotone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "stronglyMonotone_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StronglyMonotone.le_inner": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "subdifferential_eq_empty_of_notMem_effectiveDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Subdifferential.0.le_of_forall_mem_Ioo_add_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mem_subdifferential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Subdifferential.0.convexCombo_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.le_inner_subdifferential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "subdifferential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.subdifferential_stronglyMonotone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Subdifferential.0.toReal_add_inner_le_of_mem_subdifferential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.le_toReal_add_sq_of_mem_subdifferential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Subdifferential.0.inner_sub_le_of_quadratic_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "cocoercive_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "cocoercive_iff_inner_comm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.InnerProductSpace.Cocoercive.0.norm_le_inv_mul_norm_of_mul_norm_sq_le_inner": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Cocoercive.lipschitzWith": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Cocoercive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Cocoercive.norm_sub_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "stronglyMonotone_iff_resolvent_cocoercive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolventDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.InnerProductSpace.Resolvent.0.mem_resolventDomain._simp_1_2": [
+      "propext"
+    ],
+    "idAdd.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolvent_norm_sub_le_of_cocoercive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "stronglyMonotone_iff_resolvent_graph": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolvent_mem_idAdd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolventDomain.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StronglyMonotone.resolvent_cocoercive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "operatorResolvent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolvent_eq_of_sub_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mem_idAdd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.InnerProductSpace.Resolvent.0.mem_resolventDomain._simp_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolvent_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "exists_mem_resolventDomain_of_sub_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "idAdd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "operatorResolvent._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolvent_lipschitzWith": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sub_mem_iff_eq_resolvent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mem_resolventDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Cocoercive.stronglyMonotone_resolvent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolvent_norm_sub_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolvent_lipschitzWith_coe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "resolvent_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mem_resolventDomain_iff_sub_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.InnerProductSpace.Resolvent.0.mul_normSq_le_inner_sub_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "erealIndicator.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "erealIndicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "erealIndicator_of_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "erealIndicator_of_notMem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "bot_lt_erealIndicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mem_effectiveDomain_erealIndicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "halfNormSqEReal_strongConvex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "halfNormSq_add_erealIndicator_eq_top_of_notMem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "halfNormSq_add_erealIndicator_strongConvex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "halfNormSq_add_erealIndicator_eq_coe_of_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "erealIndicator_le_combo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effectiveDomain_halfNormSq_add_erealIndicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.combination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nesterov.StrongConvexC1On.le_of_fderiv_eq_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "clients": {
+    "ReasLibDemo/Clients/ExtendedRealBoundaries.lean": {
+      "SerialBoundaryChecks.top_allowed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "SerialBoundaryChecks.bottom_rejected": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "SerialBoundaryChecks.zero_rejected": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "SerialBoundaryChecks.exact_shift": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "ReasLibDemo/Clients/ThreeSourceQuadratic.lean": {
+      "ReasLibDemoClients.halfNormSq_domain": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_proper": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_strongConvex": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_beck": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_bauschke_inequality": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_bauschke_shift": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.empty_domain": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.singleton_domain": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.scalarQuadratic_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.scalarQuadratic_monotone": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.ambient_max_norm": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.axisQuadratic_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.tiltedQuadratic_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.axis_witness_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibThreeSourceClients.same_quadratic": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibThreeSourceClients.same_real_values": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibThreeSourceClients.shared_quadratic_views": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "ReasLibDemo/Clients/Frozen/06428dee445c6910.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/0912045f3dd5c8aa.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/0b04cd92046814a3.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/0c71b3df807400e2.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/10542623780864a7.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/18ec72eeb50288cc.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/1bcd3b724bc2e632.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/1bd1d865bd6bb7ff.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/1e1dfb237b00d588.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/22b3c6454acb5723.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/27b6581c0fb83c01.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/29740b30bf0a3d88.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/2d705add578b7541.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/3347f01c1ee1bb57.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/33aee4118bf80786.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/374de387a9bb74fd.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/37f3cc536a8c54c9.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/3b080747564bd9ba.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/3eee6212671d954d.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/3f42d7a88d2ae142.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/3fe0c7378064569a.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/42ce02ac922ea024.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/48349aaf097ca19f.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/4a9f0732bb821a13.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/4be6a6e97cd47f16.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/5270e71fdfb110b7.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/5948685b9e2c8e62.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/606ba13ed1c10c42.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/60efaf8894f8ccec.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/613c032874e47d32.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/64268de7481b6b0c.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/660c3af067e763e8.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/69c4e5fd963269c9.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/6a893ba95a837659.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/6bd9611f9a4a4811.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/6d34531be9601211.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/6f67aec3a9ee4706.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/7001b5df9c8f0cec.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/70d2fddcfb98cc40.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/797e5bd1d47bb1ae.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/7e0718dea46bc095.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/8114b245797cba7d.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/815ccf91688be190.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/83fcc8d7b5c8db0c.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/84448d1d60fc36e9.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/9c4280a8ec293488.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/a982b75310ae000a.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/ab3d337c8568831d.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/b14f8a26c25afc3a.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/b22513ef9d1bf65c.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/b3a15b5737302453.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/bb981caa85aa515c.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/c6d9c0666ba88a4d.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/c9bbaf36f5728095.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/c9f2bc58dd362920.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/ca25cc488842c678.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/cabeda8feb78b235.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/cc518aeaf701f4f4.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/d019f3bca93d23c5.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/d27ee5a16f3ae210.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/d7893f8700e93465.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/deb1ed916823fc02.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/e4a0624c81d5638d.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/ea212038e218955b.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/eecaf38a72ffb6c5.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/f04956fbc4b5e31e.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/f108c9cc40924fd0.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/f78d9a15bb68ed7b.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/Frozen/fbce052485ff5658.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/BeckBoundaries.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/NesterovBoundaries.lean": {
+      "compiled": true
+    },
+    "ReasLibDemo/Clients/BauschkeBoundaries.lean": {
+      "compiled": true
+    }
+  },
+  "compile_only_client_files": 72,
+  "fixed_source_client_checks": 69,
+  "extension_boundary_examples": 25,
+  "checks": [
+    {
+      "check": "version",
+      "returncode": 0
+    },
+    {
+      "check": "build",
+      "returncode": 0
+    },
+    {
+      "check": "library-axioms",
+      "returncode": 0
+    },
+    {
+      "check": "clients-0",
+      "returncode": 0
+    },
+    {
+      "check": "clients-1",
+      "returncode": 0
+    },
+    {
+      "check": "clients-2",
+      "returncode": 0
+    },
+    {
+      "check": "clients-3",
+      "returncode": 0
+    },
+    {
+      "check": "clients-4",
+      "returncode": 0
+    },
+    {
+      "check": "clients-5",
+      "returncode": 0
+    },
+    {
+      "check": "clients-6",
+      "returncode": 0
+    },
+    {
+      "check": "clients-7",
+      "returncode": 0
+    },
+    {
+      "check": "clients-8",
+      "returncode": 0
+    },
+    {
+      "check": "clients-9",
+      "returncode": 0
+    },
+    {
+      "check": "clients-10",
+      "returncode": 0
+    },
+    {
+      "check": "clients-11",
+      "returncode": 0
+    },
+    {
+      "check": "clients-12",
+      "returncode": 0
+    },
+    {
+      "check": "clients-13",
+      "returncode": 0
+    },
+    {
+      "check": "clients-14",
+      "returncode": 0
+    },
+    {
+      "check": "clients-15",
+      "returncode": 0
+    },
+    {
+      "check": "clients-16",
+      "returncode": 0
+    },
+    {
+      "check": "clients-17",
+      "returncode": 0
+    },
+    {
+      "check": "clients-18",
+      "returncode": 0
+    },
+    {
+      "check": "clients-19",
+      "returncode": 0
+    },
+    {
+      "check": "clients-20",
+      "returncode": 0
+    },
+    {
+      "check": "clients-21",
+      "returncode": 0
+    },
+    {
+      "check": "clients-22",
+      "returncode": 0
+    },
+    {
+      "check": "clients-23",
+      "returncode": 0
+    },
+    {
+      "check": "clients-24",
+      "returncode": 0
+    },
+    {
+      "check": "clients-25",
+      "returncode": 0
+    },
+    {
+      "check": "clients-26",
+      "returncode": 0
+    },
+    {
+      "check": "clients-27",
+      "returncode": 0
+    },
+    {
+      "check": "clients-28",
+      "returncode": 0
+    },
+    {
+      "check": "clients-29",
+      "returncode": 0
+    },
+    {
+      "check": "clients-30",
+      "returncode": 0
+    },
+    {
+      "check": "clients-31",
+      "returncode": 0
+    },
+    {
+      "check": "clients-32",
+      "returncode": 0
+    },
+    {
+      "check": "clients-33",
+      "returncode": 0
+    },
+    {
+      "check": "clients-34",
+      "returncode": 0
+    },
+    {
+      "check": "clients-35",
+      "returncode": 0
+    },
+    {
+      "check": "clients-36",
+      "returncode": 0
+    },
+    {
+      "check": "clients-37",
+      "returncode": 0
+    },
+    {
+      "check": "clients-38",
+      "returncode": 0
+    },
+    {
+      "check": "clients-39",
+      "returncode": 0
+    },
+    {
+      "check": "clients-40",
+      "returncode": 0
+    },
+    {
+      "check": "clients-41",
+      "returncode": 0
+    },
+    {
+      "check": "clients-42",
+      "returncode": 0
+    },
+    {
+      "check": "clients-43",
+      "returncode": 0
+    },
+    {
+      "check": "clients-44",
+      "returncode": 0
+    },
+    {
+      "check": "clients-45",
+      "returncode": 0
+    },
+    {
+      "check": "clients-46",
+      "returncode": 0
+    },
+    {
+      "check": "clients-47",
+      "returncode": 0
+    },
+    {
+      "check": "clients-48",
+      "returncode": 0
+    },
+    {
+      "check": "clients-49",
+      "returncode": 0
+    },
+    {
+      "check": "clients-50",
+      "returncode": 0
+    },
+    {
+      "check": "clients-51",
+      "returncode": 0
+    },
+    {
+      "check": "clients-52",
+      "returncode": 0
+    },
+    {
+      "check": "clients-53",
+      "returncode": 0
+    },
+    {
+      "check": "clients-54",
+      "returncode": 0
+    },
+    {
+      "check": "clients-55",
+      "returncode": 0
+    },
+    {
+      "check": "clients-56",
+      "returncode": 0
+    },
+    {
+      "check": "clients-57",
+      "returncode": 0
+    },
+    {
+      "check": "clients-58",
+      "returncode": 0
+    },
+    {
+      "check": "clients-59",
+      "returncode": 0
+    },
+    {
+      "check": "clients-60",
+      "returncode": 0
+    },
+    {
+      "check": "clients-61",
+      "returncode": 0
+    },
+    {
+      "check": "clients-62",
+      "returncode": 0
+    },
+    {
+      "check": "clients-63",
+      "returncode": 0
+    },
+    {
+      "check": "clients-64",
+      "returncode": 0
+    },
+    {
+      "check": "clients-65",
+      "returncode": 0
+    },
+    {
+      "check": "clients-66",
+      "returncode": 0
+    },
+    {
+      "check": "clients-67",
+      "returncode": 0
+    },
+    {
+      "check": "clients-68",
+      "returncode": 0
+    },
+    {
+      "check": "clients-69",
+      "returncode": 0
+    },
+    {
+      "check": "clients-70",
+      "returncode": 0
+    },
+    {
+      "check": "clients-71",
+      "returncode": 0
+    },
+    {
+      "check": "clients-72",
+      "returncode": 0
+    },
+    {
+      "check": "clients-73",
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 184.10693054500007,
+  "model_calls": 0
+}

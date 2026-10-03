@@ -1,0 +1,2363 @@
+{
+  "schema": "lift.live-natural-evidence.v1",
+  "records": [
+    {
+      "compiler": {
+        "axioms": [],
+        "constructors": [
+          "SemanticExample.QuadraticModel.mk"
+        ],
+        "definition_value": null,
+        "dependency_modules": {
+          "SemanticExample.QuadraticModel.center": "Semantic",
+          "SemanticExample.QuadraticModel.curvature": "Semantic",
+          "SemanticExample.QuadraticModel.mk": "Semantic",
+          "SemanticExample.QuadraticModel.positive": "Semantic"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "inductive",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.QuadraticModel"
+        ],
+        "name": "SemanticExample.QuadraticModel",
+        "selection_range": {
+          "column_end": 24,
+          "column_start": 10,
+          "line_end": 4,
+          "line_start": 4
+        },
+        "source_range": {
+          "column_end": 14,
+          "column_start": 0,
+          "line_end": 7,
+          "line_start": 3
+        },
+        "structure_fields": [
+          "SemanticExample.QuadraticModel.center",
+          "SemanticExample.QuadraticModel.curvature",
+          "SemanticExample.QuadraticModel.positive"
+        ],
+        "type": "Type",
+        "type_dependencies": [
+          "SemanticExample.QuadraticModel.center",
+          "SemanticExample.QuadraticModel.curvature",
+          "SemanticExample.QuadraticModel.mk",
+          "SemanticExample.QuadraticModel.positive"
+        ],
+        "value_available": false,
+        "value_dependencies": [],
+        "declaration_key": "Semantic::SemanticExample.QuadraticModel"
+      },
+      "natural": {
+        "statement": "A quadratic model is an inductive type whose elements are constructed by supplying a natural number, called the curvature, a hypothesis that zero is strictly less than that curvature, and an integer, called the center. For every quadratic model, its curvature is the natural number given as its first component, its center is the integer given as its third component, and zero is strictly less than its curvature.",
+        "objects": [
+          "QuadraticModel, an inductive type",
+          "curvature, the field sending each quadratic model to a natural number",
+          "center, the field sending each quadratic model to an integer",
+          "positive, the field associating to each quadratic model the assertion that zero is strictly less than its curvature",
+          "mk, the sole constructor of a quadratic model"
+        ],
+        "assumptions": [
+          "The constructor requires the hypothesis that zero is strictly less than the supplied natural-number curvature, where zero is the zero natural number and the comparison is the strict order on the natural numbers",
+          "For every quadratic model, the positivity field asserts that zero is strictly less than the curvature of that model"
+        ],
+        "quantifiers": [
+          "The constructor ranges over a natural number curvature, a proof that zero is strictly less than curvature, and an integer",
+          "For every quadratic model self, zero is strictly less than the curvature of self"
+        ],
+        "definition": "QuadraticModel is the inductive type with constructor mk of construction law (curvature : natural number) followed by the hypothesis (zero is strictly less than curvature) followed by an integer, yielding a quadratic model. The curvature of a quadratic model self is defined by curvature(self) = the first component of self and takes values in the natural numbers. The center of a quadratic model self is defined by center(self) = the third component of self and takes values in the integers. The positivity field states that, for every quadratic model self, zero is strictly less than curvature(self).",
+        "uncertainties": []
+      },
+      "review": {
+        "draft_hash": "6520dbe287d8f43af4d953c40a774e5a2809aa8b2e0ed083477cb85129a523a4",
+        "context_hash": "d266ea594574b8a2361c0c3597b3ccf2560176578303c4cdf21624510dc65978",
+        "status": "passed",
+        "checks": {
+          "objects_and_quantifiers": {
+            "verdict": "passed",
+            "reason": "QuadraticModel is the inductive type with sole constructor mk. The constructor quantifies over a named natural-number curvature, a proof that zero is strictly less than that curvature, and an integer. Separately, positive quantifies over every quadratic model self and asserts that zero is strictly less than self.curvature. Curvature and center are the projections to Nat and Int.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.QuadraticModel.mk",
+              "field": "type",
+              "excerpt": "(curvature : Nat) → 0 < curvature → Int → SemanticExample.QuadraticModel"
+            }
+          },
+          "hypotheses_and_domains": {
+            "verdict": "passed",
+            "reason": "The only constructor hypothesis is the strict inequality 0 < curvature, with curvature in Nat and the comparison depending on LT.lt, OfNat.ofNat, instLTNat, and instOfNatNat, so zero is the zero natural number under the strict order on natural numbers. The integer argument has domain Int. The positivity statement repeats that hypothesis for the curvature of an arbitrary model and adds no further assumption.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.QuadraticModel.positive",
+              "field": "type",
+              "excerpt": "∀ (self : SemanticExample.QuadraticModel), 0 < self.curvature"
+            }
+          },
+          "conclusion_and_formula": {
+            "verdict": "passed",
+            "reason": "The draft's three conclusions match the compiler data: curvature projects to the first component and lands in Nat, center projects to the third component and lands in Int, and every quadratic model satisfies zero strictly less than its curvature. No extra formula or renamed bound is introduced.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.QuadraticModel.center",
+              "field": "definition_value",
+              "excerpt": "fun (self : SemanticExample.QuadraticModel) => self.3"
+            }
+          },
+          "definition_and_construction": {
+            "verdict": "passed",
+            "reason": "QuadraticModel is inductive of type Type with constructor mk of law (curvature : Nat) → 0 < curvature → Int → QuadraticModel. curvature is defined as self.1 into Nat and center as self.3 into Int. positive is the structure field whose type is the universal strict inequality; the draft states that proposition and does not invent a definitional equation where definition_value is absent.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.QuadraticModel.curvature",
+              "field": "definition_value",
+              "excerpt": "fun (self : SemanticExample.QuadraticModel) => self.1"
+            }
+          }
+        },
+        "issues": [],
+        "context_requests": []
+      },
+      "compiler_context": [
+        {
+          "axioms": [],
+          "constructors": [
+            "SemanticExample.QuadraticModel.mk"
+          ],
+          "definition_value": null,
+          "dependency_modules": {
+            "SemanticExample.QuadraticModel.center": "Semantic",
+            "SemanticExample.QuadraticModel.curvature": "Semantic",
+            "SemanticExample.QuadraticModel.mk": "Semantic",
+            "SemanticExample.QuadraticModel.positive": "Semantic"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "inductive",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel"
+          ],
+          "name": "SemanticExample.QuadraticModel",
+          "selection_range": {
+            "column_end": 24,
+            "column_start": 10,
+            "line_end": 4,
+            "line_start": 4
+          },
+          "source_range": {
+            "column_end": 14,
+            "column_start": 0,
+            "line_end": 7,
+            "line_start": 3
+          },
+          "structure_fields": [
+            "SemanticExample.QuadraticModel.center",
+            "SemanticExample.QuadraticModel.curvature",
+            "SemanticExample.QuadraticModel.positive"
+          ],
+          "type": "Type",
+          "type_dependencies": [
+            "SemanticExample.QuadraticModel.center",
+            "SemanticExample.QuadraticModel.curvature",
+            "SemanticExample.QuadraticModel.mk",
+            "SemanticExample.QuadraticModel.positive"
+          ],
+          "value_available": false,
+          "value_dependencies": [],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": "fun (self : SemanticExample.QuadraticModel) => self.3",
+          "dependency_modules": {
+            "Int": "Init.Data.Int.Basic",
+            "SemanticExample.QuadraticModel": "Semantic"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "def",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel.center"
+          ],
+          "name": "SemanticExample.QuadraticModel.center",
+          "selection_range": {
+            "column_end": 8,
+            "column_start": 2,
+            "line_end": 7,
+            "line_start": 7
+          },
+          "source_range": {
+            "column_end": 8,
+            "column_start": 2,
+            "line_end": 7,
+            "line_start": 7
+          },
+          "structure_fields": [],
+          "type": "SemanticExample.QuadraticModel → Int",
+          "type_dependencies": [
+            "Int",
+            "SemanticExample.QuadraticModel"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "SemanticExample.QuadraticModel"
+          ],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel.center"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": "fun (self : SemanticExample.QuadraticModel) => self.1",
+          "dependency_modules": {
+            "Nat": "Init.Prelude",
+            "SemanticExample.QuadraticModel": "Semantic"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "def",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel.curvature"
+          ],
+          "name": "SemanticExample.QuadraticModel.curvature",
+          "selection_range": {
+            "column_end": 11,
+            "column_start": 2,
+            "line_end": 5,
+            "line_start": 5
+          },
+          "source_range": {
+            "column_end": 11,
+            "column_start": 2,
+            "line_end": 5,
+            "line_start": 5
+          },
+          "structure_fields": [],
+          "type": "SemanticExample.QuadraticModel → Nat",
+          "type_dependencies": [
+            "Nat",
+            "SemanticExample.QuadraticModel"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "SemanticExample.QuadraticModel"
+          ],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel.curvature"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "Int": "Init.Data.Int.Basic",
+            "LT.lt": "Init.Prelude",
+            "Nat": "Init.Prelude",
+            "OfNat.ofNat": "Init.Prelude",
+            "SemanticExample.QuadraticModel": "Semantic",
+            "instLTNat": "Init.Prelude",
+            "instOfNatNat": "Init.Prelude"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "constructor",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel.mk"
+          ],
+          "name": "SemanticExample.QuadraticModel.mk",
+          "selection_range": {
+            "column_end": 24,
+            "column_start": 10,
+            "line_end": 4,
+            "line_start": 4
+          },
+          "source_range": {
+            "column_end": 24,
+            "column_start": 10,
+            "line_end": 4,
+            "line_start": 4
+          },
+          "structure_fields": [],
+          "type": "(curvature : Nat) → 0 < curvature → Int → SemanticExample.QuadraticModel",
+          "type_dependencies": [
+            "Int",
+            "LT.lt",
+            "Nat",
+            "OfNat.ofNat",
+            "SemanticExample.QuadraticModel",
+            "instLTNat",
+            "instOfNatNat"
+          ],
+          "value_available": false,
+          "value_dependencies": [],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel.mk"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "LT.lt": "Init.Prelude",
+            "Nat": "Init.Prelude",
+            "OfNat.ofNat": "Init.Prelude",
+            "SemanticExample.QuadraticModel": "Semantic",
+            "SemanticExample.QuadraticModel.curvature": "Semantic",
+            "instLTNat": "Init.Prelude",
+            "instOfNatNat": "Init.Prelude"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "theorem",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel.positive"
+          ],
+          "name": "SemanticExample.QuadraticModel.positive",
+          "selection_range": {
+            "column_end": 10,
+            "column_start": 2,
+            "line_end": 6,
+            "line_start": 6
+          },
+          "source_range": {
+            "column_end": 10,
+            "column_start": 2,
+            "line_end": 6,
+            "line_start": 6
+          },
+          "structure_fields": [],
+          "type": "∀ (self : SemanticExample.QuadraticModel), 0 < self.curvature",
+          "type_dependencies": [
+            "LT.lt",
+            "Nat",
+            "OfNat.ofNat",
+            "SemanticExample.QuadraticModel",
+            "SemanticExample.QuadraticModel.curvature",
+            "instLTNat",
+            "instOfNatNat"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "SemanticExample.QuadraticModel"
+          ],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel.positive"
+        }
+      ],
+      "repairs": 0,
+      "context_expansions": 0,
+      "status": "accepted"
+    },
+    {
+      "compiler": {
+        "axioms": [],
+        "constructors": [],
+        "definition_value": "fun (q : SemanticExample.QuadraticModel) (x : Int) => ↑q.curvature * (x - q.center) ^ 2",
+        "dependency_modules": {
+          "HMul.hMul": "Init.Prelude",
+          "HPow.hPow": "Init.Prelude",
+          "HSub.hSub": "Init.Prelude",
+          "Int": "Init.Data.Int.Basic",
+          "Int.instMul": "Init.Data.Int.Basic",
+          "Int.instNatPow": "Init.Data.Int.Basic",
+          "Int.instSub": "Init.Data.Int.Basic",
+          "Nat": "Init.Prelude",
+          "Nat.cast": "Init.Data.Cast",
+          "OfNat.ofNat": "Init.Prelude",
+          "SemanticExample.QuadraticModel": "Semantic",
+          "SemanticExample.QuadraticModel.center": "Semantic",
+          "SemanticExample.QuadraticModel.curvature": "Semantic",
+          "instHMul": "Init.Prelude",
+          "instHPow": "Init.Prelude",
+          "instHSub": "Init.Prelude",
+          "instNatCastInt": "Init.Data.Int.Basic",
+          "instOfNatNat": "Init.Prelude",
+          "instPowNat": "Init.Prelude"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "def",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.energy"
+        ],
+        "name": "SemanticExample.energy",
+        "selection_range": {
+          "column_end": 10,
+          "column_start": 4,
+          "line_end": 10,
+          "line_start": 10
+        },
+        "source_range": {
+          "column_end": 42,
+          "column_start": 0,
+          "line_end": 11,
+          "line_start": 9
+        },
+        "structure_fields": [],
+        "type": "SemanticExample.QuadraticModel → Int → Int",
+        "type_dependencies": [
+          "Int",
+          "SemanticExample.QuadraticModel"
+        ],
+        "value_available": true,
+        "value_dependencies": [
+          "HMul.hMul",
+          "HPow.hPow",
+          "HSub.hSub",
+          "Int",
+          "Int.instMul",
+          "Int.instNatPow",
+          "Int.instSub",
+          "Nat",
+          "Nat.cast",
+          "OfNat.ofNat",
+          "SemanticExample.QuadraticModel",
+          "SemanticExample.QuadraticModel.center",
+          "SemanticExample.QuadraticModel.curvature",
+          "instHMul",
+          "instHPow",
+          "instHSub",
+          "instNatCastInt",
+          "instOfNatNat",
+          "instPowNat"
+        ],
+        "declaration_key": "Semantic::SemanticExample.energy"
+      },
+      "natural": {
+        "statement": "A quadratic model consists of a curvature, a natural number, together with the datum that zero is strictly less than that curvature, and a center, an integer. For every quadratic model q and every integer x, the energy of q at x is the integer equal to the canonical image of the curvature of q in the integers multiplied by the square of the difference between x and the center of q.",
+        "objects": [
+          "q is a quadratic model",
+          "x is an integer",
+          "the curvature of a quadratic model is a natural number",
+          "the center of a quadratic model is an integer",
+          "the energy of q at x is an integer"
+        ],
+        "assumptions": [
+          "Every quadratic model includes the hypothesis that zero is strictly less than its curvature"
+        ],
+        "quantifiers": [
+          "q ranges over all quadratic models",
+          "x ranges over all integers"
+        ],
+        "definition": "A quadratic model is constructed from a natural number called its curvature, a proof that zero is strictly less than that curvature, and an integer called its center. The energy is defined by energy(q, x) = (the curvature of q, coerced from the natural numbers to the integers) multiplied by (x minus the center of q) raised to the natural-number power 2, with subtraction, multiplication, and the resulting value taken in the integers.",
+        "uncertainties": []
+      },
+      "review": {
+        "draft_hash": "50a5fc8c1d294bd6de2377b70ce1ce0310add9a0247f19c5852ff911b81ab537",
+        "context_hash": "f580b2bfecceb65fc18ff1c2bd167462cb51156685177c30f69a17de4b8e2bfb",
+        "status": "passed",
+        "checks": {
+          "objects_and_quantifiers": {
+            "verdict": "passed",
+            "reason": "Energy is a total function of every QuadraticModel q and every Int x, returning Int. Curvature projects to Nat and center projects to Int, matching the stated objects and universal quantifiers.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.energy",
+              "field": "type",
+              "excerpt": "SemanticExample.QuadraticModel → Int → Int"
+            }
+          },
+          "hypotheses_and_domains": {
+            "verdict": "passed",
+            "reason": "Every QuadraticModel carries the hypothesis that zero is strictly less than its curvature, as required by the constructor and recorded by the positive theorem. Energy adds no further hypothesis; curvature stays in Nat and center and x stay in Int.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.QuadraticModel.positive",
+              "field": "type",
+              "excerpt": "0 < self.curvature"
+            }
+          },
+          "conclusion_and_formula": {
+            "verdict": "passed",
+            "reason": "The defining term is the integer cast of q.curvature multiplied by (x - q.center) raised to the natural-number power 2, which is exactly the claimed energy formula and integer result.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.energy",
+              "field": "definition_value",
+              "excerpt": "↑q.curvature * (x - q.center) ^ 2"
+            }
+          },
+          "definition_and_construction": {
+            "verdict": "passed",
+            "reason": "QuadraticModel is constructed from a Nat curvature, a proof that 0 < curvature, and an Int center. The energy definition then uses those projections with Nat-to-Int coercion, integer subtraction, integer multiplication, and natural-number exponent 2.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.QuadraticModel.mk",
+              "field": "type",
+              "excerpt": "(curvature : Nat) → 0 < curvature → Int → SemanticExample.QuadraticModel"
+            }
+          }
+        },
+        "issues": [],
+        "context_requests": []
+      },
+      "compiler_context": [
+        {
+          "axioms": [],
+          "constructors": [
+            "SemanticExample.QuadraticModel.mk"
+          ],
+          "definition_value": null,
+          "dependency_modules": {
+            "SemanticExample.QuadraticModel.center": "Semantic",
+            "SemanticExample.QuadraticModel.curvature": "Semantic",
+            "SemanticExample.QuadraticModel.mk": "Semantic",
+            "SemanticExample.QuadraticModel.positive": "Semantic"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "inductive",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel"
+          ],
+          "name": "SemanticExample.QuadraticModel",
+          "selection_range": {
+            "column_end": 24,
+            "column_start": 10,
+            "line_end": 4,
+            "line_start": 4
+          },
+          "source_range": {
+            "column_end": 14,
+            "column_start": 0,
+            "line_end": 7,
+            "line_start": 3
+          },
+          "structure_fields": [
+            "SemanticExample.QuadraticModel.center",
+            "SemanticExample.QuadraticModel.curvature",
+            "SemanticExample.QuadraticModel.positive"
+          ],
+          "type": "Type",
+          "type_dependencies": [
+            "SemanticExample.QuadraticModel.center",
+            "SemanticExample.QuadraticModel.curvature",
+            "SemanticExample.QuadraticModel.mk",
+            "SemanticExample.QuadraticModel.positive"
+          ],
+          "value_available": false,
+          "value_dependencies": [],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": "fun (self : SemanticExample.QuadraticModel) => self.3",
+          "dependency_modules": {
+            "Int": "Init.Data.Int.Basic",
+            "SemanticExample.QuadraticModel": "Semantic"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "def",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel.center"
+          ],
+          "name": "SemanticExample.QuadraticModel.center",
+          "selection_range": {
+            "column_end": 8,
+            "column_start": 2,
+            "line_end": 7,
+            "line_start": 7
+          },
+          "source_range": {
+            "column_end": 8,
+            "column_start": 2,
+            "line_end": 7,
+            "line_start": 7
+          },
+          "structure_fields": [],
+          "type": "SemanticExample.QuadraticModel → Int",
+          "type_dependencies": [
+            "Int",
+            "SemanticExample.QuadraticModel"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "SemanticExample.QuadraticModel"
+          ],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel.center"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": "fun (self : SemanticExample.QuadraticModel) => self.1",
+          "dependency_modules": {
+            "Nat": "Init.Prelude",
+            "SemanticExample.QuadraticModel": "Semantic"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "def",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel.curvature"
+          ],
+          "name": "SemanticExample.QuadraticModel.curvature",
+          "selection_range": {
+            "column_end": 11,
+            "column_start": 2,
+            "line_end": 5,
+            "line_start": 5
+          },
+          "source_range": {
+            "column_end": 11,
+            "column_start": 2,
+            "line_end": 5,
+            "line_start": 5
+          },
+          "structure_fields": [],
+          "type": "SemanticExample.QuadraticModel → Nat",
+          "type_dependencies": [
+            "Nat",
+            "SemanticExample.QuadraticModel"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "SemanticExample.QuadraticModel"
+          ],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel.curvature"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "Int": "Init.Data.Int.Basic",
+            "LT.lt": "Init.Prelude",
+            "Nat": "Init.Prelude",
+            "OfNat.ofNat": "Init.Prelude",
+            "SemanticExample.QuadraticModel": "Semantic",
+            "instLTNat": "Init.Prelude",
+            "instOfNatNat": "Init.Prelude"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "constructor",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel.mk"
+          ],
+          "name": "SemanticExample.QuadraticModel.mk",
+          "selection_range": {
+            "column_end": 24,
+            "column_start": 10,
+            "line_end": 4,
+            "line_start": 4
+          },
+          "source_range": {
+            "column_end": 24,
+            "column_start": 10,
+            "line_end": 4,
+            "line_start": 4
+          },
+          "structure_fields": [],
+          "type": "(curvature : Nat) → 0 < curvature → Int → SemanticExample.QuadraticModel",
+          "type_dependencies": [
+            "Int",
+            "LT.lt",
+            "Nat",
+            "OfNat.ofNat",
+            "SemanticExample.QuadraticModel",
+            "instLTNat",
+            "instOfNatNat"
+          ],
+          "value_available": false,
+          "value_dependencies": [],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel.mk"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "LT.lt": "Init.Prelude",
+            "Nat": "Init.Prelude",
+            "OfNat.ofNat": "Init.Prelude",
+            "SemanticExample.QuadraticModel": "Semantic",
+            "SemanticExample.QuadraticModel.curvature": "Semantic",
+            "instLTNat": "Init.Prelude",
+            "instOfNatNat": "Init.Prelude"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "theorem",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.QuadraticModel.positive"
+          ],
+          "name": "SemanticExample.QuadraticModel.positive",
+          "selection_range": {
+            "column_end": 10,
+            "column_start": 2,
+            "line_end": 6,
+            "line_start": 6
+          },
+          "source_range": {
+            "column_end": 10,
+            "column_start": 2,
+            "line_end": 6,
+            "line_start": 6
+          },
+          "structure_fields": [],
+          "type": "∀ (self : SemanticExample.QuadraticModel), 0 < self.curvature",
+          "type_dependencies": [
+            "LT.lt",
+            "Nat",
+            "OfNat.ofNat",
+            "SemanticExample.QuadraticModel",
+            "SemanticExample.QuadraticModel.curvature",
+            "instLTNat",
+            "instOfNatNat"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "SemanticExample.QuadraticModel"
+          ],
+          "declaration_key": "Semantic::SemanticExample.QuadraticModel.positive"
+        },
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": "fun (q : SemanticExample.QuadraticModel) (x : Int) => ↑q.curvature * (x - q.center) ^ 2",
+          "dependency_modules": {
+            "HMul.hMul": "Init.Prelude",
+            "HPow.hPow": "Init.Prelude",
+            "HSub.hSub": "Init.Prelude",
+            "Int": "Init.Data.Int.Basic",
+            "Int.instMul": "Init.Data.Int.Basic",
+            "Int.instNatPow": "Init.Data.Int.Basic",
+            "Int.instSub": "Init.Data.Int.Basic",
+            "Nat": "Init.Prelude",
+            "Nat.cast": "Init.Data.Cast",
+            "OfNat.ofNat": "Init.Prelude",
+            "SemanticExample.QuadraticModel": "Semantic",
+            "SemanticExample.QuadraticModel.center": "Semantic",
+            "SemanticExample.QuadraticModel.curvature": "Semantic",
+            "instHMul": "Init.Prelude",
+            "instHPow": "Init.Prelude",
+            "instHSub": "Init.Prelude",
+            "instNatCastInt": "Init.Data.Int.Basic",
+            "instOfNatNat": "Init.Prelude",
+            "instPowNat": "Init.Prelude"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "def",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.energy"
+          ],
+          "name": "SemanticExample.energy",
+          "selection_range": {
+            "column_end": 10,
+            "column_start": 4,
+            "line_end": 10,
+            "line_start": 10
+          },
+          "source_range": {
+            "column_end": 42,
+            "column_start": 0,
+            "line_end": 11,
+            "line_start": 9
+          },
+          "structure_fields": [],
+          "type": "SemanticExample.QuadraticModel → Int → Int",
+          "type_dependencies": [
+            "Int",
+            "SemanticExample.QuadraticModel"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "HMul.hMul",
+            "HPow.hPow",
+            "HSub.hSub",
+            "Int",
+            "Int.instMul",
+            "Int.instNatPow",
+            "Int.instSub",
+            "Nat",
+            "Nat.cast",
+            "OfNat.ofNat",
+            "SemanticExample.QuadraticModel",
+            "SemanticExample.QuadraticModel.center",
+            "SemanticExample.QuadraticModel.curvature",
+            "instHMul",
+            "instHPow",
+            "instHSub",
+            "instNatCastInt",
+            "instOfNatNat",
+            "instPowNat"
+          ],
+          "declaration_key": "Semantic::SemanticExample.energy"
+        }
+      ],
+      "repairs": 0,
+      "context_expansions": 0,
+      "status": "accepted"
+    },
+    {
+      "compiler": {
+        "axioms": [],
+        "constructors": [],
+        "definition_value": null,
+        "dependency_modules": {
+          "HAdd.hAdd": "Init.Prelude",
+          "LE.le": "Init.Prelude",
+          "Nat": "Init.Prelude",
+          "Nat.add_le_add_right": "Init.Data.Nat.Basic",
+          "instAddNat": "Init.Prelude",
+          "instHAdd": "Init.Prelude",
+          "instLENat": "Init.Prelude"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "theorem",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.add_order"
+        ],
+        "name": "SemanticExample.add_order",
+        "selection_range": {
+          "column_end": 17,
+          "column_start": 8,
+          "line_end": 14,
+          "line_start": 14
+        },
+        "source_range": {
+          "column_end": 26,
+          "column_start": 0,
+          "line_end": 15,
+          "line_start": 13
+        },
+        "structure_fields": [],
+        "type": "∀ (n m k : Nat), n ≤ m → n + k ≤ m + k",
+        "type_dependencies": [
+          "HAdd.hAdd",
+          "LE.le",
+          "Nat",
+          "instAddNat",
+          "instHAdd",
+          "instLENat"
+        ],
+        "value_available": true,
+        "value_dependencies": [
+          "LE.le",
+          "Nat",
+          "Nat.add_le_add_right",
+          "instLENat"
+        ],
+        "declaration_key": "Semantic::SemanticExample.add_order"
+      },
+      "natural": {
+        "statement": "For all natural numbers n, m, and k, if n ≤ m, then n + k ≤ m + k.",
+        "objects": [
+          "n is a natural number",
+          "m is a natural number",
+          "k is a natural number"
+        ],
+        "assumptions": [
+          "n ≤ m"
+        ],
+        "quantifiers": [
+          "n is universally quantified over the natural numbers",
+          "m is universally quantified over the natural numbers",
+          "k is universally quantified over the natural numbers"
+        ],
+        "definition": "",
+        "uncertainties": []
+      },
+      "review": {
+        "draft_hash": "44cb7c53fec4169f863b6d95f6232c3cce09ce5bca09737e8f25a95bf68c3ae7",
+        "context_hash": "6d995839955d1c40ca5fb9408d97fb0675372259c9c2155ee0603bea05f37549",
+        "status": "passed",
+        "checks": {
+          "objects_and_quantifiers": {
+            "verdict": "passed",
+            "reason": "The type universally quantifies exactly three variables n, m, and k, each of domain Nat, matching the draft objects and quantifiers.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.add_order",
+              "field": "type",
+              "excerpt": "∀ (n m k : Nat)"
+            }
+          },
+          "hypotheses_and_domains": {
+            "verdict": "passed",
+            "reason": "The sole hypothesis is n ≤ m on Nat, and addition and order are the Nat instances named by the type dependencies; no extra assumptions appear.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.add_order",
+              "field": "type",
+              "excerpt": "n ≤ m →"
+            }
+          },
+          "conclusion_and_formula": {
+            "verdict": "passed",
+            "reason": "The consequent is exactly n + k ≤ m + k, so the informal statement matches the full quantified implication.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.add_order",
+              "field": "type",
+              "excerpt": "n + k ≤ m + k"
+            }
+          },
+          "definition_and_construction": {
+            "verdict": "passed",
+            "reason": "The declaration is a theorem with definition_value null, so the empty definition is correct and no construction is claimed or required.",
+            "evidence": {
+              "declaration_key": "Semantic::SemanticExample.add_order",
+              "field": "type",
+              "excerpt": "∀ (n m k : Nat), n ≤ m → n + k ≤ m + k"
+            }
+          }
+        },
+        "issues": [],
+        "context_requests": []
+      },
+      "compiler_context": [
+        {
+          "axioms": [],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "HAdd.hAdd": "Init.Prelude",
+            "LE.le": "Init.Prelude",
+            "Nat": "Init.Prelude",
+            "Nat.add_le_add_right": "Init.Data.Nat.Basic",
+            "instAddNat": "Init.Prelude",
+            "instHAdd": "Init.Prelude",
+            "instLENat": "Init.Prelude"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "theorem",
+          "module": "Semantic",
+          "mutual_family": [
+            "SemanticExample.add_order"
+          ],
+          "name": "SemanticExample.add_order",
+          "selection_range": {
+            "column_end": 17,
+            "column_start": 8,
+            "line_end": 14,
+            "line_start": 14
+          },
+          "source_range": {
+            "column_end": 26,
+            "column_start": 0,
+            "line_end": 15,
+            "line_start": 13
+          },
+          "structure_fields": [],
+          "type": "∀ (n m k : Nat), n ≤ m → n + k ≤ m + k",
+          "type_dependencies": [
+            "HAdd.hAdd",
+            "LE.le",
+            "Nat",
+            "instAddNat",
+            "instHAdd",
+            "instLENat"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "LE.le",
+            "Nat",
+            "Nat.add_le_add_right",
+            "instLENat"
+          ],
+          "declaration_key": "Semantic::SemanticExample.add_order"
+        }
+      ],
+      "repairs": 0,
+      "context_expansions": 0,
+      "status": "accepted"
+    },
+    {
+      "compiler": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "constructors": [
+          "StrongConvexC1On.mk"
+        ],
+        "definition_value": null,
+        "dependency_modules": {
+          "NormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+          "NormedAddCommGroup.toSeminormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+          "NormedSpace": "Mathlib.Analysis.Normed.Module.Basic",
+          "Real": "Mathlib.Data.Real.Basic",
+          "Real.normedField": "Mathlib.Analysis.Normed.Field.Basic",
+          "Set": "Mathlib.Data.Set.Defs",
+          "StrongConvexC1On.contDiffOn": "ReasLib.Analysis.Convex.StrongC1",
+          "StrongConvexC1On.convexDomain": "ReasLib.Analysis.Convex.StrongC1",
+          "StrongConvexC1On.lower": "ReasLib.Analysis.Convex.StrongC1",
+          "StrongConvexC1On.mk": "ReasLib.Analysis.Convex.StrongC1",
+          "StrongConvexC1On.muPos": "ReasLib.Analysis.Convex.StrongC1"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "inductive",
+        "module": "ReasLib.Analysis.Convex.StrongC1",
+        "mutual_family": [
+          "StrongConvexC1On"
+        ],
+        "name": "StrongConvexC1On",
+        "selection_range": {
+          "column_end": 26,
+          "column_start": 10,
+          "line_end": 25,
+          "line_start": 25
+        },
+        "source_range": {
+          "column_end": 70,
+          "column_start": 0,
+          "line_end": 36,
+          "line_start": 20
+        },
+        "structure_fields": [
+          "StrongConvexC1On.contDiffOn",
+          "StrongConvexC1On.convexDomain",
+          "StrongConvexC1On.lower",
+          "StrongConvexC1On.muPos"
+        ],
+        "type": "{E : Type u} → [inst : NormedAddCommGroup E] → [NormedSpace ℝ E] → Set E → ℝ → (E → ℝ) → Prop",
+        "type_dependencies": [
+          "NormedAddCommGroup",
+          "NormedAddCommGroup.toSeminormedAddCommGroup",
+          "NormedSpace",
+          "Real",
+          "Real.normedField",
+          "Set",
+          "StrongConvexC1On.contDiffOn",
+          "StrongConvexC1On.convexDomain",
+          "StrongConvexC1On.lower",
+          "StrongConvexC1On.mk",
+          "StrongConvexC1On.muPos"
+        ],
+        "value_available": false,
+        "value_dependencies": [],
+        "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On"
+      },
+      "natural": {
+        "statement": "Let E be a type equipped with a normed additive commutative group structure and with a normed vector space structure over the scalar field of real numbers. Let Q be a subset of E, let μ be a real number, and let f be a function from E to the real numbers. The proposition StrongConvexC1On Q μ f is the one-constructor predicate whose data are exactly the following: Q is convex over the real numbers; μ is strictly positive; f is continuously differentiable of order 1 on Q; and f satisfies the first-order lower bound that, for every point x of Q and every point y of Q, f(x) + (fderivWithin ℝ f Q x)(y − x) + (μ / 2) · ‖y − x‖² ≤ f(y). Here fderivWithin ℝ f Q x is the derivative of f within Q at x, used as a continuous linear map from E to the real numbers and evaluated at the vector y − x, and ‖·‖ is the norm of the given normed additive commutative group structure on E. Equivalently, any proof of StrongConvexC1On Q μ f yields each of these four pieces of data, and these four pieces of data together construct StrongConvexC1On Q μ f.",
+        "objects": [
+          "E is a type, equipped with a normed additive commutative group structure and a normed vector space structure over the real numbers.",
+          "Q is a subset of E.",
+          "μ is a real number.",
+          "f is a function from E to the real numbers.",
+          "x and y are points of E that are required to belong to Q in the lower-bound condition.",
+          "y − x is the difference, in the additive group E, of the two points y and x.",
+          "fderivWithin ℝ f Q x is the derivative within Q of f at x, applied as a continuous linear map from E to the real numbers.",
+          "‖y − x‖ is the norm of y − x in the normed additive commutative group E."
+        ],
+        "assumptions": [
+          "E carries a normed additive commutative group structure.",
+          "E carries a normed vector space structure over the real numbers.",
+          "Q is convex over the real numbers.",
+          "The real number μ satisfies 0 < μ.",
+          "f is continuously differentiable of order 1 on Q.",
+          "For every x belonging to Q and every y belonging to Q, f(x) + (fderivWithin ℝ f Q x)(y − x) + (μ / 2) · ‖y − x‖² ≤ f(y)."
+        ],
+        "quantifiers": [
+          "The predicate is stated for an arbitrary type E carrying the two named structures.",
+          "The subset Q of E, the real parameter μ, and the function f from E to the real numbers are arbitrary.",
+          "The lower bound quantifies over every point x belonging to Q and every point y belonging to Q."
+        ],
+        "definition": "StrongConvexC1On is the inductive proposition on a subset Q of E, a real number μ, and a function f from E to the real numbers whose single constructor accepts four arguments and whose four fields return them. The constructor arguments, which are also the construction laws, are: convexity of Q over the real numbers; the strict inequality 0 < μ; continuous differentiability of f of order 1 on Q; and the condition that for all x in Q and all y in Q, f(x) + (fderivWithin ℝ f Q x)(y − x) + (μ / 2) · ‖y − x‖² ≤ f(y). The field convexDomain returns convexity of Q over the real numbers, the field muPos returns 0 < μ, the field contDiffOn returns continuous differentiability of f of order 1 on Q, and the field lower returns that same quantified inequality.",
+        "uncertainties": []
+      },
+      "review": {
+        "draft_hash": "871604e75cae9900e2cb32cc8b35e82c2b7a15792a9575e1f319cfa9e04cae12",
+        "context_hash": "43f61deb02c79f7e3602d295dd8977226b8e9ed501c5d4c5bbd0b01afa812aac",
+        "status": "passed",
+        "checks": {
+          "objects_and_quantifiers": {
+            "verdict": "passed",
+            "reason": "The predicate is quantified over a type E with NormedAddCommGroup and NormedSpace ℝ, then a set Q, a real μ, and a map f : E → ℝ. The lower bound is restricted by membership of both points in Q, matching the draft’s objects and quantifiers.",
+            "evidence": {
+              "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On",
+              "field": "type",
+              "excerpt": "{E : Type u} → [inst : NormedAddCommGroup E] → [NormedSpace ℝ E] → Set E → ℝ → (E → ℝ) → Prop"
+            }
+          },
+          "hypotheses_and_domains": {
+            "verdict": "passed",
+            "reason": "The single constructor requires exactly Convex ℝ Q, 0 < μ, ContDiffOn ℝ 1 f Q, and the stated pointwise inequality on Q; the four projections recover those same hypotheses, with no extra domain restriction.",
+            "evidence": {
+              "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On.mk",
+              "field": "type",
+              "excerpt": "Convex ℝ Q →\n    0 < μ →\n      ContDiffOn ℝ 1 f Q →"
+            }
+          },
+          "conclusion_and_formula": {
+            "verdict": "passed",
+            "reason": "The lower-bound formula is exactly f x plus the within-derivative at x applied to y - x plus (μ / 2) times ‖y - x‖ ^ 2, bounded above by f y, for all x, y in Q.",
+            "evidence": {
+              "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On.lower",
+              "field": "type",
+              "excerpt": "f x + (fderivWithin ℝ f Q x) (y - x) + μ / 2 * ‖y - x‖ ^ 2 ≤ f y"
+            }
+          },
+          "definition_and_construction": {
+            "verdict": "passed",
+            "reason": "StrongConvexC1On is the one-constructor inductive whose constructor builds the predicate from those four data, and convexDomain, muPos, contDiffOn, and lower are the corresponding eliminators. No separate definitional value is supplied, and none is needed beyond this constructor and its projections.",
+            "evidence": {
+              "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On.mk",
+              "field": "type",
+              "excerpt": "(∀ x ∈ Q, ∀ y ∈ Q, f x + (fderivWithin ℝ f Q x) (y - x) + μ / 2 * ‖y - x‖ ^ 2 ≤ f y) → StrongConvexC1On Q μ f"
+            }
+          }
+        },
+        "issues": [],
+        "context_requests": []
+      },
+      "compiler_context": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "constructors": [
+            "StrongConvexC1On.mk"
+          ],
+          "definition_value": null,
+          "dependency_modules": {
+            "NormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toSeminormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedSpace": "Mathlib.Analysis.Normed.Module.Basic",
+            "Real": "Mathlib.Data.Real.Basic",
+            "Real.normedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Set": "Mathlib.Data.Set.Defs",
+            "StrongConvexC1On.contDiffOn": "ReasLib.Analysis.Convex.StrongC1",
+            "StrongConvexC1On.convexDomain": "ReasLib.Analysis.Convex.StrongC1",
+            "StrongConvexC1On.lower": "ReasLib.Analysis.Convex.StrongC1",
+            "StrongConvexC1On.mk": "ReasLib.Analysis.Convex.StrongC1",
+            "StrongConvexC1On.muPos": "ReasLib.Analysis.Convex.StrongC1"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "inductive",
+          "module": "ReasLib.Analysis.Convex.StrongC1",
+          "mutual_family": [
+            "StrongConvexC1On"
+          ],
+          "name": "StrongConvexC1On",
+          "selection_range": {
+            "column_end": 26,
+            "column_start": 10,
+            "line_end": 25,
+            "line_start": 25
+          },
+          "source_range": {
+            "column_end": 70,
+            "column_start": 0,
+            "line_end": 36,
+            "line_start": 20
+          },
+          "structure_fields": [
+            "StrongConvexC1On.contDiffOn",
+            "StrongConvexC1On.convexDomain",
+            "StrongConvexC1On.lower",
+            "StrongConvexC1On.muPos"
+          ],
+          "type": "{E : Type u} → [inst : NormedAddCommGroup E] → [NormedSpace ℝ E] → Set E → ℝ → (E → ℝ) → Prop",
+          "type_dependencies": [
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedSpace",
+            "Real",
+            "Real.normedField",
+            "Set",
+            "StrongConvexC1On.contDiffOn",
+            "StrongConvexC1On.convexDomain",
+            "StrongConvexC1On.lower",
+            "StrongConvexC1On.mk",
+            "StrongConvexC1On.muPos"
+          ],
+          "value_available": false,
+          "value_dependencies": [],
+          "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "AddMonoidWithOne.toOne": "Mathlib.Data.Nat.Cast.Defs",
+            "ContDiffOn": "Mathlib.Analysis.Calculus.ContDiff.Defs",
+            "DenselyNormedField.toNontriviallyNormedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "ENat": "Mathlib.Data.ENat.Defs",
+            "InnerProductSpace.toNormedSpace": "Mathlib.Analysis.InnerProductSpace.Defs",
+            "NormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toSeminormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedSpace": "Mathlib.Analysis.Normed.Module.Basic",
+            "OfNat.ofNat": "Init.Prelude",
+            "One.toOfNat1": "Init.Data.Zero",
+            "RCLike.toInnerProductSpaceReal": "Mathlib.Analysis.InnerProductSpace.Basic",
+            "Real": "Mathlib.Data.Real.Basic",
+            "Real.denselyNormedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Real.instRCLike": "Mathlib.Analysis.RCLike.Basic",
+            "Real.normedAddCommGroup": "Mathlib.Analysis.Normed.Group.Real",
+            "Real.normedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Set": "Mathlib.Data.Set.Defs",
+            "StrongConvexC1On": "ReasLib.Analysis.Convex.StrongC1",
+            "WithTop": "Mathlib.Order.TypeTags",
+            "WithTop.one": "Mathlib.Algebra.Order.Monoid.Unbundled.WithTop",
+            "instAddMonoidWithOneENat": "Mathlib.Data.ENat.Basic"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "theorem",
+          "module": "ReasLib.Analysis.Convex.StrongC1",
+          "mutual_family": [
+            "StrongConvexC1On.contDiffOn"
+          ],
+          "name": "StrongConvexC1On.contDiffOn",
+          "selection_range": {
+            "column_end": 12,
+            "column_start": 2,
+            "line_end": 32,
+            "line_start": 32
+          },
+          "source_range": {
+            "column_end": 12,
+            "column_start": 2,
+            "line_end": 32,
+            "line_start": 32
+          },
+          "structure_fields": [],
+          "type": "∀ {E : Type u} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] {Q : Set E} {μ : ℝ} {f : E → ℝ},\n  StrongConvexC1On Q μ f → ContDiffOn ℝ 1 f Q",
+          "type_dependencies": [
+            "AddMonoidWithOne.toOne",
+            "ContDiffOn",
+            "DenselyNormedField.toNontriviallyNormedField",
+            "ENat",
+            "InnerProductSpace.toNormedSpace",
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedSpace",
+            "OfNat.ofNat",
+            "One.toOfNat1",
+            "RCLike.toInnerProductSpaceReal",
+            "Real",
+            "Real.denselyNormedField",
+            "Real.instRCLike",
+            "Real.normedAddCommGroup",
+            "Real.normedField",
+            "Set",
+            "StrongConvexC1On",
+            "WithTop",
+            "WithTop.one",
+            "instAddMonoidWithOneENat"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedSpace",
+            "Real",
+            "Real.normedField",
+            "Set",
+            "StrongConvexC1On"
+          ],
+          "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On.contDiffOn"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "AddCommGroup.toAddCommMonoid": "Mathlib.Algebra.Group.Defs",
+            "AddCommGroup.toAddGroup": "Mathlib.Algebra.Group.Defs",
+            "AddGroup.toSubNegMonoid": "Mathlib.Algebra.Group.Defs",
+            "AddMonoid.toAddZeroClass": "Mathlib.Algebra.Group.Defs",
+            "AddZero.toZero": "Mathlib.Algebra.Group.Defs",
+            "AddZeroClass.toAddZero": "Mathlib.Algebra.Group.Defs",
+            "Convex": "Mathlib.Analysis.Convex.Basic",
+            "DistribMulAction.toDistribSMul": "Mathlib.Algebra.GroupWithZero.Action.Defs",
+            "DistribSMul.toSMulZeroClass": "Mathlib.Algebra.GroupWithZero.Action.Defs",
+            "Module.toDistribMulAction": "Mathlib.Algebra.Module.Defs",
+            "NormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toSeminormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedSpace": "Mathlib.Analysis.Normed.Module.Basic",
+            "NormedSpace.toModule": "Mathlib.Analysis.Normed.Module.Basic",
+            "Real": "Mathlib.Data.Real.Basic",
+            "Real.instMonoid": "Mathlib.Data.Real.Basic",
+            "Real.normedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Real.partialOrder": "Mathlib.Data.Real.Basic",
+            "Real.semiring": "Mathlib.Data.Real.Basic",
+            "SMulZeroClass.toSMul": "Mathlib.Algebra.GroupWithZero.Action.Defs",
+            "Set": "Mathlib.Data.Set.Defs",
+            "StrongConvexC1On": "ReasLib.Analysis.Convex.StrongC1",
+            "SubNegMonoid.toAddMonoid": "Mathlib.Algebra.Group.Defs"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "theorem",
+          "module": "ReasLib.Analysis.Convex.StrongC1",
+          "mutual_family": [
+            "StrongConvexC1On.convexDomain"
+          ],
+          "name": "StrongConvexC1On.convexDomain",
+          "selection_range": {
+            "column_end": 14,
+            "column_start": 2,
+            "line_end": 28,
+            "line_start": 28
+          },
+          "source_range": {
+            "column_end": 14,
+            "column_start": 2,
+            "line_end": 28,
+            "line_start": 28
+          },
+          "structure_fields": [],
+          "type": "∀ {E : Type u} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] {Q : Set E} {μ : ℝ} {f : E → ℝ},\n  StrongConvexC1On Q μ f → Convex ℝ Q",
+          "type_dependencies": [
+            "AddCommGroup.toAddCommMonoid",
+            "AddCommGroup.toAddGroup",
+            "AddGroup.toSubNegMonoid",
+            "AddMonoid.toAddZeroClass",
+            "AddZero.toZero",
+            "AddZeroClass.toAddZero",
+            "Convex",
+            "DistribMulAction.toDistribSMul",
+            "DistribSMul.toSMulZeroClass",
+            "Module.toDistribMulAction",
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toAddCommGroup",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedSpace",
+            "NormedSpace.toModule",
+            "Real",
+            "Real.instMonoid",
+            "Real.normedField",
+            "Real.partialOrder",
+            "Real.semiring",
+            "SMulZeroClass.toSMul",
+            "Set",
+            "StrongConvexC1On",
+            "SubNegMonoid.toAddMonoid"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedSpace",
+            "Real",
+            "Real.normedField",
+            "Set",
+            "StrongConvexC1On"
+          ],
+          "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On.convexDomain"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "AddCommGroup.toAddCommMonoid": "Mathlib.Algebra.Group.Defs",
+            "AddCommGroup.toAddGroup": "Mathlib.Algebra.Group.Defs",
+            "AddGroup.toSubNegMonoid": "Mathlib.Algebra.Group.Defs",
+            "ContinuousLinearMap": "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Basic",
+            "ContinuousLinearMap.funLike": "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Basic",
+            "DFunLike.coe": "Mathlib.Data.FunLike.Basic",
+            "DenselyNormedField.toNontriviallyNormedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "DivInvMonoid.toDiv": "Mathlib.Algebra.Group.Defs",
+            "DivisionSemiring.toSemiring": "Mathlib.Algebra.Field.Defs",
+            "Field.toSemifield": "Mathlib.Algebra.Field.Defs",
+            "HAdd.hAdd": "Init.Prelude",
+            "HDiv.hDiv": "Init.Prelude",
+            "HMul.hMul": "Init.Prelude",
+            "HPow.hPow": "Init.Prelude",
+            "HSub.hSub": "Init.Prelude",
+            "LE.le": "Init.Prelude",
+            "Membership.mem": "Init.Prelude",
+            "Monoid.toPow": "Mathlib.Algebra.Group.Defs",
+            "Nat": "Init.Prelude",
+            "Nat.instAtLeastTwoHAddOfNat": "Mathlib.Data.Nat.Init",
+            "Nat.instNeZeroSucc": "Init.Data.Nat.Basic",
+            "NontriviallyNormedField.toNormedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Norm.norm": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toNorm": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toSeminormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedField.toField": "Mathlib.Analysis.Normed.Field.Basic",
+            "NormedSpace": "Mathlib.Analysis.Normed.Module.Basic",
+            "NormedSpace.toModule": "Mathlib.Analysis.Normed.Module.Basic",
+            "OfNat.ofNat": "Init.Prelude",
+            "PseudoMetricSpace.toUniformSpace": "Mathlib.Topology.MetricSpace.Pseudo.Defs",
+            "Real": "Mathlib.Data.Real.Basic",
+            "Real.denselyNormedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Real.instAdd": "Mathlib.Data.Real.Basic",
+            "Real.instAddCommGroup": "Mathlib.Data.Real.Basic",
+            "Real.instDivInvMonoid": "Mathlib.Data.Real.Basic",
+            "Real.instLE": "Mathlib.Data.Real.Basic",
+            "Real.instMonoid": "Mathlib.Data.Real.Basic",
+            "Real.instMul": "Mathlib.Data.Real.Basic",
+            "Real.instNatCast": "Mathlib.Data.Real.Basic",
+            "Real.normedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Real.pseudoMetricSpace": "Mathlib.Topology.MetricSpace.Pseudo.Defs",
+            "RingHom.id": "Mathlib.Algebra.Ring.Hom.Defs",
+            "Semifield.toDivisionSemiring": "Mathlib.Algebra.Field.Defs",
+            "SeminormedAddCommGroup.toPseudoMetricSpace": "Mathlib.Analysis.Normed.Group.Defs",
+            "Semiring.toModule": "Mathlib.Algebra.Module.Defs",
+            "Semiring.toNonAssocSemiring": "Mathlib.Algebra.Ring.Defs",
+            "Set": "Mathlib.Data.Set.Defs",
+            "Set.instMembership": "Mathlib.Data.Set.Defs",
+            "StrongConvexC1On": "ReasLib.Analysis.Convex.StrongC1",
+            "SubNegMonoid.toSub": "Mathlib.Algebra.Group.Defs",
+            "UniformSpace.toTopologicalSpace": "Mathlib.Topology.UniformSpace.Defs",
+            "fderivWithin": "Mathlib.Analysis.Calculus.FDeriv.Defs",
+            "instHAdd": "Init.Prelude",
+            "instHDiv": "Init.Prelude",
+            "instHMul": "Init.Prelude",
+            "instHPow": "Init.Prelude",
+            "instHSub": "Init.Prelude",
+            "instOfNatAtLeastTwo": "Mathlib.Data.Nat.Cast.Defs",
+            "instOfNatNat": "Init.Prelude"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "theorem",
+          "module": "ReasLib.Analysis.Convex.StrongC1",
+          "mutual_family": [
+            "StrongConvexC1On.lower"
+          ],
+          "name": "StrongConvexC1On.lower",
+          "selection_range": {
+            "column_end": 7,
+            "column_start": 2,
+            "line_end": 34,
+            "line_start": 34
+          },
+          "source_range": {
+            "column_end": 7,
+            "column_start": 2,
+            "line_end": 34,
+            "line_start": 34
+          },
+          "structure_fields": [],
+          "type": "∀ {E : Type u} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] {Q : Set E} {μ : ℝ} {f : E → ℝ},\n  StrongConvexC1On Q μ f → ∀ x ∈ Q, ∀ y ∈ Q, f x + (fderivWithin ℝ f Q x) (y - x) + μ / 2 * ‖y - x‖ ^ 2 ≤ f y",
+          "type_dependencies": [
+            "AddCommGroup.toAddCommMonoid",
+            "AddCommGroup.toAddGroup",
+            "AddGroup.toSubNegMonoid",
+            "ContinuousLinearMap",
+            "ContinuousLinearMap.funLike",
+            "DFunLike.coe",
+            "DenselyNormedField.toNontriviallyNormedField",
+            "DivInvMonoid.toDiv",
+            "DivisionSemiring.toSemiring",
+            "Field.toSemifield",
+            "HAdd.hAdd",
+            "HDiv.hDiv",
+            "HMul.hMul",
+            "HPow.hPow",
+            "HSub.hSub",
+            "LE.le",
+            "Membership.mem",
+            "Monoid.toPow",
+            "Nat",
+            "Nat.instAtLeastTwoHAddOfNat",
+            "Nat.instNeZeroSucc",
+            "NontriviallyNormedField.toNormedField",
+            "Norm.norm",
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toAddCommGroup",
+            "NormedAddCommGroup.toNorm",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedField.toField",
+            "NormedSpace",
+            "NormedSpace.toModule",
+            "OfNat.ofNat",
+            "PseudoMetricSpace.toUniformSpace",
+            "Real",
+            "Real.denselyNormedField",
+            "Real.instAdd",
+            "Real.instAddCommGroup",
+            "Real.instDivInvMonoid",
+            "Real.instLE",
+            "Real.instMonoid",
+            "Real.instMul",
+            "Real.instNatCast",
+            "Real.normedField",
+            "Real.pseudoMetricSpace",
+            "RingHom.id",
+            "Semifield.toDivisionSemiring",
+            "SeminormedAddCommGroup.toPseudoMetricSpace",
+            "Semiring.toModule",
+            "Semiring.toNonAssocSemiring",
+            "Set",
+            "Set.instMembership",
+            "StrongConvexC1On",
+            "SubNegMonoid.toSub",
+            "UniformSpace.toTopologicalSpace",
+            "fderivWithin",
+            "instHAdd",
+            "instHDiv",
+            "instHMul",
+            "instHPow",
+            "instHSub",
+            "instOfNatAtLeastTwo",
+            "instOfNatNat"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedSpace",
+            "Real",
+            "Real.normedField",
+            "Set",
+            "StrongConvexC1On"
+          ],
+          "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On.lower"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "AddCommGroup.toAddCommMonoid": "Mathlib.Algebra.Group.Defs",
+            "AddCommGroup.toAddGroup": "Mathlib.Algebra.Group.Defs",
+            "AddGroup.toSubNegMonoid": "Mathlib.Algebra.Group.Defs",
+            "AddMonoid.toAddZeroClass": "Mathlib.Algebra.Group.Defs",
+            "AddMonoidWithOne.toOne": "Mathlib.Data.Nat.Cast.Defs",
+            "AddZero.toZero": "Mathlib.Algebra.Group.Defs",
+            "AddZeroClass.toAddZero": "Mathlib.Algebra.Group.Defs",
+            "ContDiffOn": "Mathlib.Analysis.Calculus.ContDiff.Defs",
+            "ContinuousLinearMap": "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Basic",
+            "ContinuousLinearMap.funLike": "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Basic",
+            "Convex": "Mathlib.Analysis.Convex.Basic",
+            "DFunLike.coe": "Mathlib.Data.FunLike.Basic",
+            "DenselyNormedField.toNontriviallyNormedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "DistribMulAction.toDistribSMul": "Mathlib.Algebra.GroupWithZero.Action.Defs",
+            "DistribSMul.toSMulZeroClass": "Mathlib.Algebra.GroupWithZero.Action.Defs",
+            "DivInvMonoid.toDiv": "Mathlib.Algebra.Group.Defs",
+            "DivisionSemiring.toSemiring": "Mathlib.Algebra.Field.Defs",
+            "ENat": "Mathlib.Data.ENat.Defs",
+            "Field.toSemifield": "Mathlib.Algebra.Field.Defs",
+            "HAdd.hAdd": "Init.Prelude",
+            "HDiv.hDiv": "Init.Prelude",
+            "HMul.hMul": "Init.Prelude",
+            "HPow.hPow": "Init.Prelude",
+            "HSub.hSub": "Init.Prelude",
+            "InnerProductSpace.toNormedSpace": "Mathlib.Analysis.InnerProductSpace.Defs",
+            "LE.le": "Init.Prelude",
+            "LT.lt": "Init.Prelude",
+            "Membership.mem": "Init.Prelude",
+            "Module.toDistribMulAction": "Mathlib.Algebra.Module.Defs",
+            "Monoid.toPow": "Mathlib.Algebra.Group.Defs",
+            "Nat": "Init.Prelude",
+            "Nat.instAtLeastTwoHAddOfNat": "Mathlib.Data.Nat.Init",
+            "Nat.instNeZeroSucc": "Init.Data.Nat.Basic",
+            "NontriviallyNormedField.toNormedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Norm.norm": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toNorm": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toSeminormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedField.toField": "Mathlib.Analysis.Normed.Field.Basic",
+            "NormedSpace": "Mathlib.Analysis.Normed.Module.Basic",
+            "NormedSpace.toModule": "Mathlib.Analysis.Normed.Module.Basic",
+            "OfNat.ofNat": "Init.Prelude",
+            "One.toOfNat1": "Init.Data.Zero",
+            "PseudoMetricSpace.toUniformSpace": "Mathlib.Topology.MetricSpace.Pseudo.Defs",
+            "RCLike.toInnerProductSpaceReal": "Mathlib.Analysis.InnerProductSpace.Basic",
+            "Real": "Mathlib.Data.Real.Basic",
+            "Real.denselyNormedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Real.instAdd": "Mathlib.Data.Real.Basic",
+            "Real.instAddCommGroup": "Mathlib.Data.Real.Basic",
+            "Real.instDivInvMonoid": "Mathlib.Data.Real.Basic",
+            "Real.instLE": "Mathlib.Data.Real.Basic",
+            "Real.instLT": "Mathlib.Data.Real.Basic",
+            "Real.instMonoid": "Mathlib.Data.Real.Basic",
+            "Real.instMul": "Mathlib.Data.Real.Basic",
+            "Real.instNatCast": "Mathlib.Data.Real.Basic",
+            "Real.instRCLike": "Mathlib.Analysis.RCLike.Basic",
+            "Real.instZero": "Mathlib.Data.Real.Basic",
+            "Real.normedAddCommGroup": "Mathlib.Analysis.Normed.Group.Real",
+            "Real.normedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Real.partialOrder": "Mathlib.Data.Real.Basic",
+            "Real.pseudoMetricSpace": "Mathlib.Topology.MetricSpace.Pseudo.Defs",
+            "Real.semiring": "Mathlib.Data.Real.Basic",
+            "RingHom.id": "Mathlib.Algebra.Ring.Hom.Defs",
+            "SMulZeroClass.toSMul": "Mathlib.Algebra.GroupWithZero.Action.Defs",
+            "Semifield.toDivisionSemiring": "Mathlib.Algebra.Field.Defs",
+            "SeminormedAddCommGroup.toPseudoMetricSpace": "Mathlib.Analysis.Normed.Group.Defs",
+            "Semiring.toModule": "Mathlib.Algebra.Module.Defs",
+            "Semiring.toNonAssocSemiring": "Mathlib.Algebra.Ring.Defs",
+            "Set": "Mathlib.Data.Set.Defs",
+            "Set.instMembership": "Mathlib.Data.Set.Defs",
+            "StrongConvexC1On": "ReasLib.Analysis.Convex.StrongC1",
+            "SubNegMonoid.toAddMonoid": "Mathlib.Algebra.Group.Defs",
+            "SubNegMonoid.toSub": "Mathlib.Algebra.Group.Defs",
+            "UniformSpace.toTopologicalSpace": "Mathlib.Topology.UniformSpace.Defs",
+            "WithTop": "Mathlib.Order.TypeTags",
+            "WithTop.one": "Mathlib.Algebra.Order.Monoid.Unbundled.WithTop",
+            "Zero.toOfNat0": "Init.Data.Zero",
+            "fderivWithin": "Mathlib.Analysis.Calculus.FDeriv.Defs",
+            "instAddMonoidWithOneENat": "Mathlib.Data.ENat.Basic",
+            "instHAdd": "Init.Prelude",
+            "instHDiv": "Init.Prelude",
+            "instHMul": "Init.Prelude",
+            "instHPow": "Init.Prelude",
+            "instHSub": "Init.Prelude",
+            "instOfNatAtLeastTwo": "Mathlib.Data.Nat.Cast.Defs",
+            "instOfNatNat": "Init.Prelude"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "constructor",
+          "module": "ReasLib.Analysis.Convex.StrongC1",
+          "mutual_family": [
+            "StrongConvexC1On.mk"
+          ],
+          "name": "StrongConvexC1On.mk",
+          "selection_range": {
+            "column_end": 26,
+            "column_start": 10,
+            "line_end": 25,
+            "line_start": 25
+          },
+          "source_range": {
+            "column_end": 26,
+            "column_start": 10,
+            "line_end": 25,
+            "line_start": 25
+          },
+          "structure_fields": [],
+          "type": "∀ {E : Type u} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] {Q : Set E} {μ : ℝ} {f : E → ℝ},\n  Convex ℝ Q →\n    0 < μ →\n      ContDiffOn ℝ 1 f Q →\n        (∀ x ∈ Q, ∀ y ∈ Q, f x + (fderivWithin ℝ f Q x) (y - x) + μ / 2 * ‖y - x‖ ^ 2 ≤ f y) → StrongConvexC1On Q μ f",
+          "type_dependencies": [
+            "AddCommGroup.toAddCommMonoid",
+            "AddCommGroup.toAddGroup",
+            "AddGroup.toSubNegMonoid",
+            "AddMonoid.toAddZeroClass",
+            "AddMonoidWithOne.toOne",
+            "AddZero.toZero",
+            "AddZeroClass.toAddZero",
+            "ContDiffOn",
+            "ContinuousLinearMap",
+            "ContinuousLinearMap.funLike",
+            "Convex",
+            "DFunLike.coe",
+            "DenselyNormedField.toNontriviallyNormedField",
+            "DistribMulAction.toDistribSMul",
+            "DistribSMul.toSMulZeroClass",
+            "DivInvMonoid.toDiv",
+            "DivisionSemiring.toSemiring",
+            "ENat",
+            "Field.toSemifield",
+            "HAdd.hAdd",
+            "HDiv.hDiv",
+            "HMul.hMul",
+            "HPow.hPow",
+            "HSub.hSub",
+            "InnerProductSpace.toNormedSpace",
+            "LE.le",
+            "LT.lt",
+            "Membership.mem",
+            "Module.toDistribMulAction",
+            "Monoid.toPow",
+            "Nat",
+            "Nat.instAtLeastTwoHAddOfNat",
+            "Nat.instNeZeroSucc",
+            "NontriviallyNormedField.toNormedField",
+            "Norm.norm",
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toAddCommGroup",
+            "NormedAddCommGroup.toNorm",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedField.toField",
+            "NormedSpace",
+            "NormedSpace.toModule",
+            "OfNat.ofNat",
+            "One.toOfNat1",
+            "PseudoMetricSpace.toUniformSpace",
+            "RCLike.toInnerProductSpaceReal",
+            "Real",
+            "Real.denselyNormedField",
+            "Real.instAdd",
+            "Real.instAddCommGroup",
+            "Real.instDivInvMonoid",
+            "Real.instLE",
+            "Real.instLT",
+            "Real.instMonoid",
+            "Real.instMul",
+            "Real.instNatCast",
+            "Real.instRCLike",
+            "Real.instZero",
+            "Real.normedAddCommGroup",
+            "Real.normedField",
+            "Real.partialOrder",
+            "Real.pseudoMetricSpace",
+            "Real.semiring",
+            "RingHom.id",
+            "SMulZeroClass.toSMul",
+            "Semifield.toDivisionSemiring",
+            "SeminormedAddCommGroup.toPseudoMetricSpace",
+            "Semiring.toModule",
+            "Semiring.toNonAssocSemiring",
+            "Set",
+            "Set.instMembership",
+            "StrongConvexC1On",
+            "SubNegMonoid.toAddMonoid",
+            "SubNegMonoid.toSub",
+            "UniformSpace.toTopologicalSpace",
+            "WithTop",
+            "WithTop.one",
+            "Zero.toOfNat0",
+            "fderivWithin",
+            "instAddMonoidWithOneENat",
+            "instHAdd",
+            "instHDiv",
+            "instHMul",
+            "instHPow",
+            "instHSub",
+            "instOfNatAtLeastTwo",
+            "instOfNatNat"
+          ],
+          "value_available": false,
+          "value_dependencies": [],
+          "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On.mk"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "constructors": [],
+          "definition_value": null,
+          "dependency_modules": {
+            "LT.lt": "Init.Prelude",
+            "NormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedAddCommGroup.toSeminormedAddCommGroup": "Mathlib.Analysis.Normed.Group.Defs",
+            "NormedSpace": "Mathlib.Analysis.Normed.Module.Basic",
+            "OfNat.ofNat": "Init.Prelude",
+            "Real": "Mathlib.Data.Real.Basic",
+            "Real.instLT": "Mathlib.Data.Real.Basic",
+            "Real.instZero": "Mathlib.Data.Real.Basic",
+            "Real.normedField": "Mathlib.Analysis.Normed.Field.Basic",
+            "Set": "Mathlib.Data.Set.Defs",
+            "StrongConvexC1On": "ReasLib.Analysis.Convex.StrongC1",
+            "Zero.toOfNat0": "Init.Data.Zero"
+          },
+          "is_partial": false,
+          "is_unsafe": false,
+          "kind": "theorem",
+          "module": "ReasLib.Analysis.Convex.StrongC1",
+          "mutual_family": [
+            "StrongConvexC1On.muPos"
+          ],
+          "name": "StrongConvexC1On.muPos",
+          "selection_range": {
+            "column_end": 7,
+            "column_start": 2,
+            "line_end": 30,
+            "line_start": 30
+          },
+          "source_range": {
+            "column_end": 7,
+            "column_start": 2,
+            "line_end": 30,
+            "line_start": 30
+          },
+          "structure_fields": [],
+          "type": "∀ {E : Type u} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] {Q : Set E} {μ : ℝ} {f : E → ℝ},\n  StrongConvexC1On Q μ f → 0 < μ",
+          "type_dependencies": [
+            "LT.lt",
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedSpace",
+            "OfNat.ofNat",
+            "Real",
+            "Real.instLT",
+            "Real.instZero",
+            "Real.normedField",
+            "Set",
+            "StrongConvexC1On",
+            "Zero.toOfNat0"
+          ],
+          "value_available": true,
+          "value_dependencies": [
+            "NormedAddCommGroup",
+            "NormedAddCommGroup.toSeminormedAddCommGroup",
+            "NormedSpace",
+            "Real",
+            "Real.normedField",
+            "Set",
+            "StrongConvexC1On"
+          ],
+          "declaration_key": "ReasLib.Analysis.Convex.StrongC1::StrongConvexC1On.muPos"
+        }
+      ],
+      "repairs": 0,
+      "context_expansions": 0,
+      "status": "accepted"
+    }
+  ],
+  "negative_control": {
+    "draft": {
+      "statement": "For every natural numbers n, m, and k, n + k is at most m + k.",
+      "objects": [
+        "n, m, k are natural numbers"
+      ],
+      "assumptions": [],
+      "quantifiers": [
+        "For all n, m, k"
+      ],
+      "definition": "",
+      "uncertainties": []
+    },
+    "review": {
+      "draft_hash": "2567dbf012b999315e2a0db12e33e0c980618d43b08309322f6a4d1f4eab5089",
+      "context_hash": "6d995839955d1c40ca5fb9408d97fb0675372259c9c2155ee0603bea05f37549",
+      "status": "rejected",
+      "checks": {
+        "objects_and_quantifiers": {
+          "verdict": "passed",
+          "reason": "The draft's objects n, m, and k as natural numbers and its universal quantifiers match the binder ∀ (n m k : Nat).",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.add_order",
+            "field": "type",
+            "excerpt": "∀ (n m k : Nat)"
+          }
+        },
+        "hypotheses_and_domains": {
+          "verdict": "failed",
+          "reason": "The type requires the hypothesis n ≤ m, but the draft assumptions are empty and never restrict the domain of the claim by that inequality.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.add_order",
+            "field": "type",
+            "excerpt": "n ≤ m →"
+          }
+        },
+        "conclusion_and_formula": {
+          "verdict": "failed",
+          "reason": "The draft asserts n + k ≤ m + k for every natural numbers n, m, and k, omitting the antecedent, so it does not match the implication formula.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.add_order",
+            "field": "type",
+            "excerpt": "n ≤ m → n + k ≤ m + k"
+          }
+        },
+        "definition_and_construction": {
+          "verdict": "passed",
+          "reason": "The declaration is a theorem with null definition_value, so the definition check is inapplicable; the draft's empty definition does not invent a construction.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.add_order",
+            "field": "type",
+            "excerpt": "∀ (n m k : Nat), n ≤ m → n + k ≤ m + k"
+          }
+        }
+      },
+      "issues": [
+        {
+          "category": "missing_hypothesis",
+          "message": "The compiler type is conditional on n ≤ m, but the draft lists no assumptions and states n + k ≤ m + k unconditionally for all natural numbers n, m, and k.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.add_order",
+            "field": "type",
+            "excerpt": "n ≤ m → n + k ≤ m + k"
+          }
+        }
+      ],
+      "context_requests": []
+    },
+    "correctly_rejected": true,
+    "accounting": {
+      "command_calls": 1,
+      "settled_tokens": 9157,
+      "unknown_usage_calls": 0,
+      "actual_total_tokens": 9157,
+      "automatic_transport_retries": 0
+    }
+  },
+  "preserved_undecided_energy": {
+    "compiler": {
+      "axioms": [],
+      "constructors": [],
+      "definition_value": "fun (q : SemanticExample.QuadraticModel) (x : Int) => ↑q.curvature * (x - q.center) ^ 2",
+      "dependency_modules": {
+        "HMul.hMul": "Init.Prelude",
+        "HPow.hPow": "Init.Prelude",
+        "HSub.hSub": "Init.Prelude",
+        "Int": "Init.Data.Int.Basic",
+        "Int.instMul": "Init.Data.Int.Basic",
+        "Int.instNatPow": "Init.Data.Int.Basic",
+        "Int.instSub": "Init.Data.Int.Basic",
+        "Nat": "Init.Prelude",
+        "Nat.cast": "Init.Data.Cast",
+        "OfNat.ofNat": "Init.Prelude",
+        "SemanticExample.QuadraticModel": "Semantic",
+        "SemanticExample.QuadraticModel.center": "Semantic",
+        "SemanticExample.QuadraticModel.curvature": "Semantic",
+        "instHMul": "Init.Prelude",
+        "instHPow": "Init.Prelude",
+        "instHSub": "Init.Prelude",
+        "instNatCastInt": "Init.Data.Int.Basic",
+        "instOfNatNat": "Init.Prelude",
+        "instPowNat": "Init.Prelude"
+      },
+      "is_partial": false,
+      "is_unsafe": false,
+      "kind": "def",
+      "module": "Semantic",
+      "mutual_family": [
+        "SemanticExample.energy"
+      ],
+      "name": "SemanticExample.energy",
+      "selection_range": {
+        "column_end": 10,
+        "column_start": 4,
+        "line_end": 10,
+        "line_start": 10
+      },
+      "source_range": {
+        "column_end": 42,
+        "column_start": 0,
+        "line_end": 11,
+        "line_start": 9
+      },
+      "structure_fields": [],
+      "type": "SemanticExample.QuadraticModel → Int → Int",
+      "type_dependencies": [
+        "Int",
+        "SemanticExample.QuadraticModel"
+      ],
+      "value_available": true,
+      "value_dependencies": [
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.instMul",
+        "Int.instNatPow",
+        "Int.instSub",
+        "Nat",
+        "Nat.cast",
+        "OfNat.ofNat",
+        "SemanticExample.QuadraticModel",
+        "SemanticExample.QuadraticModel.center",
+        "SemanticExample.QuadraticModel.curvature",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instNatCastInt",
+        "instOfNatNat",
+        "instPowNat"
+      ],
+      "declaration_key": "Semantic::SemanticExample.energy"
+    },
+    "resume_request_hash": "628b04318dce003406bf9a4835fa2c33b6014b46b2780593ba2d65aec6617eed",
+    "original_input_unchanged": true,
+    "natural": {
+      "statement": "For every quadratic model q and every integer x, the energy of q at x is the integer obtained by canonically coercing the curvature of q from the natural numbers to the integers and multiplying that integer by the square of the difference between x and the center of q. Explicitly, energy(q, x) equals the canonical coercion of curvature(q) multiplied, in the integers, by (x minus center(q)) raised to the natural-number power 2.",
+      "objects": [
+        "q, a quadratic model, that is, an element of the inductive type QuadraticModel",
+        "x, an integer",
+        "curvature(q), a natural number, equal to the first component of q",
+        "center(q), an integer, equal to the third component of q",
+        "the canonical coercion of curvature(q) from the natural numbers to the integers",
+        "the integer difference of x and center(q)",
+        "the square of that difference, obtained by natural-number exponentiation of an integer with exponent 2",
+        "energy(q, x), an integer"
+      ],
+      "assumptions": [],
+      "quantifiers": [
+        "for every quadratic model q",
+        "for every integer x"
+      ],
+      "definition": "Energy is defined by sending each quadratic model q and each integer x to the integer given by the canonical coercion of curvature(q) from the natural numbers to the integers, multiplied in the integers by (x − center(q)) raised to the natural-number power 2. Subtraction and multiplication are the integer operations, and the exponent 2 is the natural number two. QuadraticModel is an inductive type with constructor mk. The constructor mk takes, in order, a natural number curvature, a proof that zero is strictly less than that curvature in the strict order of the natural numbers, and an integer, and returns a quadratic model. Curvature is defined by curvature(self) = self.1 and takes values in the natural numbers. Center is defined by center(self) = self.3 and takes values in the integers. The named field positive is the assertion that, for every quadratic model self, zero is strictly less than curvature(self); no defining projection formula for positive is supplied.",
+      "uncertainties": [
+        "It remains unresolved whether the name positive denotes the second argument of the constructor mk, namely the stored proof that zero is strictly less than the curvature, or only a separately recorded theorem. The constructor type places a proof of zero strictly less than curvature in second position, curvature is the first component, and center is the third component, but positive has a null defining value and no projection equation identifying it with a component."
+      ]
+    },
+    "review": {
+      "draft_hash": "5f277a925bc6909cb18c46879bf2a168c75900d705a520ef99744230d6f31f20",
+      "context_hash": "f580b2bfecceb65fc18ff1c2bd167462cb51156685177c30f69a17de4b8e2bfb",
+      "status": "undecided",
+      "checks": {
+        "objects_and_quantifiers": {
+          "verdict": "passed",
+          "reason": "The two quantifiers are exactly the two arguments of energy, whose type is QuadraticModel to Int to Int. The listed objects match those arguments, the Nat-valued first projection curvature, the Int-valued third projection center, the Nat-to-Int coercion, integer subtraction, natural-number power 2, and the Int result.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.energy",
+            "field": "type",
+            "excerpt": "SemanticExample.QuadraticModel → Int → Int"
+          }
+        },
+        "hypotheses_and_domains": {
+          "verdict": "passed",
+          "reason": "energy is a total definition on every QuadraticModel and every Int, with result Int, and the supplied definition adds no further hypothesis. The empty assumption list matches that. Positivity is not an extra premise of energy; it is the separate statement that every model satisfies 0 < curvature.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.energy",
+            "field": "definition_value",
+            "excerpt": "fun (q : SemanticExample.QuadraticModel) (x : Int) => ↑q.curvature * (x - q.center) ^ 2"
+          }
+        },
+        "conclusion_and_formula": {
+          "verdict": "passed",
+          "reason": "The stated formula is the compiler definition: coerce curvature from Nat to Int, subtract center from x in Int, raise that Int difference to the natural-number power 2, and multiply in Int. Dependencies Nat.cast, instNatCastInt, Int.instSub, Int.instMul, and Int.instNatPow support those operations and the parenthesization.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.energy",
+            "field": "definition_value",
+            "excerpt": "↑q.curvature * (x - q.center) ^ 2"
+          }
+        },
+        "definition_and_construction": {
+          "verdict": "undecided",
+          "reason": "The energy equation, mk's argument order, curvature = self.1 in Nat, and center = self.3 in Int are supplied. positive is only the theorem that every model has 0 < curvature, with definition_value null, so the draft's open question whether positive is the stored second constructor argument is not settled by any projection equation.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.QuadraticModel.positive",
+            "field": "type",
+            "excerpt": "∀ (self : SemanticExample.QuadraticModel), 0 < self.curvature"
+          }
+        }
+      },
+      "issues": [
+        {
+          "category": "unresolved_definition",
+          "message": "The draft leaves unresolved whether positive is the second argument of mk, the stored proof 0 < curvature, or only the recorded theorem ∀ self, 0 < self.curvature. mk's type places that proof second, curvature is self.1, and center is self.3, but positive has a null definition_value and no equation identifying it with a component, so the construction narrative cannot be approved.",
+          "evidence": {
+            "declaration_key": "Semantic::SemanticExample.QuadraticModel.mk",
+            "field": "type",
+            "excerpt": "(curvature : Nat) → 0 < curvature → Int → SemanticExample.QuadraticModel"
+          }
+        }
+      ],
+      "context_requests": []
+    },
+    "compiler_context": [
+      {
+        "axioms": [],
+        "constructors": [
+          "SemanticExample.QuadraticModel.mk"
+        ],
+        "definition_value": null,
+        "dependency_modules": {
+          "SemanticExample.QuadraticModel.center": "Semantic",
+          "SemanticExample.QuadraticModel.curvature": "Semantic",
+          "SemanticExample.QuadraticModel.mk": "Semantic",
+          "SemanticExample.QuadraticModel.positive": "Semantic"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "inductive",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.QuadraticModel"
+        ],
+        "name": "SemanticExample.QuadraticModel",
+        "selection_range": {
+          "column_end": 24,
+          "column_start": 10,
+          "line_end": 4,
+          "line_start": 4
+        },
+        "source_range": {
+          "column_end": 14,
+          "column_start": 0,
+          "line_end": 7,
+          "line_start": 3
+        },
+        "structure_fields": [
+          "SemanticExample.QuadraticModel.center",
+          "SemanticExample.QuadraticModel.curvature",
+          "SemanticExample.QuadraticModel.positive"
+        ],
+        "type": "Type",
+        "type_dependencies": [
+          "SemanticExample.QuadraticModel.center",
+          "SemanticExample.QuadraticModel.curvature",
+          "SemanticExample.QuadraticModel.mk",
+          "SemanticExample.QuadraticModel.positive"
+        ],
+        "value_available": false,
+        "value_dependencies": [],
+        "declaration_key": "Semantic::SemanticExample.QuadraticModel"
+      },
+      {
+        "axioms": [],
+        "constructors": [],
+        "definition_value": "fun (self : SemanticExample.QuadraticModel) => self.3",
+        "dependency_modules": {
+          "Int": "Init.Data.Int.Basic",
+          "SemanticExample.QuadraticModel": "Semantic"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "def",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.QuadraticModel.center"
+        ],
+        "name": "SemanticExample.QuadraticModel.center",
+        "selection_range": {
+          "column_end": 8,
+          "column_start": 2,
+          "line_end": 7,
+          "line_start": 7
+        },
+        "source_range": {
+          "column_end": 8,
+          "column_start": 2,
+          "line_end": 7,
+          "line_start": 7
+        },
+        "structure_fields": [],
+        "type": "SemanticExample.QuadraticModel → Int",
+        "type_dependencies": [
+          "Int",
+          "SemanticExample.QuadraticModel"
+        ],
+        "value_available": true,
+        "value_dependencies": [
+          "SemanticExample.QuadraticModel"
+        ],
+        "declaration_key": "Semantic::SemanticExample.QuadraticModel.center"
+      },
+      {
+        "axioms": [],
+        "constructors": [],
+        "definition_value": "fun (self : SemanticExample.QuadraticModel) => self.1",
+        "dependency_modules": {
+          "Nat": "Init.Prelude",
+          "SemanticExample.QuadraticModel": "Semantic"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "def",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.QuadraticModel.curvature"
+        ],
+        "name": "SemanticExample.QuadraticModel.curvature",
+        "selection_range": {
+          "column_end": 11,
+          "column_start": 2,
+          "line_end": 5,
+          "line_start": 5
+        },
+        "source_range": {
+          "column_end": 11,
+          "column_start": 2,
+          "line_end": 5,
+          "line_start": 5
+        },
+        "structure_fields": [],
+        "type": "SemanticExample.QuadraticModel → Nat",
+        "type_dependencies": [
+          "Nat",
+          "SemanticExample.QuadraticModel"
+        ],
+        "value_available": true,
+        "value_dependencies": [
+          "SemanticExample.QuadraticModel"
+        ],
+        "declaration_key": "Semantic::SemanticExample.QuadraticModel.curvature"
+      },
+      {
+        "axioms": [],
+        "constructors": [],
+        "definition_value": null,
+        "dependency_modules": {
+          "Int": "Init.Data.Int.Basic",
+          "LT.lt": "Init.Prelude",
+          "Nat": "Init.Prelude",
+          "OfNat.ofNat": "Init.Prelude",
+          "SemanticExample.QuadraticModel": "Semantic",
+          "instLTNat": "Init.Prelude",
+          "instOfNatNat": "Init.Prelude"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "constructor",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.QuadraticModel.mk"
+        ],
+        "name": "SemanticExample.QuadraticModel.mk",
+        "selection_range": {
+          "column_end": 24,
+          "column_start": 10,
+          "line_end": 4,
+          "line_start": 4
+        },
+        "source_range": {
+          "column_end": 24,
+          "column_start": 10,
+          "line_end": 4,
+          "line_start": 4
+        },
+        "structure_fields": [],
+        "type": "(curvature : Nat) → 0 < curvature → Int → SemanticExample.QuadraticModel",
+        "type_dependencies": [
+          "Int",
+          "LT.lt",
+          "Nat",
+          "OfNat.ofNat",
+          "SemanticExample.QuadraticModel",
+          "instLTNat",
+          "instOfNatNat"
+        ],
+        "value_available": false,
+        "value_dependencies": [],
+        "declaration_key": "Semantic::SemanticExample.QuadraticModel.mk"
+      },
+      {
+        "axioms": [],
+        "constructors": [],
+        "definition_value": null,
+        "dependency_modules": {
+          "LT.lt": "Init.Prelude",
+          "Nat": "Init.Prelude",
+          "OfNat.ofNat": "Init.Prelude",
+          "SemanticExample.QuadraticModel": "Semantic",
+          "SemanticExample.QuadraticModel.curvature": "Semantic",
+          "instLTNat": "Init.Prelude",
+          "instOfNatNat": "Init.Prelude"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "theorem",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.QuadraticModel.positive"
+        ],
+        "name": "SemanticExample.QuadraticModel.positive",
+        "selection_range": {
+          "column_end": 10,
+          "column_start": 2,
+          "line_end": 6,
+          "line_start": 6
+        },
+        "source_range": {
+          "column_end": 10,
+          "column_start": 2,
+          "line_end": 6,
+          "line_start": 6
+        },
+        "structure_fields": [],
+        "type": "∀ (self : SemanticExample.QuadraticModel), 0 < self.curvature",
+        "type_dependencies": [
+          "LT.lt",
+          "Nat",
+          "OfNat.ofNat",
+          "SemanticExample.QuadraticModel",
+          "SemanticExample.QuadraticModel.curvature",
+          "instLTNat",
+          "instOfNatNat"
+        ],
+        "value_available": true,
+        "value_dependencies": [
+          "SemanticExample.QuadraticModel"
+        ],
+        "declaration_key": "Semantic::SemanticExample.QuadraticModel.positive"
+      },
+      {
+        "axioms": [],
+        "constructors": [],
+        "definition_value": "fun (q : SemanticExample.QuadraticModel) (x : Int) => ↑q.curvature * (x - q.center) ^ 2",
+        "dependency_modules": {
+          "HMul.hMul": "Init.Prelude",
+          "HPow.hPow": "Init.Prelude",
+          "HSub.hSub": "Init.Prelude",
+          "Int": "Init.Data.Int.Basic",
+          "Int.instMul": "Init.Data.Int.Basic",
+          "Int.instNatPow": "Init.Data.Int.Basic",
+          "Int.instSub": "Init.Data.Int.Basic",
+          "Nat": "Init.Prelude",
+          "Nat.cast": "Init.Data.Cast",
+          "OfNat.ofNat": "Init.Prelude",
+          "SemanticExample.QuadraticModel": "Semantic",
+          "SemanticExample.QuadraticModel.center": "Semantic",
+          "SemanticExample.QuadraticModel.curvature": "Semantic",
+          "instHMul": "Init.Prelude",
+          "instHPow": "Init.Prelude",
+          "instHSub": "Init.Prelude",
+          "instNatCastInt": "Init.Data.Int.Basic",
+          "instOfNatNat": "Init.Prelude",
+          "instPowNat": "Init.Prelude"
+        },
+        "is_partial": false,
+        "is_unsafe": false,
+        "kind": "def",
+        "module": "Semantic",
+        "mutual_family": [
+          "SemanticExample.energy"
+        ],
+        "name": "SemanticExample.energy",
+        "selection_range": {
+          "column_end": 10,
+          "column_start": 4,
+          "line_end": 10,
+          "line_start": 10
+        },
+        "source_range": {
+          "column_end": 42,
+          "column_start": 0,
+          "line_end": 11,
+          "line_start": 9
+        },
+        "structure_fields": [],
+        "type": "SemanticExample.QuadraticModel → Int → Int",
+        "type_dependencies": [
+          "Int",
+          "SemanticExample.QuadraticModel"
+        ],
+        "value_available": true,
+        "value_dependencies": [
+          "HMul.hMul",
+          "HPow.hPow",
+          "HSub.hSub",
+          "Int",
+          "Int.instMul",
+          "Int.instNatPow",
+          "Int.instSub",
+          "Nat",
+          "Nat.cast",
+          "OfNat.ofNat",
+          "SemanticExample.QuadraticModel",
+          "SemanticExample.QuadraticModel.center",
+          "SemanticExample.QuadraticModel.curvature",
+          "instHMul",
+          "instHPow",
+          "instHSub",
+          "instNatCastInt",
+          "instOfNatNat",
+          "instPowNat"
+        ],
+        "declaration_key": "Semantic::SemanticExample.energy"
+      }
+    ],
+    "status": "needs_review",
+    "accounting": {
+      "command_calls": 5,
+      "settled_tokens": 70736,
+      "unknown_usage_calls": 0,
+      "actual_total_tokens": 70736,
+      "automatic_transport_retries": 0
+    }
+  },
+  "semantic_equivalence_formally_proved": false
+}

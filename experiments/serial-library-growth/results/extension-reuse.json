@@ -1,0 +1,99 @@
+{
+  "schema": "lift.serial-extension-reuse.v1",
+  "batches": [
+    {
+      "batch": "B3",
+      "source_identity": "83fb8b5bd12c1c2f4ec8e044f3b576059b752867b1b92e98cfba514fea428325",
+      "observed_compiled_proof_dependencies": [
+        {
+          "consumer": "halfNormSq_add_erealIndicator_strongConvex",
+          "callee": "StrongConvex.add_convex"
+        }
+      ],
+      "independent_replacement": null,
+      "cross_implementation_recovery": null,
+      "baseline_advantage": null
+    },
+    {
+      "batch": "B4",
+      "source_identity": "9c0e332940d62b0e31694f62b51bfbdd9b38e18a1dfdd54234e636dc267af110",
+      "observed_compiled_proof_dependencies": [
+        {
+          "consumer": "StrongConvexC1On.iff_strongConvex_coe",
+          "direct_dependencies": [
+            "StrongConvex",
+            "StrongConvex.coe_iff_strongConvexOn_univ",
+            "StrongConvexC1On",
+            "StrongConvexC1On.iff_strongConvexOn"
+          ]
+        },
+        {
+          "consumer": "StrongConvex.coe_iff_strongConvexOn_univ",
+          "direct_dependencies": [
+            "StrongConvex",
+            "_private.ReasLib.Analysis.Convex.Strong.0.StrongConvex.coe_iff_strongConvexOn_univ._simp_1_1",
+            "effectiveDomain",
+            "effectiveDomain_coe_eq_univ",
+            "strongConvex_iff_strongConvexOn"
+          ]
+        },
+        {
+          "consumer": "StrongConvexC1NonnegOn.nonnegCombination",
+          "direct_dependencies": [
+            "StrongConvexC1NonnegOn",
+            "StrongConvexC1NonnegOn.contDiffOn",
+            "StrongConvexC1NonnegOn.convexDomain",
+            "StrongConvexC1NonnegOn.lower",
+            "StrongConvexC1NonnegOn.muNonneg",
+            "StrongConvexC1NonnegOn.ofConditions",
+            "_private.ReasLib.Analysis.Convex.StrongC1Nonneg.0.contDiffOn_linearCombination",
+            "_private.ReasLib.Analysis.Convex.StrongC1Nonneg.0.fderivWithin_linearCombination_apply_sub"
+          ]
+        },
+        {
+          "consumer": "StrongConvexC1On.combination",
+          "direct_dependencies": [
+            "StrongConvexC1On",
+            "StrongConvexC1On.nonnegCombination"
+          ]
+        },
+        {
+          "consumer": "StrongConvexC1On.nonnegCombination",
+          "direct_dependencies": [
+            "StrongConvexC1NonnegOn",
+            "StrongConvexC1NonnegOn.nonnegCombination",
+            "StrongConvexC1On",
+            "strongConvexC1On_iff_nonneg_and_pos"
+          ]
+        },
+        {
+          "consumer": "StrongConvexC1On.le_of_fderiv_eq_zero",
+          "direct_dependencies": [
+            "StrongConvexC1On",
+            "StrongConvexC1On.lower"
+          ]
+        }
+      ],
+      "independent_replacement": null,
+      "cross_implementation_recovery": null,
+      "baseline_advantage": null
+    },
+    {
+      "batch": "B5",
+      "source_identity": "02aa84f81d84ffe3245af1ecb4fb535cea12cca77ccc0e5223ae90a0d47d8bde",
+      "observed_compiled_proof_dependencies": [
+        {
+          "path": [
+            "StrongConvex.subdifferential_stronglyMonotone",
+            "StrongConvex.le_toReal_add_sq_of_mem_subdifferential",
+            "strongConvex_iff_strongConvexOn"
+          ]
+        }
+      ],
+      "independent_replacement": null,
+      "cross_implementation_recovery": null,
+      "baseline_advantage": null
+    }
+  ],
+  "evidence_kind": "executable_demonstration"
+}

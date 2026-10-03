@@ -1,0 +1,201 @@
+{
+  "schema": "lift.experiments.v1",
+  "experiments": [
+    {
+      "id": "corpus-construction",
+      "title": "Construction across mathematical domains",
+      "paper_labels": [
+        "tab:construction-full",
+        "tab:mainresults",
+        "tab:library-full",
+        "tab:corpus-scope",
+        "tab:actions-full",
+        "fig:action-profile"
+      ],
+      "evidence_kind": "paper_experiment",
+      "inputs": [
+        "experiments/corpus-construction/data/actions.csv",
+        "experiments/corpus-construction/data/integration-manifests.csv",
+        "experiments/corpus-construction/data/modules.csv",
+        "experiments/corpus-construction/data/project-metadata.json",
+        "experiments/corpus-construction/data/provenance.json",
+        "experiments/corpus-construction/data/selection.csv",
+        "experiments/corpus-construction/data/stage-counts.csv"
+      ],
+      "results": [
+        "experiments/corpus-construction/results/construction.csv",
+        "experiments/corpus-construction/results/declaration-actions.csv",
+        "experiments/corpus-construction/results/module-profile.csv"
+      ],
+      "command": "python3 scripts/reproduce_tables.py --check",
+      "configuration": [
+        "metadata/artifacts.json"
+      ],
+      "units": [
+        "catalogue_item",
+        "accepted_integration",
+        "module_occurrence",
+        "declaration_action"
+      ]
+    },
+    {
+      "id": "source-recovery",
+      "title": "Interfaces and source recovery",
+      "paper_labels": [
+        "tab:interfaces",
+        "tab:checked-declarations",
+        "tab:proof-handoff",
+        "tab:handoff-detail"
+      ],
+      "evidence_kind": "paper_experiment",
+      "inputs": [
+        "experiments/source-recovery/data/obligation-identities.json",
+        "experiments/source-recovery/data/proof-stages.json"
+      ],
+      "results": [
+        "experiments/source-recovery/results/lean-checks-historical.json",
+        "experiments/source-recovery/results/lean-checks-release.json",
+        "experiments/source-recovery/results/package-checks.json",
+        "experiments/source-recovery/results/proof-handoff.csv",
+        "experiments/source-recovery/results/proof-obligations.csv",
+        "experiments/source-recovery/results/proof-task-links.csv"
+      ],
+      "command": "python3 scripts/reproduce_tables.py --check",
+      "configuration": [
+        "metadata/artifacts.json",
+        "examples/paper-cases/reaslib/lake-manifest.json",
+        "examples/paper-cases/reaslib/lakefile.toml",
+        "examples/paper-cases/reaslib/lean-toolchain"
+      ],
+      "units": [
+        "proof_batch",
+        "obligation",
+        "task_link",
+        "named_declaration"
+      ]
+    },
+    {
+      "id": "downstream-reuse",
+      "title": "A public interface in a later proof",
+      "paper_labels": [
+        "tab:normal-cone-recovery"
+      ],
+      "evidence_kind": "paper_experiment",
+      "inputs": [
+        "experiments/downstream-reuse/data/normal-cone-comparator-upstream.md",
+        "experiments/downstream-reuse/data/normal-cone-integration.json",
+        "experiments/downstream-reuse/data/normal-cone.json"
+      ],
+      "results": [
+        "experiments/downstream-reuse/results/package-checks.json"
+      ],
+      "command": "python3 scripts/check_case.py normal-cone --output _runs/downstream-reuse",
+      "configuration": [
+        "metadata/artifacts.json",
+        "examples/paper-cases/normal-cone/check.json",
+        "examples/paper-cases/normal-cone/lake-manifest.json",
+        "examples/paper-cases/normal-cone/lakefile.toml",
+        "examples/paper-cases/normal-cone/lean-toolchain"
+      ],
+      "units": [
+        "original_module",
+        "source_application",
+        "named_declaration",
+        "actual_caller"
+      ]
+    },
+    {
+      "id": "online-revision",
+      "title": "Reuse during online revision",
+      "paper_labels": [
+        "tab:online-revision",
+        "tab:revision-events",
+        "fig:growth-evaluation"
+      ],
+      "evidence_kind": "paper_experiment",
+      "inputs": [
+        "experiments/online-revision/data/online-events.json",
+        "experiments/online-revision/data/online-revision.patch"
+      ],
+      "results": [
+        "experiments/online-revision/results/online-checkpoint.json",
+        "experiments/online-revision/results/online-trace.csv",
+        "experiments/online-revision/results/package-checks.json"
+      ],
+      "command": "python3 scripts/check_case.py beck --output _runs/online-revision",
+      "configuration": [
+        "metadata/artifacts.json",
+        "examples/paper-cases/beck/before/lake-manifest.json",
+        "examples/paper-cases/beck/before/lakefile.toml",
+        "examples/paper-cases/beck/before/lean-toolchain",
+        "examples/paper-cases/beck/check.json",
+        "examples/paper-cases/beck/checkpoint/lake-manifest.json",
+        "examples/paper-cases/beck/checkpoint/lakefile.toml",
+        "examples/paper-cases/beck/checkpoint/lean-toolchain",
+        "examples/paper-cases/beck/clients.json"
+      ],
+      "units": [
+        "event",
+        "source_declaration",
+        "named_theorem",
+        "fixed_client"
+      ]
+    },
+    {
+      "id": "tool-validation",
+      "title": "Compiler extraction and toolchain alignment",
+      "paper_labels": [],
+      "evidence_kind": "tool_validation",
+      "inputs": [],
+      "results": [
+        "experiments/tool-validation/results/package-checks.json",
+        "experiments/tool-validation/results/workflows.json"
+      ],
+      "command": "python3 scripts/validate_tools.py --output _runs/tool-validation",
+      "configuration": [
+        "metadata/artifacts.json",
+        "examples/lean-json/lean-toolchain",
+        "examples/mathlib-migration/lean-toolchain",
+        "examples/toolchain-repair/rules.json"
+      ],
+      "units": [
+        "compiler_version",
+        "fixture_declaration",
+        "original_client"
+      ]
+    },
+    {
+      "id": "serial-library-growth",
+      "title": "Serial ReasLib construction from three textbooks",
+      "paper_labels": [],
+      "evidence_kind": "executable_demonstration",
+      "inputs": [
+        "experiments/serial-library-growth/data/sources.json",
+        "experiments/serial-library-growth/data/protocol.json",
+        "experiments/serial-library-growth/data/extension-selection.json"
+      ],
+      "results": [
+        "experiments/serial-library-growth/results/demo.json",
+        "experiments/serial-library-growth/results/package.json",
+        "experiments/serial-library-growth/results/package-checks.json",
+        "experiments/serial-library-growth/results/interpretation.json",
+        "experiments/serial-library-growth/results/extension-reuse.json",
+        "experiments/serial-library-growth/results/supplementary-cases.json"
+      ],
+      "command": "python3 scripts/check_serial_demo.py --output _runs/reaslib-serial",
+      "configuration": [
+        "examples/reaslib-serial/lean-toolchain",
+        "examples/reaslib-serial/lake-manifest.json",
+        "examples/reaslib-serial/lakefile.toml"
+      ],
+      "units": [
+        "source_unit",
+        "source_interface",
+        "representation_obligation",
+        "trusted_declaration",
+        "independent_client",
+        "execution_attempt"
+      ]
+    }
+  ]
+}

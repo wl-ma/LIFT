@@ -1,0 +1,190 @@
+{
+  "schema": "lift.serial-extension-selection.v1",
+  "status": "reviewed_and_completed",
+  "source_units": 6,
+  "derived_bridge_units": 1,
+  "sources": [
+    {
+      "id": "beck",
+      "title": "First-Order Methods in Optimization",
+      "year": 2017,
+      "doi": "10.1137/1.9781611974997",
+      "edition": "first",
+      "pdf_sha256": "b5186c4c06aca872b16013bf81f27782daaa65de3b7534b81c450f95b8980c48"
+    },
+    {
+      "id": "bauschke",
+      "title": "Convex Analysis and Monotone Operator Theory in Hilbert Spaces",
+      "year": 2017,
+      "doi": "10.1007/978-3-319-48311-5",
+      "edition": "second",
+      "pdf_sha256": "947607eae3a205eefa00f849ac5b98abaa9968f08fd8df4cdda15f2bcc2f3286"
+    },
+    {
+      "id": "nesterov",
+      "title": "Lectures on Convex Optimization",
+      "year": 2018,
+      "doi": "10.1007/978-3-319-91578-4",
+      "edition": "second",
+      "pdf_sha256": "1c1c2c8f63b00bf377cc2acd553da4fefc109731f571e508dd38801a67a77ddf"
+    }
+  ],
+  "items": [
+    {
+      "id": "beck-add",
+      "source": "beck",
+      "locator": "Lemma 5.20",
+      "printed_page": 119,
+      "pdf_pages": [
+        128
+      ],
+      "serial_batch": 1,
+      "statement": "An extended-real sigma-strongly convex function plus a convex function is sigma-strongly convex for sigma > 0.",
+      "conditions": "Retain the original effective-domain semantics; neither summand is assumed proper. An empty intersection of effective domains is not excluded.",
+      "expected_upstream": [
+        "StrongConvex",
+        "effectiveDomain"
+      ],
+      "reuse_hypothesis": "Generic addition interface, then exact source recovery.",
+      "status": "reviewed_and_completed"
+    },
+    {
+      "id": "beck-indicator",
+      "source": "beck",
+      "locator": "Example 5.21",
+      "printed_page": 119,
+      "pdf_pages": [
+        128
+      ],
+      "serial_batch": 1,
+      "statement": "For a nonempty convex subset C of a Euclidean space, one half of the squared norm plus the indicator of C is 1-strongly convex.",
+      "conditions": "Retain nonempty and convex C; the indicator takes the value positive infinity outside C.",
+      "expected_upstream": [
+        "beck-add",
+        "Analysis.InnerProductSpace.euclideanNormSq_combo_sub"
+      ],
+      "reuse_hypothesis": "Combine the existing quadratic identity with the new addition interface; exercise a nonsmooth extended-real consumer.",
+      "status": "reviewed_and_completed"
+    },
+    {
+      "id": "nesterov-weighted",
+      "source": "nesterov",
+      "locator": "Lemma 2.1.6",
+      "printed_page": 74,
+      "pdf_pages": [
+        94
+      ],
+      "serial_batch": 2,
+      "statement": "For nonnegative alpha and beta, alpha f1 + beta f2 has strong-convexity parameter alpha mu1 + beta mu2 on Q1 intersect Q2.",
+      "conditions": "Both functions are continuously differentiable in the source sense and use the same norm. Preserve alpha=beta=0 using the source convention S_0^1=F^1; do not silently require a positive resulting parameter.",
+      "expected_upstream": [
+        "StrongConvexC1On",
+        "beck-add"
+      ],
+      "reuse_hypothesis": "Share nonnegative curvature arithmetic and explicitly recover the differentiable formulation.",
+      "status": "reviewed_and_completed"
+    },
+    {
+      "id": "nesterov-growth",
+      "source": "nesterov",
+      "locator": "Theorem 2.1.8",
+      "printed_page": 74,
+      "pdf_pages": [
+        94
+      ],
+      "serial_batch": 2,
+      "statement": "If f belongs to S_mu^1 on the whole finite-dimensional space and its gradient vanishes at x_star, f(x) >= f(x_star) + (mu/2) norm(x-x_star)^2 for every x.",
+      "conditions": "Preserve the arbitrary norm and whole-space domain. The stationary point is an assumption; existence is not a conclusion of this item.",
+      "expected_upstream": [
+        "StrongConvexC1On.le_of_hasFDerivWithinAt"
+      ],
+      "reuse_hypothesis": "Expose and consume a stationary quadratic-growth interface.",
+      "status": "reviewed_and_completed"
+    },
+    {
+      "id": "bauschke-subgradient",
+      "source": "bauschke",
+      "locator": "Example 22.4(iv)",
+      "printed_page": 385,
+      "pdf_pages": [
+        390,
+        391
+      ],
+      "serial_batch": 3,
+      "statement": "For a proper convex extended-real function on a real Hilbert space, beta-strong convexity with beta > 0 implies beta-strong monotonicity of the subdifferential.",
+      "conditions": "Do not add lower semicontinuity or differentiability. Preserve the subgradient graph and extended-real effective domain.",
+      "expected_upstream": [
+        "StrongConvex",
+        "effectiveDomain"
+      ],
+      "reuse_hypothesis": "Use the shared quadratic inequality to obtain an operator interface.",
+      "status": "reviewed_and_completed"
+    },
+    {
+      "id": "bauschke-resolvent",
+      "source": "bauschke",
+      "locator": "Proposition 23.13",
+      "printed_page": 397,
+      "pdf_pages": [
+        403
+      ],
+      "serial_batch": 3,
+      "statement": "A monotone operator A is beta-strongly monotone iff its resolvent is (beta+1)-cocoercive; consequently the resolvent is 1/(beta+1)-Lipschitz.",
+      "conditions": "beta > 0. The resolvent domain is ran(Id+A). Do not assert it is all of H without maximal-monotonicity evidence. Preserve both directions and the Lipschitz conclusion.",
+      "expected_upstream": [
+        "bauschke-subgradient"
+      ],
+      "reuse_hypothesis": "An operator consumer uses the preceding strong-monotonicity interface.",
+      "status": "reviewed_and_completed"
+    }
+  ],
+  "derived_bridge": {
+    "id": "c1-ereal-bridge",
+    "label": "derived synthesis, not an additional textbook theorem",
+    "scope": "Whole finite-dimensional real inner-product space; C1 real-valued f; positive mu; real-to-EReal embedding. Relate the existing StrongConvexC1On and StrongConvex predicates without narrowing either original source interface.",
+    "background": "StrongConvexC1On.iff_strongConvexOn and strongConvex_iff_strongConvexOn already exist; the connecting theorem and source recoveries do not yet exist.",
+    "status": "selected_not_run"
+  },
+  "reserve": [
+    {
+      "source": "beck",
+      "locator": "Theorem 5.25",
+      "printed_pages": [
+        122,
+        123
+      ],
+      "pdf_pages": [
+        131,
+        132
+      ],
+      "reason": "Existence and uniqueness need closedness, properness and coercivity; do not replace with an assumed minimizer."
+    },
+    {
+      "source": "nesterov",
+      "locator": "Theorem 2.1.12",
+      "printed_pages": [
+        77
+      ],
+      "pdf_pages": [
+        97
+      ],
+      "reason": "Needs Lipschitz-gradient and cocoercivity background, including mu=L boundary."
+    },
+    {
+      "source": "nesterov",
+      "locator": "Theorem 2.1.15",
+      "printed_pages": [
+        81,
+        82
+      ],
+      "pdf_pages": [
+        101,
+        102
+      ],
+      "reason": "Algorithmic consumer after mixed gradient inequality; preserve step-size interval and full rate."
+    }
+  ],
+  "execution": "Serial on the retained three-source project, each batch statement preparation, library integration and proof; do not start from disjoint projects.",
+  "selection_policy": "Keep every selected item and failure; record dependency reuse, source recovery and independent clients separately. No selection changes based on method outcomes.",
+  "materials_publication": "Bibliographic locators and original paraphrases only; no textbook PDF or extracted pages included."
+}

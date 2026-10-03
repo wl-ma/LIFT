@@ -1,0 +1,21 @@
+{
+  "projects": 20,
+  "catalogue_items": 10922,
+  "integrated_items": 5061,
+  "public_module_occurrences": 15716,
+  "declaration_actions": {
+    "reuse_existing": 8854,
+    "promote": 19253,
+    "remove": 3283,
+    "keep_source": 2001,
+    "keep_item_local": 567
+  },
+  "proof_batches": 7,
+  "successful_integration_items_in_linked_batches": 118,
+  "successful_proof_tasks": 135,
+  "linked_obligations": 249,
+  "compiled_example_files": 5,
+  "axiom_checked_declarations": 9,
+  "additional_normal_cone_case": "Separately checked; original 5-file / 9-declaration totals unchanged",
+  "evidence_set": "paper-experiments"
+}

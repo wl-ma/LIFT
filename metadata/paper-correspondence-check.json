@@ -1,0 +1,25 @@
+{
+  "schema": "lift.paper-correspondence-check.v1",
+  "paper_sha256": "1098697517bdb6546574078f80ae5fca03124773bc0473b520c65a1788d70cba",
+  "passed": true,
+  "paper_artifact_files_unchanged": 175,
+  "paper_labels_checked": [
+    "tab:construction-full",
+    "tab:mainresults",
+    "tab:library-full",
+    "tab:corpus-scope",
+    "tab:actions-full",
+    "fig:action-profile",
+    "tab:interfaces",
+    "tab:checked-declarations",
+    "tab:proof-handoff",
+    "tab:handoff-detail",
+    "tab:normal-cone-recovery",
+    "tab:online-revision",
+    "tab:revision-events",
+    "fig:growth-evaluation"
+  ],
+  "supplementary_paper_labels": [],
+  "paper_results_reproduced": true,
+  "new_model_calls": 0
+}

@@ -1,4 +1,4 @@
-name: Version13 artifact verification
+name: Artifact verification
 on:
   push:
   pull_request:
@@ -18,12 +18,12 @@ jobs:
       - run: python -m pip install ruff -r requirements-plots.txt
       - run: |
           python scripts/verify_release.py
-          python scripts/verify_v13.py
+          python scripts/verify_artifacts.py
           python scripts/reproduce_tables.py --check
           python scripts/plot_results.py --output _runs/figures
           python -m unittest discover -s tests -v
-          ruff check scripts tools tests
-          ruff format --check scripts tools tests
+          ruff check src scripts tools tests
+          ruff format --check src scripts tools tests
       - uses: actions/upload-artifact@v4
         with:
           name: recomputed-figures
@@ -36,12 +36,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - project: examples/reaslib
+          - project: examples/paper-cases/reaslib
             case: reaslib
-          - project: examples/normal-cone
+          - project: examples/paper-cases/normal-cone
             case: normal-cone
-          - project: examples/beck/checkpoint
+          - project: examples/paper-cases/beck/checkpoint
             case: beck
+          - project: examples/reaslib-serial
+            case: serial
     steps:
       - uses: actions/checkout@v5
       - uses: leanprover/lean-action@v1
@@ -58,6 +60,13 @@ jobs:
         run: |
           if [ "${{ matrix.case }}" = "reaslib" ]; then
             python3 scripts/check_lean.py --output _runs/ci-reaslib
+          elif [ "${{ matrix.case }}" = "serial" ]; then
+            python3 scripts/check_serial_demo.py --output _runs/ci-serial
+            for project in experiments/serial-library-growth/supplementary/*/project; do
+              mkdir -p "$project/.lake"
+              ln -s "$GITHUB_WORKSPACE/examples/reaslib-serial/.lake/packages" "$project/.lake/packages"
+            done
+            python3 scripts/check_serial_cases.py --output _runs/ci-serial-cases
           else
             python3 scripts/check_case.py "${{ matrix.case }}" --output "_runs/ci-${{ matrix.case }}"
           fi
@@ -80,6 +89,7 @@ jobs:
           lint: false
           use-github-cache: false
       - run: python3 scripts/validate_tools.py --output _runs/ci-tools
+      - run: python3 scripts/validate_workflows.py --output _runs/ci-workflows
       - uses: actions/upload-artifact@v4
         if: always()
         with:

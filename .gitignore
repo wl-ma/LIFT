@@ -8,3 +8,7 @@ _runs/
 .env
 .env.*
 !.env.example
+
+*.egg-info/
+build/
+dist/

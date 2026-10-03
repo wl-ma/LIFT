@@ -1,0 +1,602 @@
+{
+  "schema": "lift.live-tool-qualification.v1",
+  "date": "2026-09-28",
+  "provider": "hosted Responses service",
+  "requested_model": "grok-4.7",
+  "wire_api": "responses",
+  "returned_models": [
+    "grok-4.7",
+    "grok-4.7-build"
+  ],
+  "model_sessions_per_track": 1,
+  "shared_compiler_slots": 1,
+  "natural_cases": [
+    {
+      "declaration": "SemanticExample.QuadraticModel",
+      "status": "accepted",
+      "review_status": "passed"
+    },
+    {
+      "declaration": "SemanticExample.energy",
+      "status": "accepted",
+      "review_status": "passed"
+    },
+    {
+      "declaration": "SemanticExample.add_order",
+      "status": "accepted",
+      "review_status": "passed"
+    },
+    {
+      "declaration": "StrongConvexC1On",
+      "status": "accepted",
+      "review_status": "passed"
+    }
+  ],
+  "negative_control": "missing_order_hypothesis_rejected",
+  "migration": {
+    "schema": "lift.automatic-migration.v1",
+    "status": "accepted",
+    "attempts": [
+      {
+        "round": 0,
+        "build_returncode": 1,
+        "source_snapshot_hash": "a9b4bdea0fa506b8406d070c33c1c2e92d1829e73914716115c12eebfef4ed0f",
+        "triggered_rules": {
+          "Mathlib.Analysis.NormedSpace.Extr": "Mathlib.Analysis.Normed.Group.Basic"
+        },
+        "edits": [
+          {
+            "file": "NormProof.lean",
+            "before": "7ee46e3e67c55d8e8e87c55ad8980ad6f1d884bfa6d020e05d85b6b5736e1b28",
+            "after": "1c1acbc02c64b4fb67a297f5b9082582b6a4e236b629eedcddda793303cbb752"
+          }
+        ]
+      },
+      {
+        "round": 1,
+        "build_returncode": 0,
+        "source_snapshot_hash": "586bf3696c5f2bfb0f575972eeb40cf7a5a4cf299cec06e34fb37941c2fa5db1"
+      }
+    ],
+    "model_calls": 1,
+    "repair_method": "diagnostic_gated_model_identifier_proposals",
+    "modules": [
+      "NormProof"
+    ],
+    "source_snapshot_hash": "405023c2c3102ef18970df3b450ee8cc8c88904b692efc43ce5b20784abdb84e",
+    "rules_hash": null,
+    "target_toolchain": "leanprover/lean4:v4.32.0",
+    "preservation_passed": true,
+    "clients_passed": true,
+    "accounting": {
+      "command_calls": 1,
+      "settled_tokens": 10816,
+      "unknown_usage_calls": 0,
+      "actual_total_tokens": 10816,
+      "automatic_transport_retries": 0
+    },
+    "original_unchanged": true
+  },
+  "migration_preservation": {
+    "passed": true,
+    "missing": [],
+    "added": [],
+    "changed": [],
+    "untrusted": [],
+    "dependency_changes": [],
+    "proof_terms_may_change": true,
+    "textual_comparison_is_not_semantic_equivalence": true
+  },
+  "migration_source_toolchain": "leanprover/lean4:v4.30.0",
+  "migration_target_mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+  "failures_preserved": [
+    "Run 1 launcher import error before model invocation",
+    "Run 2 invalid translator schema: combined field name",
+    "Run 3 invalid reviewer schema: nested issues and evidence arrays",
+    "Run 4 provider command failure with unknown usage and unclassified cause",
+    "Run 5 resumed energy review remained undecided about proof-field construction; complete compiler context in a fresh workflow resolved it"
+  ],
+  "accounting": {
+    "completed_provider_responses": 21,
+    "known_total_tokens": 241429,
+    "unknown_usage_provider_attempts": 1,
+    "pre_provider_launcher_failures": 1,
+    "actual_total_tokens": null,
+    "automatic_transport_retries": 0,
+    "assistant_implementation_and_audit_usage": null
+  },
+  "calls": [
+    {
+      "run": 1,
+      "call_record": "natural-calls/0000-receipt.json",
+      "role": "translator",
+      "status": "outcome_unknown",
+      "model": null,
+      "elapsed_seconds": 0.01534231600004432,
+      "request_hash": "4778e96c5e3ef73afe996355fb9ec4f1af5eb77f1c10b8a1376a2a22943f6a93",
+      "response_hash": null,
+      "usage": null,
+      "diagnosis": "Launcher import failed before provider invocation; zero model calls and tokens. Original command receipt retained.",
+      "actual_model_calls": 0
+    },
+    {
+      "run": 2,
+      "call_record": "natural-calls/0000-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 58.52710461700002,
+      "request_hash": "4778e96c5e3ef73afe996355fb9ec4f1af5eb77f1c10b8a1376a2a22943f6a93",
+      "response_hash": "04f044ab391ed65538779c73d4963eb5603dbedf6259aa68e596ce8d70dac93c",
+      "usage": {
+        "input_tokens": 5455,
+        "output_tokens": 3415,
+        "total_tokens": 8870,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 3130
+        }
+      }
+    },
+    {
+      "run": 3,
+      "call_record": "natural-calls/0000-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 38.75980262899998,
+      "request_hash": "e39dc3d54f72037e398305883c4a9cc84aa51db7d3329ac030983cc3d926dd74",
+      "response_hash": "e1a03406a27cae55beefb4d82d1270133f3e0d1909a14d5c445be4f654f8d2a7",
+      "usage": {
+        "input_tokens": 5580,
+        "output_tokens": 2734,
+        "total_tokens": 8314,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 2427
+        }
+      }
+    },
+    {
+      "run": 3,
+      "call_record": "natural-calls/0001-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 74.76164255799995,
+      "request_hash": "4d83c57ba53098e723b52e5736d70fa7f4ff0d7d56e7e6728720a62fac170039",
+      "response_hash": "b6f96176dcdd8a97518a81e90298ae67f77d8507b16e147238929e4b73adf76e",
+      "usage": {
+        "input_tokens": 6045,
+        "output_tokens": 5512,
+        "total_tokens": 11557,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 4474
+        }
+      }
+    },
+    {
+      "run": 4,
+      "call_record": "natural-calls/0000-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 30.360646267999982,
+      "request_hash": "e39dc3d54f72037e398305883c4a9cc84aa51db7d3329ac030983cc3d926dd74",
+      "response_hash": "6520dbe287d8f43af4d953c40a774e5a2809aa8b2e0ed083477cb85129a523a4",
+      "usage": {
+        "input_tokens": 5580,
+        "output_tokens": 2163,
+        "total_tokens": 7743,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 1781
+        }
+      }
+    },
+    {
+      "run": 4,
+      "call_record": "natural-calls/0001-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 49.742028463999986,
+      "request_hash": "f151533a6071fbb59ccbf8146d824485788781942de1e77141cc14e3088c23b6",
+      "response_hash": "29033b6c76dbe582a2fc1fa4477d40b3bab3cb625bc23a8250e884192fa54bad",
+      "usage": {
+        "input_tokens": 6611,
+        "output_tokens": 3750,
+        "total_tokens": 10361,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 3110
+        }
+      }
+    },
+    {
+      "run": 4,
+      "call_record": "natural-calls/0002-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 40.625557742999945,
+      "request_hash": "530f5e56af430a09ad9a53db6df6f5de65286f4f61389b9c39d8a569a0cd1132",
+      "response_hash": "94c998baa54b90ee6e2a9d42ad85b2e43fced899aa44651bf4e9ea7f5d8ec010",
+      "usage": {
+        "input_tokens": 5759,
+        "output_tokens": 3012,
+        "total_tokens": 8771,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 2652
+        }
+      }
+    },
+    {
+      "run": 4,
+      "call_record": "natural-calls/0003-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 96.95209421999994,
+      "request_hash": "f641f8857ef1508e1bdb4504f415e9c652ff817984598d3a7351dc80642c64ba",
+      "response_hash": "4c9a308180a2909adc03bbc6abea20c545595b8eed0f938acd3a6348fdec8683",
+      "usage": {
+        "input_tokens": 6772,
+        "output_tokens": 7134,
+        "total_tokens": 13906,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 6407
+        }
+      }
+    },
+    {
+      "run": 4,
+      "call_record": "natural-calls/0004-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7",
+      "elapsed_seconds": 119.40706199200008,
+      "request_hash": "2fa0cdaa0739b2b942fcee6113a4561795281ba4067d4f80de0a67ec0017b442",
+      "response_hash": "b5b79f54fd8749f9567990fb65cd27817e649176911cffe1c9ebf3df2cbb4f74",
+      "usage": {
+        "input_tokens": 7175,
+        "output_tokens": 7470,
+        "total_tokens": 14645,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 6931
+        }
+      }
+    },
+    {
+      "run": 4,
+      "call_record": "natural-calls/0005-receipt.json",
+      "role": "verifier",
+      "status": "outcome_unknown",
+      "model": null,
+      "elapsed_seconds": 122.16475697600004,
+      "request_hash": "628b04318dce003406bf9a4835fa2c33b6014b46b2780593ba2d65aec6617eed",
+      "response_hash": null,
+      "usage": null
+    },
+    {
+      "run": 5,
+      "call_record": "energy-calls/0000-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 119.39446787700012,
+      "request_hash": "628b04318dce003406bf9a4835fa2c33b6014b46b2780593ba2d65aec6617eed",
+      "response_hash": "60d58d4a71779bbbdefddd2eeea228470f274b9e897cff5a6e28062fecc1b778",
+      "usage": {
+        "input_tokens": 7277,
+        "output_tokens": 8175,
+        "total_tokens": 15452,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 7498
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "energy-calls/0001-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 39.67784282699995,
+      "request_hash": "08df0f236a5b1ec4897661807cb61369874e587e83500194998333a5d02d5489",
+      "response_hash": "ac226a93aaac6ab876ebf8b1200b7f1d53b17afeba225224ba95e7aaa6622455",
+      "usage": {
+        "input_tokens": 7304,
+        "output_tokens": 2784,
+        "total_tokens": 10088,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 2300
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "energy-calls/0002-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7",
+      "elapsed_seconds": 129.71770548099994,
+      "request_hash": "b1040f87c702067ca09ef871f073e23d3f306d5b8c185ceb581b924f7f7b5ec5",
+      "response_hash": "bce75cec1c809e88f0991f7a7d67299213fc010367bee29fc635fed4441ed3a7",
+      "usage": {
+        "input_tokens": 7221,
+        "output_tokens": 9977,
+        "total_tokens": 17198,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 9222
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "energy-calls/0003-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7",
+      "elapsed_seconds": 116.50759744599986,
+      "request_hash": "933aedfef2e1c486c44a5b4bdd6617109f6a835a3ec8002671ec00078fae2414",
+      "response_hash": "5f277a925bc6909cb18c46879bf2a168c75900d705a520ef99744230d6f31f20",
+      "usage": {
+        "input_tokens": 7648,
+        "output_tokens": 5625,
+        "total_tokens": 13273,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 5094
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "energy-calls/0004-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 98.69943246499997,
+      "request_hash": "525aa8589650ba78a79f6ab3b2447db4955c123638906840039c6aab1944acd3",
+      "response_hash": "5a4c491c18a00ed7efc8b184e958cf8ed1686cd3566eb7cdc4385554676fcfd2",
+      "usage": {
+        "input_tokens": 7587,
+        "output_tokens": 7138,
+        "total_tokens": 14725,
+        "input_tokens_details": {
+          "cached_tokens": 5632
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 6373
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "energy-complete-calls/0000-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 26.863110567999684,
+      "request_hash": "f9063d9e79e8be0635d3bf6171e38807d71d2eefd7991c72c8c1d7bb1240e36c",
+      "response_hash": "50a5fc8c1d294bd6de2377b70ce1ce0310add9a0247f19c5852ff911b81ab537",
+      "usage": {
+        "input_tokens": 6408,
+        "output_tokens": 1734,
+        "total_tokens": 8142,
+        "input_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 1465
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "energy-complete-calls/0001-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 49.77200972399987,
+      "request_hash": "12e3f621ea16dba34cba8837f9a812a96a29cc656237f276e4d5853bcb8096f2",
+      "response_hash": "32364bf89b620a576a8551f14ef01af41cd58de568019355bd6f97d19e3c2322",
+      "usage": {
+        "input_tokens": 7327,
+        "output_tokens": 3322,
+        "total_tokens": 10649,
+        "input_tokens_details": {
+          "cached_tokens": 4224
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 2816
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "migration/model-calls/0000-receipt.json",
+      "role": "migration_repair",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 114.30012438900008,
+      "request_hash": "69772fd1577335697536de75bd8d1d1e1beecffb08710ca7efe4d751f479ddfb",
+      "response_hash": "4c5f6587c1f5cf205518a53e28fad66950c57177c4e9f693cdd38e69ed6a1aee",
+      "usage": {
+        "input_tokens": 4093,
+        "output_tokens": 6723,
+        "total_tokens": 10816,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 6581
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "negative-calls/0000-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7",
+      "elapsed_seconds": 57.952818563000164,
+      "request_hash": "2a4b2956eefc1aebdeb0a3b1a20ea7e0297077de7c544ff2843acdebad1749af",
+      "response_hash": "497d87b9406b3196ca4653afeaa9d65ca6e64ebf462dcbab135f749cf5eed105",
+      "usage": {
+        "input_tokens": 5190,
+        "output_tokens": 3967,
+        "total_tokens": 9157,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 3443
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "reaslib-calls/0000-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 65.92867700999977,
+      "request_hash": "ffbf23fb191019a10f637d44027bf2c831daeded369a643e33530883891f0b93",
+      "response_hash": "871604e75cae9900e2cb32cc8b35e82c2b7a15792a9575e1f319cfa9e04cae12",
+      "usage": {
+        "input_tokens": 11851,
+        "output_tokens": 4572,
+        "total_tokens": 16423,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 3765
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "reaslib-calls/0001-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 79.29606633000003,
+      "request_hash": "a95310c762a5af3c8c1fdb154c47b380ac2ed723fec4384da9bb3cb2ba25ecc7",
+      "response_hash": "b107e5ce2f59875807669ead965ef5a5c2529998d8c82773fbffb45a4b5cec70",
+      "usage": {
+        "input_tokens": 13305,
+        "output_tokens": 5746,
+        "total_tokens": 19051,
+        "input_tokens_details": {
+          "cached_tokens": 4224
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 5056
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "theorem-calls/0000-receipt.json",
+      "role": "translator",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 23.57723172599981,
+      "request_hash": "3e7d51735e3f40eaff399d5320640f65998fd44394fc4296e6c4432b275744e1",
+      "response_hash": "44cb7c53fec4169f863b6d95f6232c3cce09ce5bca09737e8f25a95bf68c3ae7",
+      "usage": {
+        "input_tokens": 4478,
+        "output_tokens": 1462,
+        "total_tokens": 5940,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 1360
+        }
+      }
+    },
+    {
+      "run": 5,
+      "call_record": "theorem-calls/0001-receipt.json",
+      "role": "verifier",
+      "status": "returned",
+      "model": "grok-4.7-build",
+      "elapsed_seconds": 16.56605447200036,
+      "request_hash": "de72c64df9553f9571d4eda3a96f9e760c0aff0bcefd68865eacf93275e68fd8",
+      "response_hash": "dfca7f876ece4220eeea4e5e7ae230a65e2b3ace9991661129a3f36ee599aa57",
+      "usage": {
+        "input_tokens": 5231,
+        "output_tokens": 1117,
+        "total_tokens": 6348,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 696
+        }
+      }
+    }
+  ],
+  "implementation": {
+    "recorded_at": "2026-09-28T08:49:48.222902+00:00",
+    "unittests_passed": 69,
+    "ruff": "passed",
+    "files": {
+      "src/lift_tools/migration.py": "1f048980eff0cd5acf336dd333be71a3484ff4008bb2f1a62ff9e8bbdf86374d",
+      "src/lift_tools/process.py": "ee134854c88418f4f778d3b6ec8328d5757462b253d85115e9e15f8bf9b90cde",
+      "src/lift_tools/natural.py": "8d91c68771e55b14b77e9ac2d94e3be23d2cfbd1ab636711d56779d41b4a605b",
+      "src/lift_tools/http_model.py": "54cf800c12d64c73bffc5cfc2488717586fd4680e9c1933a9248d088ac99c3d3",
+      "src/lift_tools/common.py": "e294a9cce1ad5110602ac89cbdf6f79635d57da4566d72cd78685600369b2c91",
+      "src/lift_tools/compiler.py": "5a2b4582900b8fa1e46d36b1d576d1a552bbd99ddc78d57dda63d2e126fd8dd0",
+      "src/lift_tools/__init__.py": "dc8917ce67931838e5d18ad0a038e3ff111711921b27e0943980b18a035d934f",
+      "src/lift_tools/provider.py": "9b853ee31cc59685545b6693f8fa62e08a0c27e840591711c95d77ec5caccbe0",
+      "src/lift_tools/repair.py": "6e7021be82469f845efee15e0f054921760d38be290a35e13cf9a8b5a2144c27"
+    },
+    "change_since_67_test_snapshot": "Argument parsing provides credential-free CLI help; runtime request/response protocol unchanged."
+  },
+  "evidence_file": "../data/live-natural-evidence.json",
+  "evidence_sha256": "9fa194795bee729a115a2f1ac58f97206f6bc2794cfbf6e72514d4c84c7ac783"
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "lift.tooling-workflows.v1",
+  "date": "2026-09-28",
+  "repair": {
+    "status": "accepted",
+    "real_lean_builds": true,
+    "source_toolchain": "leanprover/lean4:v4.30.0",
+    "target_toolchain": "leanprover/lean4:v4.32.0",
+    "build_returncodes": [
+      1,
+      0
+    ],
+    "applied_rules": {
+      "Mathlib.Analysis.NormedSpace.Extr": "Mathlib.Analysis.Normed.Group.Basic"
+    },
+    "selected_declarations": 1,
+    "preservation_passed": true,
+    "original_clients": 2,
+    "all_clients_passed": true,
+    "original_unchanged": true,
+    "report_sha256": "b2b41037fa30349b762dbb7f0b6d4c4b0f91b772c05aeec32c3ce0e812ddc271",
+    "gate": {
+      "passed": true,
+      "missing": [],
+      "added": [],
+      "changed": [],
+      "untrusted": [],
+      "dependency_changes": [],
+      "proof_terms_may_change": true,
+      "textual_comparison_is_not_semantic_equivalence": true
+    },
+    "model_calls": 0
+  },
+  "natural_language": {
+    "workflow_passed": true,
+    "real_lean_extraction": true,
+    "target": "Fixture::LIFTExample.twice_eq",
+    "provider": "deterministic_test_double",
+    "initial_rejection": "wrong_formula",
+    "repairs": 1,
+    "whole_draft_reviews": 2,
+    "provider_command_calls": 4,
+    "external_model_calls": 0,
+    "live_model_translation_quality": "not_evaluated",
+    "result_hash": "cdaba6fd7e3d6fc9d89162b9f91b860f4da27b6ad502904ec4f1f0eab77089c2"
+  },
+  "regression": {
+    "public_tests": 55,
+    "passed": true
+  },
+  "setup_diagnostics": [
+    {
+      "kind": "fixture_client_error",
+      "detail": "The original pair client initially lacked its product norm import, then named a nonexistent import. Baseline checks rejected both. The correct Constructions import was frozen before the successful migrations."
+    },
+    {
+      "kind": "repair_implementation_error",
+      "detail": "The initial relative output path triggered the absolute source-containment check. Resolve output before candidate preparation; failure retained locally and corrected runs passed."
+    }
+  ],
+  "implementation_files": {
+    "src/lift_tools/HarnessFacts.lean": "399bc54599e0ad0a10e00f33772bb23857f8651f9e2a0452ca51b154dfa42019",
+    "src/lift_tools/__init__.py": "dc8917ce67931838e5d18ad0a038e3ff111711921b27e0943980b18a035d934f",
+    "src/lift_tools/common.py": "e294a9cce1ad5110602ac89cbdf6f79635d57da4566d72cd78685600369b2c91",
+    "src/lift_tools/compiler.py": "5a2b4582900b8fa1e46d36b1d576d1a552bbd99ddc78d57dda63d2e126fd8dd0",
+    "src/lift_tools/http_model.py": "b9e88c2492d277c59ca3f676f0bbbfecffb8d00b24ec8bf9028000aed368c099",
+    "src/lift_tools/migration.py": "1f048980eff0cd5acf336dd333be71a3484ff4008bb2f1a62ff9e8bbdf86374d",
+    "src/lift_tools/natural.py": "a6ba915d966b3d39701282711a26a8b5ee8700670beef604e4bd338b10e17969",
+    "src/lift_tools/process.py": "ee134854c88418f4f778d3b6ec8328d5757462b253d85115e9e15f8bf9b90cde",
+    "src/lift_tools/provider.py": "2f7fd25f2dbc2321ea749ac911dbf438d98f96669b2c503da70c7c03a88253b5",
+    "src/lift_tools/repair.py": "5b9336e76442bfeb1d142c86a1e9b5f642301d532d8ac982ad34fb68f6feae8a"
+  },
+  "paid_model_calls": 0,
+  "scope": "Supporting-tool checks, separate from the paper construction experiments.",
+  "packaging": {
+    "wheel_sha256": "1ff9eb2b671b09a46dc61f9a1854c409fe982c1808fa646ec51109e68859d8b4",
+    "contents_allowlist_passed": true,
+    "installed_import_passed": true,
+    "lean_probe_packaged": true,
+    "private_engine_required": false,
+    "current_source_ast_matches_installed_wheel": true,
+    "post_build_changes": "Explanatory lint comments only; all Python ASTs and the Lean probe match the installed wheel."
+  },
+  "dependency_boundary": {
+    "isolated_public_imports_passed": true,
+    "private_engine_imports_in_public_source": false,
+    "construction_backend_source_modified": false
+  }
+}

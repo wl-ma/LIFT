@@ -1,82 +1,98 @@
 # LIFT
 
-**Library Integration of Formalized Theorems for Reusable Mathematical Knowledge**
+**面向可复用数学知识的形式化定理库整合**
 
-[English](README.md) · [数据说明](data/README.md) · [ReasLib 示例](examples/reaslib/README.md) · [复现指南](docs/reproduce.md)
+[English](README.md) · [论文实验](docs/experiments.md) · [复现指南](docs/reproducibility.md) · [数学案例](examples/paper-cases/README.md) · [许可证](LICENSES.md)
 
-LIFT 研究怎样把独立形式化的 Lean 项目组织为可复用的数学库。核心是同时确定公共接口和回到原始数学要求的适配关系：公共结论应能恢复来源命题；公共构造还要保留所要求的数据、定义方程与运算规律。多个候选可以并行构造，接纳和修订时使用当前库中的内容。
+LIFT 将形式化数学项目整合为可复用的 Lean 接口，同时构造从公共接口恢复原始规格的证明或映射。这些公共数学组件组成 **ReasLib**。
 
-本仓库存放论文相关的公开实验材料、ReasLib 示例和配套工具。当前内容对应 **2026-09-26 17:50 固定的 version13 论文**，稿件哈希与文件来源见[发布溯源](data/release-provenance.json)。
+![LIFT 方法概览](docs/assets/method-overview.png)
 
-新增的[论文—材料对照表](docs/paper-artifact-map.md)逐项定位实验表格与案例；[证明任务关联表](data/proof-task-links.csv)保留三个 Taylor 义务由同一成功任务完成的分组关系。
+## 方法
 
-## 先看什么
+LIFT 联合处理公共接口与来源恢复：复用已有定理、将具体论证推广到更一般的接口，或通过表示映射连接不同构造；随后验证原始完整类型，以及构造所要求的定义方程和运算规律。
 
-- 想了解论文：阅读[完整英文 README](README.md)及[方法说明](docs/method.md)。
-- 想浏览数据与案例：下载或克隆仓库，在浏览器打开 [demo/index.html](demo/index.html)。页面包含搜索、领域筛选、三个数学案例及在线更新轨迹，不需要服务器或模型。
-- 想检查统计：[data/](data/README.md) 提供 CSV、JSON 与字段定义。
-- 想运行 Lean：[examples/reaslib/](examples/reaslib/README.md) 包含实际公共模块和来源应用。
-- 想用转换或迁移工具：[Lean→JSON](tools/lean_json/README.md) 与[工具链辅助工具](tools/toolchain/README.md) 提供独立命令。
+多个生产者可以并发构建候选，单个消费者将候选整合到持续更新的库中。需要修改的候选返回修订，并可使用此前已接受的新接口。[方法说明](docs/method.md)。
 
-## 当前发布的数据
+## 论文实验
 
-| 内容 | 数量及含义 |
-| --- | --- |
-| 构建覆盖 | 20 个数学项目；10,922 个目录条目；5,061 个成功整合条目 |
-| 公共库规模 | 15,716 次项目内公共模块出现，含继承内容及未完成证明的接口 |
-| 声明决策 | 8,854 次复用；19,253 次发布；2,568 次局部保留；3,283 次移除 |
-| 证明交接 | 7 个批次；118 个整合工作项；135 个成功证明任务；249 条义务关联 |
-| 数学案例 | 5 个编译文件；9 个声明的公理依赖检查 |
-| Beck 在线案例 | 成功修订后的检查点：20 个原声明、15 个可信来源定理、22 个固定客户端 |
+| 实验目的 | 结果与证据 | 入口 |
+| --- | --- | --- |
+| 数学库构建 | 20 个项目，10,922 个目录条目，5,061 次接受的来源条目整合 | [构建数据](experiments/corpus-construction/README.md) |
+| 来源恢复 | 7 组证明交接；249 个义务关联成功任务；5 个案例文件、9 个声明有编译与公理检查 | [恢复链](experiments/source-recovery/README.md) |
+| 后续复用 | 法锥公共接口恢复半径 1/2 的来源结果，并用于半径 12 的研究证明 | [实际调用](experiments/downstream-reuse/README.md) |
+| 在线修订 | 同余接口进入 Beck 修订证明；检查点覆盖 20 个来源声明与 22 个客户端 | [事件与快照](experiments/online-revision/README.md) |
 
-这些数字的统计单位不同。整合条目、模块出现和任务成功都不等于新增可信定理数。249 条关联反映记录中的证明交接；所选 9 个声明才有对应的独立公理检查。完整定义见[数据说明](data/README.md)。
+![构建过程中的声明决策](docs/assets/result-action-profile.svg)
 
-## ReasLib demo 展示什么
+15,716 个公共模块出现记录包含继承内容和未完成证明。声明决策按动作计数：复用 8,854、发布 19,253、本地保留 2,568、移除 3,283。任务关联属于历史执行证据；选定 Lean 案例另有编译与公理证据。[统计口径及论文对应表](docs/experiments.md)。
 
-当前 ReasLib 指历史项目中的公共数学组件。本次公开的 Lean 示例包抽取其中两份公共模块与三份来源应用，保留原始文件及哈希：
+## 快速使用
 
-1. **一阶最优性**：把来源的 EuclideanSpace 类型对齐到已有导数定理。
-2. **Taylor 公式**：在一般实赋范空间给出公共接口，再特化到有限维来源。
-3. **积空间基本群**：构造投影与配对同态，证明互逆律，并组成可调用的乘法等价。
-
-浏览 demo 用于理解与定位；Lean 示例用于实际编译。它们不宣称把全部 20 个项目合并成了已经完成验证的统一库。
-
-Beck 轨迹展示一个新接纳的强凸性相等替换接口，如何进入后续候选修订后的来源证明。发布的事件表、实际补丁和检查点可以对应阅读。这是来源内部的具体复用案例；原整轮运行后来未通过最终公共清单检查，第二轮没有接纳数学更新，不能从本案例推导普遍性能优势。
-
-## 快速检查
+从[论文材料链接](https://anonymous.4open.science/r/LIFT-C5F7/)下载并解压，在根目录运行（Python 3.10 及以上）：
 
 ```bash
-git clone https://github.com/wl-ma/LIFT.git
-cd LIFT
 python3 scripts/verify_release.py
+python3 scripts/verify_artifacts.py
+python3 scripts/reproduce_tables.py --check
 ```
 
-Python 3.10+ 即可运行数据校验，不需要额外 Python 依赖。
-
-若从评审镜像访问，请使用镜像的下载入口，在解压后的仓库根目录运行命令；被匿名替换的 Git 地址不能用来克隆。保留完整目录结构，文档和 demo 的相对链接才能正常工作。
-
-编译数学示例需要 Elan、Git，以及首次下载的 Lean/Mathlib 依赖：
+生成表格和图：
 
 ```bash
-cd examples/reaslib
+python3 scripts/reproduce_tables.py --output _runs/tables
+python3 -m pip install -r requirements-plots.txt
+python3 scripts/plot_results.py --output _runs/figures
+```
+
+直接打开 [demo/index.html](demo/index.html)，可离线查看项目目录、数学案例和在线修订时间线。
+
+## 数学案例与工具
+
+[数学案例](examples/paper-cases/README.md)包括一阶最优性、Taylor 公式、乘积基本群、法锥接口及 Beck 在线修订。各项目固定 Lean 与 Mathlib 依赖，并提供来源应用与审计入口。安装 [Elan](https://github.com/leanprover/elan) 和 Git 后，可编译微积分与拓扑案例：
+
+```bash
+cd examples/paper-cases/reaslib
 lake update
 lake exe cache get
 lake build
 lake env lean Audit.lean
 ```
 
-示例固定 Lean 4.32.0 和 Mathlib 提交 `81a5d257c8e410db227a6665ed08f64fea08e997`。版本不能仅按“越新越好”替换：形式化代码同时依赖编译器和 Mathlib 接口，二者需要匹配。核查结果与缓存使用方式见[复现指南](docs/reproduce.md)。
+[Lean → JSON](tools/lean_json/README.md)从编译环境提取完整类型、定义体、依赖和公理信息；[工具链对齐](tools/toolchain/README.md)在独立副本中准备固定目标版本，比较声明并检查原客户端。[完整复现流程](docs/reproducibility.md)。
 
-## 工具能做到哪一步
+## ReasLib 串行构建示例
 
-**Lean→JSON** 从编译后的环境提取完整类型、定义体、所属模块、位置、依赖、公理等事实，用 `Module::name` 区分声明身份。它不把源码字符串猜测当作编译器事实，也不自动把提取结果标记为完成自然语言审查。仓库附有既有翻译和核查提示词；自然语言模型执行后端尚未作为此公开命令的一部分发布。
+[交互结果页](demo/serial.html) · [Lean 项目](examples/reaslib-serial/README.md) · [构建记录](experiments/serial-library-growth/README.md)
 
-**工具链辅助工具** 创建新副本，固定目标 Lean/Mathlib，运行构建并比较升级前后的声明事实。当前支持 `lakefile.toml`，可检测名称缺失、类型或定义体变化、公理变化。构建成功与接口保持是两种不同检查；程序不会自动修复任意 API 变化，也不能以字符串相同证明跨版本语义等价。
+同一项目依次加入 Beck、Bauschke–Combettes 和 Nesterov 三本教材的内容，每一步完成陈述、库整合及证明流程。六个批次形成的最终库有 **180 个可信声明**，保留 **18 个来源接口**和 **51 项表示义务**，通过 **69 项固定来源检查**、**25 个扩展边界案例**及原有 **21 项独立检查**。共享接口连接强凸性、约束二次函数、可微曲率、次梯度强单调性与预解算子收缩界。
 
-本次发布未启动模型调用或新的论文实验。原教材全文、全部历史源码包、内部服务配置和原始会话日志未纳入仓库。来源、复用边界及后续仍待补充的内容见[来源说明](docs/provenance-and-reuse.md)和[验证记录](docs/validation.md)。
+```bash
+python3 scripts/check_serial_demo.py --output _runs/reaslib-serial
+```
 
-## version13 补充材料
+依赖安装见项目指南。交互页展示三个接受版本、完整声明类型与依赖、全部执行尝试和已结算用量。该可执行示例对应论文的 ReasLib 方法，结果与论文实验表格分别记录。
 
-现已补入[法锥及研究证明调用](examples/normal-cone/README.md)、[Beck 原始检查点与 22 个客户端](examples/beck/README.md)、61→20 筛选记录和逐项统计输入。见[完整复现命令](docs/reproduce-v13.md)、[许可范围](LICENSES.md)及[CITATION.cff](CITATION.cff)。新增检查与原历史结果分别记录。
+## 目录结构
 
-See the [ReasLib demo plan](docs/reaslib-demo-plan.md) for the next evidence-focused interface, grounded in the version13 manuscript.
+- `src/lift_artifacts/`：共享分析与校验实现；`scripts/`：命令入口。
+- `experiments/`：按实验目的组织输入、结果和数据字典。
+- `examples/paper-cases/`：论文案例；`examples/reaslib-serial/`：三来源串行构建的数学库与独立客户端。
+- `tools/`：声明提取与工具链对齐工具。
+- `docs/`：方法、论文对应、复现说明和插图。
+- `metadata/`：文件注册表、来源及完整性摘要。
+- `demo/`：离线证据浏览页面。
+
+新的本地检查写入 `_runs/`，已发布的实验记录单独保留。[验证范围](docs/validation.md)。
+
+## 引用与许可
+
+引用名称：**LIFT: Library Integration of Formalized Theorems for Reusable Mathematical Knowledge**；材料链接为[论文仓库](https://anonymous.4open.science/r/LIFT-C5F7/)。
+
+原创软件采用 **Apache-2.0**；原创文档、插图及整理后的统计数据采用 **CC BY 4.0**。第三方材料与具体路径例外见 [LICENSES.md](LICENSES.md)。
+
+## 独立工具与后续构库
+
+编译提取、自然语言翻译及语义审核、带自动修复的工具链迁移集中在 `src/lift_tools/`；实验复核在 `src/lift_artifacts/`。两者均可独立于构库后端使用。完整构库仍通过外部后端执行，其实现不随本仓库发布。[依赖与安装](docs/dependencies.md)。
+
+[扩展来源与流程](experiments/serial-library-growth/extension-plan.md)记录三本教材的六项新增条目及一项单列表示桥接；[补充证明案例](experiments/serial-library-growth/supplementary/README.md)分别展示原目标证明和实际接口调用。

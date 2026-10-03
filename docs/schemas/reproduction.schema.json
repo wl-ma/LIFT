@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LIFT reproduction record",
+  "type": "object",
+  "required": [
+    "schema",
+    "evidence_kind",
+    "status",
+    "model_calls",
+    "inputs",
+    "outputs",
+    "details"
+  ],
+  "properties": {
+    "schema": {
+      "const": "lift.reproduction.v1"
+    },
+    "evidence_kind": {
+      "const": "reproduction_check"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "failed"
+      ]
+    },
+    "model_calls": {
+      "const": 0
+    },
+    "inputs": {
+      "$ref": "#/$defs/hashes"
+    },
+    "outputs": {
+      "$ref": "#/$defs/hashes"
+    },
+    "details": {
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "hashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    }
+  },
+  "additionalProperties": false
+}

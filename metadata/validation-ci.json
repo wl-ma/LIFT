@@ -1,0 +1,30 @@
+{
+  "schema": "lift.historical-ci.v1",
+  "evidence_kind": "historical_package_validation",
+  "jobs": [
+    {
+      "name": "tools",
+      "conclusion": "success"
+    },
+    {
+      "name": "lean (examples/paper-cases/beck/checkpoint, beck)",
+      "conclusion": "success"
+    },
+    {
+      "name": "lean (examples/paper-cases/reaslib, reaslib)",
+      "conclusion": "success"
+    },
+    {
+      "name": "data",
+      "conclusion": "success"
+    },
+    {
+      "name": "lean (examples/paper-cases/normal-cone, normal-cone)",
+      "conclusion": "success"
+    }
+  ],
+  "model_calls": 0,
+  "scope": "Fresh hosted checkout, dependency download, compilation, clients, portable data and tool checks.",
+  "source_identity": "original-publication-package",
+  "current_checkout_validation": "Run the checked-in workflow for the current checkout."
+}

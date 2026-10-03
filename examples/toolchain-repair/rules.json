@@ -1,0 +1,12 @@
+{
+  "schema": "lift.migration-rules.v1",
+  "source_toolchain": "leanprover/lean4:v4.30.0",
+  "target_toolchain": "leanprover/lean4:v4.32.0",
+  "replacements": [
+    {
+      "old": "Mathlib.Analysis.NormedSpace.Extr",
+      "new": "Mathlib.Analysis.Normed.Group.Basic",
+      "reason": "The old deprecated forwarding module is absent in the target revision. Normed.Group.Basic supplies the norm interface used by this project."
+    }
+  ]
+}

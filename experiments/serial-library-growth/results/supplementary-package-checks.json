@@ -1,0 +1,53 @@
+{
+  "schema": "lift.supplementary-package-check.v1",
+  "passed": true,
+  "model_calls": 0,
+  "cases": [
+    {
+      "case": "beck-525b",
+      "passed": true,
+      "goal": "lower_quadratic_bound_of_isMinOn_of_strongly_convex",
+      "exact_original_type": true,
+      "owned_declarations": 16,
+      "review_sha256": "8a0a228c34cc7f2f3364ba95a094fb2fe42cceefb4042c7490448eff983c4075",
+      "facts_sha256": "745b361760cb384cd05589a49bd658e4acf80346a9ce26e3e167b8c82c380b9b",
+      "reuse_classification": "none_in_actual_proof",
+      "actual_upstream_dependencies": []
+    },
+    {
+      "case": "canonical-existence",
+      "passed": true,
+      "goal": "smoothedMaximizer_exists",
+      "exact_original_type": true,
+      "owned_declarations": 11,
+      "review_sha256": "a229a049d8e49953b853b6a111901cc1fab0a5b97f6056d6496bd3118738bf7d",
+      "facts_sha256": "0ce718fec7eac2b1b726a37ead6d03fbed13e3a2a1090339178a9525438f806d",
+      "reuse_classification": "none_in_actual_proof",
+      "actual_upstream_dependencies": []
+    },
+    {
+      "case": "stability",
+      "passed": true,
+      "goal": "smoothedMaximizer_lipschitz_of_isSmoothedMaximizer",
+      "exact_original_type": true,
+      "owned_declarations": 22,
+      "review_sha256": "16b51d854a2f0717a771e7fbfe5068ff81269a26264032ac5f925aef22f0b952",
+      "facts_sha256": "7c3e960b5fecc02d5bc2984d5ca7dabcc52f2ca112892c637f53b43faed2b070",
+      "reuse_classification": "limited_representation_interface_reuse",
+      "actual_upstream_dependencies": [
+        "strongConvexOn_iff_segment"
+      ]
+    },
+    {
+      "case": "unique",
+      "passed": true,
+      "goal": "smoothedMaximizer_unique",
+      "exact_original_type": true,
+      "owned_declarations": 8,
+      "review_sha256": "8e052e56e77077a1467723bcfb911f0da578f89867563d5f11db4c9d810bfce4",
+      "facts_sha256": "027d50f53441503aa41d96c0c92e4643e240a8113fa554e69765612209990a9b",
+      "reuse_classification": "none_in_actual_proof",
+      "actual_upstream_dependencies": []
+    }
+  ]
+}

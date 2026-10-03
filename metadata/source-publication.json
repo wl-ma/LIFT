@@ -1,0 +1,371 @@
+{
+  "schema": "lift.source-publication.v1",
+  "files": {
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/Convex/NormalCone.lean": {
+      "source_sha256": "69fa88f536292c0d78f6f598a3c361c82642e428a91c6c0e9410fbd447673d0f",
+      "published_sha256": "78d4369d16f33bd12877fba7ae86546233d580e5f5cabe0a7d9f9f38d7320f8e",
+      "body_sha256": "a5311d6921d8de4e490d17f5d6da12ec2a49053053895d19cf79a2d8384470b3",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/Convex/NormalCone/ClosedBall.lean": {
+      "source_sha256": "be40c69f9d050cca1622638d4b8e980898591ab919de1def39b939bce248ca11",
+      "published_sha256": "0cf90ed8ce791afffe6e4f5c198d8906ed199c5a8c54eb571e29c67079544783",
+      "body_sha256": "6e119c7c1d85b6b65e35816081fb0b1a25e19b428ad3d4611e528c010be862b7",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/Convex/NormalCone/Sum.lean": {
+      "source_sha256": "4f38dfa54c499d71543244f886561b2724c3c077501b53b5e9114769629b9808",
+      "published_sha256": "275036d144b66ad60cc3bc3d34ec54faa0b1c3fd0bc30e2eaf2bfd527e74f6ba",
+      "body_sha256": "ee840623f9cbd448bd4b95835f3d12a6dec2113dd5b278623baaf199d7c90fc4",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/InfiniteSum/NatTriangle.lean": {
+      "source_sha256": "ac60fce50dd7bad12737df4bf21e714874cf790127355b5640c0db6a7b8de178",
+      "published_sha256": "7a07abc986f90c6f4039aa3cbcac94d2f8344bc115ba2cb7264a250861b7a24a",
+      "body_sha256": "84613e0f7f9d83668d7a5e557651504cdf688404ab692d9eab8caf3c27386126",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/InnerProductSpace/HilbertProd2.lean": {
+      "source_sha256": "89dd12a31371ad0341829b8771aa32347654685e09367b2a10090af122bbc6bd",
+      "published_sha256": "1be872de34ea924cd61283e6379f7233fbb7a4a82e05247ff0bd9940c8fab036",
+      "body_sha256": "5ab67762f66c5dd26cd11960a6f4f2a0d7fa9e06a9999ef9b5bc313adcc9f21a",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/Normed/LorentzCone.lean": {
+      "source_sha256": "9416dae08f7627daceffa7cd5c786cf0d25443cf859f2a4212adcf2cff1b00a1",
+      "published_sha256": "bfd9b73b7cc3fc88f4bc45c70b93a9fefdd1a3eae921d7d5537c347614383fd2",
+      "body_sha256": "722220c75f15630e5cd4dd8f462840fc527a5661511c8826ac877d7585c080fe",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/Normed/LorentzCone/HilbertProd2.lean": {
+      "source_sha256": "f4366810a140b6c18caf1a801529a6d08748dcd695b232a1bdedca2558a26259",
+      "published_sha256": "15da4f7983124c7b5a3ccf80cbe46fe948b0856ccd9e7fd57ae1fa0910e5904d",
+      "body_sha256": "eaa5f097536adca6a10226a739b6c6a4f286870d98c30b0f09df09a17f9c7b4b",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/Normed/LorentzCone/SeedTemplate.lean": {
+      "source_sha256": "eb3991824edcdb4c7b6d6123f0528274f61e9c02f23345bdf5ecde12347bcbd5",
+      "published_sha256": "b55234625ae54ac716c9297cd09d22dc80a8b8339d28608314d9386cbcae947a",
+      "body_sha256": "d8bca604075bbc845b154f1d087306099e5edad70729fffe8ff7e4fd9f16bd64",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/Sequence/L1.lean": {
+      "source_sha256": "0b43f68a6d748cc23aa60d9c9765c40881316483329c4d4654a13fd851d9744b",
+      "published_sha256": "ba6255baf9ab3628dfdf581a99875176f7205de20bf6c8649db41384a2e29df9",
+      "body_sha256": "ab0ae9115d4eb211447aebbc93349ec28204b06269a26544724fa118c58c5ca0",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/Sequence/L1Synthesis.lean": {
+      "source_sha256": "77cfe7f13c8ca4d4f83b37e0f1bac14178a76de8a302b7759753cad9b5687195",
+      "published_sha256": "2e08f38031cb7be1ea8c9a12c3c79edc65a362e42c1050d8785db1fd7233206c",
+      "body_sha256": "a8a05d541ee2e47f017d2b3495cd40cdc950113c5b4db99d9a589d951b91dba8",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Analysis/SetValuedOperator.lean": {
+      "source_sha256": "e548f670cb653201508ea11be9e722be6724e6b7bc7ac4bc1069630b57c6a4c8",
+      "published_sha256": "cc5a0b221f9d840bb8e2d30fdec6e45969f2ce154e2beb2d021fc143101684d0",
+      "body_sha256": "5a8d1fe4daea82b39e1bac763685fe9bc867a9052a92c1b328efe2344d25cf02",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Data/Countable/RepeatingSchedule.lean": {
+      "source_sha256": "06f80d59b8ad4e51772e43c5b07023999e3d42eef0912ca6ffd596f85b1f1477",
+      "published_sha256": "aa76f9288c5ccc21f77959d18db729a7a729ee0417f855826fb63264f01c2bbd",
+      "body_sha256": "6f7bf9333676055de0f388eb24e66cc8b1894a8e2c7c6f78dcfe8026837e4de8",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/DualPairing.lean": {
+      "source_sha256": "2738c375cf4007d6bdbc557a0f1e5f0319f13c9cb177b9a8fbe8ed5f2c89092f",
+      "published_sha256": "56dc191d7b8639274867b8c474030f66216eb2abbe2d3e5b0e24b64f896a48e9",
+      "body_sha256": "ea038a80665387b18ce2cb01c363bd92f63421a94c07c18ab44d3194da602e6a",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/DualPairing/MaximalExtension.lean": {
+      "source_sha256": "b3e36f8cd9c1c046832544e0852c26521b4a3d25486a52c4ffe052c92b3551ba",
+      "published_sha256": "63e1174c065ba4c090aad9923bfb7396307a7be60c495752f97667846ce93a4c",
+      "body_sha256": "e461d1e02640e63891f87540cff5e699918291babaaf3c01926ff2719a9a25bb",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/DualPairing/Monotone.lean": {
+      "source_sha256": "57c857719ab0aa7ab436ea55c2c35050252d364917c23479030211bc8ec520c4",
+      "published_sha256": "f7d871a276c78d07904d70531d454234ea20f125212e0e4ebac770bee518dc32",
+      "body_sha256": "c51aebd4219b732f31037098d8fb497348313fc4d6fe8be2a089c03601014c5b",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0.lean": {
+      "source_sha256": "d583836f476dd234dca6688f56c0ef40e0b57c7b5785747538abdbbd5a10771c",
+      "published_sha256": "e44ad4dc019bb91e18cf4e0a9116f26fb6337c66a4fd570d0599da4815e7e40b",
+      "body_sha256": "d296fd799ec846e2358d1c50c1890b81d3b2e5cbe08593f079bf7c7c7a36dc7d",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0/Coordinate.lean": {
+      "source_sha256": "b268bd5564e90ddf1ce424573f6d1eb20a23871ed8c494f8bdf8f5057fb8ec8a",
+      "published_sha256": "d4242e283bfd8fd8d250117b74b21d4303a71c2691205fa46d7ac214337a926a",
+      "body_sha256": "08cdd3cc65d2de1c72a58004f1d29556ec2570534c5a4bff21b0ee63adbcc033",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0/Dual.lean": {
+      "source_sha256": "6acc44a9e318f6aec0015932525e518e80df52514da155d0b5bb498c68650748",
+      "published_sha256": "9fc5edc5280f0fce95bb61a457c8b3c3397f6a23d4dac376dfb831f80ed03fbf",
+      "body_sha256": "dc336c96721b565c58858392ed8dd19b7cc8565f828e0602f8b0c161677fd83a",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0/DualPairing.lean": {
+      "source_sha256": "7277ca6344f1e5fa274a0f46e7cb6def2d7c5f47e03285384f7c000bad6866b1",
+      "published_sha256": "ecfe3bb822a0269ce3f5d70b0711b1d15a0e06e4d4ad61c9a58ab4e9148f8e16",
+      "body_sha256": "ec95febd6c2e7d3258b537d5124525693659a0d806dac9e58dc711c14d1aa57c",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0/DualPairing/Origin.lean": {
+      "source_sha256": "046538db2eff6fa49d1a57de4ee21390a373ac4960acb23eedadfb81160c1a28",
+      "published_sha256": "791ba448c767767d057054c99364316421a7697d2cfafecb00d2321dcd0e9461",
+      "body_sha256": "1c5a30c88ccc32f7b42204381bf626e9f992e3ab9dbdae7e46551b8faa55e212",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0/DualPairing/Surjective.lean": {
+      "source_sha256": "e6f8ceb2619290da20e3aecddd7072a49c1d4dbbb92a56fc57ea818c42fa2088",
+      "published_sha256": "cef094661800c494c70bc0473c7b567c7221570ba2bce1ee4e0a90f633dd16d7",
+      "body_sha256": "365004ec2eb6a3bc8684e859389cb926d6fa52c9ca9bda9ba1fcc8134272e9a6",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0/Pairing.lean": {
+      "source_sha256": "e631411e47ff7f0ecbc2aed4e6d5e5d08bcae1318dda42fbcc057de268eb6dff",
+      "published_sha256": "e91030e47b0037aaa6a4f96fc6da7f21ddf1cfb3f53daa7b255021d2d950b857",
+      "body_sha256": "57d536a74201896619c94eef91c599889e4e92ec516a71d8c3ec2854b27a3616",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0/Single.lean": {
+      "source_sha256": "8305f27a72e837cf1708240d8229e231273ac3aa7a12602e7a97c65da2ca603b",
+      "published_sha256": "b892c24d7a1aebc2bce9f7b942da977039e177698238c1d7a4405f8c39fdea87",
+      "body_sha256": "4ffaa2ad884d64188894c2f51cbf7f584e099de656d2592904f28ee07ee9ebe6",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/C0/Transpose.lean": {
+      "source_sha256": "2923884146a321dc235217bcf358791bf5da223a902aea132726f142bed4c628",
+      "published_sha256": "0d73567cefdaa7d46f3e07eab6253f09dea68dbdd04fb02f43bcbff8a1220be3",
+      "body_sha256": "d300d9eea43119f3f08261b42fcfa7e7dca1ad9ec8ce2f92080e980e08103c66",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/L1/Transpose.lean": {
+      "source_sha256": "bcf56b9e60ef1136b814d57a9f952dcb6c24b54e07b953f324fda5846330cfe4",
+      "published_sha256": "4c46f427de50e1b261b2983dac690dbd183fa612e8f7413f9bc85a3f48591962",
+      "body_sha256": "910ae0c7c65e2d7002f78a8a5aab7e8b1648a882fb93b77c26b88c274bb0699b",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator.lean": {
+      "source_sha256": "1c02957efe5d41b47c0410621bc38ac264d57eb99319a6f0f9e7cc95fd074136",
+      "published_sha256": "c707ea8fc52319d58e8b04c801294eb68de4b48efb4fc512762db00d36b29fee",
+      "body_sha256": "5e55f3ee7fdad93ba06c510140ddd28c1c1ef0668b10f16fa686729ab4d5e5f5",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Bilinear.lean": {
+      "source_sha256": "4a54da225e7287094e1b5c4aed6804ebc86be75812eab7e153002e6579f2487f",
+      "published_sha256": "86cd949f1dfd7966a5a099d50d75a1778332275f228039dcd117879aaeb333e6",
+      "body_sha256": "c4a55a80ce0646238cc13531f41dc71281d95543dd01c4efdca700ed34ee8299",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Gram.lean": {
+      "source_sha256": "7fe259555cc81041f971a118ed46980e576204c6fef96408d2f6c0f76c06a0cb",
+      "published_sha256": "9b0dbfb34da31109f632b2cd970ad16b3abd897cc9ba1764821cfc2941b057ec",
+      "body_sha256": "435dea3f7a775c5913d95598ccf87aafdf09ad0a854bc9dfae2cf4dd2c200d17",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Norm.lean": {
+      "source_sha256": "17f9effbe5e329555e577ce7846c335a7c4c62b83e192d5a289e8e7076c3184d",
+      "published_sha256": "2bac2134817b99cd256fb083e8df16e04315f2508fc971ebbfcebb60e2fe8b50",
+      "body_sha256": "a5ea0ed4dd65101702f2292ead3a7d430f2d53e09df301851070c2b8ea5ca653",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization.lean": {
+      "source_sha256": "e35d8a79dc7cd46dd9f795345d7e4007ee328d5a364965fdcfab6dd6335ab527",
+      "published_sha256": "500d99701f73883f5a8a96f9ea1e1614a293e95f7d9fa85d4175df2ce078555e",
+      "body_sha256": "4168dcd758b26e1746ef0bd9ae34884b21acbcaf0098ca9d90409ce5e649d5d3",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/LorentzCoordinates.lean": {
+      "source_sha256": "7c141e8b29affb0071657981e02bb0441a1f1aaf1a0a6ef18c689bbd9cd010a6",
+      "published_sha256": "4dd45365141220eb9d5b69dc6f6192b7436de0142f3168d6aa4c1e4336b3ba3c",
+      "body_sha256": "b1e5b0318aad1b4dd6728514a181c549f0fdd533be4d6f17e7601e8024dffb6e",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/LorentzCoordinates/FixedPositive.lean": {
+      "source_sha256": "a379d49103efd1fc32875c7d0ec525fa714decbce486cd921b1b17cb5c6d95a2",
+      "published_sha256": "9af819ff6df71df084506004c382aa8f35c85c10b9f3978e5ea326fd60fa84fc",
+      "body_sha256": "9dc8eabc02c496a46c689d6046132657e0b98d8d2730867365243eddb28e36a3",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/LorentzCoordinates/Kernel.lean": {
+      "source_sha256": "4430b003d8a8503d558e2691a3cdce78e10c7a05b6ab9cb69172b10e71ad906d",
+      "published_sha256": "109f23eb21309fe6dea104a923cbb913b051d7c896a6c759d49400e1541564e7",
+      "body_sha256": "de796724518e67c3cf58e47ddb7126c3ad9085d7f44c21d52c9b6d946c1894cd",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/LorentzEnergy.lean": {
+      "source_sha256": "5b9f695495d8b6be99cc217060f83db158236167bdb6a8f0ea1d4056985b7862",
+      "published_sha256": "71255643d084277acb84b119f3237e4e903c41b6e430fae7ec3f26840495d01d",
+      "body_sha256": "3610935fe0ef68c7dd70f0fd143ce4238014e332a2aef57f4a4de3378229b13d",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/Pairing.lean": {
+      "source_sha256": "1b06e32bd0b3582e17b8b306e4280bcdab7ead35abd643338e9f000f8c6170f9",
+      "published_sha256": "8dda34c957d68e2dbaf51b5063886b8ce2ffc02f78942f76f6f697be705ae0a3",
+      "body_sha256": "e1172548af99850b395ef4485930e4ffdeaf82ac3809efd28389a40327742c00",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/Point.lean": {
+      "source_sha256": "459bd938e5c67fc800dd82fb8920e5c80dd170e2d1aa59bfa7a04c680f27168f",
+      "published_sha256": "16f57d9ec9619f58ec1b2b0568afc7726e2309e19093b22bfb4114b960f43476",
+      "body_sha256": "970da55c203a8d028e6725e8cf5e73530152164f1f1a09c11643c9c9056aff7c",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/SamePositiveCoordinate.lean": {
+      "source_sha256": "252562f0a41d97ab6fde1f2e327b175a127dca8a0acf78c527b4110902d8ad6e",
+      "published_sha256": "ddf65af0e6b4c6a9e9cafc29bcb6ee9d0d9400133f009f9c0e54f1797d5b4c42",
+      "body_sha256": "87a0b4b141ed066e8f83c8efa3443928b14952ba9e965bf06059840de9b70ba4",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/ScaledDetector.lean": {
+      "source_sha256": "eb3505f20a4df574104e99104a751a432fa7af345b15b31b18eea9a3c7943cfa",
+      "published_sha256": "54e46c4ab217e7e2d0a0bd1b241e26cb6dc755b61a27403cf53af602cf846e4d",
+      "body_sha256": "913e92263f0aeafa1dee089bf51fec67c65a8d5d3e2760106adbabdb8014ea8f",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/SeedAssembly.lean": {
+      "source_sha256": "10c960e667352e9ddc100a4abd9695558396414a9117badbdd747a3fb2f228dc",
+      "published_sha256": "6c69f1300c768e6202f352e32b0e0065a7750b8bb0c77720b2406e73a7a9422f",
+      "body_sha256": "947e112fbfb8eb1521982c3a075a3c65efdceb9598592023295868eefc2608d4",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/SeedBase.lean": {
+      "source_sha256": "4d26b7f032b4d02b5e5eef8f05886fb8331d35e5e478089013c55d042bd04b18",
+      "published_sha256": "7eb4380e44739e8851aac20f603a7f8a71a8d1e0290ad8c75ab9ed9d81e44935",
+      "body_sha256": "61be8c8f09f933c70124a812239e3ba39e4ee284d872841f06044d49205687b0",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/SeedComparisons.lean": {
+      "source_sha256": "c112d93ff73a907976c4c5cee07768a24064c3c489d1151fe9879ba5a41ceafa",
+      "published_sha256": "4bea42657d61f25c3e2a8fbfc74941ff23f89cbb186fb0032182fda7ec8be529",
+      "body_sha256": "1494daa2eb804f49dda56b918ff417a1ab211805dba73e23b9169b6fe238da0a",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/SeedCounterexample.lean": {
+      "source_sha256": "ec6bdf5f5f4b3f67bdbf79a2526d60b4dab46ee7eca3edbf586de0d1de762eab",
+      "published_sha256": "4509861f9394816e5bd62f1f6b273cf4d5633afd1448fc729a257988afe3629c",
+      "body_sha256": "b9209344d01bd47c6318d032581d27e7152a289b9ded991018425f944aad3729",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/SeedSchedule.lean": {
+      "source_sha256": "8315fb6bceded5268e77374094fdf6dd9c413b214a0e6726c6f86a2ad3d1fad3",
+      "published_sha256": "2a4a13b8503daa9328b0ffa4c5a9b5f98733a357e00c1dbbafc1f64ed5c39ba2",
+      "body_sha256": "74de3bd28dbcc8471526db01efba4146e7059e4e883c1245ef0dc2d0e84f4b1b",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/SeedWitnesses.lean": {
+      "source_sha256": "73e260570848a1279be5a819311e287df43f16f7e43c86d6359dc410d65c8d0e",
+      "published_sha256": "8a359398f07077af6fb55d2462ee7aba685682c025c9250c421bdfd1bf97cbb3",
+      "body_sha256": "54e678fccbeb89a2a41ad7882f72ded38948908163724b549ca529d5e6b60c7f",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Parametrization/UnitDifferenceDetector.lean": {
+      "source_sha256": "312ec2f218549008373f140a1bb86f2e38d349c863b3a2da270d23d33b6379ca",
+      "published_sha256": "5d18914b7e8d338a26c17bc307ca48f35de14504269b41986e86cabcb04c3b08",
+      "body_sha256": "1983bfcedb9e6c9509beb536639604540a71429206351e6b65cabff2e99c4cf1",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/Quadratic.lean": {
+      "source_sha256": "4106893373c90cd8c760a728ba45da918f1f499219a6e210ef4546df254b407b",
+      "published_sha256": "80164da6860a7cdead3f3b1ed69e50fd7f390737be59f9b778c42deb412f0533",
+      "body_sha256": "221633362f2973ee0e1cce980eb29e5054344eefbb9583c8bdc12a2e6bd351c2",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/QuadraticIdentity.lean": {
+      "source_sha256": "519795ac91342b28815818d52614a204226807bcef082e5a72331997f282ce23",
+      "published_sha256": "c8e1aecd5fb4d93245a59e8444c1ff3cfab2f13e0008a75775b7eb24727097a9",
+      "body_sha256": "895ccf90eb32ca704f6893bf506eed3c3efac40cecc632cec5fe69d68e7213a7",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/FunctionalAnalysis/SequenceSpace/RationalTimeOperator/SymmetricPart.lean": {
+      "source_sha256": "97baeed42f59a950170d652328379a9d60f23999e2e2ea243e09ecbc8a274b99",
+      "published_sha256": "8340a05d4fb314179a085296581c982f7569dc0bef8c2cc84de2c8e3c51b3a45",
+      "body_sha256": "8fdc84d7c66f13ea5d6c239c23d038049d9ba403b268fb6f8cdfc84e33c793ba",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/Measure/Lebesgue/Conull.lean": {
+      "source_sha256": "6859ee9a02b8419c99560120a340cb358b06628d3f23c6b2d2ff1d97e19173e4",
+      "published_sha256": "c35df66c56233d452381d0f258a9fc961fff6993ab49a52de7286f1e77642887",
+      "body_sha256": "5eb52b0c90683e4fff7a48c19e150c389e59c1cfa3ba29152fcdfe4eea0d79e1",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/UnitL2.lean": {
+      "source_sha256": "29decc132b74dfc3f2579e7ed63aff8e04a4a807e1ff99b586cd14671eb9bbdd",
+      "published_sha256": "1489d40eaec3ae9e1d6db76384681fd9fdf93f344da6773a7620e2d285da4b4c",
+      "body_sha256": "45b69606d8ab719f5ebae34452c6cf2d54c2e0eb97affb4d9139f28098728a12",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/UnitL2/IntervalCoordinateOperator.lean": {
+      "source_sha256": "b076db3cef375b6fe0b2fc8ad7520fcaa8d3e827fc6d7f7072a6b5b82ad47c5e",
+      "published_sha256": "72c309c9243ba69c88f812b08ecd91db67afe2af1d1121c0999b77ee614ec7c4",
+      "body_sha256": "bf8fab243494c6d4ab7d4cc51c588aa95d8023097307221521d5c960fa14ed8f",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/UnitL2/IntervalCoordinateOperator/Adjoint.lean": {
+      "source_sha256": "a3f18cc16462439d7d9451516a050743123ded77a174c5398a2ae1bbe452e68c",
+      "published_sha256": "08033b2913d81aeddfba2c9e407c0cac7af7f46c8def469e4315f3e8751f3670",
+      "body_sha256": "47769103e701cc1927cbc877782ee1d0806fd7f6aae7daa575aed3d1491919c6",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/UnitL2/IntervalCoordinateOperator/Injective.lean": {
+      "source_sha256": "b3566e046b22a96068421b085272dfe0f42536900a87cb058e897a08b0ce2725",
+      "published_sha256": "0884e074bb623c6dae9d57f835b2f1d49ae86ad4595ba2a0e70e50303dca6994",
+      "body_sha256": "e12edcc25223950cc26edbbcc25861b27a1d0ac3ebff78fe452e2af2a9313cdf",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/UnitL2/IntervalCoordinateOperator/Jump.lean": {
+      "source_sha256": "c86640cf9b04945d6a3059ccfd872628ccc94208afb357bf889eadc7d6999862",
+      "published_sha256": "1b305e21a1b2a6c5c4162cfbc811e38566dd2cfaacd0ed7d87833be70caed6b5",
+      "body_sha256": "6339bd6d44aa00de5b33031cdbf4c88655aa7813802ca599b354bec60903dbec",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/UnitL2/IntervalCoordinateOperator/Pointwise.lean": {
+      "source_sha256": "44f74b28f6ecd576504af8211e58400280843c0da9f4f9f796cf92a6ce953a6b",
+      "published_sha256": "20e20dee8252786fe029c92e5a5a8648337b606be26d209b1a9ce92f222f7353",
+      "body_sha256": "faa0c68f6ab365118b85b8e4112f94c6019846eac3efc6efe7f94a35cd3a87a7",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/UnitL2/IntervalIndicator.lean": {
+      "source_sha256": "e9c76e15688412cf1390703702a20c7e2d8d6e5ebe154e69a25a0d42e5e74e1f",
+      "published_sha256": "1d5260c8fe9f0b116569e4520db13283c27ee673a44d228adf5acd91287e91e5",
+      "body_sha256": "7afd77c9684d3f35a6d7022945727a4672ccdc7ad8ca705fc41dd99d7dada152",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/MeasureTheory/UnitL2/RationalIntervalIndicator.lean": {
+      "source_sha256": "6a859b6eed9a3f61cf7a046af2c4df0e8271a89ae1631c04754a7c23dff4d078",
+      "published_sha256": "fe48ebd40b8ebb0e98b8088689563ad73729f170c58de4dc14195156270be952",
+      "body_sha256": "e2f3f1794f4f68c0dd73b5b20e9d8101b683f97b9265a3e9fdafab69844b9d9a",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Order/RationalTime.lean": {
+      "source_sha256": "4340a10aad89c49ad0d3717cc2d07fc914c18e1f141f3152d88b6b0ff0394a67",
+      "published_sha256": "73b19c8456d2fc614fe7ca8cb1e7bbca0e1a53389527ac4cec63347df39c3e78",
+      "body_sha256": "edca381b4b96576d7b165809760f2b86b099afda106ac3a03142d53314e17d6e",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Topology/RationalTime.lean": {
+      "source_sha256": "e21390b76e5536bc829967786c450e8f51d0f16d3aea851901f9810302063282",
+      "published_sha256": "0aa74599362d98196ec11de360227d9fa16e1140c67cc274e30d6330e5f326c3",
+      "body_sha256": "52f23b89ccdab29dafd39af7e136482b549f56c49a237a512a5351a18c4be73c",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/ReasLib/Topology/Sequences.lean": {
+      "source_sha256": "a97b6c0a86ea91dbfa9e190d3d641b296afbd3563c50fde966e982989ea67b28",
+      "published_sha256": "84f7a692c16a7d39fc949ba9667baeaf51b33a9e5d36e194dee7b84504ff83bd",
+      "body_sha256": "353ec2ccd722346186966619520f663723048384f0947d705674fe97eea25082",
+      "transformation": "attribution_header_only"
+    },
+    "examples/paper-cases/normal-cone/historical/Theorem_7_12.lean.txt": {
+      "source_sha256": "b2e2759c74f10b6578a3cced420e904e0b544e2a213d0638e07b97f17ae434df",
+      "published_sha256": "1f809702b31c0a03fb1580babc6531152f6001804c9bd2ce934d32cb5ec7f8ad",
+      "body_sha256": "07c8e9c91206bef05c7f790cdfb5e4a9b9556f51ba1db9cb7e2b5bc85ff4e220",
+      "transformation": "attribution_header_only"
+    }
+  }
+}

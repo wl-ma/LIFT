@@ -1,11 +1,8 @@
 cff-version: 1.2.0
-message: "Cite this artifact with its exact Git commit. Paper publication metadata is not asserted."
-title: "LIFT: Version13 experimental artifacts and ReasLib examples"
+message: "Please cite the LIFT paper when using this software or its experimental artifacts."
+title: "LIFT: Library Integration of Formalized Theorems for Reusable Mathematical Knowledge"
 type: software
 authors:
   - name: "LIFT contributors"
-version: "paper-v13"
-date-released: 2026-09-26
-repository-code: "https://github.com/wl-ma/LIFT"
-url: "https://github.com/wl-ma/LIFT"
-abstract: "Version-bound paper data, executable mathematical cases, compiler extraction, and toolchain-alignment validation."
+url: "https://anonymous.4open.science/r/LIFT-C5F7/"
+abstract: "Experimental records, reusable Lean interfaces, source recovery examples, and tools for library integration."

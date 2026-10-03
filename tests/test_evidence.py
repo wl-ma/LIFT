@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import importlib.util
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -10,11 +10,8 @@ from pathlib import Path
 from test_tools import UPGRADE, bundle
 
 ROOT = Path(__file__).resolve().parents[1]
-spec = importlib.util.spec_from_file_location(
-    "case_check", ROOT / "scripts/check_case.py"
-)
-CASE = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(CASE)
+sys.path.insert(0, str(ROOT / "src"))
+from lift_artifacts import check_case as CASE  # noqa: E402
 
 
 class EvidenceTests(unittest.TestCase):

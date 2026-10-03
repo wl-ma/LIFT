@@ -44,12 +44,42 @@ The export is scoped to selected modules; references outside it remain reference
 
 See [the fixture output](../../examples/lean-json/expected-facts.json) for an actual output. It contains a definition, a public equation, and a caller that reuses it.
 
-## Natural-language layer
+## Natural-language translation and semantic review
 
-The existing [translator](prompts/translator.md) and [verifier](prompts/verifier.md) instructions document the separate generation/review roles. They are shipped as reference instructions, with their original contract-specific terminology. This standalone command does not implement those model calls, the full natural-language schema, semantic review, or backend submission.
+`translate.py` runs the complete natural-language workflow over real compiler facts:
 
-Compiler facts and generated prose must remain distinct. A complete natural-language workflow should retain the identity and formal specification, record context selection, and review generated prose against the actual hypotheses, conclusions, and prescribed data. Structural JSON validity alone does not establish mathematical correspondence.
+1. Build and extract the selected modules, preserving all elaborated types and definition bodies.
+2. Generate a complete mathematical statement with objects, assumptions, quantifiers, defining data and explicit uncertainties.
+3. Include compiler-identified constructors and fields of structures appearing in the local dependency context. In a fresh invocation, review every dimension against the exact compiled context. Bind the report to hashes of both the draft and context, with exact type/body evidence for each check.
+4. Resolve requested dependencies through Lean's compiled environment. Revise a rejected draft and review the entire result again, within the specified limits.
+5. Save facts, every draft, review, context, per-call receipt and final result in a new output directory. Verify that the source project has not changed.
 
-## Expanded compiler validation
+Configure the model adapter's runtime environment as described in [components and dependencies](../../docs/dependencies.md), then run:
 
-Run 'python3 scripts/validate_tools.py --output _runs/tool-validation' from repository root. Separate fixtures exercise private declarations, generated constructors/recursors, polymorphic structures, instances and cross-module proof dependencies under all three supported compilers. This remains compiler extraction, not model-generated natural-language conversion.
+```bash
+python3 tools/lean_json/translate.py examples/lean-json \
+  --module Fixture --name LIFTExample.twice_eq \
+  --model-command '["python3", "tools/lean_json/model.py"]' \
+  --max-repairs 2 --max-context-rounds 2 \
+  --output _runs/natural-fixture
+```
+
+Omit `--name` to translate every declaration in the selected modules. Multiple modules and exact names are supported. `--context-bytes` sets the maximum serialized context size, default 250000 bytes; an excess fails explicitly rather than truncating mathematical data. The example model command is relative to the repository root. A custom provider command can route translator and verifier roles to different models.
+
+`translation/result.json` uses schema `lift.natural-project.v1`; `validation.json` is the final unchanged-source check. Each record separates immutable `compiler` facts from generated `natural` content and its `review`. The mathematical fields are `statement`, `objects`, `assumptions`, `quantifiers`, `definition`, and `uncertainties`. Missing context, unresolved uncertainty or a failed check produces `needs_review`, never acceptance. A failed command records unknown usage rather than zero. Provider-returned usage remains recorded for incomplete or malformed replies. Malformed draft/review schemas trigger at most two explicit additional model calls, each retaining the original response and fee receipt; the program never reshapes an invalid reply into acceptance.
+
+`accepted` denotes completion of the configured model review, not a formal proof that English and Lean are semantically equivalent. For publication, inspect the mathematical content and retain the review evidence. [Translation instructions](prompts/translator.md) and [review instructions](prompts/verifier.md) describe the roles; executable contracts reside in `src/lift_tools/natural.py`.
+
+## Validation
+
+```bash
+python3 scripts/validate_tools.py --output _runs/tool-validation
+python3 scripts/validate_workflows.py --output _runs/workflow-validation
+python3 -m unittest discover -s tests -v
+```
+
+The first command checks real compiler extraction on three versions. The second combines real Lean extraction with an explicitly scripted provider to verify translation, rejection, repair, whole-draft review and recording. It makes no external model calls and measures workflow behavior, not translation quality. Regression tests also reject invented evidence, incorrect hashes, missing defining data, unauthorized context requests and repairs that merely erase uncertainties. [Recorded coverage](../../experiments/tool-validation/README.md).
+
+The [live qualification](../../experiments/tool-validation/README.md#live-model-qualification) additionally uses real model calls for a structure, a quadratic definition, a theorem with a necessary hypothesis and ReasLib's strong-convexity predicate. Complete drafts, compiler context and semantic reviews are available with the results.
+
+Compiler records also retain `expression_type_dependencies`, the constants present in the compiled type expression. The broader `type_dependencies` field additionally includes constructor and structure-field edges for navigation.

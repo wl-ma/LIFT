@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment": "serial-library-growth",
+  "project": "ReasLibDemo",
+  "pipeline": [
+    "statement",
+    "library_integration",
+    "proof"
+  ],
+  "release_order": [
+    "R0",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5"
+  ],
+  "model": "grok-4.7",
+  "provider": "hosted Responses service",
+  "model_concurrency": 1,
+  "lean_toolchain": "leanprover/lean4:v4.30.0",
+  "mathlib_revision": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "budget_per_source_item_per_stage": {
+    "tokens": 15000000,
+    "calls": 150,
+    "seconds": 43200
+  },
+  "budget_accounting": "Subtract actual settled failed and recovery calls and elapsed execution from the same item-stage allocation. Source-interface recovery retains the original source-unit denominator.",
+  "release_requirements": [
+    "Complete source semantics independently reviewed before integration",
+    "All controlled declarations, including private and generated declarations, compiled and trusted",
+    "Exact original source-facing full types and definition behavior preserved",
+    "All cumulative source clients and relevant boundary clients pass",
+    "Compiled value and type dependencies retained",
+    "A single evolving thematic library; source consumers import it",
+    "Every attempt, including failures and evaluator-assisted interface recovery, accounted separately"
+  ],
+  "isolation": "Prior completed answers and evaluator artifacts are excluded from model workspaces. The accepted preceding release and the fixed Mathlib background are available.",
+  "comparison": "A serial construction and cumulative preservation demonstration; no paired-method performance comparison is inferred.",
+  "public_artifacts": "Reviewed Lean library, independent client package, source index, structured execution outcomes, declaration evidence and generated release views.",
+  "selected_textbook_units": 12,
+  "derived_bridge_units": 1
+}

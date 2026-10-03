@@ -1,0 +1,68 @@
+{
+  "schema": "lift.layout-validation.v1",
+  "scope": "Repository layout and entry-point verification",
+  "model_calls": 0,
+  "checks": {
+    "protected_mathematical_and_table_files": 151,
+    "protected_files_changed": 0,
+    "recomputed_csv_tables": 6,
+    "python_regressions_passed": 12,
+    "source_files_recompiled": 5,
+    "declarations_axiom_checked": 9,
+    "compiler_fixture_exported_declarations": 3
+  },
+  "lean_check": {
+    "lean_version": "Lean (version 4.32.0, x86_64-unknown-linux-gnu, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)",
+    "modules": [
+      {
+        "module": "ReasLib.Analysis.Calculus.Taylor",
+        "returncode": 0,
+        "source_sha256": "1b67cee374f7676e14ca1c38e49432c092c6a39ad83657613f8b15174875e856"
+      },
+      {
+        "module": "NocedalNumericalOptimization.Chapter02.Theorem_2_1",
+        "returncode": 0,
+        "source_sha256": "bec7f6a13ea8ae0846bbeb0b06f3b66069adb3f32883a3ef9f67fe77b58bef5d"
+      },
+      {
+        "module": "NocedalNumericalOptimization.Chapter02.Theorem_2_2",
+        "returncode": 0,
+        "source_sha256": "711a4d293bc94486863465751ea52ed93878c74fcffc7880ef93aafb14c371c6"
+      },
+      {
+        "module": "ReasLib.AlgebraicTopology.FundamentalGroup.Product",
+        "returncode": 0,
+        "source_sha256": "011526c309459395241b238d1f5371ecee0c55d9ad57b206f2be4bc59e638b1d"
+      },
+      {
+        "module": "RiemannSurfaces.Chapter1.Exercise_3_2",
+        "returncode": 0,
+        "source_sha256": "9e1492682a2329c2f0273a65f4753366dec5d8e4e885fcdd13a50fbeec54644a"
+      }
+    ],
+    "axioms": "'IsLocalMin.fderiv_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Taylor.existsFirstOrder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Taylor.fderivAddEqIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Taylor.existsSecondOrder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodProjectionHom' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodPathHom' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodPathHom_leftInverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodPathHom_rightInverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FundamentalGroup.prodMulEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "audit_returncode": 0,
+    "checked_declarations": 9,
+    "passed": true
+  },
+  "table_inputs": {
+    "records/project-metadata.json": "3ef1aecee2b968711ccc79431bb11eeac1e0c1292d6554ca3bf4792c85a14f7e",
+    "records/stage-counts.csv": "9e9106a38c7d6df695a8de33a75e1fac279705247b943646dba9658a7152f2e1",
+    "records/integration-manifests.csv": "f4a01ab1eeb09b11ad90f74e835d6ae2273e4e307e29e91c5d713a641d93c881",
+    "records/modules.csv": "783d85ff780247dbf358573790d4fd5a0daa9c40579a406a5bd91b55a5b15b75",
+    "records/actions.csv": "809507fbe6ffe7d6674d233847283f06fa54473f2fdc56302f047c52f0f5cfd1",
+    "records/proof-stages.json": "2ea3187a537766c995a0b1b6e419cc5116af63e4b582b3f429ef41eb9d60c705",
+    "records/obligation-identities.json": "36def8c95a2f2412d1ad72cc825d09b8c3f5edd3a9795e8cccc17efcde96ad63",
+    "records/selection.csv": "56dfe3a3761c2455337b1e90c38409151f950166343704be7c48a354b3d277ce",
+    "construction.csv": "d79726c52b4bc3fba1d2830f8fd1c0d21396b5377e5d96d2e48faa6b12599aa7",
+    "declaration-actions.csv": "8d59cfea680c44c7c66bb7f837f78a98b83ef60aba0a0d685e99a0b3a1286111",
+    "module-profile.csv": "f16f6ac12bc74bfabeb73a46426043bce2591a3a931ca98fe5d1b704518b2c3d",
+    "proof-handoff.csv": "86f02b1c48c481678d253cd2127afa3e3765c58402746128d535017713788634",
+    "proof-obligations.csv": "d4388947293c5fe0c453bb2249f360dadf620fd3bba416dabea82ab3de30baad",
+    "proof-task-links.csv": "efd671cbfb45b1c29e7e4e51eed219d4823080fdbad1aec87c1bcbf4e5e3ccd4"
+  },
+  "figure_inputs": {
+    "declaration-actions.csv": "8d59cfea680c44c7c66bb7f837f78a98b83ef60aba0a0d685e99a0b3a1286111",
+    "online-trace.csv": "232e3ecf314bc0b9af5c5ded96eb79182a241785156222f2440b1d278629f6ff"
+  }
+}

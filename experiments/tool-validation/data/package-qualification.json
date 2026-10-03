@@ -1,0 +1,30 @@
+{
+  "schema": "lift.package-qualification.v1",
+  "wheel_sha256": "10ac6b754254bccc418bc3b1eeb15867d28fbf0a14d33299af4cdc374aea9785",
+  "package_files": [
+    "lift_tools/HarnessFacts.lean",
+    "lift_tools/__init__.py",
+    "lift_tools/common.py",
+    "lift_tools/compiler.py",
+    "lift_tools/http_model.py",
+    "lift_tools/migration.py",
+    "lift_tools/natural.py",
+    "lift_tools/process.py",
+    "lift_tools/provider.py",
+    "lift_tools/repair.py"
+  ],
+  "packaged_source_bytes_match": true,
+  "isolated_wsl_imports_without_backend": true,
+  "cli_help_exit_codes": {
+    "compiler": 0,
+    "natural": 0,
+    "migration": 0,
+    "repair": 0,
+    "http_model": 0
+  },
+  "model_adapter_imported_without_network": true,
+  "experimental_model_calls": 0,
+  "build_host": "Windows",
+  "qualification_host": "WSL",
+  "portable_pure_python_wheel": true
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "lift.current-release-validation.v1",
+  "passed": true,
+  "new_model_calls": 0,
+  "python_tests_passed": 70,
+  "ruff_check_passed": true,
+  "ruff_format_passed": true,
+  "clean_export_passed": true,
+  "serial_library_declarations": 180,
+  "fixed_source_clients": 69,
+  "extension_boundary_examples": 25,
+  "independent_demo_checks": 21,
+  "supplementary_original_goals": 4,
+  "paper_artifacts_unchanged": 175,
+  "paper_tables_reproduced": 6,
+  "compiler_versions": [
+    "4.26.0",
+    "4.30.0",
+    "4.32.0"
+  ],
+  "migration_original_clients_per_version": 2,
+  "review_usage": null,
+  "anonymous_repository_id": "LIFT-C5F7",
+  "remote_ci_status": "not_yet_run"
+}

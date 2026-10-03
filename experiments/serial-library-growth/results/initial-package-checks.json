@@ -1,0 +1,550 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "accepted_source_identity": "ace2137eea1f65e45423a59d46187ac58ff1b995e99064c8e65d24a8e0b61635",
+  "package_source_identity": "76f481307b2c669edf8cea726ebf97dcaac3504f424ae9b7b14d5967602034fd",
+  "dataset_sha256": "647fc96db33e478416091d43d125441d793528f3f2c347532974ce6e48fa0c79",
+  "package_manifest_sha256": "e3d4076726211ffca66903d472c7a7214ef167c3abf054bb3e222a1abcca936f",
+  "lean_version": "Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+  "mathlib_revision": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "library_axioms": {
+    "Analysis.Convex.strongConvex_iff_convex_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Analysis.InnerProductSpace.euclideanNormSq_combo_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Analysis.InnerProductSpace.norm_sq_smul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Analysis.InnerProductSpace.real_inner_smul_smul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.botLt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.convexDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.convexOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.iff_proper_Ioo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.jensen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.leCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.leCombo_Icc_iff_Ioo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.leCombo_Ioo_iff_convex_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.ofConditions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvex.sigmaPos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.congr": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.contDiffOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.convexDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.differentiableOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_convexCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_fderivMono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_fderivMono_convexCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.iff_strongConvexOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.le_of_hasFDerivWithinAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.muPos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.ofConditions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "StrongConvexC1On.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.add_coe_le_weighted_iff_toReal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.convexCombo_quadraticGap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.convexOn_toReal_sub_normSq_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.subNormSq._proof_1": [
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.subNormSq_convexCombo_le_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.subNormSq_convexCombo_le_of_top": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.subNormSq_weighted_le_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.QuadraticShift.0.weightedSub_le_iff_add_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.coe_strongConvexModulus_mul_comm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.coe_toReal_of_mem_effectiveDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.convex_effectiveDomain_of_leCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.eqOn_of_add_normSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.leCombo_at_endpoint": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.le_sub_coe_iff_add_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.le_weightedSub_toReal_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.sub_coe_le_of_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.sub_strongConvexModulus_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.Strong.0.weightedSub_coe_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.HasFDerivWithinAt.apply_sub_eq_of_convex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.convexCombo_quadratic_of_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.hasDerivAt_comp_lineMap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.le_sub_fderivWithin_of_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.lower_of_convexCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.lower_of_fderivWithin_mono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.segmentDeriv_ge_of_fderivMono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.Convex.StrongC1.0.slope_le_of_convexCombo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "_private.ReasLib.Analysis.InnerProductSpace.NormSq.0.Analysis.InnerProductSpace.sqCombo_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effectiveDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effectiveDomain_eq_lt_top": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "effectiveDomain_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "leCombo_Ioo_iff_convex_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mem_effectiveDomain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mem_effectiveDomain._simp_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexC1On_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexC1On_iff_of_finiteDimensional": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexOn_iff_exists_convex_add_normSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvexOn_iff_segment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvex_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvex_iff_convex_subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strongConvex_iff_strongConvexOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "subNormSq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "subNormSq_eq_coe_toReal_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "clients": {
+    "ReasLibDemo/Clients/ExtendedRealBoundaries.lean": {
+      "SerialBoundaryChecks.top_allowed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "SerialBoundaryChecks.bottom_rejected": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "SerialBoundaryChecks.zero_rejected": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "SerialBoundaryChecks.exact_shift": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "ReasLibDemo/Clients/ThreeSourceQuadratic.lean": {
+      "ReasLibDemoClients.halfNormSq_domain": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_proper": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_strongConvex": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_beck": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_bauschke_inequality": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibDemoClients.halfNormSq_bauschke_shift": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.empty_domain": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.singleton_domain": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.scalarQuadratic_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.scalarQuadratic_monotone": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.ambient_max_norm": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.axisQuadratic_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.tiltedQuadratic_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibNesterovClients.axis_witness_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibThreeSourceClients.same_quadratic": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibThreeSourceClients.same_real_values": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ReasLibThreeSourceClients.shared_quadratic_views": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "check": "version",
+      "returncode": 0
+    },
+    {
+      "check": "build",
+      "returncode": 0
+    },
+    {
+      "check": "library-axioms",
+      "returncode": 0
+    },
+    {
+      "check": "clients-0",
+      "returncode": 0
+    },
+    {
+      "check": "clients-1",
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 25.295192251000117,
+  "model_calls": 0
+}

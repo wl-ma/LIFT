@@ -4,3 +4,28 @@ line-length = 88
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lift-research-tools"
+version = "0.1.0"
+description = "Compiler-grounded Lean translation and checked toolchain migration"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+
+[project.scripts]
+lift-extract = "lift_tools.compiler:main"
+lift-translate = "lift_tools.natural:main"
+lift-model = "lift_tools.http_model:main"
+lift-upgrade = "lift_tools.migration:main"
+lift-repair = "lift_tools.repair:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lift_tools*"]
+
+[tool.setuptools.package-data]
+lift_tools = ["HarnessFacts.lean"]
