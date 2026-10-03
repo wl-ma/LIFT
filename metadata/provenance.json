@@ -51,7 +51,7 @@
     {
       "path": "tools/lean_json/HarnessFacts.lean",
       "sha256": "c8d46864732d383c011ac44886e823a1db36e9c534adf5b66903f656a609517d",
-      "origin": "src/leantegrate/harness/lean/HarnessFacts.lean",
+      "origin": "Original compiler extractor",
       "role": "Compiler extractor, originally for Lean 4.26.0",
       "original_sha256": "399bc54599e0ad0a10e00f33772bb23857f8651f9e2a0452ca51b154dfa42019",
       "public_extension": "Add raw expression type dependencies while preserving constructor and field navigation edges."
@@ -62,7 +62,7 @@
       "origin": "src/lift_tools/natural.py",
       "role": "Standalone translation/review contract documentation; revised independently of the construction backend",
       "previous_release_sha256": "e254647f101376e88bcdd19636779f2bef6fcb11e9dd2c2232b57e2bd0eead61",
-      "previous_origin": "src/leantegrate/harness/skills/translator.md",
+      "previous_origin": "Original mathematical translation role",
       "revision_history": [
         {
           "sha256": "2572aea1cd376af657db802b3abe11f35e5c1a78a30502a5351a6cac4d680491",
@@ -77,7 +77,7 @@
       "origin": "src/lift_tools/natural.py",
       "role": "Standalone translation/review contract documentation; revised independently of the construction backend",
       "previous_release_sha256": "079909f70228598c3c365a262dda45114db9b79479ad510dd7ad826f4bb8f607",
-      "previous_origin": "src/leantegrate/harness/skills/verifier.md"
+      "previous_origin": "Original mathematical verification role"
     },
     {
       "path": "docs/assets/result-action-profile.svg",
