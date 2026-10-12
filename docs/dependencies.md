@@ -34,3 +34,14 @@ The supplied `tools/lean_json/model.py` adapter supports HTTPS Chat Completions 
 M2F source, internal prompts, native job directories, credentials and raw provider logs are not distributed here. Backend-specific orchestration remains in a separate private installation. Portable results consist of selected mathematical sources, declaration facts, source recoveries, immutable client checks and explicit usage summaries. They do not require publishing the engine implementation.
 
 Public tests import the tools in isolated Python and check that the public package has no private-engine imports. Publication checks bind the reviewed release files by digest. Local executions write to `_runs/`, which is excluded from publication.
+
+## Public and private workspace separation
+
+Public tools must accept project paths and provider configuration as explicit
+inputs. They must not import a private backend, hard-code a personal workspace,
+or require access to a private repository. Backend-specific M2F adapters and
+experimental orchestration belong in the private experiment workspace.
+
+Only reviewed, portable experiment evidence is published under `experiments/`.
+Raw execution histories, provider requests, credentials, caches, and private
+orchestration must not be staged from `_runs/` into this repository.
