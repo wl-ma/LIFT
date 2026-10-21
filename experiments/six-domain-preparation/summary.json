@@ -51,20 +51,20 @@
   "held_out": 60,
   "pending": 0,
   "phase": "native_statement_proof_material_preparation",
-  "provider_dispatch_waiting": true,
+  "provider_dispatch_waiting": false,
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 4165,
-    "inflight": 0,
+    "finished": 4170,
+    "inflight": 1,
     "known_token_lower_bound": {
-      "cached_tokens": 179393092,
-      "input_tokens": 210908967,
-      "output_tokens": 2626176,
-      "reasoning_tokens": 625294,
-      "total_tokens": 213535143
+      "cached_tokens": 179517508,
+      "input_tokens": 211136801,
+      "output_tokens": 2629730,
+      "reasoning_tokens": 626691,
+      "total_tokens": 213766531
     },
-    "started": 4165,
+    "started": 4171,
     "unknown_usage": 23
   },
   "usage_is_lower_bound": true
