@@ -954,6 +954,33 @@
     "task": "LIFTR02FullCommonAnalysisOptimization_0011"
   },
   {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "de8190a401a303abb36dd0bf9821e02e9705f383e7465b25d454ffc25847a837",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0012.lean",
+        "public_sha256": "79add32ea9c18252cf728e79b979a565657616025261e2beca32eb435b9781b9"
+      },
+      {
+        "original_sha256": "15c467ea9058cc668ed522660fa1659643bb7aad1fedab5cde0dd4f7a21eb593",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0012_Projection.lean",
+        "public_sha256": "104ff24e7a1925007e4c47888977c34352734a728879374d909996ee5bf4d5dd"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0012"
+  },
+  {
     "accepted": false,
     "domain": "AnalysisOptimization",
     "source_files": [],
