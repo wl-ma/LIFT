@@ -1,6 +1,6 @@
 {
-  "accepted": 204,
-  "complete": 271,
+  "accepted": 206,
+  "complete": 279,
   "debug": 48,
   "denominator": 480,
   "domains": {
@@ -20,16 +20,16 @@
     },
     "GraphDiscrete": {
       "accepted": 45,
-      "complete": 64,
+      "complete": 67,
       "denominator": 80,
-      "pending": 18,
+      "pending": 21,
       "rejected": 1
     },
     "LinearMatrix": {
-      "accepted": 52,
-      "complete": 70,
+      "accepted": 54,
+      "complete": 75,
       "denominator": 80,
-      "pending": 17,
+      "pending": 20,
       "rejected": 1
     },
     "Probability": {
@@ -49,22 +49,22 @@
   },
   "formal_generic_lift_comparison_started": false,
   "held_out": 60,
-  "pending": 53,
+  "pending": 59,
   "phase": "native_statement_proof_material_preparation",
   "provider_dispatch_waiting": false,
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 13746,
-    "inflight": 7,
+    "finished": 13916,
+    "inflight": 2,
     "known_token_lower_bound": {
-      "cached_tokens": 605463188,
-      "input_tokens": 729599841,
-      "output_tokens": 10094869,
-      "reasoning_tokens": 3162284,
-      "total_tokens": 739694710
+      "cached_tokens": 612620180,
+      "input_tokens": 738173877,
+      "output_tokens": 10198964,
+      "reasoning_tokens": 3175601,
+      "total_tokens": 748372841
     },
-    "started": 13753,
+    "started": 13918,
     "unknown_usage": 106
   },
   "usage_is_lower_bound": true
