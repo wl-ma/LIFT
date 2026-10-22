@@ -1,6 +1,6 @@
 {
-  "accepted": 149,
-  "complete": 165,
+  "accepted": 159,
+  "complete": 215,
   "debug": 48,
   "denominator": 480,
   "domains": {
@@ -12,29 +12,29 @@
       "rejected": 7
     },
     "AnalysisOptimization": {
-      "accepted": 29,
-      "complete": 34,
+      "accepted": 32,
+      "complete": 45,
       "denominator": 80,
-      "pending": 1,
+      "pending": 9,
       "rejected": 4
     },
     "GraphDiscrete": {
-      "accepted": 39,
-      "complete": 41,
+      "accepted": 40,
+      "complete": 51,
       "denominator": 80,
-      "pending": 1,
+      "pending": 10,
       "rejected": 1
     },
     "LinearMatrix": {
       "accepted": 15,
-      "complete": 16,
+      "complete": 39,
       "denominator": 80,
-      "pending": 0,
+      "pending": 23,
       "rejected": 1
     },
     "Probability": {
-      "accepted": 1,
-      "complete": 1,
+      "accepted": 7,
+      "complete": 7,
       "denominator": 80,
       "pending": 0,
       "rejected": 0
@@ -49,23 +49,23 @@
   },
   "formal_generic_lift_comparison_started": false,
   "held_out": 60,
-  "pending": 2,
+  "pending": 42,
   "phase": "native_statement_proof_material_preparation",
   "provider_dispatch_waiting": false,
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 8981,
-    "inflight": 12,
+    "finished": 11034,
+    "inflight": 1,
     "known_token_lower_bound": {
-      "cached_tokens": 387628180,
-      "input_tokens": 469967846,
-      "output_tokens": 6774855,
-      "reasoning_tokens": 2308645,
-      "total_tokens": 476742701
+      "cached_tokens": 482805780,
+      "input_tokens": 583906019,
+      "output_tokens": 8259997,
+      "reasoning_tokens": 2748521,
+      "total_tokens": 592166016
     },
-    "started": 8993,
-    "unknown_usage": 80
+    "started": 11035,
+    "unknown_usage": 84
   },
   "usage_is_lower_bound": true
 }

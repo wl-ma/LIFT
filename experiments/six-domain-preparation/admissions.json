@@ -1099,6 +1099,33 @@
     "domain": "AnalysisOptimization",
     "source_files": [
       {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "e6367a52179080bcae84444baabac5224f558e19fb9b7953327f9e040e9da26b",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0017.lean",
+        "public_sha256": "59527e0f8224522a2de01b5ab699e36204f6446f16c66a55143cee12eb8b4c8a"
+      },
+      {
+        "original_sha256": "d6b64098fa0d2e1b436b510f952ada83a3e4203a85434e18410eae53ee55e39e",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0017_Softmax.lean",
+        "public_sha256": "93752db626cbe8f9742637baff9d3a96882f86d230dd529570606feb890e7b3a"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0017"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
         "original_sha256": "ca940906f27ed42e84cb1febd8ed69245ba2e4214112a19157ea98684abcf5f1",
         "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0018.lean",
         "public_sha256": "ec86d8ba86af334f294b782ed12985ccb94723b1570c524e111d87bcee2a8ff8"
@@ -1111,6 +1138,43 @@
     "domain": "AnalysisOptimization",
     "source_files": [],
     "task": "LIFTR02FullCommonAnalysisOptimization_0019"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "ade3f347bfa0ff1c0642a6c6bb4943bbd8622e9d47b8b876e9ab9846e148fef4",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0001.lean",
+        "public_sha256": "872b235168d4bdb81dd7c2e07411ca3bac2337e756fe505237e88f45804ed1c9"
+      },
+      {
+        "original_sha256": "84e009ea712790dc8e63b4dc24f4300a80965f6140916c283834b15b4d8f5ee8",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0001_Smoothness.lean",
+        "public_sha256": "a99a02d3770d1bec1e1dcdb014d8db59e1784115fdea0210a1d2b1f35a7c995e"
+      },
+      {
+        "original_sha256": "6a68cdbaa5eb71eb3ca4934d34846c52b647df3c349228911c5991c2d940e2fe",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0021.lean",
+        "public_sha256": "b96fbf43fe3f1840dc586702fd0228cbf4a32ba6fb60b2b525fe9c9300eb7bc9"
+      },
+      {
+        "original_sha256": "f153c0e6c58ad0a8973e47925b68176e35dff3930dc4b1294ab8ec3b6632e60c",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0021_Gradient.lean",
+        "public_sha256": "1b02509edce2281db3ec19de9dd6f163b6228dd26ee134e188e49b4ee5a66695"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0021"
   },
   {
     "accepted": true,
@@ -1212,6 +1276,38 @@
       }
     ],
     "task": "LIFTR02FullCommonAnalysisOptimization_0025"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "9296baf0b82c20be5c1c65cd468e7eba71156e16357e28dbea7e26b93354a71d",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0002.lean",
+        "public_sha256": "33e585ea39fe33726f8aa2e74865c074b8d73c62cb5dc7f2d3f69739d0d99e0f"
+      },
+      {
+        "original_sha256": "c392cad4fb5bf4fb914656f58c1673f659a2ea5128e4b68601fced15bb219034",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0002_StrongConvex.lean",
+        "public_sha256": "23d700da617a5d71cb5038b84d1365da7e4861756b6418b3dbf7ef31540e04dd"
+      },
+      {
+        "original_sha256": "fb25bf28461c88d5f742676929d69e3a5b29e30b253ad0c38b04100881113da8",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0028.lean",
+        "public_sha256": "ce750c06a233fb2b0543e729077ac07796d689fd0119482e85848d939d97d230"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0028"
   },
   {
     "accepted": true,
@@ -1767,6 +1863,33 @@
       }
     ],
     "task": "LIFTR02FullCommonGraphDiscrete_0003"
+  },
+  {
+    "accepted": true,
+    "domain": "GraphDiscrete",
+    "source_files": [
+      {
+        "original_sha256": "dcbc5175f6b81d7daa638b37aba9acaca69d1cc77bac4805c86791bbb5036e1e",
+        "path": "LIFTR02FullCommonGraphDiscrete.lean",
+        "public_sha256": "dd4205572abf58129c3d694c9fc473d8fdc815277ef044fbe637255d05e6acfe"
+      },
+      {
+        "original_sha256": "e7324a04cf573f7896a12d0f872f9fc26577b2b662db10e9f96a1fbd49c1cc72",
+        "path": "LIFTR02FullCommonGraphDiscrete/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "22be631b6ab741365c78300742ea6d8560fee07f92d8070cc65419ee5d5d062a",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0004.lean",
+        "public_sha256": "b34a4e04d1e6d217581f3a82c04e95a2901e29066a14dfa9a0519e97818cc21f"
+      },
+      {
+        "original_sha256": "1480d6d4165368422f42dbf3dd55920659d9be880376856030502a35632c036d",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0004_Representation.lean",
+        "public_sha256": "d0f3eab8313a91ce09f1ce75c3a0f1126dbe5c4189e0ad80865718a864c4a6a7"
+      }
+    ],
+    "task": "LIFTR02FullCommonGraphDiscrete_0004"
   },
   {
     "accepted": true,
@@ -3070,6 +3193,143 @@
       }
     ],
     "task": "LIFTR02FullCommonLinearMatrix_0066"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "7d873c68b97a73e7311c9024215d95eb347c2e9b02692966df304e5109ee788a",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0001.lean",
+        "public_sha256": "24c4088ab3f940b0c5686e927cd4864af48751132099fd6200e07ac2b6c862f2"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0001"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "a7301f6cd055e262aef45ed6aa29871e019daba9b0e0006ee793054ea7a01f38",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0004.lean",
+        "public_sha256": "0f18cb0a7cf0006bdb49e97ccab6c786c7a7782e5d4bd3fda4adeff60920a8d6"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0004"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "dc9279e2069c3bb451fef4b9049fccec694aca98a813251843b479d75347c293",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0005.lean",
+        "public_sha256": "b5ff799bda37c692a1ddfc24a502f29197aab0aaa18941ce604a4c0ddd3b16ff"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0005"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "edf1a9e842e20bf58212d17d9b31da78ab3c0c2680f4db5e91eab3fa23ffbd86",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0006.lean",
+        "public_sha256": "a086887e07a20a6043e362bab71b694af284465cff526cb31953c9fc81b71033"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0006"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "6752d9c52276f6d89cb2086640a20f259b5962eb375876c6678d2073e8742972",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0007.lean",
+        "public_sha256": "f8a569667d327774dc3a072ab2b7690dae9c5d3af367227ed4bc1d8ed628872a"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0007"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "76629824a2112e872467ed37b1dfdf415950a6d51444f056ce28fe006bfd38dc",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0008.lean",
+        "public_sha256": "bb816bb52c487d0276a641ca5bacaf1e55bf5d6bd215ed0be0d5c226a575396f"
+      },
+      {
+        "original_sha256": "041a69de7e8a5bec81d90a6248364180d8bfb3282e49658eb2dc805259c39fe4",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0008_RandomWalk.lean",
+        "public_sha256": "14a94904e3c66c9999a5beb0c1620821b858d7ff32f120abc3c7ead93fc1a921"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0008"
   },
   {
     "accepted": true,
