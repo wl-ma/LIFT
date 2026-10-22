@@ -3,7 +3,7 @@
     "experiments/six-domain-preparation/README.md": "c4adafffe92bb023c3bd512f32741d16f42712a780d2c68f92b5eb3e67815f63",
     "experiments/six-domain-preparation/admissions.json": "a2a2e3ad731ca13fd750ced66efc54166f781271d3f23b10cf6bcc3e42d35a85",
     "experiments/six-domain-preparation/lean-sources.jsonl": "cd49f4d0a838149c9a9295e1d0cc4ddb7bbd92ff7403824ea50d93b5a0558027",
-    "experiments/six-domain-preparation/summary.json": "947eb1990e547bd2f616f469ba43a67f1841f0526abcabd671d21527c50024f4",
+    "experiments/six-domain-preparation/summary.json": "e2e207e0162209ceb61bee983b952a61b62d5b3835566fde2cae5b605b2aba56",
     "tools/experiment_ops/README.md": "98b075f308ad26598bf482d482f4aefbf660f489c9e19728f74cda4d3c66019c",
     "tools/experiment_ops/lift_ops.py": "c7ae8511f684d9bd4147aa50f05f999a099b9e4a183d7e4a646e81bdca85ce06",
     "tools/experiment_ops/materialize_sources.py": "5dd5ac6ba1af7bcd3825532fbff7a31142ed66690e957bbeeda97507ddb3737b",
