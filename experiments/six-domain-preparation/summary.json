@@ -1,6 +1,6 @@
 {
-  "accepted": 211,
-  "complete": 283,
+  "accepted": 214,
+  "complete": 286,
   "debug": 48,
   "denominator": 480,
   "domains": {
@@ -19,8 +19,8 @@
       "rejected": 4
     },
     "GraphDiscrete": {
-      "accepted": 48,
-      "complete": 68,
+      "accepted": 50,
+      "complete": 70,
       "denominator": 80,
       "pending": 19,
       "rejected": 1
@@ -33,8 +33,8 @@
       "rejected": 1
     },
     "Probability": {
-      "accepted": 11,
-      "complete": 19,
+      "accepted": 12,
+      "complete": 20,
       "denominator": 80,
       "pending": 8,
       "rejected": 0
@@ -55,17 +55,17 @@
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 14157,
-    "inflight": 2,
+    "finished": 14592,
+    "inflight": 8,
     "known_token_lower_bound": {
-      "cached_tokens": 621600916,
-      "input_tokens": 749409506,
-      "output_tokens": 10371194,
-      "reasoning_tokens": 3213231,
-      "total_tokens": 759780700
+      "cached_tokens": 636213524,
+      "input_tokens": 766868960,
+      "output_tokens": 10632000,
+      "reasoning_tokens": 3255987,
+      "total_tokens": 777500960
     },
-    "started": 14159,
-    "unknown_usage": 108
+    "started": 14600,
+    "unknown_usage": 109
   },
   "usage_is_lower_bound": true
 }
