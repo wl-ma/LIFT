@@ -1852,6 +1852,33 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "b64237d26158494fbff5a38282d4655d6b796fb60a364e69caffcfdb0db75667",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0002.lean",
+        "public_sha256": "e590ab830dcbcab6981bef8f2db85d48bacc8af9524c7d8462f39e15cfb88111"
+      },
+      {
+        "original_sha256": "88c6a7b93836de99ff7d9fd3e522461889ded77c9ca81a66c2922bbce1ea2e8b",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0002_Automorphism.lean",
+        "public_sha256": "05a3eebc578f53a68b9533c7b58256bf3dcc5480773eb8566758f3982b29291e"
+      }
+    ],
+    "task": "LIFTR02FullCommonGraphDiscrete_0002"
+  },
+  {
+    "accepted": true,
+    "domain": "GraphDiscrete",
+    "source_files": [
+      {
+        "original_sha256": "dcbc5175f6b81d7daa638b37aba9acaca69d1cc77bac4805c86791bbb5036e1e",
+        "path": "LIFTR02FullCommonGraphDiscrete.lean",
+        "public_sha256": "dd4205572abf58129c3d694c9fc473d8fdc815277ef044fbe637255d05e6acfe"
+      },
+      {
+        "original_sha256": "e7324a04cf573f7896a12d0f872f9fc26577b2b662db10e9f96a1fbd49c1cc72",
+        "path": "LIFTR02FullCommonGraphDiscrete/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "9b0e43d056fecef3dba6f099919be7529b4382a0a4281963ae6f44d50f78764e",
         "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0003.lean",
         "public_sha256": "fd31d4c197a88f66bc361c7f52dfbf7b7e296b216118d359cad977c72c2fa155"
@@ -4174,6 +4201,48 @@
   },
   {
     "accepted": true,
+    "domain": "LinearMatrix",
+    "source_files": [
+      {
+        "original_sha256": "5aea5da6818b2353f7de9e5d628d74a6bb8492cafea95dd2ebe59079cafae6c0",
+        "path": "LIFTR02FullCommonLinearMatrix.lean",
+        "public_sha256": "b4c198f121c97a1b9d0412f7ca1be1be42a2f46c0358e4e2cad0d006ea0650b2"
+      },
+      {
+        "original_sha256": "5b4c6aa786aca4b12ba392484d7e1c6bde6577ece91ef1d25c262dfdd5399be2",
+        "path": "LIFTR02FullCommonLinearMatrix/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "90c0788f6e8a9055121d90017f1240ce93a586a90a7bd5092314b47e7562b26d",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0003.lean",
+        "public_sha256": "dbb7fc80d54055f4a131806f63c0f89e65b0410aa83425f06b5446ac1783f235"
+      },
+      {
+        "original_sha256": "0bbd5bd791a8de05dbc0973d32abcfd33346d36e9777a902c6b5b8041f7ed6c1",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0039.lean",
+        "public_sha256": "e00ce5f763dafb6aad84c4a28d6ffb72405995d0221a9b004619ed00ffd4ebb6"
+      },
+      {
+        "original_sha256": "b1dc18e88c7c62a9ba04dfb5cb1f0ef12284903be5a8d09c1150c527462b3f4f",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0053.lean",
+        "public_sha256": "152b04d4ef632562a2cb255af92d0bf13e95d2082e25d2dc212bad68f84c05e3"
+      },
+      {
+        "original_sha256": "075f81198aec21f866a9d9b26f58e91e7e7fac815a512dea4fadc942fa343a3c",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0076.lean",
+        "public_sha256": "36433b89de893245be253f1de1ac449bdd8e9b1d8db9ce6096d2ee994297baa9"
+      },
+      {
+        "original_sha256": "7d255098fe43e37d516999487f20209609aa86e9f4d991962c5ebc7676a32244",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0076_Pseudoinverse.lean",
+        "public_sha256": "603af53a0b178dcb2f7fa0eeaafaa8c61bd9ace60d4d2ee23720c9e9f57ef5bf"
+      }
+    ],
+    "task": "LIFTR02FullCommonLinearMatrix_0076"
+  },
+  {
+    "accepted": true,
     "domain": "Probability",
     "source_files": [
       {
@@ -4320,6 +4389,33 @@
       }
     ],
     "task": "LIFTR02FullCommonProbability_0015"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "a7301f6cd055e262aef45ed6aa29871e019daba9b0e0006ee793054ea7a01f38",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0004.lean",
+        "public_sha256": "0f18cb0a7cf0006bdb49e97ccab6c786c7a7782e5d4bd3fda4adeff60920a8d6"
+      },
+      {
+        "original_sha256": "214c89183265cccd8d4540dc861a2524f56283787ca623e238352a79bfe25405",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0028.lean",
+        "public_sha256": "3b43673723640f4501891b7596e5d23d6e38f9abd4e3728cdf8d40b0c916789d"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0028"
   },
   {
     "accepted": true,
