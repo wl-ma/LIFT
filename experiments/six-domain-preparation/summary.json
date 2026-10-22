@@ -55,16 +55,16 @@
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 7573,
-    "inflight": 0,
+    "finished": 7640,
+    "inflight": 24,
     "known_token_lower_bound": {
-      "cached_tokens": 338042516,
-      "input_tokens": 404276253,
-      "output_tokens": 5731398,
-      "reasoning_tokens": 2011464,
-      "total_tokens": 410007651
+      "cached_tokens": 339172372,
+      "input_tokens": 406498360,
+      "output_tokens": 5755654,
+      "reasoning_tokens": 2015792,
+      "total_tokens": 412254014
     },
-    "started": 7573,
+    "started": 7664,
     "unknown_usage": 73
   },
   "usage_is_lower_bound": true
