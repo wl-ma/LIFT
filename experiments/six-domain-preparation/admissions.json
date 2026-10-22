@@ -1817,6 +1817,33 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "5f11496c9bb19f377aca64c4060be437a3e1c249e17d9c51887ec4deb68dcee1",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0016.lean",
+        "public_sha256": "8c32ea9a39e40e5194db4b8e8df4c98ca15bab4f37d8631dc7219d4944a85ac4"
+      },
+      {
+        "original_sha256": "cec4190a8c64e640c040da7b92c901b63ef0ef6952df11fe4383089e12b7c6f7",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0016_BlockCut.lean",
+        "public_sha256": "04cc5701b462899055b18858b48ee5a386278b39240ad583500468c299e6217f"
+      }
+    ],
+    "task": "LIFTR02FullCommonGraphDiscrete_0016"
+  },
+  {
+    "accepted": true,
+    "domain": "GraphDiscrete",
+    "source_files": [
+      {
+        "original_sha256": "dcbc5175f6b81d7daa638b37aba9acaca69d1cc77bac4805c86791bbb5036e1e",
+        "path": "LIFTR02FullCommonGraphDiscrete.lean",
+        "public_sha256": "dd4205572abf58129c3d694c9fc473d8fdc815277ef044fbe637255d05e6acfe"
+      },
+      {
+        "original_sha256": "e7324a04cf573f7896a12d0f872f9fc26577b2b662db10e9f96a1fbd49c1cc72",
+        "path": "LIFTR02FullCommonGraphDiscrete/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "9bf0353127da3697ef4fe087345686b386cf6957a2c4bda3988c116963b1fe85",
         "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0019.lean",
         "public_sha256": "0460144e050f6cb9183882fda74a326fe8e57c8b2aa1cf3db5686f3d3abc1919"
@@ -1867,6 +1894,38 @@
       }
     ],
     "task": "LIFTR02FullCommonGraphDiscrete_0021"
+  },
+  {
+    "accepted": true,
+    "domain": "GraphDiscrete",
+    "source_files": [
+      {
+        "original_sha256": "dcbc5175f6b81d7daa638b37aba9acaca69d1cc77bac4805c86791bbb5036e1e",
+        "path": "LIFTR02FullCommonGraphDiscrete.lean",
+        "public_sha256": "dd4205572abf58129c3d694c9fc473d8fdc815277ef044fbe637255d05e6acfe"
+      },
+      {
+        "original_sha256": "e7324a04cf573f7896a12d0f872f9fc26577b2b662db10e9f96a1fbd49c1cc72",
+        "path": "LIFTR02FullCommonGraphDiscrete/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "630a8d999ceb0b25dfc23f160f2fd13814d0840626183be94ae5add3d8af4c2e",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0022.lean",
+        "public_sha256": "f4db17cd8adc54f18e006513a6736144c6817a117b3938244a1b5c0d56f6069c"
+      },
+      {
+        "original_sha256": "224f1a465800e86ab8596398efe3764ac500662c2b6a4ae4a6a422e7168520fe",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0022_Circumference.lean",
+        "public_sha256": "194374d0021b2fb40e850f5b5bc815505aac3d6a6573c2a86e04599523bb41dc"
+      },
+      {
+        "original_sha256": "1fa9b4b3b2a2718349a60c147c9b058e988fad0ee4a53a164723e61f1af50c8e",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0022_Cube.lean",
+        "public_sha256": "0da0c0fefa5bd8f6bfbcd2ba13a9a34b1f77c3bdafd3ee31c1176f8651e3a7cf"
+      }
+    ],
+    "task": "LIFTR02FullCommonGraphDiscrete_0022"
   },
   {
     "accepted": true,
