@@ -1018,6 +1018,33 @@
     "domain": "AnalysisOptimization",
     "source_files": [
       {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "ef324acd02d1a76643783446656c051b4a7a43285085fe80894f2ab38262789b",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0016.lean",
+        "public_sha256": "e7a34201478d6263f17b9c01cbe680a9fd765f1a4865b14b499fe3adc98b275c"
+      },
+      {
+        "original_sha256": "189c43f53bda73b28641bef9f8068e16b47a832f19e45a74c9cd13974a273b3c",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0016_MaxForm.lean",
+        "public_sha256": "5df95ec044b66af79e929e5a1963706c360a753ce3a5337476fe0c57589bb739"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0016"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
         "original_sha256": "ca940906f27ed42e84cb1febd8ed69245ba2e4214112a19157ea98684abcf5f1",
         "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0018.lean",
         "public_sha256": "ec86d8ba86af334f294b782ed12985ccb94723b1570c524e111d87bcee2a8ff8"
