@@ -4761,6 +4761,33 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "12cf2d1507d2b887c4f5158cd539f8697f8a63184c66a7246b03f6e4f0beb511",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0003.lean",
+        "public_sha256": "315bb6538188ab8f9396f04710914336283f528a77482c2d8cd639c81636adea"
+      },
+      {
+        "original_sha256": "1ee3ca487759dbb21cbac4cd3a303fe2ca37e28f9fc3e247e5b5bfac4685b620",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0003_Absorption.lean",
+        "public_sha256": "d715e91880c891e23f75485dc1e913e2da0efd7ee75f2d0f4665a1de4e6fac83"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0003"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "a7301f6cd055e262aef45ed6aa29871e019daba9b0e0006ee793054ea7a01f38",
         "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0004.lean",
         "public_sha256": "0f18cb0a7cf0006bdb49e97ccab6c786c7a7782e5d4bd3fda4adeff60920a8d6"
@@ -5083,6 +5110,33 @@
       }
     ],
     "task": "LIFTR02FullCommonProbability_0057"
+  },
+  {
+    "accepted": true,
+    "domain": "Topology",
+    "source_files": [
+      {
+        "original_sha256": "e4d47f0163cacc080999af16e29463815cc99a3fbcc2dd9e03eb175fe104bfc8",
+        "path": "LIFTR02FullCommonTopology.lean",
+        "public_sha256": "298680bef2130ef54ff1bc66af0f830b1a538c39567b07d4bacfe5f58593433f"
+      },
+      {
+        "original_sha256": "63b6af2d887a21fe7fc0bdf239a94e0cbd24ea16afeb38753d82c59181d21e86",
+        "path": "LIFTR02FullCommonTopology/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "2f8514be65add4d41fb50ec86bf87ee010ebc951d17ff4ac883d8371c72e94b9",
+        "path": "LIFTR02FullCommonTopology/topology/LIFTR02FullCommonTopology_0010.lean",
+        "public_sha256": "fa061ecfcd6ffc756b7dd3f66367014ae9cf5bacada0c7c20442708ffe2441fa"
+      },
+      {
+        "original_sha256": "f454ac82a6627d5800610d78dc88422954c32876a9c9759cc3c713b8627e7e44",
+        "path": "LIFTR02FullCommonTopology/topology/LIFTR02FullCommonTopology_0010_Orbit.lean",
+        "public_sha256": "58659a974f530c53e9d2e55da7b63fc9e3ac9b4eda4e35f9a8422800a20d0d5c"
+      }
+    ],
+    "task": "LIFTR02FullCommonTopology_0010"
   },
   {
     "accepted": true,
