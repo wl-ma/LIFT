@@ -875,6 +875,33 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "968186135da700f6c60da69ef86eced3446e41b9a1b3576137baf89274f7d631",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0004.lean",
+        "public_sha256": "1542b217133c0e4458f62f25ad941cfbc55c78256702430bba9dffedee63c687"
+      },
+      {
+        "original_sha256": "a62d6e537a5fb4c087abf542c301bfbb6a858563db49eaaeaece700177f0e015",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0004_LineDeriv.lean",
+        "public_sha256": "d1ff9d297355f51871b0ff8ac6f50a1bf5c567340307b4dbac6fa734b51c8db3"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0004"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "cb618830b35928176c4dbb2269d83c3f7dd73b0513a1e6e3f23651c640da801a",
         "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005_Subdifferential.lean",
         "public_sha256": "482f9a5ca540569e739d3af9d52f8bf50e1e310a8108daf7eecc3b95975da658"
@@ -1100,6 +1127,122 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "ade3f347bfa0ff1c0642a6c6bb4943bbd8622e9d47b8b876e9ab9846e148fef4",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0001.lean",
+        "public_sha256": "872b235168d4bdb81dd7c2e07411ca3bac2337e756fe505237e88f45804ed1c9"
+      },
+      {
+        "original_sha256": "84e009ea712790dc8e63b4dc24f4300a80965f6140916c283834b15b4d8f5ee8",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0001_Smoothness.lean",
+        "public_sha256": "a99a02d3770d1bec1e1dcdb014d8db59e1784115fdea0210a1d2b1f35a7c995e"
+      },
+      {
+        "original_sha256": "a696582a33aab29b67628a4af90dbbf56caa5aa31df055666741ef6cc1ebdb6f",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0023/ProofSupport/RadialGradient.lean",
+        "public_sha256": "fd23a8a4c7c2441ec57cce0beaa2a6531c4dd1cc869ee0b3a9530391365a44c5"
+      },
+      {
+        "original_sha256": "567b8717165360df04109603f657aec3b791717af42c5df93d29e8d68bf487c8",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0023.lean",
+        "public_sha256": "b2880b19856e7eb0283bff18820b58f937b479f80c69b462c3a0dbde81f46afb"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0023"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "e1929f542e87b41e9ef707a2348da2d266c0138d81afc509e83c9a8f4dc4df19",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005.lean",
+        "public_sha256": "e4b54268a9b6818effcfb0927aa32f47202953a7864634790d8674d002f9969c"
+      },
+      {
+        "original_sha256": "cb618830b35928176c4dbb2269d83c3f7dd73b0513a1e6e3f23651c640da801a",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005_Subdifferential.lean",
+        "public_sha256": "482f9a5ca540569e739d3af9d52f8bf50e1e310a8108daf7eecc3b95975da658"
+      },
+      {
+        "original_sha256": "c038e35e70050995aad95169865a7cf7c196aba57892fb32d9ef8049b34c0e57",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0031/ProofSupport/FiniteSupportSubdifferential.lean",
+        "public_sha256": "356da3abff9ca9d80c356da01a726d353b7ad51d89c9ee21a0ed02f17e37e982"
+      },
+      {
+        "original_sha256": "fc49a4fbc7f80c69b539a960bf70da7ffdce953180407304bd69e161f1c88b43",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0031/ProofSupport/SupportingHyperplane.lean",
+        "public_sha256": "d5c0f5e9f35b267ba67de4d0845427616063ce341e5ce4cafae354fb8e2ae1c2"
+      },
+      {
+        "original_sha256": "4d9b4ed715bca3c448bd3848d3b319cbed7347aab36e4789b837c0e8111dd7b1",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0031.lean",
+        "public_sha256": "0d2213203b8582ee9bf3c937f4f4331af884f14f665567be8d52a6423f3057ab"
+      },
+      {
+        "original_sha256": "1ba828b1387f9c7be66c4c89522a344c594fe340e69441a177a1d35d0850012e",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0031_Chebyshev.lean",
+        "public_sha256": "a9999a95d28a912c719a124ff7e64193dc7640dcc3170a69eea0efdafc48dfdb"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0031"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "e1929f542e87b41e9ef707a2348da2d266c0138d81afc509e83c9a8f4dc4df19",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005.lean",
+        "public_sha256": "e4b54268a9b6818effcfb0927aa32f47202953a7864634790d8674d002f9969c"
+      },
+      {
+        "original_sha256": "cb618830b35928176c4dbb2269d83c3f7dd73b0513a1e6e3f23651c640da801a",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005_Subdifferential.lean",
+        "public_sha256": "482f9a5ca540569e739d3af9d52f8bf50e1e310a8108daf7eecc3b95975da658"
+      },
+      {
+        "original_sha256": "717554fdb20baa5b2aff450dfbc617b88b8d5e61ee88ccabd632e850d79201c9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0032.lean",
+        "public_sha256": "f667146829830beb820247c07d8f1b05f42fa5d0d7e1d1f5d0ef4b51eb7ffde8"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0032"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "e1929f542e87b41e9ef707a2348da2d266c0138d81afc509e83c9a8f4dc4df19",
         "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005.lean",
         "public_sha256": "e4b54268a9b6818effcfb0927aa32f47202953a7864634790d8674d002f9969c"
@@ -1237,6 +1380,58 @@
       }
     ],
     "task": "LIFTR02FullCommonAnalysisOptimization_0044"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "e1929f542e87b41e9ef707a2348da2d266c0138d81afc509e83c9a8f4dc4df19",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005.lean",
+        "public_sha256": "e4b54268a9b6818effcfb0927aa32f47202953a7864634790d8674d002f9969c"
+      },
+      {
+        "original_sha256": "cb618830b35928176c4dbb2269d83c3f7dd73b0513a1e6e3f23651c640da801a",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005_Subdifferential.lean",
+        "public_sha256": "482f9a5ca540569e739d3af9d52f8bf50e1e310a8108daf7eecc3b95975da658"
+      },
+      {
+        "original_sha256": "909da65a82119e2f8e32a65f01d4ac6c8775f6157176292c3ed9be10f7045194",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0046/ProofSupport/ConvexMinorants.lean",
+        "public_sha256": "14a7fcbded4f7096b71174e760d4f026d472b4eb768c1b7dc8bcc381f28201bd"
+      },
+      {
+        "original_sha256": "becd427f458d7e5b58a5811da3f3fc9067a21e39c484f98a7dcd206add452e30",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0046/ProofSupport/EpigraphGeometry.lean",
+        "public_sha256": "cc28d15bafeaac79f1b490f4b30aad97f29b90d04293292500c07b6bd2fd8461"
+      },
+      {
+        "original_sha256": "ff146f1caa44e7eab87b2999b072bdc3cef575e75fe8d373710e0ced92ce7cc3",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0046/ProofSupport/SublevelMultipliers.lean",
+        "public_sha256": "5092ba95f797527d44e2e40a346c3978109b6ec77116e28828db3178cc43d19e"
+      },
+      {
+        "original_sha256": "5593f5488c624f678cf53edb7ffe8e5d7adaf40a4644114e9a14dedffff92639",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0046/ProofSupport/SupportingMultipliers.lean",
+        "public_sha256": "e995c348af7f78a1d2ae347f49598aa4fa715d51b34c43000f54d65818e4a005"
+      },
+      {
+        "original_sha256": "bc512b348af73357bb705db9709dce14046270931b7b93a25fa5dcd42b944b1d",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0046.lean",
+        "public_sha256": "830065fd0b83ee4ef3bedbbe310204233e531d7c843e577f3f34d1f5118e1232"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0046"
   },
   {
     "accepted": true,

@@ -345,6 +345,20 @@ def scan_public(directory: Path, scanner: str, report: Path) -> None:
     )
 
 
+def native_success_tasks(state: dict) -> set[str]:
+    """Count completed proof receipts, including an unfinished current batch."""
+    successful = set()
+    tasks = set(state["tasks"]) | set(state.get("active_tasks", []))
+    for task in tasks:
+        task_state = state["tasks"].get(task, {})
+        runs = {task_state.get("last_run"), state.get("active_run")}
+        for run in filter(None, runs):
+            result = Path(run) / "items" / task / "proof-result.json"
+            if result.is_file() and read(result).get("status") == "success":
+                successful.add(task)
+    return successful
+
+
 def export_public(config: dict) -> dict:
     guard(config)
     root, q, f, ops = layout(config)
@@ -434,16 +448,12 @@ def export_public(config: dict) -> dict:
     }
     state = read(f / "continuous-r08/state.json")
     admission_tasks = {row["task"] for row in records}
-    for task, task_state in state["tasks"].items():
-        if task in admission_tasks or not task_state.get("last_run"):
-            continue
-        result = Path(task_state["last_run"]) / "items" / task / "proof-result.json"
-        if result.exists() and read(result).get("status") == "success":
-            domain = next(d for d in DOMAINS if d in task)
-            domains[domain]["complete"] += 1
-            domains[domain]["pending"] += 1
-            summary["complete"] += 1
-            summary["pending"] += 1
+    for task in sorted(native_success_tasks(state) - admission_tasks):
+        domain = next(d for d in DOMAINS if d in task)
+        domains[domain]["complete"] += 1
+        domains[domain]["pending"] += 1
+        summary["complete"] += 1
+        summary["pending"] += 1
     atomic_json(published / "summary.json", summary)
     atomic_json(published / "admissions.json", records)
     with (published / "lean-sources.jsonl").open("w") as handle:

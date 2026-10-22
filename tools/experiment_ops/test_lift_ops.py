@@ -12,6 +12,32 @@ import lift_ops
 
 
 class SafetyTests(unittest.TestCase):
+    def test_native_success_includes_active_batch_and_deduplicates(self):
+        with tempfile.TemporaryDirectory() as folder:
+            previous = Path(folder) / "previous"
+            active = Path(folder) / "active"
+            for run, task, status in [
+                (previous, "done", "success"),
+                (active, "done", "success"),
+                (active, "pending_audit", "success"),
+                (active, "failed", "failed"),
+            ]:
+                lift_ops.atomic_json(
+                    run / "items" / task / "proof-result.json", {"status": status}
+                )
+            state = {
+                "active_run": str(active),
+                "active_tasks": ["done", "pending_audit", "failed", "running"],
+                "tasks": {
+                    "done": {"last_run": str(previous)},
+                    "failed": {},
+                    "running": {},
+                },
+            }
+            self.assertEqual(
+                lift_ops.native_success_tasks(state), {"done", "pending_audit"}
+            )
+
     def test_atomic_json(self):
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "index.json"

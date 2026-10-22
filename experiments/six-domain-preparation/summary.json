@@ -1,6 +1,6 @@
 {
-  "accepted": 119,
-  "complete": 133,
+  "accepted": 124,
+  "complete": 140,
   "debug": 48,
   "denominator": 480,
   "domains": {
@@ -12,10 +12,10 @@
       "rejected": 7
     },
     "AnalysisOptimization": {
-      "accepted": 19,
-      "complete": 23,
+      "accepted": 24,
+      "complete": 30,
       "denominator": 80,
-      "pending": 0,
+      "pending": 2,
       "rejected": 4
     },
     "GraphDiscrete": {
@@ -49,22 +49,22 @@
   },
   "formal_generic_lift_comparison_started": false,
   "held_out": 60,
-  "pending": 0,
+  "pending": 2,
   "phase": "native_statement_proof_material_preparation",
   "provider_dispatch_waiting": false,
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 6475,
-    "inflight": 8,
+    "finished": 6814,
+    "inflight": 1,
     "known_token_lower_bound": {
-      "cached_tokens": 281249300,
-      "input_tokens": 334282604,
-      "output_tokens": 4908648,
-      "reasoning_tokens": 1744434,
-      "total_tokens": 339191252
+      "cached_tokens": 315989012,
+      "input_tokens": 371308969,
+      "output_tokens": 5194108,
+      "reasoning_tokens": 1843440,
+      "total_tokens": 376503077
     },
-    "started": 6483,
+    "started": 6815,
     "unknown_usage": 30
   },
   "usage_is_lower_bound": true
