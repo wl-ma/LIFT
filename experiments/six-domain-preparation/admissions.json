@@ -1164,6 +1164,38 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "9296baf0b82c20be5c1c65cd468e7eba71156e16357e28dbea7e26b93354a71d",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0002.lean",
+        "public_sha256": "33e585ea39fe33726f8aa2e74865c074b8d73c62cb5dc7f2d3f69739d0d99e0f"
+      },
+      {
+        "original_sha256": "c392cad4fb5bf4fb914656f58c1673f659a2ea5128e4b68601fced15bb219034",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0002_StrongConvex.lean",
+        "public_sha256": "23d700da617a5d71cb5038b84d1365da7e4861756b6418b3dbf7ef31540e04dd"
+      },
+      {
+        "original_sha256": "e3e0317334d7f9b09e93842a40881244a78aa1a3c053d3e8b3056f1d83da5514",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0024.lean",
+        "public_sha256": "c993efed1ec5b3fbe342b1f1c30edaebfd1f7ed116bc1ebdcfae3d6b8a2049a9"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0024"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "e1929f542e87b41e9ef707a2348da2d266c0138d81afc509e83c9a8f4dc4df19",
         "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005.lean",
         "public_sha256": "e4b54268a9b6818effcfb0927aa32f47202953a7864634790d8674d002f9969c"
@@ -1676,6 +1708,28 @@
       }
     ],
     "task": "LIFTR02FullCommonAnalysisOptimization_0053"
+  },
+  {
+    "accepted": true,
+    "domain": "GraphDiscrete",
+    "source_files": [
+      {
+        "original_sha256": "dcbc5175f6b81d7daa638b37aba9acaca69d1cc77bac4805c86791bbb5036e1e",
+        "path": "LIFTR02FullCommonGraphDiscrete.lean",
+        "public_sha256": "dd4205572abf58129c3d694c9fc473d8fdc815277ef044fbe637255d05e6acfe"
+      },
+      {
+        "original_sha256": "e7324a04cf573f7896a12d0f872f9fc26577b2b662db10e9f96a1fbd49c1cc72",
+        "path": "LIFTR02FullCommonGraphDiscrete/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "c8bb49603cdea7e02e761c5e5257c66ed3cc5b59cda497655fe255e25ba0b7af",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0010.lean",
+        "public_sha256": "efdf177b47585ca250eb7db488180fd3dfd61d38fd9eb492d45ca6bb0d99e5da"
+      }
+    ],
+    "task": "LIFTR02FullCommonGraphDiscrete_0010"
   },
   {
     "accepted": true,

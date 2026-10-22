@@ -1,5 +1,5 @@
 {
-  "accepted": 127,
+  "accepted": 129,
   "complete": 143,
   "debug": 48,
   "denominator": 480,
@@ -12,17 +12,17 @@
       "rejected": 7
     },
     "AnalysisOptimization": {
-      "accepted": 27,
+      "accepted": 28,
       "complete": 32,
       "denominator": 80,
-      "pending": 1,
+      "pending": 0,
       "rejected": 4
     },
     "GraphDiscrete": {
-      "accepted": 27,
+      "accepted": 28,
       "complete": 29,
       "denominator": 80,
-      "pending": 1,
+      "pending": 0,
       "rejected": 1
     },
     "LinearMatrix": {
@@ -49,13 +49,13 @@
   },
   "formal_generic_lift_comparison_started": false,
   "held_out": 60,
-  "pending": 2,
+  "pending": 0,
   "phase": "native_statement_proof_material_preparation",
   "provider_dispatch_waiting": false,
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 7554,
+    "finished": 7573,
     "inflight": 0,
     "known_token_lower_bound": {
       "cached_tokens": 338042516,
@@ -64,8 +64,8 @@
       "reasoning_tokens": 2011464,
       "total_tokens": 410007651
     },
-    "started": 7554,
-    "unknown_usage": 54
+    "started": 7573,
+    "unknown_usage": 73
   },
   "usage_is_lower_bound": true
 }
