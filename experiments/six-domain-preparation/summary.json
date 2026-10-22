@@ -1,6 +1,6 @@
 {
-  "accepted": 110,
-  "complete": 124,
+  "accepted": 119,
+  "complete": 133,
   "debug": 48,
   "denominator": 480,
   "domains": {
@@ -12,8 +12,8 @@
       "rejected": 7
     },
     "AnalysisOptimization": {
-      "accepted": 10,
-      "complete": 14,
+      "accepted": 19,
+      "complete": 23,
       "denominator": 80,
       "pending": 0,
       "rejected": 4
@@ -55,17 +55,17 @@
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 5846,
-    "inflight": 10,
+    "finished": 6475,
+    "inflight": 8,
     "known_token_lower_bound": {
-      "cached_tokens": 251363476,
-      "input_tokens": 298177700,
-      "output_tokens": 4354898,
-      "reasoning_tokens": 1569875,
-      "total_tokens": 302532598
+      "cached_tokens": 281249300,
+      "input_tokens": 334282604,
+      "output_tokens": 4908648,
+      "reasoning_tokens": 1744434,
+      "total_tokens": 339191252
     },
-    "started": 5856,
-    "unknown_usage": 29
+    "started": 6483,
+    "unknown_usage": 30
   },
   "usage_is_lower_bound": true
 }
