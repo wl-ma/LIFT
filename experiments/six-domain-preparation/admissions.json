@@ -1839,6 +1839,75 @@
   },
   {
     "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "ef324acd02d1a76643783446656c051b4a7a43285085fe80894f2ab38262789b",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0016.lean",
+        "public_sha256": "e7a34201478d6263f17b9c01cbe680a9fd765f1a4865b14b499fe3adc98b275c"
+      },
+      {
+        "original_sha256": "189c43f53bda73b28641bef9f8068e16b47a832f19e45a74c9cd13974a273b3c",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0016_MaxForm.lean",
+        "public_sha256": "5df95ec044b66af79e929e5a1963706c360a753ce3a5337476fe0c57589bb739"
+      },
+      {
+        "original_sha256": "b9b0426eb3e4937f560e3395ee8e4354f6794adadd18f7c5e911b95facd9b13e",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0059.lean",
+        "public_sha256": "d6d295896641f6c908a061cae5a96bac62e0dc9f6c13c4b9c714d41ca27b39db"
+      },
+      {
+        "original_sha256": "7d1f7237723b715fffa96bcc56b308da91fed0a0f4be1992a09ea206c6044364",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0059_Prox.lean",
+        "public_sha256": "6b33840f52a139d591f12423983d2632e2e64c626d72163a60ac83ec1bff6525"
+      },
+      {
+        "original_sha256": "56bce3b8a0eac34eca278a7eeb265e21a27efc1f32e84db66baa6f52cbc98da9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0059_Smoothing.lean",
+        "public_sha256": "997b013c3b2d193542caa9578a0ac000837cb58ddfbbb2eb0c489b9effaa4ea1"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0059"
+  },
+  {
+    "accepted": true,
+    "domain": "GraphDiscrete",
+    "source_files": [
+      {
+        "original_sha256": "dcbc5175f6b81d7daa638b37aba9acaca69d1cc77bac4805c86791bbb5036e1e",
+        "path": "LIFTR02FullCommonGraphDiscrete.lean",
+        "public_sha256": "dd4205572abf58129c3d694c9fc473d8fdc815277ef044fbe637255d05e6acfe"
+      },
+      {
+        "original_sha256": "e7324a04cf573f7896a12d0f872f9fc26577b2b662db10e9f96a1fbd49c1cc72",
+        "path": "LIFTR02FullCommonGraphDiscrete/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "49c1021f52dadcfbcaa251cd07b6d8efe2c8e8b5a9a5e638dc3d5ff78f9a7879",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0001.lean",
+        "public_sha256": "0a364979e10f4425bb6294ead1e5f68ea61f60c987c7a201ce2fc5342f4b50cb"
+      },
+      {
+        "original_sha256": "b65a384ace65ec18b0217cfb5f9331fb08b5b52474673e5fb507f5cb0980491d",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0001_FractionalPacking.lean",
+        "public_sha256": "01902287a6a13936c8cb663b9188d97595e1e375734e618c6d1bfdc99a07dcc0"
+      }
+    ],
+    "task": "LIFTR02FullCommonGraphDiscrete_0001"
+  },
+  {
+    "accepted": true,
     "domain": "GraphDiscrete",
     "source_files": [
       {
