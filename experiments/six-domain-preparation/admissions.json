@@ -2293,6 +2293,48 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "9b0e43d056fecef3dba6f099919be7529b4382a0a4281963ae6f44d50f78764e",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0003.lean",
+        "public_sha256": "fd31d4c197a88f66bc361c7f52dfbf7b7e296b216118d359cad977c72c2fa155"
+      },
+      {
+        "original_sha256": "2b0c9f151efcab4ee72b1a4be88891e2048cf0654334012b2d7e2bd06b80ea35",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0003_StrongProduct.lean",
+        "public_sha256": "228fc18fc07a769edd3ed33bcdf729f1256f3e78654504e8378634d176ad029d"
+      },
+      {
+        "original_sha256": "22be631b6ab741365c78300742ea6d8560fee07f92d8070cc65419ee5d5d062a",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0004.lean",
+        "public_sha256": "b34a4e04d1e6d217581f3a82c04e95a2901e29066a14dfa9a0519e97818cc21f"
+      },
+      {
+        "original_sha256": "1480d6d4165368422f42dbf3dd55920659d9be880376856030502a35632c036d",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0004_Representation.lean",
+        "public_sha256": "d0f3eab8313a91ce09f1ce75c3a0f1126dbe5c4189e0ad80865718a864c4a6a7"
+      },
+      {
+        "original_sha256": "2c47be89b602805470e5b1fb8b913bc152e338ab13f92eab0a1b9395f835a6ad",
+        "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0034.lean",
+        "public_sha256": "53f6e9afbfcd2ed1120aaa1451b0e5f04a38a5bbd162a2e05835093646b6a3ef"
+      }
+    ],
+    "task": "LIFTR02FullCommonGraphDiscrete_0034"
+  },
+  {
+    "accepted": true,
+    "domain": "GraphDiscrete",
+    "source_files": [
+      {
+        "original_sha256": "dcbc5175f6b81d7daa638b37aba9acaca69d1cc77bac4805c86791bbb5036e1e",
+        "path": "LIFTR02FullCommonGraphDiscrete.lean",
+        "public_sha256": "dd4205572abf58129c3d694c9fc473d8fdc815277ef044fbe637255d05e6acfe"
+      },
+      {
+        "original_sha256": "e7324a04cf573f7896a12d0f872f9fc26577b2b662db10e9f96a1fbd49c1cc72",
+        "path": "LIFTR02FullCommonGraphDiscrete/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "22be631b6ab741365c78300742ea6d8560fee07f92d8070cc65419ee5d5d062a",
         "path": "LIFTR02FullCommonGraphDiscrete/graph_discrete/LIFTR02FullCommonGraphDiscrete_0004.lean",
         "public_sha256": "b34a4e04d1e6d217581f3a82c04e95a2901e29066a14dfa9a0519e97818cc21f"
@@ -3611,6 +3653,70 @@
     "domain": "LinearMatrix",
     "source_files": [
       {
+        "original_sha256": "5aea5da6818b2353f7de9e5d628d74a6bb8492cafea95dd2ebe59079cafae6c0",
+        "path": "LIFTR02FullCommonLinearMatrix.lean",
+        "public_sha256": "b4c198f121c97a1b9d0412f7ca1be1be42a2f46c0358e4e2cad0d006ea0650b2"
+      },
+      {
+        "original_sha256": "5b4c6aa786aca4b12ba392484d7e1c6bde6577ece91ef1d25c262dfdd5399be2",
+        "path": "LIFTR02FullCommonLinearMatrix/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "97dd4e7edf956da713e29339d026498b9837d380a6c443cca69265f7b93f3d06",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0006.lean",
+        "public_sha256": "7458afcc5ab1ce84598c2498565bdf9705ba2c18e4fdc19cfee2977583328879"
+      },
+      {
+        "original_sha256": "eba306752de67f526e3ebe9da953c3dc8e55c9345c1c318ccb084d9dd52ad73f",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0037.lean",
+        "public_sha256": "00061cd39fdec80a9261d7423fc00b4f5614ad7ed07906b2484c4fd5c0273cd3"
+      },
+      {
+        "original_sha256": "20098b2ed6c35aad0b11c12cc3f5bc2b2a0b2b9617c04fad532f2d1aaa3e6408",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0049.lean",
+        "public_sha256": "4ab413a83a763b5fc17c787b663c26f229f3a7f4555b42ab5f70146991e0674c"
+      }
+    ],
+    "task": "LIFTR02FullCommonLinearMatrix_0049"
+  },
+  {
+    "accepted": true,
+    "domain": "LinearMatrix",
+    "source_files": [
+      {
+        "original_sha256": "5aea5da6818b2353f7de9e5d628d74a6bb8492cafea95dd2ebe59079cafae6c0",
+        "path": "LIFTR02FullCommonLinearMatrix.lean",
+        "public_sha256": "b4c198f121c97a1b9d0412f7ca1be1be42a2f46c0358e4e2cad0d006ea0650b2"
+      },
+      {
+        "original_sha256": "5b4c6aa786aca4b12ba392484d7e1c6bde6577ece91ef1d25c262dfdd5399be2",
+        "path": "LIFTR02FullCommonLinearMatrix/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "97dd4e7edf956da713e29339d026498b9837d380a6c443cca69265f7b93f3d06",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0006.lean",
+        "public_sha256": "7458afcc5ab1ce84598c2498565bdf9705ba2c18e4fdc19cfee2977583328879"
+      },
+      {
+        "original_sha256": "eba306752de67f526e3ebe9da953c3dc8e55c9345c1c318ccb084d9dd52ad73f",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0037.lean",
+        "public_sha256": "00061cd39fdec80a9261d7423fc00b4f5614ad7ed07906b2484c4fd5c0273cd3"
+      },
+      {
+        "original_sha256": "0f8e9021ac725919a4a23385dc0c5a8ca1ba3b9f9654e4db09a313a5453c2464",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0050.lean",
+        "public_sha256": "954c6628d1f223b1c532a0ba4df8c47117a6fd8783b92b427bf7c497a57f7f6b"
+      }
+    ],
+    "task": "LIFTR02FullCommonLinearMatrix_0050"
+  },
+  {
+    "accepted": true,
+    "domain": "LinearMatrix",
+    "source_files": [
+      {
         "original_sha256": "5b4c6aa786aca4b12ba392484d7e1c6bde6577ece91ef1d25c262dfdd5399be2",
         "path": "LIFTR02FullCommonLinearMatrix/Book.lean",
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
@@ -3653,6 +3759,38 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "e9c1d277a38e7cffcb28e12d2216c1e7815e1087745d43ee8c98fc1d4ba8a92a",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0011.lean",
+        "public_sha256": "0510e3c76464f163202e63c89924d9bd4258abfaf17b75875edf016457124133"
+      },
+      {
+        "original_sha256": "7ad94e2b9e3f6c19c61b95e0d12a395302d26630e2caab6e8fd1b2a989e67fba",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0038.lean",
+        "public_sha256": "0d1b72a8fdfa4d6eb92686f2e1d41c70ffebe7b11d9c5b6dc0f3b30dbc41c094"
+      },
+      {
+        "original_sha256": "cefeaf8329970081d5da266463244b712a9086a1467599cb359605735d7cbec5",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0052.lean",
+        "public_sha256": "d5a34d9110d9dc5501ccc4c42079c4d8752e82dc6435e8b61e7283406bd52c23"
+      }
+    ],
+    "task": "LIFTR02FullCommonLinearMatrix_0052"
+  },
+  {
+    "accepted": true,
+    "domain": "LinearMatrix",
+    "source_files": [
+      {
+        "original_sha256": "5aea5da6818b2353f7de9e5d628d74a6bb8492cafea95dd2ebe59079cafae6c0",
+        "path": "LIFTR02FullCommonLinearMatrix.lean",
+        "public_sha256": "b4c198f121c97a1b9d0412f7ca1be1be42a2f46c0358e4e2cad0d006ea0650b2"
+      },
+      {
+        "original_sha256": "5b4c6aa786aca4b12ba392484d7e1c6bde6577ece91ef1d25c262dfdd5399be2",
+        "path": "LIFTR02FullCommonLinearMatrix/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "90c0788f6e8a9055121d90017f1240ce93a586a90a7bd5092314b47e7562b26d",
         "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0003.lean",
         "public_sha256": "dbb7fc80d54055f4a131806f63c0f89e65b0410aa83425f06b5446ac1783f235"
@@ -3669,6 +3807,38 @@
       }
     ],
     "task": "LIFTR02FullCommonLinearMatrix_0053"
+  },
+  {
+    "accepted": true,
+    "domain": "LinearMatrix",
+    "source_files": [
+      {
+        "original_sha256": "5aea5da6818b2353f7de9e5d628d74a6bb8492cafea95dd2ebe59079cafae6c0",
+        "path": "LIFTR02FullCommonLinearMatrix.lean",
+        "public_sha256": "b4c198f121c97a1b9d0412f7ca1be1be42a2f46c0358e4e2cad0d006ea0650b2"
+      },
+      {
+        "original_sha256": "5b4c6aa786aca4b12ba392484d7e1c6bde6577ece91ef1d25c262dfdd5399be2",
+        "path": "LIFTR02FullCommonLinearMatrix/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "90c0788f6e8a9055121d90017f1240ce93a586a90a7bd5092314b47e7562b26d",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0003.lean",
+        "public_sha256": "dbb7fc80d54055f4a131806f63c0f89e65b0410aa83425f06b5446ac1783f235"
+      },
+      {
+        "original_sha256": "0bbd5bd791a8de05dbc0973d32abcfd33346d36e9777a902c6b5b8041f7ed6c1",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0039.lean",
+        "public_sha256": "e00ce5f763dafb6aad84c4a28d6ffb72405995d0221a9b004619ed00ffd4ebb6"
+      },
+      {
+        "original_sha256": "b266af00a1f1adf32d93024a852f5076e0288740723168cc806169c6c953ef16",
+        "path": "LIFTR02FullCommonLinearMatrix/linear_matrix/LIFTR02FullCommonLinearMatrix_0054.lean",
+        "public_sha256": "4c4159ff4e86be612cb4050d7414b1e705d934f95f6d539421831aebfd6c0743"
+      }
+    ],
+    "task": "LIFTR02FullCommonLinearMatrix_0054"
   },
   {
     "accepted": true,
