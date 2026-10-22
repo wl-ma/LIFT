@@ -1490,6 +1490,43 @@
         "public_sha256": "482f9a5ca540569e739d3af9d52f8bf50e1e310a8108daf7eecc3b95975da658"
       },
       {
+        "original_sha256": "db9444cff8b4e48abbfd77b62d772341f9960a03ab94f9a1dcd40440917bd389",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0048.lean",
+        "public_sha256": "42983245f740438aa74eb2ea811cb2622756bb62b75436d52d5e67340dc63a34"
+      },
+      {
+        "original_sha256": "6e07e8e355f043d341407f47b77d4543fec2f9aa755a5bdf103d880f26fdda03",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0048_ConvexFunctions.lean",
+        "public_sha256": "f8a794e1978ee56b5ca6ad2cab31467c5bc93932cc4e22430f4fbaa76ea49fb9"
+      }
+    ],
+    "task": "LIFTR02FullCommonAnalysisOptimization_0048"
+  },
+  {
+    "accepted": true,
+    "domain": "AnalysisOptimization",
+    "source_files": [
+      {
+        "original_sha256": "307681212027cbcdf801fb81fcf442dba51da188c8a0be16858c71daba843500",
+        "path": "LIFTR02FullCommonAnalysisOptimization.lean",
+        "public_sha256": "88c91e290715dad30740a97bd8fb722a6d9627171a5e259767c28e651f4ebcab"
+      },
+      {
+        "original_sha256": "9bd289754fe95937e1efbf194b079aec7f280fd89cdf3813d283d51e2e2443e9",
+        "path": "LIFTR02FullCommonAnalysisOptimization/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "e1929f542e87b41e9ef707a2348da2d266c0138d81afc509e83c9a8f4dc4df19",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005.lean",
+        "public_sha256": "e4b54268a9b6818effcfb0927aa32f47202953a7864634790d8674d002f9969c"
+      },
+      {
+        "original_sha256": "cb618830b35928176c4dbb2269d83c3f7dd73b0513a1e6e3f23651c640da801a",
+        "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0005_Subdifferential.lean",
+        "public_sha256": "482f9a5ca540569e739d3af9d52f8bf50e1e310a8108daf7eecc3b95975da658"
+      },
+      {
         "original_sha256": "87be508b1799c19c7b1405bacb3674efee732fce85b27a5b12b4a44e46bbf4bb",
         "path": "LIFTR02FullCommonAnalysisOptimization/analysis_optimization/LIFTR02FullCommonAnalysisOptimization_0049.lean",
         "public_sha256": "06b62336d6fca940424aeed45d3783bee3ce8cc1cd7233bab9e01c0f7dbe7ef0"
