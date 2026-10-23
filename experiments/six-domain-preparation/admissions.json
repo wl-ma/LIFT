@@ -4903,6 +4903,94 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "1ab50c7b6be188fb1d130da71a401d92b58daa8422b95f7d7bb2120dc490fc5b",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0010.lean",
+        "public_sha256": "b58b2ac7dddec3e80633f441aa150c76e22367a859c25d54435c7a5132b65f3a"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0010"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "aa9e51d72d6c6784d3ecc86b3dba6822a88ca9a054b9721346bf8709898b4c9e",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0011.lean",
+        "public_sha256": "bdde4ca6b86bd9d8f4c252f7ac518192d49f9b55c817674f09fb2312929cafa5"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0011"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "95ebae9b624499014820b0a58e8c957649100fd76da31ec51dcac759ef8d4e16",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0012.lean",
+        "public_sha256": "f83928eff660aa52f43df50b4e1e492da14cdc736d9a241541c85275790b858d"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0012"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "2dd447d08febeb31689059dd5cfd44127298c573be26085bd7f5367a3ad817b3",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0013.lean",
+        "public_sha256": "207d6b866d861e9c911c13abd9255dba0fec909e50d10692dff8ef4ca4946579"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0013"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "f083d14a1fef9e02fdd8cd4c8e9e5157a27ed3d4cea6496e74b0592f99e05a04",
         "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0014.lean",
         "public_sha256": "1aa78bc04ad4d536d3aadd1e369b102258ca266c797d09d358078b1d9c64cce5"
@@ -4926,6 +5014,28 @@
       }
     ],
     "task": "LIFTR02FullCommonProbability_0015"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "f5d4a0dec78e6388e6295075ba3e75758d6e4043a984efd24682b6a397d497fc",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0017.lean",
+        "public_sha256": "1b696abc02adceac15f3cf4cd4411129764c05a1dd79a629bac40c59c5b51626"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0017"
   },
   {
     "accepted": true,
