@@ -1,9 +1,9 @@
 {
   "files": {
     "experiments/six-domain-preparation/README.md": "c4adafffe92bb023c3bd512f32741d16f42712a780d2c68f92b5eb3e67815f63",
-    "experiments/six-domain-preparation/admissions.json": "937a18cbadf9d864b1b4f9abb90cff52a680f98d956163167cdf66110a92fbf9",
-    "experiments/six-domain-preparation/lean-sources.jsonl": "65c67e5c4e6779da41e7c7481cb73d6d470eb0b06e105ecf7010dcdbbb123de8",
-    "experiments/six-domain-preparation/summary.json": "1405578e442909d058ae14f6e5a6c8e3185fa0faf01e532100ad96890cf08e46",
+    "experiments/six-domain-preparation/admissions.json": "eeaceeb332aa5ea89ef175e982f3a5daa45cb3dcf87a958f56efc3a0fa527f2c",
+    "experiments/six-domain-preparation/lean-sources.jsonl": "66f70c34e4907bda114fe67e3c9b9252bff8e90317e0b7070ad3417fa5632d5a",
+    "experiments/six-domain-preparation/summary.json": "ac6d1f9c86f833adea98f0a2fc11a333ca76f4e3ec73071cd5bb535ee76258d8",
     "tools/experiment_ops/README.md": "98b075f308ad26598bf482d482f4aefbf660f489c9e19728f74cda4d3c66019c",
     "tools/experiment_ops/lift_ops.py": "c577bb6cf526dc3bcb265a388bf569f6375e13721fbcf3627e40dc1eb3b6b211",
     "tools/experiment_ops/materialize_sources.py": "5dd5ac6ba1af7bcd3825532fbff7a31142ed66690e957bbeeda97507ddb3737b",
