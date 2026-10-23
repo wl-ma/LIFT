@@ -1,5 +1,5 @@
 {
-  "accepted": 224,
+  "accepted": 229,
   "complete": 319,
   "debug": 48,
   "denominator": 480,
@@ -40,22 +40,22 @@
       "rejected": 0
     },
     "Topology": {
-      "accepted": 27,
+      "accepted": 32,
       "complete": 49,
       "denominator": 80,
-      "pending": 21,
+      "pending": 16,
       "rejected": 1
     }
   },
   "formal_generic_lift_comparison_started": false,
   "held_out": 60,
-  "pending": 81,
+  "pending": 76,
   "phase": "native_statement_proof_material_preparation",
   "provider_dispatch_waiting": false,
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 15594,
+    "finished": 15635,
     "inflight": 0,
     "known_token_lower_bound": {
       "cached_tokens": 672663700,
@@ -64,8 +64,8 @@
       "reasoning_tokens": 3359688,
       "total_tokens": 820380524
     },
-    "started": 15594,
-    "unknown_usage": 175
+    "started": 15635,
+    "unknown_usage": 216
   },
   "usage_is_lower_bound": true
 }
