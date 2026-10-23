@@ -5864,6 +5864,53 @@
     "domain": "Probability",
     "source_files": [
       {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
+        "original_sha256": "12cf2d1507d2b887c4f5158cd539f8697f8a63184c66a7246b03f6e4f0beb511",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0003.lean",
+        "public_sha256": "315bb6538188ab8f9396f04710914336283f528a77482c2d8cd639c81636adea"
+      },
+      {
+        "original_sha256": "1ee3ca487759dbb21cbac4cd3a303fe2ca37e28f9fc3e247e5b5bfac4685b620",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0003_Absorption.lean",
+        "public_sha256": "d715e91880c891e23f75485dc1e913e2da0efd7ee75f2d0f4665a1de4e6fac83"
+      },
+      {
+        "original_sha256": "3ce086cbe4a8d618be26c35404dee10ab3424e51159a8cc97dcffa31ee647158",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0025.lean",
+        "public_sha256": "4d0ea1cb8ed8d1778317b6cc3834a62a31b35c026b7c71432d4b0a3de7421fdf"
+      },
+      {
+        "original_sha256": "582e9e6dcf27daf1905fea09ecc460358b5f19ae9a08e33295451ac6899b8969",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0025_Transience.lean",
+        "public_sha256": "bf3aaeaa1cd362813fbcbe64438f72d2c0879a271334b91d10d7378cb94f5b90"
+      },
+      {
+        "original_sha256": "5d1f69cbdd03f15776b3a4678ce98cba679b8276fd8fd321fbb1265bd1380745",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0060.lean",
+        "public_sha256": "f5cc665a1c7dbe8402f98cea26c5f0a3613719a0eef1580dd92819607bd90056"
+      },
+      {
+        "original_sha256": "44f485f7f96c4f7c8d2e47532f9cdb57a5478c5220ceafa3594a55f285cfeafb",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0060_Transition.lean",
+        "public_sha256": "f0bb4183909f4a5ddb5e243dbd92ec83e0f88475e87943d03dbb3f51e2d9813f"
+      },
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0060"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
         "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
         "path": "LIFTR02FullCommonProbability.lean",
         "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
