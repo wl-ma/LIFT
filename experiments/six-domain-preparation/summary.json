@@ -55,7 +55,7 @@
   "rejected": 15,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 17478,
+    "finished": 17488,
     "inflight": 0,
     "known_token_lower_bound": {
       "cached_tokens": 744558186,
@@ -64,8 +64,8 @@
       "reasoning_tokens": 3711021,
       "total_tokens": 911980117
     },
-    "started": 17478,
-    "unknown_usage": 463
+    "started": 17488,
+    "unknown_usage": 473
   },
   "usage_is_lower_bound": true
 }
