@@ -5381,6 +5381,38 @@
         "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
       },
       {
+        "original_sha256": "dc9279e2069c3bb451fef4b9049fccec694aca98a813251843b479d75347c293",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0005.lean",
+        "public_sha256": "b5ff799bda37c692a1ddfc24a502f29197aab0aaa18941ce604a4c0ddd3b16ff"
+      },
+      {
+        "original_sha256": "4014e595226fe47c9859c8b799d9ef1041d1f449219986ebb39d74668aa459e4",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0031.lean",
+        "public_sha256": "9150037393d725da647144eeb3eaf46ab801b0e6dccab207b0b558744f66f57c"
+      },
+      {
+        "original_sha256": "1aa97e3c7e91991be64f21e7280ea39c7785a72d0cb52c6b8dc5cc193a69b516",
+        "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0062.lean",
+        "public_sha256": "ea4ac1b10ed6feba429ad3396204b26404ee0651670f963912de930d3e9a4c9a"
+      }
+    ],
+    "task": "LIFTR02FullCommonProbability_0062"
+  },
+  {
+    "accepted": true,
+    "domain": "Probability",
+    "source_files": [
+      {
+        "original_sha256": "0c00a9997d2a999421aa32c865af0516388decf00b77334aac01895cbcd00158",
+        "path": "LIFTR02FullCommonProbability.lean",
+        "public_sha256": "3b3872e95a217b7043718418aefa7f97abecb09e05d7c9ec0597c5b1b94e82d2"
+      },
+      {
+        "original_sha256": "5d15a25a2ed184d108dd551af486fb88b22823b9f32fe39edd5f40c655e9ae5d",
+        "path": "LIFTR02FullCommonProbability/Book.lean",
+        "public_sha256": "eca99f99e08122eda44bbeb774d630c5aecdaa902141f619929071b869d4aa37"
+      },
+      {
         "original_sha256": "a7301f6cd055e262aef45ed6aa29871e019daba9b0e0006ee793054ea7a01f38",
         "path": "LIFTR02FullCommonProbability/probability/LIFTR02FullCommonProbability_0004.lean",
         "public_sha256": "0f18cb0a7cf0006bdb49e97ccab6c786c7a7782e5d4bd3fda4adeff60920a8d6"

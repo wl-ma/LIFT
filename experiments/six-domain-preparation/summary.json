@@ -1,6 +1,6 @@
 {
-  "accepted": 235,
-  "complete": 319,
+  "accepted": 236,
+  "complete": 323,
   "debug": 48,
   "denominator": 480,
   "domains": {
@@ -33,39 +33,39 @@
       "rejected": 1
     },
     "Probability": {
-      "accepted": 27,
-      "complete": 31,
+      "accepted": 28,
+      "complete": 32,
       "denominator": 80,
       "pending": 4,
       "rejected": 0
     },
     "Topology": {
       "accepted": 32,
-      "complete": 49,
+      "complete": 52,
       "denominator": 80,
-      "pending": 16,
+      "pending": 19,
       "rejected": 1
     }
   },
   "formal_generic_lift_comparison_started": false,
   "held_out": 60,
-  "pending": 70,
+  "pending": 73,
   "phase": "native_statement_proof_material_preparation",
   "provider_dispatch_waiting": false,
   "rejected": 14,
   "usage": {
     "cache_and_reasoning_included_in_total": true,
-    "finished": 15745,
+    "finished": 15945,
     "inflight": 0,
     "known_token_lower_bound": {
-      "cached_tokens": 672663700,
-      "input_tokens": 809199207,
-      "output_tokens": 11181317,
-      "reasoning_tokens": 3359688,
-      "total_tokens": 820380524
+      "cached_tokens": 677819156,
+      "input_tokens": 815794606,
+      "output_tokens": 11254354,
+      "reasoning_tokens": 3369613,
+      "total_tokens": 827048960
     },
-    "started": 15745,
-    "unknown_usage": 326
+    "started": 15945,
+    "unknown_usage": 358
   },
   "usage_is_lower_bound": true
 }
